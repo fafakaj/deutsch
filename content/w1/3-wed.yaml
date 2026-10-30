@@ -1,0 +1,136 @@
+date: 2026-11-04
+title: "Числа, возраст, контакты. Вопросы и порядок слов"
+hours: 2
+kind: study
+intro: |
+  Сегодня: числа до 1000, возраст, номер телефона и адрес. Грамматика: вопросы и место глагола.
+steps:
+  - type: theory
+    title: "Числа 0–1000"
+    minutes: 15
+    article: zahlen
+    alt:
+      - {title: "Nicos Weg, Folge 9: Zahlen von 1 bis 100 (YouTube DW)", url: "https://www.youtube.com/watch?v=p1dci7nBJRo", lang: de, type: video, verified: "200 2026-10-31"}
+    goals:
+      - "назвать числа 0–1000, номер телефона по цифрам и возраст"
+
+  - type: theory
+    title: "W-Fragen, Ja/Nein-Fragen, порядок слов"
+    minutes: 15
+    article: fragen-wortstellung
+    alt:
+      - {title: "Lingolia: Fragen", url: "https://deutsch.lingolia.com/de/grammatik/satzbau/fragen", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "задать вопрос с вопросительным словом и вопрос «да/нет»"
+      - "поставить глагол на 2-е место в утверждении"
+
+  - type: quiz
+    title: "Проверка: числа и вопросы"
+    minutes: 15
+    quiz:
+      id: q-w1d3-fragen
+      title: "Числа и вопросы"
+      questions:
+        - {type: de, q: "Напишите словом: 13", answer: "dreizehn"}
+        - {type: de, q: "Напишите словом: 21", answer: "einundzwanzig", explain: "Сначала единицы, потом десятки: *ein-und-zwanzig*."}
+        - {type: de, q: "Напишите словом: 67", answer: "siebenundsechzig", explain: "*sieben* → *siebzig* (70), но *siebenundsechzig* (67). *sechs* → *sechzig* (60)."}
+        - {type: de, q: "Напишите словом: 30", answer: "dreißig"}
+        - type: choice
+          q: "*dreihundertfünfundvierzig* — это:"
+          options: ["345", "354", "435", "543"]
+          answer: 0
+        - type: choice
+          q: "Как спросить возраст?"
+          options: ["Wie alt bist du?", "Wie viel bist du?", "Was alt bist du?", "Wie alt du bist?"]
+          answer: 0
+        - {type: de, q: "Вопросительное слово: «___ wohnst du?» — «In Kasan.»", answer: "Wo"}
+        - {type: de, q: "Вопросительное слово: «___ kommst du?» — «Aus Russland.»", answer: "Woher"}
+        - {type: de, q: "Вопросительное слово: «___ ist das?» — «Das ist Lisa.»", answer: "Wer"}
+        - {type: de, q: "Вопросительное слово: «___ ist Ihre Telefonnummer?» — «0173 …»", answer: "Wie"}
+        - type: choice
+          q: "Какой вопрос — «да/нет»?"
+          options: ["Kommst du aus Spanien?", "Woher kommst du?", "Wo wohnst du?", "Wie heißt du?"]
+          answer: 0
+          explain: "В вопросе «да/нет» глагол стоит на 1-м месте."
+        - type: choice
+          q: "Где ошибка в порядке слов?"
+          options: ["Heute ich lerne Deutsch.", "Heute lerne ich Deutsch.", "Ich lerne heute Deutsch.", "Lernst du heute Deutsch?"]
+          answer: 0
+          explain: "В утверждении глагол — на 2-м месте: *Heute **lerne** ich Deutsch.*"
+
+  - type: listen
+    title: "Nicos Weg, Folge 10: Wichtige Nummern"
+    minutes: 15
+    episode: 10
+    intro: |
+      Слушайте числа: возраст и номер телефона. Номер можно записать на бумаге.
+    quiz:
+      id: q-w1d3-listen
+      title: "Folge 10: Wichtige Nummern"
+      questions:
+        - {type: de, q: "Wie alt ist Lotte? Напишите число словом.", answer: ["acht", "8"]}
+        - type: choice
+          q: "Wie alt ist Emma?"
+          options: ["auch acht", "sieben", "neun", "zehn"]
+          answer: 0
+        - type: choice
+          q: "Что Лиза принесла для Эммы?"
+          options: ["Schlafsack und Isomatte (спальник и коврик)", "Kuchen und Saft", "ein Buch", "eine Tasche"]
+          answer: 0
+        - type: choice
+          q: "Радио. Где работает «женщина мечты» звонящего?"
+          options: ["im Fundbüro (бюро находок)", "im Radio", "bei der Polizei", "im Restaurant"]
+          answer: 0
+        - type: choice
+          q: "Какой номер называет ведущая?"
+          options: ["0800 777 33 44", "0800 333 77 44", "0800 777 44 33", "0700 777 33 44"]
+          answer: 0
+          explain: "*0800, dann dreimal die Sieben, zweimal die Drei, zweimal die Vier.*"
+
+  - type: words
+    title: "Слова дня: числа и контакты"
+    minutes: 20
+    mode: study
+
+  - type: practice
+    title: "Письмо: контакты и вопросы"
+    minutes: 15
+    items:
+      - text: "Напишите словами свой возраст и номер телефона (выдуманный) по цифрам."
+        write: true
+        sample: |
+          Ich bin zweiundzwanzig Jahre alt. Meine Telefonnummer ist null – eins – sieben – drei – neun – null – sieben – sechs.
+      - text: "Напишите 5 вопросов новому однокурснику (на *du*): имя, страна, город, возраст, телефон."
+        write: true
+        sample: |
+          Wie heißt du? Woher kommst du? Wo wohnst du? Wie alt bist du? Wie ist deine Telefonnummer?
+
+  - type: oral
+    title: "Говорение: вопросы о человеке"
+    minutes: 10
+    intro: "Это задание как в Goethe A1, Sprechen Teil 1: представиться и назвать номер и адрес по буквам."
+    quiz:
+      id: q-w1d3-oral
+      title: "Скажите вслух"
+      questions:
+        - {type: text, q: "Назовите свой возраст.", answer: "Ich bin zweiundzwanzig (Jahre alt)."}
+        - {type: text, q: "Продиктуйте номер телефона по цифрам: 0173 90 76.", answer: "Null – eins – sieben – drei – neun – null – sieben – sechs."}
+        - {type: text, q: "Произнесите по буквам свою фамилию (*buchstabieren*).", answer: "S – M – I – R – N – O – W – A."}
+        - {type: text, q: "Спросите вежливо: «Как Ваш номер телефона?»", answer: "Wie ist Ihre Telefonnummer?"}
+        - {type: text, q: "Спросите на *du*: «Ты живёшь в Берлине?» (вопрос да/нет) и ответьте «Нет, я живу в Казани».", answer: "Wohnst du in Berlin? — Nein, ich wohne in Kasan."}
+
+  - type: anki
+    title: "Карточки: числа и вопросы"
+    minutes: 10
+    cards:
+      - ["Сколько тебе лет?", "Wie alt bist du?"]
+      - ["Мне 22 года.", "Ich bin zweiundzwanzig Jahre alt."]
+      - ["Какой у Вас номер телефона?", "Wie ist Ihre Telefonnummer?"]
+      - ["Какой у тебя адрес?", "Wie ist deine Adresse?"]
+      - ["Повторите, пожалуйста!", "Wiederholen Sie bitte! / Noch einmal, bitte!"]
+      - ["Можете сказать по буквам?", "Können Sie das bitte buchstabieren?"]
+      - ["Числа: 13, 16, 17", "dreizehn, sechzehn, siebzehn"]
+      - ["Числа: 21, 30, 67", "einundzwanzig, dreißig, siebenundsechzig"]
+      - ["Числа: 100, 345, 1000", "(ein)hundert, dreihundertfünfundvierzig, (ein)tausend"]
+      - ["Порядок слов: «Сегодня я учу немецкий.»", "Heute lerne ich Deutsch. (глагол на 2-м месте)"]
+      - ["Вопрос да/нет: «Ты из Испании?»", "Kommst du aus Spanien? (глагол на 1-м месте)"]

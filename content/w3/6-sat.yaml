@@ -1,0 +1,102 @@
+date: 2026-11-21
+title: "Дела по дому"
+hours: 2
+kind: study
+intro: |
+  Сегодня — дела по дому и сравнение *gern → lieber → am liebsten*.
+steps:
+  - type: theory
+    title: "gern, lieber, am liebsten"
+    minutes: 15
+    article: gern-lieber
+    goals:
+      - "сказать, что нравится больше: *Ich koche lieber.*"
+      - "различать *gern* (с глаголом) и *mögen* (с существительным)"
+
+  - type: quiz
+    title: "Проверка: gern, lieber, am liebsten"
+    minutes: 15
+    quiz:
+      id: q-w3d6-gern
+      title: "gern, lieber, am liebsten"
+      questions:
+        - {type: de, q: "Ich koche ___. (люблю)", answer: "gern"}
+        - {type: de, q: "Ich spüle ___. (больше люблю)", answer: "lieber"}
+        - {type: de, q: "Ich lese ___ ___. (больше всего)", answer: "am liebsten"}
+        - {type: de, q: "Переведите: «Я не люблю гладить».", answer: ["Ich bügle nicht gern", "Ich bügele nicht gern"]}
+        - {type: de, q: "Переведите: «Что ты любишь делать больше всего?»", answer: "Was machst du am liebsten"}
+        - type: choice
+          q: "*Ich ___ Bücher.* (с существительным)"
+          options: ["mag", "gern", "lieber", "möchte gern"]
+          answer: 0
+        - type: choice
+          q: "*staubsaugen* — это:"
+          options: ["пылесосить", "стирать", "гладить", "мыть посуду"]
+          answer: 0
+        - type: choice
+          q: "*den Müll rausbringen* — это:"
+          options: ["выносить мусор", "мыть пол", "убирать комнату", "готовить"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 47: Haushaltsarbeit"
+    minutes: 15
+    episode: 47
+    intro: |
+      Нико помогает Инге по дому. Что Инге думает о домашних делах?
+    quiz:
+      id: q-w3d6-listen
+      title: "Folge 47: Haushaltsarbeit"
+      questions:
+        - type: choice
+          q: "Что Нико выбирает делать?"
+          options: ["lieber abwaschen", "lieber staubsaugen", "lieber kochen", "lieber putzen"]
+          answer: 0
+        - type: choice
+          q: "*abwaschen* значит то же, что:"
+          options: ["das Geschirr spülen", "Wäsche waschen", "den Boden putzen", "abtrocknen"]
+          answer: 0
+        - type: choice
+          q: "Как Инге относится к домашним делам?"
+          options: ["Sie hasst Hausarbeit.", "Sie liebt Hausarbeit.", "Sie putzt jeden Tag gern.", "Das sagt sie nicht."]
+          answer: 0
+        - type: choice
+          q: "Что Инге приносит Нико в конце?"
+          options: ["den Besen und das Kehrblech", "den Staubsauger", "das Fleisch", "einen Beutel"]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: кто что делает дома"
+    minutes: 15
+    items:
+      - text: "Напишите 5 предложений: какие дела по дому вы делаете, что любите, что нет, что больше всего. Используйте *gern, nicht gern, lieber, am liebsten*."
+        write: true
+        sample: |
+          Ich koche gern. Ich putze nicht gern. Mein Mann spült lieber, ich bügle lieber. Am liebsten gehe ich einkaufen. Den Müll bringt mein Sohn raus.
+
+  - type: oral
+    title: "Говорение: дела по дому"
+    minutes: 10
+    quiz:
+      id: q-w3d6-oral
+      title: "Дом вслух"
+      questions:
+        - {type: text, q: "Was machen Sie gern im Haushalt?", answer: "*Ich koche gern. Ich räume auch gern auf.*"}
+        - {type: text, q: "Was machen Sie nicht gern?", answer: "*Ich bügle nicht gern und ich putze nicht gern das Bad.*"}
+        - {type: text, q: "Kochen oder spülen — was machen Sie lieber?", answer: "*Ich koche lieber.*"}
+
+  - type: words
+    title: "Слова дня: дела по дому"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Я люблю готовить.", "Ich koche gern."]
+      - ["Я больше люблю мыть посуду.", "Ich spüle lieber."]
+      - ["Больше всего я люблю читать.", "Am liebsten lese ich."]
+      - ["Я не люблю гладить.", "Ich bügle nicht gern."]
+      - ["пылесосить", "staubsaugen"]
+      - ["выносить мусор", "den Müll rausbringen"]
+      - ["Что ты больше всего любишь делать?", "Was machst du am liebsten?"]

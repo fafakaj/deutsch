@@ -1,0 +1,102 @@
+date: 2026-11-12
+title: "Кухня и посуда"
+hours: 2
+kind: study
+intro: |
+  Сегодня — кухня и глаголы, у которых меняется гласная: *essen → du isst, nehmen → er nimmt*.
+steps:
+  - type: theory
+    title: "Глаголы со сменой гласной"
+    minutes: 20
+    article: vokalwechsel
+    alt:
+      - {title: "Wiktionary: Flexion:sehen", url: "https://de.wiktionary.org/wiki/Flexion:sehen", lang: de, type: article, verified: "200 2026-10-31"}
+      - {title: "Wiktionary: Flexion:fahren", url: "https://de.wiktionary.org/wiki/Flexion:fahren", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "спрягать *essen, nehmen, sprechen, sehen, fahren* в формах *du* и *er*"
+      - "помнить: у *wir* и *sie* смены нет"
+
+  - type: quiz
+    title: "Проверка: смена гласной"
+    minutes: 15
+    quiz:
+      id: q-w2d4-vokal
+      title: "e → i/ie, a → ä"
+      questions:
+        - {type: de, q: "du ___ (essen)", answer: "isst"}
+        - {type: de, q: "er ___ (nehmen)", answer: "nimmt"}
+        - {type: de, q: "sie ___ Deutsch. (sprechen)", answer: "spricht"}
+        - {type: de, q: "du ___ (sehen)", answer: "siehst"}
+        - {type: de, q: "er ___ nach Berlin. (fahren)", answer: "fährt"}
+        - {type: de, q: "wir ___ (essen)", answer: "essen"}
+        - {type: de, q: "du ___ lange. (schlafen)", answer: "schläfst"}
+        - {type: de, q: "Переведите: «Что ты ешь?»", answer: "Was isst du"}
+        - {type: de, q: "Переведите: «Он берёт тарелку».", answer: "Er nimmt den Teller"}
+        - type: choice
+          q: "В какой форме НЕТ смены гласной?"
+          options: ["wir nehmen", "du nimmst", "er nimmt", "sie nimmt (она)"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 52: Wie viel Mehl?"
+    minutes: 15
+    episode: 52
+    intro: |
+      Инге и Нико пекут пиццу по кулинарной книге. Слушайте, что и как режут.
+    quiz:
+      id: q-w2d4-listen
+      title: "Folge 52: Wie viel Mehl?"
+      questions:
+        - type: choice
+          q: "Что режет Инге?"
+          options: ["die Zwiebeln", "den Käse", "die Tomaten", "den Schinken"]
+          answer: 0
+        - type: choice
+          q: "Сколько нужно сыра фета?"
+          options: ["250 Gramm", "200 Gramm", "500 Gramm", "ein Kilo"]
+          answer: 0
+        - type: choice
+          q: "Сколько минут и при какой температуре печь пиццу?"
+          options: ["20 Minuten bei 180 Grad", "30 Minuten bei 200 Grad", "15 Minuten bei 180 Grad", "20 Minuten bei 250 Grad"]
+          answer: 0
+        - type: choice
+          q: "Кто в семье Инге хорошо готовит?"
+          options: ["ihre Schwester", "Inge", "ihr Mann", "Tarek"]
+          answer: 0
+        - {type: de, q: "Как Инге говорит «Ты режешь сыр»? Du ___ den Käse.", answer: "schneidest"}
+
+  - type: practice
+    title: "Письмо: мой рецепт"
+    minutes: 15
+    items:
+      - text: "Напишите простой рецепт (5–6 предложений): что нужно и что делать. Используйте *man nimmt, man schneidet, man kocht/backt* и названия посуды: *der Topf, die Pfanne, der Teller, die Schüssel*."
+        write: true
+        sample: |
+          Für einen Salat braucht man Tomaten, eine Gurke und Käse. Man wäscht das Gemüse. Dann schneidet man die Tomaten und die Gurke klein. Man nimmt eine große Schüssel. Man gibt Öl und Salz dazu. Guten Appetit!
+
+  - type: oral
+    title: "Говорение: на кухне"
+    minutes: 10
+    quiz:
+      id: q-w2d4-oral
+      title: "Кухня вслух"
+      questions:
+        - {type: text, q: "Was isst du gern zum Frühstück?", answer: "*Zum Frühstück esse ich gern Brot mit Käse.*"}
+        - {type: text, q: "Wer kocht in Ihrer Familie?", answer: "*Meine Mutter kocht. Sie kocht sehr gut.*"}
+        - {type: text, q: "Was nimmt man für eine Suppe? (посуда)", answer: "*Für eine Suppe nimmt man einen Topf.*"}
+
+  - type: words
+    title: "Слова дня: кухня и посуда"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Что ты ешь?", "Was isst du?"]
+      - ["Он берёт тарелку.", "Er nimmt den Teller."]
+      - ["Она говорит по-немецки.", "Sie spricht Deutsch."]
+      - ["Ты видишь кастрюлю?", "Siehst du den Topf?"]
+      - ["Я режу помидоры.", "Ich schneide die Tomaten."]
+      - ["Пицца печётся 20 минут.", "Die Pizza backt 20 Minuten."]
+      - ["Приятного аппетита!", "Guten Appetit!"]

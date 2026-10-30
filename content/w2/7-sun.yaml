@@ -1,0 +1,76 @@
+date: 2026-11-15
+title: "Повторение недели 2"
+hours: 1.5
+kind: review
+intro: |
+  Воскресенье — повторение: еда, покупки, кафе, одежда. Сначала мини-тест, потом видео.
+steps:
+  - type: quiz
+    title: "Мини-тест недели 2"
+    minutes: 25
+    quiz:
+      id: q-w2d7-test
+      title: "Неделя 2: мини-тест"
+      questions:
+        - {type: de, q: "Ich kaufe ___ Apfel. (der Apfel, неопределённый)", answer: "einen"}
+        - {type: de, q: "Ich esse ___ Fleisch. (отрицание)", answer: "kein"}
+        - {type: de, q: "Ich esse das ___. (отрицание глагола/предмета)", answer: "nicht"}
+        - {type: de, q: "Ich ___ gern Käse. (mögen)", answer: "mag"}
+        - {type: de, q: "Ich ___ einen Tee. (вежливо хотел бы)", answer: "möchte"}
+        - {type: de, q: "er ___ (essen)", answer: "isst"}
+        - {type: de, q: "du ___ (nehmen)", answer: "nimmst"}
+        - {type: de, q: "Попросите счёт (2 слова).", answer: ["Zahlen bitte", "Zahlen, bitte"]}
+        - {type: de, q: "Die Hose? Ich nehme ___.", answer: "sie"}
+        - {type: de, q: "Der Mantel? Ich finde ___ schön.", answer: "ihn"}
+        - type: choice
+          q: "Множественное число *der Apfel*:"
+          options: ["die Äpfel", "die Apfels", "die Apfeln", "die Äpfeln"]
+          answer: 0
+        - type: choice
+          q: "*Was kostet das?* — это:"
+          options: ["Сколько это стоит?", "Что это?", "Что вы хотите?", "Где касса?"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 15: Eine Pizza bitte!"
+    minutes: 15
+    episode: 15
+    intro: |
+      Друзья заказывают пиццу. Слушайте, кто что берёт.
+    quiz:
+      id: q-w2d7-listen
+      title: "Folge 15: Eine Pizza bitte!"
+      questions:
+        - type: choice
+          q: "Какую пиццу хочет Навин?"
+          options: ["mit Thunfisch", "mit Salami", "Hawaii", "Tomate Mozzarella"]
+          answer: 0
+        - type: choice
+          q: "Какую пиццу берёт Нико?"
+          options: ["mit Salami", "mit Thunfisch", "Hawaii", "ohne Schinken"]
+          answer: 0
+        - type: choice
+          q: "Почему Нина берёт Pizza Hawaii без ветчины?"
+          options: ["Sie ist Vegetarierin.", "Sie mag keinen Käse.", "Schinken ist zu teuer.", "Sie hat keinen Hunger."]
+          answer: 0
+        - type: choice
+          q: "Что на Pizza Hawaii?"
+          options: ["Ananas und Schinken", "Thunfisch und Zwiebeln", "Salami und Käse", "Tomaten und Mozzarella"]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: список покупок и вечер в кафе"
+    minutes: 20
+    items:
+      - text: "(1) Напишите список покупок на выходные: 6 продуктов с количеством (*ein Kilo Äpfel, 200 Gramm Käse*). (2) Напишите 3 предложения: что вы обычно заказываете в кафе и что не едите."
+        write: true
+        sample: |
+          Einkaufsliste: ein Kilo Äpfel, 200 Gramm Käse, ein Liter Milch, sechs Eier, ein Brot, eine Flasche Wasser.
+          Im Café nehme ich meistens einen Cappuccino und ein Stück Kuchen. Ich esse keinen Fisch. Ich trinke keinen Alkohol.
+
+  - type: anki
+    title: "Карточки недели"
+    minutes: 15
+    cards:
+      - ["Я не ем мясо.", "Ich esse kein Fleisch."]
+      - ["Сколько это стоит?", "Was kostet das?"]

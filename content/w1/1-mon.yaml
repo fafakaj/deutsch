@@ -1,0 +1,215 @@
+date: 2026-11-02
+title: "Знакомство: люди, приветствия. Входной тест"
+hours: 2
+kind: study
+intro: |
+  Первый день. Сначала входной тест: он показывает, что вы уже знаете. Ошибки — это нормально.
+  Потом: глагол *sein*, видео «Nicos Weg», слова, письмо, говорение и карточки.
+steps:
+  - type: quiz
+    title: "Входной тест A0"
+    minutes: 20
+    why: "Тест показывает исходный уровень. Через 4 недели сравните его с пробным экзаменом."
+    quiz:
+      id: q-w1d1-a0
+      title: "Входной тест A0"
+      questions:
+        - type: choice
+          q: "*Guten Morgen!* — это:"
+          options: ["Доброе утро!", "Добрый вечер!", "Спокойной ночи!", "До свидания!"]
+          answer: 0
+        - type: choice
+          q: "Как попрощаться с другом?"
+          options: ["Tschüss!", "Guten Tag!", "Hallo!", "Danke!"]
+          answer: 0
+          explain: "*Tschüss!* — неформально. Вежливо: *Auf Wiedersehen!*"
+        - type: choice
+          q: "*Danke* значит:"
+          options: ["спасибо", "пожалуйста", "извините", "привет"]
+          answer: 0
+        - type: choice
+          q: "*Bitte* значит:"
+          options: ["пожалуйста", "спасибо", "да", "нет"]
+          answer: 0
+        - type: de
+          q: "Напишите по-немецки «да»."
+          answer: "ja"
+        - type: de
+          q: "Напишите по-немецки «нет»."
+          answer: "nein"
+        - type: choice
+          q: "Какое число — *sieben*?"
+          options: ["7", "6", "9", "17"]
+          answer: 0
+        - type: de
+          q: "Напишите словом число 3."
+          answer: "drei"
+        - type: choice
+          q: "Как читается *ei* в слове *mein*?"
+          options: ["[ай]", "[эй]", "[и]", "[е]"]
+          answer: 0
+          explain: "*ei* = [ай]: *mein, nein, drei*. А *ie* = долгое [и]: *Sie, vier*."
+        - type: choice
+          q: "Как читается *ie* в слове *vier*?"
+          options: ["долгое [и]", "[ие]", "[ай]", "[е]"]
+          answer: 0
+        - type: choice
+          q: "Как читается *w* в слове *Wasser*?"
+          options: ["[в]", "[у]", "как английское w", "[ф]"]
+          answer: 0
+          explain: "Немецкое *w* = русское [в]. А *v* обычно = [ф]: *vier, Vater*."
+        - type: choice
+          q: "*Wie heißt du?* — это:"
+          options: ["Как тебя зовут?", "Как дела?", "Откуда ты?", "Где ты живёшь?"]
+          answer: 0
+        - type: choice
+          q: "*Wie geht's?* — это:"
+          options: ["Как дела?", "Как тебя зовут?", "Куда ты идёшь?", "Сколько стоит?"]
+          answer: 0
+        - type: de
+          q: "Закончите: «Ich ___ Anna.» (меня зовут Анна; глагол *heißen*)"
+          answer: "heiße"
+          explain: "*ich heiße* — меня зовут. Можно писать *heisse*."
+        - type: choice
+          q: "Какое слово пишется с большой буквы?"
+          options: ["Tasche (сумка)", "gut (хорошо)", "schön (красивый)", "und (и)"]
+          answer: 0
+          explain: "В немецком все существительные пишутся с большой буквы: *die Tasche, der Name*."
+        - type: choice
+          q: "*Entschuldigung!* — это:"
+          options: ["Извините!", "Спасибо!", "Пока!", "Отлично!"]
+          answer: 0
+        - type: de
+          q: "Как сказать «хорошо»?"
+          answer: "gut"
+        - type: choice
+          q: "*Frau Müller* — это:"
+          options: ["госпожа Мюллер", "господин Мюллер", "девочка Мюллер", "семья Мюллер"]
+          answer: 0
+          explain: "*Frau* — госпожа (и «женщина», «жена»). *Herr* — господин."
+
+  - type: theory
+    title: "Личные местоимения и глагол sein"
+    minutes: 20
+    article: personalpronomen-sein
+    alt:
+      - {title: "Wiktionary: Flexion:sein (все формы)", url: "https://de.wiktionary.org/wiki/Flexion:sein", lang: de, type: article, verified: "200 2026-10-31"}
+      - {title: "Lingolia: Personalpronomen", url: "https://deutsch.lingolia.com/de/grammatik/pronomen/personalpronomen", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "назвать все формы *sein*: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind"
+      - "выбрать *du* или *Sie*"
+
+  - type: quiz
+    title: "Проверка: sein"
+    minutes: 15
+    quiz:
+      id: q-w1d1-sein
+      title: "Глагол sein"
+      questions:
+        - {type: de, q: "Ich ___ Lisa.", answer: "bin"}
+        - {type: de, q: "Du ___ Nico.", answer: "bist"}
+        - {type: de, q: "Er ___ Polizist.", answer: "ist"}
+        - {type: de, q: "Wir ___ Freunde.", answer: "sind"}
+        - {type: de, q: "Ihr ___ hier.", answer: "seid"}
+        - {type: de, q: "Frau Kamp, ___ Sie Lehrerin?", answer: "sind"}
+        - type: choice
+          q: "Вы говорите с господином Мюллером. Какое местоимение?"
+          options: ["Sie", "du", "ihr", "er"]
+          answer: 0
+          explain: "С незнакомыми взрослыми и по фамилии — *Sie* (всегда с большой буквы)."
+        - type: choice
+          q: "«Она» по-немецки:"
+          options: ["sie", "Sie", "er", "es"]
+          answer: 0
+          explain: "*sie ist* — она. *Sie sind* — Вы (вежливо). *sie sind* — они."
+        - type: de
+          q: "Переведите: «Мы — Анна и Макс.»"
+          answer: ["Wir sind Anna und Max", "Wir sind Max und Anna"]
+        - type: de
+          q: "Переведите: «Как у Вас дела?» (вежливо)"
+          answer: ["Wie geht es Ihnen", "Wie geht's Ihnen"]
+
+  - type: listen
+    title: "Nicos Weg, Folge 1: Hallo!"
+    minutes: 15
+    episode: 1
+    intro: |
+      Посмотрите видео 2 раза: сначала без субтитров, потом с немецкими субтитрами. Потом ответьте на вопросы.
+    quiz:
+      id: q-w1d1-listen
+      title: "Folge 1: Hallo!"
+      questions:
+        - type: choice
+          q: "Frau Schneider: *Wie geht es Ihnen?* Что отвечает Herr Müller?"
+          options: ["Danke, gut! Und Ihnen?", "Super, danke. Und dir?", "Nicht so gut.", "Tschüss!"]
+          answer: 0
+        - type: choice
+          q: "Почему с господином Мюллером говорят *Ihnen*, а с дедушкой (*Opa*) — *dir*?"
+          options: ["*Ihnen* — вежливо (Sie), *dir* — неформально (du)", "*Ihnen* — для мужчин, *dir* — для женщин", "*Ihnen* — утром, *dir* — вечером", "Разницы нет"]
+          answer: 0
+        - type: choice
+          q: "Что нравится Эмме? *… ist schön!*"
+          options: ["die Tasche — сумка", "das Taxi — такси", "die Straße — улица", "das Telefon — телефон"]
+          answer: 0
+        - type: de
+          q: "Нико не понял Эмму. Каким словом он переспрашивает?"
+          answer: "Entschuldigung"
+        - type: choice
+          q: "Что говорит Нико в конце эпизода?"
+          options: ["адрес: Adalbert-Stifter-Straße", "своё имя", "номер телефона", "название страны"]
+          answer: 0
+
+  - type: words
+    title: "Слова дня: знакомство"
+    minutes: 20
+    mode: study
+
+  - type: practice
+    title: "Письмо: о себе и приветствия"
+    minutes: 15
+    items:
+      - text: "Напишите 4–5 предложений о себе: приветствие, имя, *ich bin …*, как дела, прощание."
+        write: true
+        sample: |
+          Hallo! Ich heiße Anna. Ich bin Anna Smirnowa. Mir geht es gut. Tschüss!
+      - text: "Напишите диалог: утром вы встречаете соседа, господина Мюллера (на *Sie*). 3–4 реплики."
+        write: true
+        sample: |
+          — Guten Morgen, Herr Müller! Wie geht es Ihnen?
+          — Guten Morgen! Danke, gut. Und Ihnen?
+          — Auch gut, danke. Auf Wiedersehen!
+      - text: "Тот же диалог с другом Томом (на *du*)."
+        write: true
+        sample: |
+          — Hallo, Tom! Wie geht's?
+          — Hi! Super, danke. Und dir?
+          — Auch gut. Tschüss!
+
+  - type: oral
+    title: "Говорение: знакомство"
+    minutes: 10
+    quiz:
+      id: q-w1d1-oral
+      title: "Скажите вслух"
+      questions:
+        - {type: text, q: "Утро. Поздоровайтесь с госпожой Шнайдер и спросите, как у неё дела.", answer: "Guten Morgen, Frau Schneider! Wie geht es Ihnen?"}
+        - {type: text, q: "Ответьте: дела хорошо, спасибо. Спросите в ответ (вежливо).", answer: "Danke, gut! Und Ihnen?"}
+        - {type: text, q: "Представьтесь: имя двумя способами.", answer: "Ich heiße Anna. / Ich bin Anna."}
+        - {type: text, q: "Представьте подругу Лизу.", answer: "Das ist Lisa."}
+        - {type: text, q: "Попрощайтесь с другом Томом, потом с госпожой Шнайдер.", answer: "Tschüss, Tom! — Auf Wiedersehen, Frau Schneider!"}
+
+  - type: anki
+    title: "Карточки: приветствия и sein"
+    minutes: 10
+    cards:
+      - ["Доброе утро!", "Guten Morgen!"]
+      - ["Добрый день!", "Guten Tag!"]
+      - ["Добрый вечер!", "Guten Abend!"]
+      - ["Как у Вас дела? (вежливо)", "Wie geht es Ihnen?"]
+      - ["Как у тебя дела?", "Wie geht es dir? / Wie geht's?"]
+      - ["Спасибо, хорошо. А у Вас?", "Danke, gut. Und Ihnen?"]
+      - ["Меня зовут Анна. (2 способа)", "Ich heiße Anna. / Ich bin Anna."]
+      - ["Это Нико.", "Das ist Nico."]
+      - ["Пока! / До свидания!", "Tschüss! / Auf Wiedersehen!"]
+      - ["sein: я, ты, он/она/оно", "ich bin, du bist, er/sie/es ist"]
+      - ["sein: мы, вы (ihr), они / Вы", "wir sind, ihr seid, sie/Sie sind"]

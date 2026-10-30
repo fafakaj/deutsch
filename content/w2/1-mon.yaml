@@ -1,0 +1,117 @@
+date: 2026-11-09
+title: "Продукты. Akkusativ: den, einen"
+hours: 2
+kind: study
+intro: |
+  Сегодня: продукты, холодильник, завтрак. Грамматика: винительный падеж (Akkusativ) — «что?» после *haben, brauchen, kaufen, essen*.
+steps:
+  - type: theory
+    title: "Akkusativ: den / einen / keinen"
+    minutes: 20
+    article: akkusativ
+    alt:
+      - {title: "Lingolia: Deklination (Kasus)", url: "https://deutsch.lingolia.com/de/grammatik/nomen/deklination", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "заменить *der → den*, *ein → einen*, *kein → keinen* в Akkusativ"
+      - "помнить: *die, das* и мн. число в Akkusativ не меняются"
+
+  - type: quiz
+    title: "Проверка: Akkusativ"
+    minutes: 15
+    quiz:
+      id: q-w2d1-akk
+      title: "Akkusativ: den, einen, keinen"
+      questions:
+        - {type: de, q: "Ich kaufe ___ Apfel. (der Apfel, неопр.)", answer: "einen"}
+        - {type: de, q: "Wir brauchen ___ Salat. (der Salat, опр.)", answer: "den"}
+        - {type: de, q: "Ich esse ___ Banane. (die Banane, неопр.)", answer: "eine"}
+        - {type: de, q: "Hast du ___ Brot? (das Brot, неопр.)", answer: "ein"}
+        - {type: de, q: "Ich habe ___ Fisch. (der Fisch, отрицание)", answer: "keinen"}
+        - {type: de, q: "Er isst ___ Fleisch. (das Fleisch, отрицание)", answer: "kein"}
+        - {type: de, q: "Wo ist ___ Käse? (der Käse — подлежащее!)", answer: "der", explain: "*Wo ist …?* — кто/что? Это Nominativ: *der Käse*."}
+        - type: choice
+          q: "Какой артикль меняется в Akkusativ?"
+          options: ["только мужской род: der → den, ein → einen", "все артикли", "только женский род", "только множественное число"]
+          answer: 0
+        - type: choice
+          q: "Выберите правильное: «Мне нужен ключ.»"
+          options: ["Ich brauche den Schlüssel.", "Ich brauche der Schlüssel.", "Ich brauche dem Schlüssel.", "Ich brauche des Schlüssels."]
+          answer: 0
+        - {type: de, q: "Переведите: «У меня нет хлеба.» (das Brot)", answer: "Ich habe kein Brot"}
+        - {type: de, q: "Переведите: «Я покупаю помидоры и сыр.» (die Tomaten, der Käse; без артиклей)", answer: ["Ich kaufe Tomaten und Käse", "Ich kaufe Käse und Tomaten"]}
+
+  - type: listen
+    title: "Nicos Weg, Folge 45: Lebensmittel"
+    minutes: 15
+    episode: 45
+    intro: |
+      Инге убирает продукты в холодильник. Слушайте названия продуктов.
+    quiz:
+      id: q-w2d1-listen
+      title: "Folge 45: Lebensmittel"
+      questions:
+        - type: choice
+          q: "Was ist zu klein?"
+          options: ["der Kühlschrank (холодильник)", "der Teller", "die Küche", "der Tisch"]
+          answer: 0
+        - type: choice
+          q: "Чьи груши (*die Birnen*)?"
+          options: ["сестры Инге", "Нико", "соседа Гюнтера", "Лизы"]
+          answer: 0
+        - type: choice
+          q: "Was kommt auf den Teller?"
+          options: ["die Äpfel, die Orangen und die Birnen", "das Fleisch und der Käse", "die Butter und der Quark", "der Schinken"]
+          answer: 0
+        - type: multi
+          q: "Was ist für das Frühstück? Выберите все."
+          options: ["die Marmelade", "die Butter", "der Quark", "der Schinken", "der Fisch", "die Pizza"]
+          answers: [0, 1, 2, 3]
+        - type: choice
+          q: "Wer kommt zu Inge zu Besuch?"
+          options: ["ein junger Mann, für ein paar Tage", "ihre Schwester", "Lisa und Emma", "Günther"]
+          answer: 0
+
+  - type: words
+    title: "Слова дня: продукты"
+    minutes: 20
+    mode: study
+
+  - type: practice
+    title: "Письмо: список покупок и завтрак"
+    minutes: 15
+    items:
+      - text: "Напишите список покупок на неделю: 8 продуктов с количеством (*ein Kilo, zwei, drei …*)."
+        write: true
+        sample: |
+          ein Kilo Äpfel, sechs Eier, ein Brot, zwei Tomaten, ein Hähnchen, Butter, Käse, eine Flasche Milch
+      - text: "Что вы едите на завтрак? Напишите 4 предложения с Akkusativ (*Ich esse einen …, ich trinke …*)."
+        write: true
+        sample: |
+          Zum Frühstück esse ich ein Brötchen mit Butter und Käse. Ich esse auch einen Apfel. Ich trinke einen Kaffee. Fleisch esse ich morgens nicht.
+
+  - type: oral
+    title: "Говорение: что в холодильнике?"
+    minutes: 15
+    quiz:
+      id: q-w2d1-oral
+      title: "Скажите вслух"
+      questions:
+        - {type: text, q: "*Was ist in Ihrem Kühlschrank?* Назовите 4 продукта.", answer: "In meinem Kühlschrank sind Milch, Butter, Käse und Tomaten."}
+        - {type: text, q: "*Was brauchen Sie heute?* (3 продукта, Akkusativ)", answer: "Ich brauche einen Salat, ein Brot und eine Gurke."}
+        - {type: text, q: "*Haben Sie Fisch?* — ответьте отрицательно.", answer: "Nein, ich habe keinen Fisch."}
+        - {type: text, q: "Спросите друга: что он ест на завтрак?", answer: "Was isst du zum Frühstück?"}
+
+  - type: anki
+    title: "Карточки: продукты и Akkusativ"
+    minutes: 10
+    cards:
+      - ["Я покупаю яблоко. (der Apfel)", "Ich kaufe einen Apfel."]
+      - ["Мне нужен салат. (der Salat)", "Ich brauche einen Salat."]
+      - ["У меня нет рыбы. (der Fisch)", "Ich habe keinen Fisch."]
+      - ["У нас нет хлеба. (das Brot)", "Wir haben kein Brot."]
+      - ["Что ты ешь на завтрак?", "Was isst du zum Frühstück?"]
+      - ["Akkusativ м. р.: der, ein, kein, mein", "den, einen, keinen, meinen"]
+      - ["Akkusativ: die, das, Plural", "не меняются: die, das, die"]
+      - ["Холодильник слишком маленький.", "Der Kühlschrank ist zu klein."]
+      - ["есть (в наличии): «Есть мясо и рыба.»", "Es gibt Fleisch und Fisch."]
+      - ["килограмм яблок, бутылка молока", "ein Kilo Äpfel, eine Flasche Milch"]

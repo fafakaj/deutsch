@@ -30,6 +30,11 @@ GROUPS = {
     "jahreszeiten": ["der Frühling", "das Frühjahr", "der Sommer", "der Herbst", "der Winter"],
     "farben": ["schwarz", "weiß", "grau", "rot", "blau", "gelb", "grün", "braun"],
     "himmelsrichtungen": ["der Norden", "der Süden", "der Westen", "der Osten"],
+    "laender": ["Deutschland", "Europa", "deutsch", "europäisch"],
+    "uhrzeit": ["die Uhr", "das Viertel", "halb"],
+    "masse": ["Meter", "Zentimeter", "Kilometer", "Quadratmeter", "Grad", "Prozent", "Liter", "Gramm", "Pfund",
+              "Kilo"],
+    "waehrungen": ["Euro", "Cent"],
     "zahlen": ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn",
                "elf", "zwölf", "zwanzig", "hundert", "tausend", "die Million, -en"],
 }
@@ -77,6 +82,8 @@ def alphabetical(text):
                 kept = prev["examples"]
                 entries[-1] = entry(prev["raw"][:-1] + head)
                 entries[-1]["examples"] = kept + examples
+                continue
+            if head == "Literatur":
                 continue
             entries.append(entry(head))
             entries[-1]["examples"] = examples

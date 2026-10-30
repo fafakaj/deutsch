@@ -296,7 +296,7 @@ async function renderRead(slug) {
       <span class="tag">${esc(fm.kind || "перевод")}</span>
       <h1>${esc(fm.title || slug)}</h1>
       <p class="muted small">${what}. Источник: ${esc(fm.source || "")}.${fm.license ? ` ${esc(fm.license)}` : ""}</p>
-      ${fm.original ? `<a class="btn" href="${esc(fm.original)}" target="_blank" rel="noopener">Оригинал (англ.) ${icon("external")}</a>` : ""}
+      ${fm.original ? `<a class="btn" href="${esc(fm.original)}" target="_blank" rel="noopener">${fm.kind === "конспект" ? "Источник" : "Оригинал"} ${icon("external")}</a>` : ""}
     </header>
     <div class="md article-body">${md(rest, { article: true })}</div>`;
 }

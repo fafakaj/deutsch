@@ -197,6 +197,7 @@ export function renderListen(root, step, ctx) {
   root.innerHTML = `<div class="card listen">
       ${step.intro ? `<div class="md">${md(step.intro)}</div>` : ""}
       ${sourceCard(step.source, { big: true })}
+      ${step.alt?.length ? `<details class="alt"><summary>Другие источники</summary>${step.alt.map((s) => sourceCard(s)).join("")}</details>` : ""}
       <p class="muted small">Смотрите без субтитров. Если поняли меньше половины — включите немецкие субтитры и посмотрите ещё раз.</p>
     </div><div data-listen-quiz></div>`;
   renderQuiz(root.querySelector("[data-listen-quiz]"), step, ctx);

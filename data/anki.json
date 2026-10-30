@@ -1,0 +1,1966 @@
+{
+ "cards": [
+  {
+   "id": "cab562a7c6",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Доброе утро!",
+   "back": "Guten Morgen!"
+  },
+  {
+   "id": "17366f8661",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Добрый день!",
+   "back": "Guten Tag!"
+  },
+  {
+   "id": "936e90df49",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Добрый вечер!",
+   "back": "Guten Abend!"
+  },
+  {
+   "id": "53c16b6543",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Как у Вас дела? (вежливо)",
+   "back": "Wie geht es Ihnen?"
+  },
+  {
+   "id": "aa5e52a7f6",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Как у тебя дела?",
+   "back": "Wie geht es dir? / Wie geht's?"
+  },
+  {
+   "id": "679c4cce33",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Спасибо, хорошо. А у Вас?",
+   "back": "Danke, gut. Und Ihnen?"
+  },
+  {
+   "id": "d1f04e0222",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Меня зовут Анна. (2 способа)",
+   "back": "Ich heiße Anna. / Ich bin Anna."
+  },
+  {
+   "id": "b89cd8db2d",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Это Нико.",
+   "back": "Das ist Nico."
+  },
+  {
+   "id": "3499375c08",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Пока! / До свидания!",
+   "back": "Tschüss! / Auf Wiedersehen!"
+  },
+  {
+   "id": "6e6a112c5f",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "sein: я, ты, он/она/оно",
+   "back": "ich bin, du bist, er/sie/es ist"
+  },
+  {
+   "id": "6b7e168d8c",
+   "day": "2026-11-02",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "sein: мы, вы (ihr), они / Вы",
+   "back": "wir sind, ihr seid, sie/Sie sind"
+  },
+  {
+   "id": "ffdc720b20",
+   "day": "2026-11-03",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Откуда ты? / Откуда Вы?",
+   "back": "Woher kommst du? / Woher kommen Sie?"
+  },
+  {
+   "id": "5c25a6b55f",
+   "day": "2026-11-03",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Я из России.",
+   "back": "Ich komme aus Russland."
+  },
+  {
+   "id": "e961999f8f",
+   "day": "2026-11-03",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Где ты живёшь?",
+   "back": "Wo wohnst du?"
+  },
+  {
+   "id": "a5c8c1eb2f",
+   "day": "2026-11-03",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Я живу в Казани.",
+   "back": "Ich wohne in Kasan."
+  },
+  {
+   "id": "dbf4e53147",
+   "day": "2026-11-03",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "На каких языках ты говоришь?",
+   "back": "Welche Sprachen sprichst du?"
+  },
+  {
+   "id": "41ed3edd02",
+   "day": "2026-11-03",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Я говорю по-русски и немного по-немецки.",
+   "back": "Ich spreche Russisch und ein bisschen Deutsch."
+  },
+  {
+   "id": "22d5520338",
+   "day": "2026-11-03",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Он из Швейцарии.",
+   "back": "Er kommt aus der Schweiz."
+  },
+  {
+   "id": "6cf68f826d",
+   "day": "2026-11-03",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "kommen: ich, du, er",
+   "back": "ich komme, du kommst, er kommt"
+  },
+  {
+   "id": "522787e959",
+   "day": "2026-11-03",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "kommen: wir, ihr, sie/Sie",
+   "back": "wir kommen, ihr kommt, sie/Sie kommen"
+  },
+  {
+   "id": "5a35b931fd",
+   "day": "2026-11-03",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "arbeiten: du, er (вставка e)",
+   "back": "du arbeitest, er arbeitet"
+  },
+  {
+   "id": "910d9ac94e",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Сколько тебе лет?",
+   "back": "Wie alt bist du?"
+  },
+  {
+   "id": "ca9672232d",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Мне 22 года.",
+   "back": "Ich bin zweiundzwanzig Jahre alt."
+  },
+  {
+   "id": "cea36785da",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Какой у Вас номер телефона?",
+   "back": "Wie ist Ihre Telefonnummer?"
+  },
+  {
+   "id": "ec8f9e0f5a",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Какой у тебя адрес?",
+   "back": "Wie ist deine Adresse?"
+  },
+  {
+   "id": "8cb287d792",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Повторите, пожалуйста!",
+   "back": "Wiederholen Sie bitte! / Noch einmal, bitte!"
+  },
+  {
+   "id": "c2c3d8c464",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Можете сказать по буквам?",
+   "back": "Können Sie das bitte buchstabieren?"
+  },
+  {
+   "id": "d821110f2f",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Числа: 13, 16, 17",
+   "back": "dreizehn, sechzehn, siebzehn"
+  },
+  {
+   "id": "3a3c6354c0",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Числа: 21, 30, 67",
+   "back": "einundzwanzig, dreißig, siebenundsechzig"
+  },
+  {
+   "id": "851e63463a",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Числа: 100, 345, 1000",
+   "back": "(ein)hundert, dreihundertfünfundvierzig, (ein)tausend"
+  },
+  {
+   "id": "fe1a20eefe",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Порядок слов: «Сегодня я учу немецкий.»",
+   "back": "Heute lerne ich Deutsch. (глагол на 2-м месте)"
+  },
+  {
+   "id": "291c180cae",
+   "day": "2026-11-04",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Вопрос да/нет: «Ты из Испании?»",
+   "back": "Kommst du aus Spanien? (глагол на 1-м месте)"
+  },
+  {
+   "id": "c8b1c19645",
+   "day": "2026-11-05",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "У тебя есть братья и сёстры?",
+   "back": "Hast du Geschwister?"
+  },
+  {
+   "id": "c50123cfa5",
+   "day": "2026-11-05",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "У меня есть брат и сестра.",
+   "back": "Ich habe einen Bruder und eine Schwester."
+  },
+  {
+   "id": "5eade21f41",
+   "day": "2026-11-05",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Это моя мать / мой отец.",
+   "back": "Das ist meine Mutter / mein Vater."
+  },
+  {
+   "id": "0fda01ce35",
+   "day": "2026-11-05",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Мои родители живут в Самаре.",
+   "back": "Meine Eltern wohnen in Samara."
+  },
+  {
+   "id": "75b6e62033",
+   "day": "2026-11-05",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Вы женаты / замужем?",
+   "back": "Sind Sie verheiratet?"
+  },
+  {
+   "id": "c45a297ade",
+   "day": "2026-11-05",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "haben: ich, du, er",
+   "back": "ich habe, du hast, er hat"
+  },
+  {
+   "id": "d9acf432f0",
+   "day": "2026-11-05",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "haben: wir, ihr, sie/Sie",
+   "back": "wir haben, ihr habt, sie/Sie haben"
+  },
+  {
+   "id": "f5299001d4",
+   "day": "2026-11-05",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "его тётя / её отец",
+   "back": "seine Tante / ihr Vater"
+  },
+  {
+   "id": "d2d478de0e",
+   "day": "2026-11-05",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "mein или meine: der/das …, die/Plural …",
+   "back": "der/das → mein; die/Plural → meine"
+  },
+  {
+   "id": "126d78c73a",
+   "day": "2026-11-05",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Как зовут твою сестру?",
+   "back": "Wie heißt deine Schwester?"
+  },
+  {
+   "id": "b34aa893cd",
+   "day": "2026-11-06",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Кем Вы работаете?",
+   "back": "Was sind Sie von Beruf?"
+  },
+  {
+   "id": "8fb54bddb7",
+   "day": "2026-11-06",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Я учитель / учительница.",
+   "back": "Ich bin Lehrer / Lehrerin."
+  },
+  {
+   "id": "7184d16a7e",
+   "day": "2026-11-06",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Где ты работаешь?",
+   "back": "Wo arbeitest du?"
+  },
+  {
+   "id": "d176b0f885",
+   "day": "2026-11-06",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Я работаю в небольшой фирме.",
+   "back": "Ich arbeite in einer kleinen Firma."
+  },
+  {
+   "id": "82af5ae7c8",
+   "day": "2026-11-06",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Он врач, она тоже врач.",
+   "back": "Er ist Arzt, sie ist auch Ärztin."
+  },
+  {
+   "id": "147034ca6e",
+   "day": "2026-11-06",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Это не компьютер.",
+   "back": "Das ist kein Computer."
+  },
+  {
+   "id": "19dedb3eec",
+   "day": "2026-11-06",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "der/die/das → неопр. (Nominativ)",
+   "back": "der → ein, das → ein, die → eine, Plural → –"
+  },
+  {
+   "id": "4508ef1065",
+   "day": "2026-11-06",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Отрицание kein (Nominativ)",
+   "back": "kein (der/das), keine (die, Plural)"
+  },
+  {
+   "id": "5dbe29e09d",
+   "day": "2026-11-06",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Удачи! (2 варианта)",
+   "back": "Viel Erfolg! / Viel Glück!"
+  },
+  {
+   "id": "041bf2e0bf",
+   "day": "2026-11-06",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Мне нравится моя работа.",
+   "back": "Ich mag meine Arbeit."
+  },
+  {
+   "id": "225294d588",
+   "day": "2026-11-07",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Как это называется по-немецки?",
+   "back": "Wie heißt das auf Deutsch?"
+  },
+  {
+   "id": "8c3f87b8a5",
+   "day": "2026-11-07",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Что это? — Это ключ.",
+   "back": "Was ist das? — Das ist ein Schlüssel."
+  },
+  {
+   "id": "643e962165",
+   "day": "2026-11-07",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Где мои очки?",
+   "back": "Wo ist meine Brille?"
+  },
+  {
+   "id": "52b99a6d3a",
+   "day": "2026-11-07",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Где мои ключи?",
+   "back": "Wo sind meine Schlüssel?"
+  },
+  {
+   "id": "bc4450dded",
+   "day": "2026-11-07",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Plural: der Tisch, der Stuhl",
+   "back": "die Tische, die Stühle"
+  },
+  {
+   "id": "d9c2850d38",
+   "day": "2026-11-07",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Plural: die Tasche, die Frage",
+   "back": "die Taschen, die Fragen"
+  },
+  {
+   "id": "cc0026fc32",
+   "day": "2026-11-07",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Plural: das Buch, das Kind",
+   "back": "die Bücher, die Kinder"
+  },
+  {
+   "id": "cfa535fb19",
+   "day": "2026-11-07",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Plural: das Foto, das Handy",
+   "back": "die Fotos, die Handys"
+  },
+  {
+   "id": "c32738b0b9",
+   "day": "2026-11-07",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Plural: der Lehrer, der Schlüssel",
+   "back": "die Lehrer, die Schlüssel"
+  },
+  {
+   "id": "b17b02c5a0",
+   "day": "2026-11-07",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Вот, пожалуйста! (даю вещь)",
+   "back": "Hier, bitte! / Bitte schön!"
+  },
+  {
+   "id": "9dff11aa85",
+   "day": "2026-11-08",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Письмо: начало (друг / подруга)",
+   "back": "Lieber Tom, / Liebe Anna,"
+  },
+  {
+   "id": "94506cdbda",
+   "day": "2026-11-08",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Письмо: конец",
+   "back": "Viele Grüße / Liebe Grüße"
+  },
+  {
+   "id": "9db1365c1c",
+   "day": "2026-11-08",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Я учу немецкий.",
+   "back": "Ich lerne Deutsch."
+  },
+  {
+   "id": "9006751327",
+   "day": "2026-11-08",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Я не понимаю.",
+   "back": "Ich verstehe das nicht."
+  },
+  {
+   "id": "b4db2b6d48",
+   "day": "2026-11-08",
+   "deck": "Неделя 1",
+   "deck_full": "DE::Неделя 1",
+   "kind": "basic",
+   "front": "Говорите медленнее, пожалуйста.",
+   "back": "Sprechen Sie bitte langsam."
+  },
+  {
+   "id": "d4e574ee59",
+   "day": "2026-11-09",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Я покупаю яблоко. (der Apfel)",
+   "back": "Ich kaufe einen Apfel."
+  },
+  {
+   "id": "71df5e08bf",
+   "day": "2026-11-09",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Мне нужен салат. (der Salat)",
+   "back": "Ich brauche einen Salat."
+  },
+  {
+   "id": "71be641364",
+   "day": "2026-11-09",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "У меня нет рыбы. (der Fisch)",
+   "back": "Ich habe keinen Fisch."
+  },
+  {
+   "id": "eb6c6c6d52",
+   "day": "2026-11-09",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "У нас нет хлеба. (das Brot)",
+   "back": "Wir haben kein Brot."
+  },
+  {
+   "id": "23de889c6d",
+   "day": "2026-11-09",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Что ты ешь на завтрак?",
+   "back": "Was isst du zum Frühstück?"
+  },
+  {
+   "id": "5cc37987ae",
+   "day": "2026-11-09",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Akkusativ м. р.: der, ein, kein, mein",
+   "back": "den, einen, keinen, meinen"
+  },
+  {
+   "id": "64b9a98bf0",
+   "day": "2026-11-09",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Akkusativ: die, das, Plural",
+   "back": "не меняются: die, das, die"
+  },
+  {
+   "id": "447128eddc",
+   "day": "2026-11-09",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Холодильник слишком маленький.",
+   "back": "Der Kühlschrank ist zu klein."
+  },
+  {
+   "id": "0bc0252e78",
+   "day": "2026-11-09",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "есть (в наличии): «Есть мясо и рыба.»",
+   "back": "Es gibt Fleisch und Fisch."
+  },
+  {
+   "id": "be64b3c90e",
+   "day": "2026-11-09",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "килограмм яблок, бутылка молока",
+   "back": "ein Kilo Äpfel, eine Flasche Milch"
+  },
+  {
+   "id": "befe41fa8e",
+   "day": "2026-11-10",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Ты любишь кофе?",
+   "back": "Magst du Kaffee?"
+  },
+  {
+   "id": "ac04eeb7e1",
+   "day": "2026-11-10",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Я не люблю рыбу.",
+   "back": "Ich mag keinen Fisch."
+  },
+  {
+   "id": "e245e23931",
+   "day": "2026-11-10",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Хочешь что-нибудь выпить?",
+   "back": "Möchtest du etwas trinken?"
+  },
+  {
+   "id": "391084377e",
+   "day": "2026-11-10",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Мне чай, пожалуйста.",
+   "back": "Ich möchte einen Tee, bitte."
+  },
+  {
+   "id": "86a975da5c",
+   "day": "2026-11-10",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Я охотно ем овощи.",
+   "back": "Ich esse gern Gemüse."
+  },
+  {
+   "id": "e75071c290",
+   "day": "2026-11-10",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Я голоден. / Я хочу пить.",
+   "back": "Ich habe Hunger. / Ich habe Durst."
+  },
+  {
+   "id": "794e4e4874",
+   "day": "2026-11-10",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Вкусно!",
+   "back": "Das schmeckt gut! / Lecker!"
+  },
+  {
+   "id": "2dab658ab1",
+   "day": "2026-11-10",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "mögen: ich, du, er",
+   "back": "ich mag, du magst, er mag"
+  },
+  {
+   "id": "b091063242",
+   "day": "2026-11-10",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "möchten: ich, du, er",
+   "back": "ich möchte, du möchtest, er möchte"
+  },
+  {
+   "id": "9ca4fa90a8",
+   "day": "2026-11-10",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "möchten + глагол: «Я хотел бы пить воду.»",
+   "back": "Ich möchte Wasser trinken."
+  },
+  {
+   "id": "ec258a1530",
+   "day": "2026-11-11",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Сколько стоит хлеб?",
+   "back": "Was kostet das Brot? / Wie viel kostet das Brot?"
+  },
+  {
+   "id": "3c44f8d217",
+   "day": "2026-11-11",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "С вас 8,60 евро.",
+   "back": "Das macht 8,60 Euro."
+  },
+  {
+   "id": "5b624b0a74",
+   "day": "2026-11-11",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Я бы хотел(а) булочку.",
+   "back": "Ich hätte gern ein Brötchen."
+  },
+  {
+   "id": "bf2b94a801",
+   "day": "2026-11-11",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Что-нибудь ещё? — Нет, спасибо, это всё.",
+   "back": "Sonst noch etwas? — Nein, danke. Das ist alles."
+  },
+  {
+   "id": "edbf8ce108",
+   "day": "2026-11-11",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "фунт = 500 г, полкило",
+   "back": "ein Pfund = 500 Gramm = ein halbes Kilo"
+  },
+  {
+   "id": "d42a358216",
+   "day": "2026-11-11",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "У меня нет денег.",
+   "back": "Ich habe kein Geld."
+  },
+  {
+   "id": "a3d67e6daf",
+   "day": "2026-11-11",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Это недорого.",
+   "back": "Das ist nicht teuer."
+  },
+  {
+   "id": "768a9d9e44",
+   "day": "2026-11-11",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "kein или nicht: «Я не покупаю этот сыр.»",
+   "back": "Ich kaufe den Käse nicht."
+  },
+  {
+   "id": "bf81af3c10",
+   "day": "2026-11-11",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Повтори, пожалуйста, ещё раз.",
+   "back": "Kannst du das bitte noch einmal wiederholen?"
+  },
+  {
+   "id": "b7b8749796",
+   "day": "2026-11-11",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Можно оплатить картой?",
+   "back": "Kann ich mit Karte bezahlen?"
+  },
+  {
+   "id": "c7706ca4c7",
+   "day": "2026-11-12",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Что ты ешь?",
+   "back": "Was isst du?"
+  },
+  {
+   "id": "5292663f5d",
+   "day": "2026-11-12",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Он берёт тарелку.",
+   "back": "Er nimmt den Teller."
+  },
+  {
+   "id": "0cf588ae5d",
+   "day": "2026-11-12",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Она говорит по-немецки.",
+   "back": "Sie spricht Deutsch."
+  },
+  {
+   "id": "433396ee3b",
+   "day": "2026-11-12",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Ты видишь кастрюлю?",
+   "back": "Siehst du den Topf?"
+  },
+  {
+   "id": "c05279884b",
+   "day": "2026-11-12",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Я режу помидоры.",
+   "back": "Ich schneide die Tomaten."
+  },
+  {
+   "id": "545471fb60",
+   "day": "2026-11-12",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Пицца печётся 20 минут.",
+   "back": "Die Pizza backt 20 Minuten."
+  },
+  {
+   "id": "db84ef4f3d",
+   "day": "2026-11-12",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Приятного аппетита!",
+   "back": "Guten Appetit!"
+  },
+  {
+   "id": "2f5997b080",
+   "day": "2026-11-13",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Мне, пожалуйста, кофе.",
+   "back": "Ich hätte gern einen Kaffee."
+  },
+  {
+   "id": "8f19b072b9",
+   "day": "2026-11-13",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Меню, пожалуйста.",
+   "back": "Die Speisekarte, bitte."
+  },
+  {
+   "id": "bd49ecd1b8",
+   "day": "2026-11-13",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Счёт, пожалуйста!",
+   "back": "Zahlen, bitte!"
+  },
+  {
+   "id": "8bc3664ec7",
+   "day": "2026-11-13",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Вместе или раздельно?",
+   "back": "Zusammen oder getrennt?"
+  },
+  {
+   "id": "beb4a40dda",
+   "day": "2026-11-13",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Наличными или картой?",
+   "back": "Bar oder mit Karte?"
+  },
+  {
+   "id": "f6939485fc",
+   "day": "2026-11-13",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Сдачи не надо.",
+   "back": "Stimmt so."
+  },
+  {
+   "id": "06ca3dbd43",
+   "day": "2026-11-13",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Что желаете?",
+   "back": "Was darf es sein?"
+  },
+  {
+   "id": "665a25bc7a",
+   "day": "2026-11-13",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Я возьму салат.",
+   "back": "Ich nehme den Salat."
+  },
+  {
+   "id": "78d71b1845",
+   "day": "2026-11-14",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Свитер? Я его беру.",
+   "back": "Der Pullover? Ich nehme ihn."
+  },
+  {
+   "id": "25ef030f51",
+   "day": "2026-11-14",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Куртку? Я её покупаю.",
+   "back": "Die Jacke? Ich kaufe sie."
+  },
+  {
+   "id": "83070b3732",
+   "day": "2026-11-14",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Как тебе рубашка?",
+   "back": "Wie findest du das Hemd?"
+  },
+  {
+   "id": "db547c10cb",
+   "day": "2026-11-14",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Тебе это идёт!",
+   "back": "Das steht dir gut!"
+  },
+  {
+   "id": "81da228bbb",
+   "day": "2026-11-14",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Можно примерить?",
+   "back": "Kann ich das anprobieren?"
+  },
+  {
+   "id": "df28c26f5c",
+   "day": "2026-11-14",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Это слишком велико.",
+   "back": "Das ist zu groß."
+  },
+  {
+   "id": "2c06112f8c",
+   "day": "2026-11-14",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Я тебя не понимаю.",
+   "back": "Ich verstehe dich nicht."
+  },
+  {
+   "id": "90b790c2ed",
+   "day": "2026-11-15",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Я не ем мясо.",
+   "back": "Ich esse kein Fleisch."
+  },
+  {
+   "id": "8429a41991",
+   "day": "2026-11-15",
+   "deck": "Неделя 2",
+   "deck_full": "DE::Неделя 2",
+   "kind": "basic",
+   "front": "Сколько это стоит?",
+   "back": "Was kostet das?"
+  },
+  {
+   "id": "68f23c3a1a",
+   "day": "2026-11-16",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Квартира большая и светлая.",
+   "back": "Die Wohnung ist groß und hell."
+  },
+  {
+   "id": "3341132a03",
+   "day": "2026-11-16",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Кухня маленькая, но новая.",
+   "back": "Die Küche ist klein, aber neu."
+  },
+  {
+   "id": "9defb5207c",
+   "day": "2026-11-16",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Комната не тёмная.",
+   "back": "Das Zimmer ist nicht dunkel."
+  },
+  {
+   "id": "dc30da8c19",
+   "day": "2026-11-16",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Аренда слишком дорогая.",
+   "back": "Die Miete ist zu teuer."
+  },
+  {
+   "id": "ba940de5c3",
+   "day": "2026-11-16",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Моя квартира в центре.",
+   "back": "Meine Wohnung ist im Zentrum."
+  },
+  {
+   "id": "a50f966b43",
+   "day": "2026-11-16",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Сколько комнат в квартире?",
+   "back": "Wie viele Zimmer hat die Wohnung?"
+  },
+  {
+   "id": "37f18fc332",
+   "day": "2026-11-16",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Диван очень удобный.",
+   "back": "Das Sofa ist sehr bequem."
+  },
+  {
+   "id": "e51021d609",
+   "day": "2026-11-16",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Здесь тихо.",
+   "back": "Hier ist es ruhig."
+  },
+  {
+   "id": "b834ffebee",
+   "day": "2026-11-17",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Который час?",
+   "back": "Wie spät ist es?"
+  },
+  {
+   "id": "a4f3259971",
+   "day": "2026-11-17",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Сейчас половина восьмого (7:30).",
+   "back": "Es ist halb acht."
+  },
+  {
+   "id": "c01acc9001",
+   "day": "2026-11-17",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Сейчас четверть девятого (8:15).",
+   "back": "Es ist Viertel nach acht."
+  },
+  {
+   "id": "3c64339f41",
+   "day": "2026-11-17",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Без четверти три (2:45).",
+   "back": "Viertel vor drei."
+  },
+  {
+   "id": "60ba99a448",
+   "day": "2026-11-17",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Во сколько?",
+   "back": "Um wie viel Uhr?"
+  },
+  {
+   "id": "c0e613595a",
+   "day": "2026-11-17",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "В шесть часов.",
+   "back": "Um sechs Uhr."
+  },
+  {
+   "id": "e4db3b7c9d",
+   "day": "2026-11-17",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "вечером",
+   "back": "am Abend"
+  },
+  {
+   "id": "251fc1f39f",
+   "day": "2026-11-17",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "ночью",
+   "back": "in der Nacht"
+  },
+  {
+   "id": "714a75c199",
+   "day": "2026-11-18",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Я встаю в семь.",
+   "back": "Ich stehe um sieben Uhr auf."
+  },
+  {
+   "id": "a52aeafb88",
+   "day": "2026-11-18",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Курс начинается в девять.",
+   "back": "Der Kurs fängt um neun Uhr an."
+  },
+  {
+   "id": "fbfdd0ec0b",
+   "day": "2026-11-18",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Мы делаем покупки в субботу.",
+   "back": "Wir kaufen am Samstag ein."
+  },
+  {
+   "id": "ef3022f4ac",
+   "day": "2026-11-18",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Вечером он смотрит телевизор.",
+   "back": "Am Abend sieht er fern."
+  },
+  {
+   "id": "20789ed6e3",
+   "day": "2026-11-18",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Я звоню маме.",
+   "back": "Ich rufe meine Mutter an."
+  },
+  {
+   "id": "3bd48e09d0",
+   "day": "2026-11-18",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Ты убираешь свою комнату?",
+   "back": "Räumst du dein Zimmer auf?"
+  },
+  {
+   "id": "dde267b7ce",
+   "day": "2026-11-18",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Я завтракаю в половине восьмого.",
+   "back": "Ich frühstücke um halb acht."
+  },
+  {
+   "id": "e82621c02e",
+   "day": "2026-11-18",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Потом я иду спать.",
+   "back": "Dann gehe ich ins Bett."
+  },
+  {
+   "id": "beede28c75",
+   "day": "2026-11-19",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "в понедельник",
+   "back": "am Montag"
+  },
+  {
+   "id": "5b590a9428",
+   "day": "2026-11-19",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "в восемь часов",
+   "back": "um acht Uhr"
+  },
+  {
+   "id": "38d8b92217",
+   "day": "2026-11-19",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "в июле",
+   "back": "im Juli"
+  },
+  {
+   "id": "3f7432273b",
+   "day": "2026-11-19",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "зимой",
+   "back": "im Winter"
+  },
+  {
+   "id": "13f9e89cbe",
+   "day": "2026-11-19",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "на выходных",
+   "back": "am Wochenende"
+  },
+  {
+   "id": "83f46d7cc0",
+   "day": "2026-11-19",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "по понедельникам",
+   "back": "montags"
+  },
+  {
+   "id": "33a0ec3501",
+   "day": "2026-11-19",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "У тебя есть время в пятницу?",
+   "back": "Hast du am Freitag Zeit?"
+  },
+  {
+   "id": "8f6f9f7f8b",
+   "day": "2026-11-19",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Это подходит. / Это не подходит.",
+   "back": "Das geht. / Das geht nicht."
+  },
+  {
+   "id": "c2774f2cfa",
+   "day": "2026-11-20",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Я умею плавать.",
+   "back": "Ich kann schwimmen."
+  },
+  {
+   "id": "820397d19c",
+   "day": "2026-11-20",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Ты умеешь танцевать?",
+   "back": "Kannst du tanzen?"
+  },
+  {
+   "id": "b00ffb62b8",
+   "day": "2026-11-20",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Можешь мне помочь?",
+   "back": "Kannst du mir helfen?"
+  },
+  {
+   "id": "e2df19a0fa",
+   "day": "2026-11-20",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Сегодня я не могу.",
+   "back": "Heute kann ich nicht."
+  },
+  {
+   "id": "168e180527",
+   "day": "2026-11-20",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Моё хобби — фотография.",
+   "back": "Mein Hobby ist Fotografieren."
+  },
+  {
+   "id": "40b49234b5",
+   "day": "2026-11-20",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Что ты делаешь в свободное время?",
+   "back": "Was machst du in deiner Freizeit?"
+  },
+  {
+   "id": "674dd9b9e3",
+   "day": "2026-11-20",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Есть желание? / Хочешь?",
+   "back": "Hast du Lust?"
+  },
+  {
+   "id": "fb9a0e67f2",
+   "day": "2026-11-20",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Мы можем пойти в кино.",
+   "back": "Wir können ins Kino gehen."
+  },
+  {
+   "id": "c0cd67edec",
+   "day": "2026-11-21",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Я люблю готовить.",
+   "back": "Ich koche gern."
+  },
+  {
+   "id": "df6db3c9fc",
+   "day": "2026-11-21",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Я больше люблю мыть посуду.",
+   "back": "Ich spüle lieber."
+  },
+  {
+   "id": "4c4545e82b",
+   "day": "2026-11-21",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Больше всего я люблю читать.",
+   "back": "Am liebsten lese ich."
+  },
+  {
+   "id": "ec82ed1490",
+   "day": "2026-11-21",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Я не люблю гладить.",
+   "back": "Ich bügle nicht gern."
+  },
+  {
+   "id": "656b6793f4",
+   "day": "2026-11-21",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "пылесосить",
+   "back": "staubsaugen"
+  },
+  {
+   "id": "4e188ea4ab",
+   "day": "2026-11-21",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "выносить мусор",
+   "back": "den Müll rausbringen"
+  },
+  {
+   "id": "93451a1bb4",
+   "day": "2026-11-21",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Что ты больше всего любишь делать?",
+   "back": "Was machst du am liebsten?"
+  },
+  {
+   "id": "ae98fce38a",
+   "day": "2026-11-22",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Ты свободен в субботу в три?",
+   "back": "Hast du am Samstag um drei Zeit?"
+  },
+  {
+   "id": "fa3982d7e3",
+   "day": "2026-11-22",
+   "deck": "Неделя 3",
+   "deck_full": "DE::Неделя 3",
+   "kind": "basic",
+   "front": "Увидимся! / До скорого!",
+   "back": "Bis bald!"
+  },
+  {
+   "id": "ce774162de",
+   "day": "2026-11-23",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Я в супермаркете.",
+   "back": "Ich bin im Supermarkt."
+  },
+  {
+   "id": "f510e6bfca",
+   "day": "2026-11-23",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Она в аптеке.",
+   "back": "Sie ist in der Apotheke."
+  },
+  {
+   "id": "807b07907a",
+   "day": "2026-11-23",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Он у врача.",
+   "back": "Er ist beim Arzt."
+  },
+  {
+   "id": "c06adfffb6",
+   "day": "2026-11-23",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Я жду на остановке.",
+   "back": "Ich warte an der Haltestelle."
+  },
+  {
+   "id": "1c9b453b83",
+   "day": "2026-11-23",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "рядом с вокзалом",
+   "back": "in der Nähe vom Bahnhof"
+  },
+  {
+   "id": "8762ab42cf",
+   "day": "2026-11-23",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "за углом",
+   "back": "um die Ecke"
+  },
+  {
+   "id": "d686df1418",
+   "day": "2026-11-23",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Где здесь банк?",
+   "back": "Wo ist hier eine Bank?"
+  },
+  {
+   "id": "fe4f123753",
+   "day": "2026-11-23",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Мы в кино.",
+   "back": "Wir sind im Kino."
+  },
+  {
+   "id": "065c2120a4",
+   "day": "2026-11-24",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Я еду на автобусе.",
+   "back": "Ich fahre mit dem Bus."
+  },
+  {
+   "id": "afbfe4e4c8",
+   "day": "2026-11-24",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Я еду на метро.",
+   "back": "Ich fahre mit der U-Bahn."
+  },
+  {
+   "id": "8c14c54926",
+   "day": "2026-11-24",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Я иду пешком.",
+   "back": "Ich gehe zu Fuß."
+  },
+  {
+   "id": "4a87cecd90",
+   "day": "2026-11-24",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Извините, где вокзал?",
+   "back": "Entschuldigung, wo ist der Bahnhof?"
+  },
+  {
+   "id": "c62fdd3bb5",
+   "day": "2026-11-24",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Идите прямо.",
+   "back": "Gehen Sie geradeaus."
+  },
+  {
+   "id": "66452af5c7",
+   "day": "2026-11-24",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "На светофоре налево.",
+   "back": "An der Ampel links."
+  },
+  {
+   "id": "749bd77274",
+   "day": "2026-11-24",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Это недалеко.",
+   "back": "Das ist nicht weit."
+  },
+  {
+   "id": "2fb0e6a79f",
+   "day": "2026-11-24",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Как ты добираешься до работы?",
+   "back": "Wie kommst du zur Arbeit?"
+  },
+  {
+   "id": "a11915c584",
+   "day": "2026-11-25",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Мне надо работать.",
+   "back": "Ich muss arbeiten."
+  },
+  {
+   "id": "9db30ad506",
+   "day": "2026-11-25",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Мы хотим учить немецкий.",
+   "back": "Wir wollen Deutsch lernen."
+  },
+  {
+   "id": "e753fe8c1f",
+   "day": "2026-11-25",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Здесь нельзя курить.",
+   "back": "Hier darf man nicht rauchen."
+  },
+  {
+   "id": "d08488965e",
+   "day": "2026-11-25",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Можно войти?",
+   "back": "Darf ich reinkommen?"
+  },
+  {
+   "id": "5f18cb25da",
+   "day": "2026-11-25",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Тебе не обязательно приходить.",
+   "back": "Du musst nicht kommen."
+  },
+  {
+   "id": "20b47c7b73",
+   "day": "2026-11-25",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Я опоздал. Была пробка.",
+   "back": "Ich bin zu spät. Ich war im Stau."
+  },
+  {
+   "id": "a71dba9006",
+   "day": "2026-11-25",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Нужно быть пунктуальным.",
+   "back": "Man muss pünktlich sein."
+  },
+  {
+   "id": "e7a4a31cdd",
+   "day": "2026-11-26",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Что вас беспокоит?",
+   "back": "Was fehlt Ihnen?"
+  },
+  {
+   "id": "fbff012ec7",
+   "day": "2026-11-26",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "У меня болит голова.",
+   "back": "Mir tut der Kopf weh."
+  },
+  {
+   "id": "905609258b",
+   "day": "2026-11-26",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "У меня температура.",
+   "back": "Ich habe Fieber."
+  },
+  {
+   "id": "92a74a102d",
+   "day": "2026-11-26",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Принимайте таблетки три раза в день.",
+   "back": "Nehmen Sie die Tabletten dreimal täglich."
+  },
+  {
+   "id": "01b4517aa7",
+   "day": "2026-11-26",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Оставайся в постели!",
+   "back": "Bleib im Bett!"
+  },
+  {
+   "id": "e695f0ec21",
+   "day": "2026-11-26",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Пейте много чая!",
+   "back": "Trinken Sie viel Tee!"
+  },
+  {
+   "id": "cdc201bdc8",
+   "day": "2026-11-26",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Выздоравливай!",
+   "back": "Gute Besserung!"
+  },
+  {
+   "id": "9b184fcfe8",
+   "day": "2026-11-26",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Мне нужно к врачу.",
+   "back": "Ich muss zum Arzt."
+  },
+  {
+   "id": "21ea803163",
+   "day": "2026-11-27",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Что ты делал в выходные?",
+   "back": "Was hast du am Wochenende gemacht?"
+  },
+  {
+   "id": "a0b1e06008",
+   "day": "2026-11-27",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Я играл в футбол.",
+   "back": "Ich habe Fußball gespielt."
+  },
+  {
+   "id": "c10a394f97",
+   "day": "2026-11-27",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Мы ели пиццу.",
+   "back": "Wir haben Pizza gegessen."
+  },
+  {
+   "id": "6ee65de9c2",
+   "day": "2026-11-27",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Я сделал покупки.",
+   "back": "Ich habe eingekauft."
+  },
+  {
+   "id": "08b1f4ab0f",
+   "day": "2026-11-27",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Хочешь пойти в кино?",
+   "back": "Hast du Lust, ins Kino zu gehen?"
+  },
+  {
+   "id": "45fdb9df65",
+   "day": "2026-11-27",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Встретимся в семь?",
+   "back": "Treffen wir uns um sieben?"
+  },
+  {
+   "id": "d975e21b9d",
+   "day": "2026-11-27",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "С удовольствием!",
+   "back": "Gern!"
+  },
+  {
+   "id": "5414d475de",
+   "day": "2026-11-27",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "К сожалению, у меня нет времени.",
+   "back": "Leider habe ich keine Zeit."
+  },
+  {
+   "id": "b908666779",
+   "day": "2026-11-28",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Какая погода?",
+   "back": "Wie ist das Wetter?"
+  },
+  {
+   "id": "ccf3cba5b9",
+   "day": "2026-11-28",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Светит солнце.",
+   "back": "Die Sonne scheint."
+  },
+  {
+   "id": "1e352d210a",
+   "day": "2026-11-28",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Идёт дождь.",
+   "back": "Es regnet."
+  },
+  {
+   "id": "566c91c4d3",
+   "day": "2026-11-28",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Идёт снег.",
+   "back": "Es schneit."
+  },
+  {
+   "id": "d3091e53f9",
+   "day": "2026-11-28",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Облачно.",
+   "back": "Es ist bewölkt."
+  },
+  {
+   "id": "bea2669352",
+   "day": "2026-11-28",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Сегодня 20 градусов.",
+   "back": "Heute sind es 20 Grad."
+  },
+  {
+   "id": "a23feafc86",
+   "day": "2026-11-28",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Завтра будет холоднее.",
+   "back": "Morgen wird es kälter."
+  },
+  {
+   "id": "24ffcb9cfb",
+   "day": "2026-11-29",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Какое сегодня число?",
+   "back": "Der Wievielte ist heute?"
+  },
+  {
+   "id": "e4284a64e9",
+   "day": "2026-11-29",
+   "deck": "Неделя 4",
+   "deck_full": "DE::Неделя 4",
+   "kind": "basic",
+   "front": "Я хотел бы забронировать столик.",
+   "back": "Ich möchte einen Tisch reservieren."
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+date: 2026-11-27
+title: "Встречи и приглашения. Perfekt"
+hours: 2
+kind: study
+intro: |
+  Сегодня — как пригласить и как рассказать о прошлом: *Was hast du am Wochenende gemacht?*
+steps:
+  - type: theory
+    title: "Perfekt с haben (знакомство)"
+    minutes: 20
+    article: perfekt
+    alt:
+      - {title: "Lingolia: Perfekt", url: "https://deutsch.lingolia.com/de/grammatik/zeitformen/perfekt", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "образовать Partizip II: *machen → gemacht*"
+      - "рассказать о выходных в Perfekt"
+
+  - type: quiz
+    title: "Проверка: Perfekt"
+    minutes: 15
+    quiz:
+      id: q-w4d5-perfekt
+      title: "Perfekt mit haben"
+      questions:
+        - {type: de, q: "machen → ge___", answer: "gemacht"}
+        - {type: de, q: "spielen → Partizip II", answer: "gespielt"}
+        - {type: de, q: "kaufen → Partizip II", answer: "gekauft"}
+        - {type: de, q: "einkaufen → Partizip II", answer: "eingekauft"}
+        - {type: de, q: "essen → Partizip II", answer: "gegessen"}
+        - {type: de, q: "Ich ___ ein Buch gelesen.", answer: "habe"}
+        - {type: de, q: "Переведите: «Что ты делал в выходные?»", answer: "Was hast du am Wochenende gemacht"}
+        - {type: de, q: "Переведите: «Мы играли в футбол».", answer: "Wir haben Fußball gespielt"}
+        - type: choice
+          q: "Где стоит Partizip II?"
+          options: ["в конце предложения", "на втором месте", "сразу после haben", "в начале"]
+          answer: 0
+        - type: choice
+          q: "Как пригласить друга? «Хочешь пойти в кино?»"
+          options: ["Hast du Lust, ins Kino zu gehen?", "Du gehst Kino?", "Musst du ins Kino?", "Darfst du Kino?"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 53: Wie war dein Urlaub?"
+    minutes: 15
+    episode: 53
+    intro: |
+      Пассажир говорит по телефону об отпуске. Слушайте прошедшее время: *war, habe … gemacht*.
+    quiz:
+      id: q-w4d5-listen
+      title: "Folge 53: Wie war dein Urlaub?"
+      questions:
+        - type: choice
+          q: "Сколько длился отпуск?"
+          options: ["zwei Wochen", "eine Woche", "drei Tage", "einen Monat"]
+          answer: 0
+        - type: choice
+          q: "Каким был отпуск?"
+          options: ["großartig", "langweilig", "zu kurz und schlecht", "kalt"]
+          answer: 0
+        - type: choice
+          q: "Где пассажир спит сегодня ночью?"
+          options: ["im Hotel", "zu Hause", "im Zug", "bei Freunden"]
+          answer: 0
+        - type: choice
+          q: "Что он фотографировал?"
+          options: ["die Berge, den Strand und das Hotel", "nur das Meer", "nur Menschen", "nichts"]
+          answer: 0
+        - {type: de, q: "Он говорит: «Я сделал много фотографий». Ich habe viele Fotos ___.", answer: "gemacht"}
+
+  - type: practice
+    title: "Письмо: приглашение и выходные"
+    minutes: 20
+    items:
+      - text: "Напишите другу: (1) что вы делали в прошлые выходные — 3 предложения в Perfekt; (2) пригласите его на что-то в субботу: где, когда, во сколько."
+        write: true
+        sample: |
+          Hallo Paul! Am Wochenende habe ich viel gemacht: Am Samstag habe ich eingekauft und gekocht. Am Sonntag habe ich Fußball gespielt. Hast du am Samstag Zeit? Wir können um acht Uhr ins Kino gehen. Der Film ist super! Treffen wir uns um halb acht vor dem Kino? Liebe Grüße, Sara
+
+  - type: oral
+    title: "Говорение: прошлые выходные"
+    minutes: 10
+    quiz:
+      id: q-w4d5-oral
+      title: "Perfekt вслух"
+      questions:
+        - {type: text, q: "Was haben Sie am Wochenende gemacht?", answer: "*Ich habe am Samstag Freunde getroffen und am Sonntag ein Buch gelesen.*"}
+        - {type: text, q: "Was haben Sie gestern gegessen?", answer: "*Gestern habe ich Pizza gegessen.*"}
+        - {type: text, q: "Пригласите коллегу на кофе завтра.", answer: "*Haben Sie morgen Zeit? Wir können zusammen einen Kaffee trinken.*"}
+
+  - type: words
+    title: "Слова дня: встречи и приглашения"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Что ты делал в выходные?", "Was hast du am Wochenende gemacht?"]
+      - ["Я играл в футбол.", "Ich habe Fußball gespielt."]
+      - ["Мы ели пиццу.", "Wir haben Pizza gegessen."]
+      - ["Я сделал покупки.", "Ich habe eingekauft."]
+      - ["Хочешь пойти в кино?", "Hast du Lust, ins Kino zu gehen?"]
+      - ["Встретимся в семь?", "Treffen wir uns um sieben?"]
+      - ["С удовольствием!", "Gern!"]
+      - ["К сожалению, у меня нет времени.", "Leider habe ich keine Zeit."]

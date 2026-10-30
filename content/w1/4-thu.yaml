@@ -1,0 +1,130 @@
+date: 2026-11-05
+title: "Семья. haben; mein, dein, sein, ihr"
+hours: 2
+kind: study
+intro: |
+  Сегодня: члены семьи, глагол *haben* и слова «мой, твой, его, её».
+steps:
+  - type: theory
+    title: "haben и притяжательные слова"
+    minutes: 20
+    article: haben-possessiv
+    alt:
+      - {title: "Wiktionary: Flexion:haben", url: "https://de.wiktionary.org/wiki/Flexion:haben", lang: de, type: article, verified: "200 2026-10-31"}
+      - {title: "Lingolia: Possessivpronomen", url: "https://deutsch.lingolia.com/de/grammatik/pronomen/possessivpronomen", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "спрягать *haben*: ich habe, du hast, er hat …"
+      - "выбрать *mein* или *meine* по роду слова"
+
+  - type: quiz
+    title: "Проверка: haben, mein/meine"
+    minutes: 15
+    quiz:
+      id: q-w1d4-haben
+      title: "haben и притяжательные слова"
+      questions:
+        - {type: de, q: "Ich ___ einen Bruder. (haben)", answer: "habe"}
+        - {type: de, q: "___ du Geschwister? (haben)", answer: "Hast"}
+        - {type: de, q: "Selma ___ zwei Brüder. (haben)", answer: "hat"}
+        - {type: de, q: "Wir ___ ein Kind. (haben)", answer: "haben"}
+        - {type: de, q: "Ihr ___ eine Oma in Berlin. (haben)", answer: "habt"}
+        - {type: de, q: "Das ist ___ Mutter. (моя)", answer: "meine"}
+        - {type: de, q: "Das ist ___ Vater. (мой)", answer: "mein"}
+        - {type: de, q: "Wie heißt ___ Schwester? (твоя)", answer: "deine"}
+        - type: choice
+          q: "Nico sucht ___ Tante. (свою — тётю Нико)"
+          options: ["seine", "sein", "ihre", "deine"]
+          answer: 0
+          explain: "Нико — *er* → *sein/seine*. *die Tante* → *seine Tante*."
+        - type: choice
+          q: "Lisa und ___ Vater. (её отец)"
+          options: ["ihr", "ihre", "sein", "seine"]
+          answer: 0
+          explain: "Лиза — *sie* → *ihr/ihre*. *der Vater* → *ihr Vater*."
+        - type: choice
+          q: "Как сказать «мои родители»?"
+          options: ["meine Eltern", "mein Eltern", "meinen Eltern", "meines Eltern"]
+          answer: 0
+          explain: "Множественное число → *meine*."
+        - {type: de, q: "Переведите: «У тебя есть дети?»", answer: ["Hast du Kinder", "Hast du ein Kind"]}
+
+  - type: listen
+    title: "Nicos Weg, Folge 61: Meine Familie"
+    minutes: 15
+    episode: 61
+    intro: |
+      Сельма пришла к Инге. Слушайте, что Сельма рассказывает о семье.
+    quiz:
+      id: q-w1d4-listen
+      title: "Folge 61: Meine Familie"
+      questions:
+        - type: choice
+          q: "Woher kommt Selma?"
+          options: ["aus Syrien", "aus Spanien", "aus der Türkei", "aus Russland"]
+          answer: 0
+        - type: choice
+          q: "Wie lange lebt Selma schon in Deutschland?"
+          options: ["fast ein Jahr", "zwei Jahre", "einen Monat", "zehn Jahre"]
+          answer: 0
+        - type: choice
+          q: "Mit wem ist Selma in Deutschland?"
+          options: ["mit ihren Eltern", "allein", "mit ihrem Mann", "mit ihren Großeltern"]
+          answer: 0
+        - type: choice
+          q: "Hat Selma Geschwister?"
+          options: ["Ja, zwei ältere Brüder in Hamburg", "Nein, sie hat keine Geschwister", "Ja, eine Schwester in Berlin", "Ja, einen Bruder in Syrien"]
+          answer: 0
+        - type: choice
+          q: "Wo leben Selmas Großeltern?"
+          options: ["in Syrien", "in Hamburg", "in Berlin", "bei Inge"]
+          answer: 0
+        - type: choice
+          q: "Was sucht Selma?"
+          options: ["ihr Portemonnaie (кошелёк)", "ihre Tasche", "ihren Schlüssel", "ihr Handy"]
+          answer: 0
+
+  - type: words
+    title: "Слова дня: семья"
+    minutes: 20
+    mode: study
+
+  - type: practice
+    title: "Письмо: моя семья"
+    minutes: 15
+    items:
+      - text: "Напишите 5–6 предложений о своей семье: кто есть, как зовут, сколько лет, где живут."
+        write: true
+        sample: |
+          Meine Familie ist klein. Mein Vater heißt Igor, meine Mutter heißt Irina. Ich habe einen Bruder. Er heißt Pawel und ist fünfzehn. Meine Oma wohnt in Samara. Ich habe keine Schwester.
+      - text: "Опишите семью друга или подруги (*sein/seine*, *ihr/ihre*): 3 предложения."
+        write: true
+        sample: |
+          Das ist Selma. Ihre Eltern sind auch in Deutschland. Ihre Brüder wohnen in Hamburg.
+
+  - type: oral
+    title: "Говорение: семья"
+    minutes: 15
+    quiz:
+      id: q-w1d4-oral
+      title: "Ответьте вслух"
+      questions:
+        - {type: text, q: "*Haben Sie Geschwister?*", answer: "Ja, ich habe einen Bruder und eine Schwester. / Nein, ich habe keine Geschwister."}
+        - {type: text, q: "*Wie heißt Ihre Mutter?*", answer: "Meine Mutter heißt Irina."}
+        - {type: text, q: "*Wo wohnen Ihre Eltern?*", answer: "Meine Eltern wohnen in Samara."}
+        - {type: text, q: "*Sind Sie verheiratet?*", answer: "Ja, ich bin verheiratet. / Nein, ich bin nicht verheiratet."}
+        - {type: text, q: "Спросите друга (*du*): есть ли у него дети и как их зовут.", answer: "Hast du Kinder? Wie heißen sie?"}
+
+  - type: anki
+    title: "Карточки: семья и haben"
+    minutes: 10
+    cards:
+      - ["У тебя есть братья и сёстры?", "Hast du Geschwister?"]
+      - ["У меня есть брат и сестра.", "Ich habe einen Bruder und eine Schwester."]
+      - ["Это моя мать / мой отец.", "Das ist meine Mutter / mein Vater."]
+      - ["Мои родители живут в Самаре.", "Meine Eltern wohnen in Samara."]
+      - ["Вы женаты / замужем?", "Sind Sie verheiratet?"]
+      - ["haben: ich, du, er", "ich habe, du hast, er hat"]
+      - ["haben: wir, ihr, sie/Sie", "wir haben, ihr habt, sie/Sie haben"]
+      - ["его тётя / её отец", "seine Tante / ihr Vater"]
+      - ["mein или meine: der/das …, die/Plural …", "der/das → mein; die/Plural → meine"]
+      - ["Как зовут твою сестру?", "Wie heißt deine Schwester?"]

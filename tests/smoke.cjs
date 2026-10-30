@@ -20,7 +20,7 @@ const REAL = process.env.REAL === "data";
   const ok = (name) => console.log(`ok ${++n} ${name}`);
 
   await go("#/");
-  assert.match(await page.textContent("header.top"), /Неделя 1 из/);
+  assert.match(await page.textContent("header.top"), /Неделя \d+ из \d+/);
   ok("home: header and current step");
 
   if (REAL) {

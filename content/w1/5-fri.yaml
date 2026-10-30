@@ -1,0 +1,118 @@
+date: 2026-11-06
+title: "Профессии и работа. der, ein, kein"
+hours: 2
+kind: study
+intro: |
+  Сегодня: профессии, место работы. Грамматика: определённый, неопределённый и отрицательный артикль в Nominativ.
+steps:
+  - type: theory
+    title: "Артикли der / ein / kein (Nominativ)"
+    minutes: 20
+    article: artikel-nominativ
+    alt:
+      - {title: "Lingolia: Artikel", url: "https://deutsch.lingolia.com/de/grammatik/nomen/artikel", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "выбрать *der/die/das* и *ein/eine*"
+      - "сказать, кем вы работаете: *Ich bin Lehrerin.* (без артикля)"
+
+  - type: quiz
+    title: "Проверка: артикли и профессии"
+    minutes: 15
+    quiz:
+      id: q-w1d5-artikel
+      title: "der, ein, kein; профессии"
+      questions:
+        - {type: de, q: "Артикль: ___ Beruf", answer: "der"}
+        - {type: de, q: "Артикль: ___ Arbeit", answer: "die"}
+        - {type: de, q: "Артикль: ___ Kind", answer: "das"}
+        - {type: de, q: "Das ist ___ Firma. (неопр. артикль)", answer: "eine"}
+        - {type: de, q: "Das ist ___ Computer. (неопр. артикль)", answer: "ein"}
+        - {type: de, q: "Das ist ___ Handy, das ist ein Telefon. (отрицание)", answer: "kein"}
+        - {type: de, q: "Das ist ___ Lehrerin, das ist eine Ärztin. (отрицание)", answer: "keine"}
+        - type: choice
+          q: "Как сказать «Я учитель»?"
+          options: ["Ich bin Lehrer.", "Ich bin ein Lehrer von Beruf.", "Ich bin der Lehrer.", "Ich habe Lehrer."]
+          answer: 0
+          explain: "С профессией артикль не нужен: *Ich bin Lehrer. Er ist Arzt.*"
+        - {type: de, q: "Женская форма: der Lehrer → die ___", answer: "Lehrerin"}
+        - {type: de, q: "Женская форма: der Arzt → die ___", answer: "Ärztin", explain: "*Arzt → Ärztin*: появляется умлаут."}
+        - type: choice
+          q: "Вежливый вопрос о профессии:"
+          options: ["Was sind Sie von Beruf?", "Wer sind Sie von Beruf?", "Was ist Ihr von Beruf?", "Wie sind Sie Beruf?"]
+          answer: 0
+        - {type: de, q: "Переведите: «Где Вы работаете?»", answer: "Wo arbeiten Sie"}
+
+  - type: listen
+    title: "Nicos Weg, Folge 37: Ich bin Lehrerin"
+    minutes: 15
+    episode: 37
+    quiz:
+      id: q-w1d5-listen
+      title: "Folge 37: Ich bin Lehrerin"
+      questions:
+        - type: choice
+          q: "Was ist Lisa von Beruf?"
+          options: ["Lehrerin für Deutsch und Englisch", "Ärztin", "Polizistin", "Verkäuferin"]
+          answer: 0
+        - type: choice
+          q: "Куда идёт Лиза?"
+          options: ["на собеседование (Bewerbungsgespräch)", "в школу на урок", "в ресторан", "к врачу"]
+          answer: 0
+        - {type: de, q: "Was ist Max von Beruf? Одно слово.", answer: "Bankkaufmann"}
+        - type: choice
+          q: "Was ist Tarek von Beruf?"
+          options: ["Elektriker", "Koch", "Lehrer", "Ingenieur"]
+          answer: 0
+        - type: choice
+          q: "Какую профессию советуют Нико его родители?"
+          options: ["Ingenieur", "Lehrer", "Polizist", "Bankkaufmann"]
+          answer: 0
+        - type: choice
+          q: "Wo arbeiten Max und Tarek jetzt?"
+          options: ["Sie haben zusammen ein Restaurant.", "Sie arbeiten in einer Bank.", "Sie arbeiten in einer Schule.", "Sie sind arbeitslos."]
+          answer: 0
+
+  - type: words
+    title: "Слова дня: профессии"
+    minutes: 20
+    mode: study
+
+  - type: practice
+    title: "Письмо: моя работа"
+    minutes: 15
+    items:
+      - text: "Напишите 4–5 предложений: кем вы работаете или где учитесь, где, нравится ли работа."
+        write: true
+        sample: |
+          Ich bin Programmierer von Beruf. Ich arbeite in Kasan. Meine Firma ist klein. Die Arbeit ist interessant. Mein Chef heißt Herr Petrow.
+      - text: "Напишите о двух знакомых: кто они по профессии и где работают."
+        write: true
+        sample: |
+          Meine Mutter ist Ärztin. Sie arbeitet in einem Krankenhaus. Mein Freund Max ist Student. Er hat keinen Job.
+
+  - type: oral
+    title: "Говорение: профессия"
+    minutes: 10
+    quiz:
+      id: q-w1d5-oral
+      title: "Ответьте вслух"
+      questions:
+        - {type: text, q: "*Was sind Sie von Beruf?*", answer: "Ich bin Programmierer. / Ich bin Studentin."}
+        - {type: text, q: "*Wo arbeiten Sie?*", answer: "Ich arbeite in Kasan, bei einer IT-Firma."}
+        - {type: text, q: "Покажите на предмет и скажите: «Это не компьютер, это телефон».", answer: "Das ist kein Computer, das ist ein Telefon."}
+        - {type: text, q: "Расскажите о Лизе: кто она по профессии.", answer: "Lisa ist Lehrerin. Sie unterrichtet Deutsch und Englisch."}
+
+  - type: anki
+    title: "Карточки: профессии и артикли"
+    minutes: 10
+    cards:
+      - ["Кем Вы работаете?", "Was sind Sie von Beruf?"]
+      - ["Я учитель / учительница.", "Ich bin Lehrer / Lehrerin."]
+      - ["Где ты работаешь?", "Wo arbeitest du?"]
+      - ["Я работаю в небольшой фирме.", "Ich arbeite in einer kleinen Firma."]
+      - ["Он врач, она тоже врач.", "Er ist Arzt, sie ist auch Ärztin."]
+      - ["Это не компьютер.", "Das ist kein Computer."]
+      - ["der/die/das → неопр. (Nominativ)", "der → ein, das → ein, die → eine, Plural → –"]
+      - ["Отрицание kein (Nominativ)", "kein (der/das), keine (die, Plural)"]
+      - ["Удачи! (2 варианта)", "Viel Erfolg! / Viel Glück!"]
+      - ["Мне нравится моя работа.", "Ich mag meine Arbeit."]

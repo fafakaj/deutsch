@@ -1,0 +1,111 @@
+date: 2026-11-07
+title: "Предметы вокруг: в классе и в сумке. Plural"
+hours: 2
+kind: study
+intro: |
+  Сегодня: предметы в классе и в сумке. Грамматика: множественное число существительных.
+steps:
+  - type: theory
+    title: "Plural: основные типы"
+    minutes: 20
+    article: plural
+    alt:
+      - {title: "Lingolia: Plural", url: "https://deutsch.lingolia.com/de/grammatik/nomen/plural", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "узнать 5 типов множественного числа"
+      - "помнить: во мн. числе артикль всегда *die*"
+
+  - type: quiz
+    title: "Проверка: Plural"
+    minutes: 15
+    quiz:
+      id: q-w1d6-plural
+      title: "Множественное число"
+      questions:
+        - {type: de, q: "der Tisch → die ___", answer: "Tische"}
+        - {type: de, q: "der Stuhl → die ___", answer: "Stühle"}
+        - {type: de, q: "die Tasche → die ___", answer: "Taschen"}
+        - {type: de, q: "das Buch → die ___", answer: "Bücher"}
+        - {type: de, q: "das Foto → die ___", answer: "Fotos"}
+        - {type: de, q: "der Schlüssel → die ___", answer: "Schlüssel", explain: "Слова на *-el, -er, -en* часто без окончания: *der Lehrer → die Lehrer*."}
+        - {type: de, q: "die Frage → die ___", answer: "Fragen"}
+        - {type: de, q: "das Kind → die ___", answer: "Kinder"}
+        - type: choice
+          q: "Какой артикль у всех слов во множественном числе?"
+          options: ["die", "der", "das", "den"]
+          answer: 0
+        - type: choice
+          q: "Как правильно: «две ручки» (der Kugelschreiber)?"
+          options: ["zwei Kugelschreiber", "zwei Kugelschreibers", "zwei Kugelschreiberen", "zwei Kugelschreibern"]
+          answer: 0
+        - {type: de, q: "Переведите: «Где мои ключи?»", answer: "Wo sind meine Schlüssel"}
+        - {type: de, q: "Переведите: «В сумке два телефона.» (das Handy)", answer: ["In der Tasche sind zwei Handys", "Zwei Handys sind in der Tasche"]}
+
+  - type: listen
+    title: "Nicos Weg, Folge 21: Was ist das?"
+    minutes: 15
+    episode: 21
+    quiz:
+      id: q-w1d6-listen
+      title: "Folge 21: Was ist das?"
+      questions:
+        - type: choice
+          q: "Was sucht Lisa?"
+          options: ["die Brille, die Stifte und das Buch", "die Tasche und das Handy", "den Computer", "die Hausaufgaben"]
+          answer: 0
+        - type: choice
+          q: "Wo arbeitet Lisa?"
+          options: ["Sie gibt Deutschkurse in einer Sprachschule.", "Sie arbeitet in einer Bank.", "Sie arbeitet im Restaurant.", "Sie arbeitet bei der Polizei."]
+          answer: 0
+        - type: choice
+          q: "Wer holt Emma?"
+          options: ["Nina", "Nico", "Lisa", "Max"]
+          answer: 0
+        - {type: de, q: "Что Лиза чуть не забыла в конце? Одно слово, без артикля.", answer: "Schlüssel"}
+        - {type: de, q: "Адрес Яры: August-Straußberg-Gasse … Напишите номер дома цифрами.", answer: "23"}
+
+  - type: words
+    title: "Слова дня: предметы"
+    minutes: 20
+    mode: study
+
+  - type: practice
+    title: "Письмо: что у меня в сумке"
+    minutes: 15
+    items:
+      - text: "Напишите, что лежит в вашей сумке или на столе: 5 предложений, с числами и Plural."
+        write: true
+        sample: |
+          In meiner Tasche sind zwei Bücher und drei Kugelschreiber. Da ist auch ein Handy. Mein Schlüssel ist auch da. Auf dem Tisch sind zwei Fotos. Ich habe keinen Computer.
+      - text: "Напишите короткую записку соседу: где лежат ключи и книги (*Der Schlüssel ist … Die Bücher sind …*)."
+        write: true
+        sample: |
+          Hallo Tom, der Schlüssel ist auf dem Tisch. Die Bücher sind in der Tasche. Bis morgen! Anna
+
+  - type: oral
+    title: "Говорение: Was ist das?"
+    minutes: 10
+    intro: "Как в Goethe A1, Sprechen Teil 3: попросить что-то и ответить."
+    quiz:
+      id: q-w1d6-oral
+      title: "Скажите вслух"
+      questions:
+        - {type: text, q: "Покажите на ручку и спросите, как это по-немецки.", answer: "Wie heißt das auf Deutsch? — Das ist ein Kugelschreiber."}
+        - {type: text, q: "Попросите у соседа карандаш.", answer: "Hast du einen Bleistift? / Einen Bleistift, bitte!"}
+        - {type: text, q: "Дайте книгу и скажите «Вот, пожалуйста».", answer: "Hier, bitte. / Bitte schön."}
+        - {type: text, q: "Назовите 4 предмета вокруг вас во множественном числе.", answer: "die Bücher, die Stühle, die Tische, die Fotos"}
+
+  - type: anki
+    title: "Карточки: предметы и Plural"
+    minutes: 10
+    cards:
+      - ["Как это называется по-немецки?", "Wie heißt das auf Deutsch?"]
+      - ["Что это? — Это ключ.", "Was ist das? — Das ist ein Schlüssel."]
+      - ["Где мои очки?", "Wo ist meine Brille?"]
+      - ["Где мои ключи?", "Wo sind meine Schlüssel?"]
+      - ["Plural: der Tisch, der Stuhl", "die Tische, die Stühle"]
+      - ["Plural: die Tasche, die Frage", "die Taschen, die Fragen"]
+      - ["Plural: das Buch, das Kind", "die Bücher, die Kinder"]
+      - ["Plural: das Foto, das Handy", "die Fotos, die Handys"]
+      - ["Plural: der Lehrer, der Schlüssel", "die Lehrer, die Schlüssel"]
+      - ["Вот, пожалуйста! (даю вещь)", "Hier, bitte! / Bitte schön!"]

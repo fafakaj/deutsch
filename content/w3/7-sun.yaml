@@ -1,0 +1,75 @@
+date: 2026-11-22
+title: "Повторение недели 3"
+hours: 1.5
+kind: review
+intro: |
+  Воскресенье — повторение. Сначала мини-тест недели, потом видео и короткий текст.
+steps:
+  - type: quiz
+    title: "Мини-тест недели 3"
+    minutes: 25
+    quiz:
+      id: q-w3d7-test
+      title: "Неделя 3: мини-тест"
+      questions:
+        - {type: de, q: "Антоним: alt — ___ (о мебели)", answer: "neu"}
+        - {type: de, q: "Переведите: «Ванная слишком маленькая».", answer: "Das Bad ist zu klein"}
+        - type: choice
+          q: "*halb sieben* — это:"
+          options: ["6:30", "7:30", "6:00", "7:00"]
+          answer: 0
+        - {type: de, q: "9:45 разговорно: Viertel ___ zehn", answer: "vor"}
+        - {type: de, q: "Переведите: «Я встаю в шесть».", answer: ["Ich stehe um sechs auf", "Ich stehe um sechs Uhr auf"]}
+        - {type: de, q: "einkaufen, wir: Wir ___ am Montag ___.", answer: "kaufen ein"}
+        - {type: de, q: "___ Sonntag ___ zehn Uhr (два предлога через пробел)", answer: "am um"}
+        - {type: de, q: "___ Dezember", answer: "im"}
+        - {type: de, q: "er ___ (können)", answer: "kann"}
+        - {type: de, q: "Переведите: «Ты можешь мне помочь?»", answer: "Kannst du mir helfen"}
+        - {type: de, q: "Ich tanze ___ ___. (больше всего)", answer: "am liebsten"}
+        - type: choice
+          q: "*Ich ___ heute nicht kommen.*"
+          options: ["kann", "kannst", "können", "könnt"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 32: Emmas Wochenende"
+    minutes: 15
+    episode: 32
+    intro: |
+      Эмма планирует выходные, а Нико — другой порядок дел. Слушайте отделяемые приставки: *ausschlafen, aufwachen, aufräumen, fernsehen*.
+    quiz:
+      id: q-w3d7-listen
+      title: "Folge 32: Emmas Wochenende"
+      questions:
+        - type: choice
+          q: "Что Эмма завтракает (по словам Нико)?"
+          options: ["Müsli", "Brot", "Eis", "Pizza"]
+          answer: 0
+        - type: choice
+          q: "Почему Эмма не хочет делать домашнее задание?"
+          options: ["Es sind Ferien.", "Sie ist krank.", "Sie ist müde.", "Sie hat keine Bücher."]
+          answer: 0
+        - type: choice
+          q: "Порядок Нико: сначала…"
+          options: ["Hausaufgaben, dann aufräumen, dann fernsehen", "fernsehen, dann Hausaufgaben", "aufräumen, dann Eis", "Kino, dann Hausaufgaben"]
+          answer: 0
+        - type: choice
+          q: "Что происходит с Эммой в конце?"
+          options: ["Ihr ist schlecht.", "Sie schläft.", "Sie geht ins Kino.", "Sie kocht."]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: моя неделя (итог)"
+    minutes: 20
+    items:
+      - text: "Напишите другу сообщение (6–8 предложений): какая у вас квартира, как проходит ваш день, что вы умеете и любите делать на выходных. Пригласите его: *Hast du am Samstag Zeit?*"
+        write: true
+        sample: |
+          Hallo Tim, wie geht's? Ich habe jetzt eine neue Wohnung. Sie ist klein, aber hell und ruhig. Ich stehe jeden Tag um sieben Uhr auf und fange um neun mit der Arbeit an. Am Abend koche ich gern. Am Wochenende schlafe ich lange und am liebsten gehe ich schwimmen. Hast du am Samstag um drei Zeit? Wir können zusammen schwimmen gehen! Viele Grüße, Anna
+
+  - type: anki
+    title: "Карточки недели"
+    minutes: 15
+    cards:
+      - ["Ты свободен в субботу в три?", "Hast du am Samstag um drei Zeit?"]
+      - ["Увидимся! / До скорого!", "Bis bald!"]

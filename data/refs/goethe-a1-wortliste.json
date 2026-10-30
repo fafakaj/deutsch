@@ -6350,13 +6350,6 @@
    ]
   },
   {
-   "lemma": "Literatur",
-   "article": null,
-   "plural": null,
-   "raw": "Literatur",
-   "examples": []
-  },
-  {
    "lemma": "Sekunde",
    "article": "die",
    "plural": "-n",
@@ -6712,6 +6705,139 @@
    "plural": null,
    "raw": "der Osten",
    "group": "himmelsrichtungen"
+  },
+  {
+   "lemma": "Deutschland",
+   "article": null,
+   "plural": null,
+   "raw": "Deutschland",
+   "group": "laender"
+  },
+  {
+   "lemma": "Europa",
+   "article": null,
+   "plural": null,
+   "raw": "Europa",
+   "group": "laender"
+  },
+  {
+   "lemma": "deutsch",
+   "article": null,
+   "plural": null,
+   "raw": "deutsch",
+   "group": "laender"
+  },
+  {
+   "lemma": "europäisch",
+   "article": null,
+   "plural": null,
+   "raw": "europäisch",
+   "group": "laender"
+  },
+  {
+   "lemma": "Uhr",
+   "article": "die",
+   "plural": null,
+   "raw": "die Uhr",
+   "group": "uhrzeit"
+  },
+  {
+   "lemma": "Viertel",
+   "article": "das",
+   "plural": null,
+   "raw": "das Viertel",
+   "group": "uhrzeit"
+  },
+  {
+   "lemma": "halb",
+   "article": null,
+   "plural": null,
+   "raw": "halb",
+   "group": "uhrzeit"
+  },
+  {
+   "lemma": "Meter",
+   "article": null,
+   "plural": null,
+   "raw": "Meter",
+   "group": "masse"
+  },
+  {
+   "lemma": "Zentimeter",
+   "article": null,
+   "plural": null,
+   "raw": "Zentimeter",
+   "group": "masse"
+  },
+  {
+   "lemma": "Kilometer",
+   "article": null,
+   "plural": null,
+   "raw": "Kilometer",
+   "group": "masse"
+  },
+  {
+   "lemma": "Quadratmeter",
+   "article": null,
+   "plural": null,
+   "raw": "Quadratmeter",
+   "group": "masse"
+  },
+  {
+   "lemma": "Grad",
+   "article": null,
+   "plural": null,
+   "raw": "Grad",
+   "group": "masse"
+  },
+  {
+   "lemma": "Prozent",
+   "article": null,
+   "plural": null,
+   "raw": "Prozent",
+   "group": "masse"
+  },
+  {
+   "lemma": "Liter",
+   "article": null,
+   "plural": null,
+   "raw": "Liter",
+   "group": "masse"
+  },
+  {
+   "lemma": "Gramm",
+   "article": null,
+   "plural": null,
+   "raw": "Gramm",
+   "group": "masse"
+  },
+  {
+   "lemma": "Pfund",
+   "article": null,
+   "plural": null,
+   "raw": "Pfund",
+   "group": "masse"
+  },
+  {
+   "lemma": "Kilo",
+   "article": null,
+   "plural": null,
+   "raw": "Kilo",
+   "group": "masse"
+  },
+  {
+   "lemma": "Euro",
+   "article": null,
+   "plural": null,
+   "raw": "Euro",
+   "group": "waehrungen"
+  },
+  {
+   "lemma": "Cent",
+   "article": null,
+   "plural": null,
+   "raw": "Cent",
+   "group": "waehrungen"
   },
   {
    "lemma": "null",

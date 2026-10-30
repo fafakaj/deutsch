@@ -1,0 +1,108 @@
+date: 2026-11-25
+title: "Учёба и работа: правила"
+hours: 2
+kind: study
+intro: |
+  Сегодня — *müssen, wollen, dürfen*: что надо, что хочу, что можно. И безличное *man*.
+steps:
+  - type: theory
+    title: "müssen, wollen, dürfen"
+    minutes: 20
+    article: modalverben
+    alt:
+      - {title: "Lingolia: Modalverben", url: "https://deutsch.lingolia.com/de/grammatik/verben/modalverben", lang: de, type: article, verified: "200 2026-10-31"}
+      - {title: "Wiktionary: Flexion:müssen", url: "https://de.wiktionary.org/wiki/Flexion:m%C3%BCssen", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "спрягать *müssen, wollen, dürfen*"
+      - "различать *nicht müssen* и *nicht dürfen*"
+
+  - type: quiz
+    title: "Проверка: модальные глаголы"
+    minutes: 15
+    quiz:
+      id: q-w4d3-modal
+      title: "müssen, wollen, dürfen"
+      questions:
+        - {type: de, q: "ich ___ (müssen)", answer: "muss"}
+        - {type: de, q: "du ___ (wollen)", answer: "willst"}
+        - {type: de, q: "er ___ (dürfen)", answer: "darf"}
+        - {type: de, q: "ihr ___ (müssen)", answer: "müsst"}
+        - {type: de, q: "Переведите: «Здесь нельзя курить». (man)", answer: ["Hier darf man nicht rauchen", "Man darf hier nicht rauchen"]}
+        - {type: de, q: "Переведите: «Мне надо работать в субботу».", answer: ["Ich muss am Samstag arbeiten", "Am Samstag muss ich arbeiten"]}
+        - {type: de, q: "Переведите: «Можно здесь сесть?» (ich)", answer: "Darf ich hier sitzen"}
+        - type: choice
+          q: "*Du musst nicht kommen* значит:"
+          options: ["тебе не обязательно приходить", "тебе нельзя приходить", "ты не хочешь приходить", "ты не можешь прийти"]
+          answer: 0
+          explain: "«Нельзя» = *nicht dürfen*: *Du darfst nicht kommen.*"
+        - type: choice
+          q: "*Wir ___ Deutsch lernen.* (твёрдо хотим)"
+          options: ["wollen", "wollt", "will", "willst"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 36: Zu spät!?"
+    minutes: 15
+    episode: 36
+    intro: |
+      Лиза опоздала. А Нико негде жить. Слушайте, почему.
+    quiz:
+      id: q-w4d3-listen
+      title: "Folge 36: Zu spät!?"
+      questions:
+        - type: choice
+          q: "Почему Лиза опоздала?"
+          options: ["Sie war eine halbe Stunde im Stau.", "Sie hat verschlafen.", "Der Bus war kaputt.", "Sie hatte einen Termin."]
+          answer: 0
+        - type: choice
+          q: "*Stau* — это:"
+          options: ["пробка: слишком много машин", "авария", "ремонт дороги", "плохая погода"]
+          answer: 0
+        - type: choice
+          q: "Почему в квартире Лизы ремонт?"
+          options: ["Die Heizung ist kaputt.", "Das Fenster ist kaputt.", "Die Küche ist alt.", "Sie ziehen um."]
+          answer: 0
+        - type: choice
+          q: "Почему Нико не может жить в хостеле?"
+          options: ["Alle Zimmer sind reserviert.", "Es ist zu teuer.", "Es ist zu weit.", "Er hat keinen Pass."]
+          answer: 0
+        - type: choice
+          q: "Кто предлагает Нико жить у себя?"
+          options: ["Inge", "Tarek", "Max", "Sebastian"]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: правила"
+    minutes: 15
+    items:
+      - text: "Напишите 5 правил для вашей работы, учёбы или дома. Используйте *man muss, man darf (nicht), wir wollen*. Пример: *Im Kurs darf man nicht telefonieren.*"
+        write: true
+        sample: |
+          Im Büro muss man pünktlich sein. Man darf nicht laut telefonieren. Am Freitag dürfen wir früher gehen. Man muss die Küche sauber machen. Wir wollen am Montag ein Team-Frühstück machen.
+
+  - type: oral
+    title: "Говорение: надо и хочу"
+    minutes: 10
+    quiz:
+      id: q-w4d3-oral
+      title: "Модальные глаголы вслух"
+      questions:
+        - {type: text, q: "Was müssen Sie heute noch machen?", answer: "*Ich muss heute noch einkaufen und kochen.*"}
+        - {type: text, q: "Was wollen Sie am Wochenende machen?", answer: "*Am Wochenende will ich meine Freunde treffen.*"}
+        - {type: text, q: "Was darf man in Ihrem Kurs nicht machen?", answer: "*Im Kurs darf man nicht essen.*"}
+
+  - type: words
+    title: "Слова дня: учёба и работа"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Мне надо работать.", "Ich muss arbeiten."]
+      - ["Мы хотим учить немецкий.", "Wir wollen Deutsch lernen."]
+      - ["Здесь нельзя курить.", "Hier darf man nicht rauchen."]
+      - ["Можно войти?", "Darf ich reinkommen?"]
+      - ["Тебе не обязательно приходить.", "Du musst nicht kommen."]
+      - ["Я опоздал. Была пробка.", "Ich bin zu spät. Ich war im Stau."]
+      - ["Нужно быть пунктуальным.", "Man muss pünktlich sein."]

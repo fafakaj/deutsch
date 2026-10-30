@@ -1,0 +1,4546 @@
+{
+ "q-w1d1-a0": {
+  "title": "Входной тест A0",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "*Guten Morgen!* — это:",
+    "options": [
+     "Доброе утро!",
+     "Добрый вечер!",
+     "Спокойной ночи!",
+     "До свидания!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Как попрощаться с другом?",
+    "options": [
+     "Tschüss!",
+     "Guten Tag!",
+     "Hallo!",
+     "Danke!"
+    ],
+    "answer": 0,
+    "explain": "*Tschüss!* — неформально. Вежливо: *Auf Wiedersehen!*"
+   },
+   {
+    "type": "choice",
+    "q": "*Danke* значит:",
+    "options": [
+     "спасибо",
+     "пожалуйста",
+     "извините",
+     "привет"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Bitte* значит:",
+    "options": [
+     "пожалуйста",
+     "спасибо",
+     "да",
+     "нет"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Напишите по-немецки «да».",
+    "answer": "ja"
+   },
+   {
+    "type": "de",
+    "q": "Напишите по-немецки «нет».",
+    "answer": "nein"
+   },
+   {
+    "type": "choice",
+    "q": "Какое число — *sieben*?",
+    "options": [
+     "7",
+     "6",
+     "9",
+     "17"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Напишите словом число 3.",
+    "answer": "drei"
+   },
+   {
+    "type": "choice",
+    "q": "Как читается *ei* в слове *mein*?",
+    "options": [
+     "[ай]",
+     "[эй]",
+     "[и]",
+     "[е]"
+    ],
+    "answer": 0,
+    "explain": "*ei* = [ай]: *mein, nein, drei*. А *ie* = долгое [и]: *Sie, vier*."
+   },
+   {
+    "type": "choice",
+    "q": "Как читается *ie* в слове *vier*?",
+    "options": [
+     "долгое [и]",
+     "[ие]",
+     "[ай]",
+     "[е]"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Как читается *w* в слове *Wasser*?",
+    "options": [
+     "[в]",
+     "[у]",
+     "как английское w",
+     "[ф]"
+    ],
+    "answer": 0,
+    "explain": "Немецкое *w* = русское [в]. А *v* обычно = [ф]: *vier, Vater*."
+   },
+   {
+    "type": "choice",
+    "q": "*Wie heißt du?* — это:",
+    "options": [
+     "Как тебя зовут?",
+     "Как дела?",
+     "Откуда ты?",
+     "Где ты живёшь?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Wie geht's?* — это:",
+    "options": [
+     "Как дела?",
+     "Как тебя зовут?",
+     "Куда ты идёшь?",
+     "Сколько стоит?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Закончите: «Ich ___ Anna.» (меня зовут Анна; глагол *heißen*)",
+    "answer": "heiße",
+    "explain": "*ich heiße* — меня зовут. Можно писать *heisse*."
+   },
+   {
+    "type": "choice",
+    "q": "Какое слово пишется с большой буквы?",
+    "options": [
+     "Tasche (сумка)",
+     "gut (хорошо)",
+     "schön (красивый)",
+     "und (и)"
+    ],
+    "answer": 0,
+    "explain": "В немецком все существительные пишутся с большой буквы: *die Tasche, der Name*."
+   },
+   {
+    "type": "choice",
+    "q": "*Entschuldigung!* — это:",
+    "options": [
+     "Извините!",
+     "Спасибо!",
+     "Пока!",
+     "Отлично!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Как сказать «хорошо»?",
+    "answer": "gut"
+   },
+   {
+    "type": "choice",
+    "q": "*Frau Müller* — это:",
+    "options": [
+     "госпожа Мюллер",
+     "господин Мюллер",
+     "девочка Мюллер",
+     "семья Мюллер"
+    ],
+    "answer": 0,
+    "explain": "*Frau* — госпожа (и «женщина», «жена»). *Herr* — господин."
+   }
+  ]
+ },
+ "q-w1d1-sein": {
+  "title": "Глагол sein",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Ich ___ Lisa.",
+    "answer": "bin"
+   },
+   {
+    "type": "de",
+    "q": "Du ___ Nico.",
+    "answer": "bist"
+   },
+   {
+    "type": "de",
+    "q": "Er ___ Polizist.",
+    "answer": "ist"
+   },
+   {
+    "type": "de",
+    "q": "Wir ___ Freunde.",
+    "answer": "sind"
+   },
+   {
+    "type": "de",
+    "q": "Ihr ___ hier.",
+    "answer": "seid"
+   },
+   {
+    "type": "de",
+    "q": "Frau Kamp, ___ Sie Lehrerin?",
+    "answer": "sind"
+   },
+   {
+    "type": "choice",
+    "q": "Вы говорите с господином Мюллером. Какое местоимение?",
+    "options": [
+     "Sie",
+     "du",
+     "ihr",
+     "er"
+    ],
+    "answer": 0,
+    "explain": "С незнакомыми взрослыми и по фамилии — *Sie* (всегда с большой буквы)."
+   },
+   {
+    "type": "choice",
+    "q": "«Она» по-немецки:",
+    "options": [
+     "sie",
+     "Sie",
+     "er",
+     "es"
+    ],
+    "answer": 0,
+    "explain": "*sie ist* — она. *Sie sind* — Вы (вежливо). *sie sind* — они."
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Мы — Анна и Макс.»",
+    "answer": [
+     "Wir sind Anna und Max",
+     "Wir sind Max und Anna"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Как у Вас дела?» (вежливо)",
+    "answer": [
+     "Wie geht es Ihnen",
+     "Wie geht's Ihnen"
+    ]
+   }
+  ]
+ },
+ "q-w1d1-listen": {
+  "title": "Folge 1: Hallo!",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Frau Schneider: *Wie geht es Ihnen?* Что отвечает Herr Müller?",
+    "options": [
+     "Danke, gut! Und Ihnen?",
+     "Super, danke. Und dir?",
+     "Nicht so gut.",
+     "Tschüss!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Почему с господином Мюллером говорят *Ihnen*, а с дедушкой (*Opa*) — *dir*?",
+    "options": [
+     "*Ihnen* — вежливо (Sie), *dir* — неформально (du)",
+     "*Ihnen* — для мужчин, *dir* — для женщин",
+     "*Ihnen* — утром, *dir* — вечером",
+     "Разницы нет"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что нравится Эмме? *… ist schön!*",
+    "options": [
+     "die Tasche — сумка",
+     "das Taxi — такси",
+     "die Straße — улица",
+     "das Telefon — телефон"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Нико не понял Эмму. Каким словом он переспрашивает?",
+    "answer": "Entschuldigung"
+   },
+   {
+    "type": "choice",
+    "q": "Что говорит Нико в конце эпизода?",
+    "options": [
+     "адрес: Adalbert-Stifter-Straße",
+     "своё имя",
+     "номер телефона",
+     "название страны"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w1d1-oral": {
+  "title": "Скажите вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Утро. Поздоровайтесь с госпожой Шнайдер и спросите, как у неё дела.",
+    "answer": "Guten Morgen, Frau Schneider! Wie geht es Ihnen?"
+   },
+   {
+    "type": "text",
+    "q": "Ответьте: дела хорошо, спасибо. Спросите в ответ (вежливо).",
+    "answer": "Danke, gut! Und Ihnen?"
+   },
+   {
+    "type": "text",
+    "q": "Представьтесь: имя двумя способами.",
+    "answer": "Ich heiße Anna. / Ich bin Anna."
+   },
+   {
+    "type": "text",
+    "q": "Представьте подругу Лизу.",
+    "answer": "Das ist Lisa."
+   },
+   {
+    "type": "text",
+    "q": "Попрощайтесь с другом Томом, потом с госпожой Шнайдер.",
+    "answer": "Tschüss, Tom! — Auf Wiedersehen, Frau Schneider!"
+   }
+  ]
+ },
+ "q-w1d2-praesens": {
+  "title": "Präsens правильных глаголов",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Woher ___ du? (kommen)",
+    "answer": "kommst"
+   },
+   {
+    "type": "de",
+    "q": "Ich ___ in Moskau. (wohnen)",
+    "answer": "wohne"
+   },
+   {
+    "type": "de",
+    "q": "Er ___ Max. (heißen)",
+    "answer": "heißt",
+    "explain": "*heißen*: du heißt, er heißt — без лишнего *s*."
+   },
+   {
+    "type": "de",
+    "q": "Wir ___ aus Russland. (kommen)",
+    "answer": "kommen"
+   },
+   {
+    "type": "de",
+    "q": "Ihr ___ in Berlin. (wohnen)",
+    "answer": "wohnt"
+   },
+   {
+    "type": "de",
+    "q": "Wie ___ Sie? (heißen)",
+    "answer": "heißen"
+   },
+   {
+    "type": "de",
+    "q": "Du ___ in Wien. (wohnen)",
+    "answer": "wohnst"
+   },
+   {
+    "type": "de",
+    "q": "Lisa ___ aus Deutschland. (kommen)",
+    "answer": "kommt"
+   },
+   {
+    "type": "de",
+    "q": "Wo ___ du? (arbeiten)",
+    "answer": "arbeitest",
+    "explain": "Основа на *-t*: перед *-st* и *-t* вставляем *e*: du arbeit**e**st, er arbeit**e**t."
+   },
+   {
+    "type": "choice",
+    "q": "Как правильно?",
+    "options": [
+     "Ich komme aus der Schweiz.",
+     "Ich komme aus Schweiz.",
+     "Ich komme aus die Schweiz.",
+     "Ich komme von Schweiz."
+    ],
+    "answer": 0,
+    "explain": "Большинство стран — без артикля: *aus Russland*. С артиклем: *die Schweiz → aus der Schweiz*, *die Türkei → aus der Türkei*, *die USA → aus den USA*."
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Я говорю по-русски.»",
+    "answer": "Ich spreche Russisch"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Откуда Вы?» (вежливо)",
+    "answer": "Woher kommen Sie"
+   }
+  ]
+ },
+ "q-w1d2-listen": {
+  "title": "Folge 7: Woher kommst du?",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Woher kommen Max und Emma?",
+    "options": [
+     "aus Deutschland",
+     "aus Spanien",
+     "aus Österreich",
+     "aus Italien"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Woher kommt Nico? Ответьте одним словом.",
+    "answer": "Spanien"
+   },
+   {
+    "type": "choice",
+    "q": "Wo wohnt Nico in Spanien?",
+    "options": [
+     "in Sevilla",
+     "in Madrid",
+     "in Barcelona",
+     "in Valencia"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что потерял Нико?",
+    "options": [
+     "сумку, телефон и номер тёти",
+     "паспорт и ключ",
+     "только телефон",
+     "билет"
+    ],
+    "answer": 0,
+    "explain": "*Meine Tasche ist weg. Mein Telefon ist weg. Und die Nummer ist weg.*"
+   },
+   {
+    "type": "choice",
+    "q": "Wen sucht Nico?",
+    "options": [
+     "seine Tante",
+     "seinen Vater",
+     "seine Schwester",
+     "seinen Freund"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Was ist Lisas Vater von Beruf?",
+    "options": [
+     "Polizist",
+     "Lehrer",
+     "Arzt",
+     "Taxifahrer"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w1d2-oral": {
+  "title": "Ответьте вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "*Woher kommen Sie?*",
+    "answer": "Ich komme aus Russland."
+   },
+   {
+    "type": "text",
+    "q": "*Wo wohnen Sie?*",
+    "answer": "Ich wohne in Kasan."
+   },
+   {
+    "type": "text",
+    "q": "*Welche Sprachen sprechen Sie?*",
+    "answer": "Ich spreche Russisch, Englisch und ein bisschen Deutsch."
+   },
+   {
+    "type": "text",
+    "q": "Спросите собеседника на *du*: откуда он и где живёт.",
+    "answer": "Woher kommst du? Wo wohnst du?"
+   },
+   {
+    "type": "text",
+    "q": "Расскажите о Нико: откуда он и где живёт.",
+    "answer": "Das ist Nico. Er kommt aus Spanien. Er wohnt in Sevilla."
+   }
+  ]
+ },
+ "q-w1d3-fragen": {
+  "title": "Числа и вопросы",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Напишите словом: 13",
+    "answer": "dreizehn"
+   },
+   {
+    "type": "de",
+    "q": "Напишите словом: 21",
+    "answer": "einundzwanzig",
+    "explain": "Сначала единицы, потом десятки: *ein-und-zwanzig*."
+   },
+   {
+    "type": "de",
+    "q": "Напишите словом: 67",
+    "answer": "siebenundsechzig",
+    "explain": "*sieben* → *siebzig* (70), но *siebenundsechzig* (67). *sechs* → *sechzig* (60)."
+   },
+   {
+    "type": "de",
+    "q": "Напишите словом: 30",
+    "answer": "dreißig"
+   },
+   {
+    "type": "choice",
+    "q": "*dreihundertfünfundvierzig* — это:",
+    "options": [
+     "345",
+     "354",
+     "435",
+     "543"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Как спросить возраст?",
+    "options": [
+     "Wie alt bist du?",
+     "Wie viel bist du?",
+     "Was alt bist du?",
+     "Wie alt du bist?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Вопросительное слово: «___ wohnst du?» — «In Kasan.»",
+    "answer": "Wo"
+   },
+   {
+    "type": "de",
+    "q": "Вопросительное слово: «___ kommst du?» — «Aus Russland.»",
+    "answer": "Woher"
+   },
+   {
+    "type": "de",
+    "q": "Вопросительное слово: «___ ist das?» — «Das ist Lisa.»",
+    "answer": "Wer"
+   },
+   {
+    "type": "de",
+    "q": "Вопросительное слово: «___ ist Ihre Telefonnummer?» — «0173 …»",
+    "answer": "Wie"
+   },
+   {
+    "type": "choice",
+    "q": "Какой вопрос — «да/нет»?",
+    "options": [
+     "Kommst du aus Spanien?",
+     "Woher kommst du?",
+     "Wo wohnst du?",
+     "Wie heißt du?"
+    ],
+    "answer": 0,
+    "explain": "В вопросе «да/нет» глагол стоит на 1-м месте."
+   },
+   {
+    "type": "choice",
+    "q": "Где ошибка в порядке слов?",
+    "options": [
+     "Heute ich lerne Deutsch.",
+     "Heute lerne ich Deutsch.",
+     "Ich lerne heute Deutsch.",
+     "Lernst du heute Deutsch?"
+    ],
+    "answer": 0,
+    "explain": "В утверждении глагол — на 2-м месте: *Heute **lerne** ich Deutsch.*"
+   }
+  ]
+ },
+ "q-w1d3-listen": {
+  "title": "Folge 10: Wichtige Nummern",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Wie alt ist Lotte? Напишите число словом.",
+    "answer": [
+     "acht",
+     "8"
+    ]
+   },
+   {
+    "type": "choice",
+    "q": "Wie alt ist Emma?",
+    "options": [
+     "auch acht",
+     "sieben",
+     "neun",
+     "zehn"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что Лиза принесла для Эммы?",
+    "options": [
+     "Schlafsack und Isomatte (спальник и коврик)",
+     "Kuchen und Saft",
+     "ein Buch",
+     "eine Tasche"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Радио. Где работает «женщина мечты» звонящего?",
+    "options": [
+     "im Fundbüro (бюро находок)",
+     "im Radio",
+     "bei der Polizei",
+     "im Restaurant"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Какой номер называет ведущая?",
+    "options": [
+     "0800 777 33 44",
+     "0800 333 77 44",
+     "0800 777 44 33",
+     "0700 777 33 44"
+    ],
+    "answer": 0,
+    "explain": "*0800, dann dreimal die Sieben, zweimal die Drei, zweimal die Vier.*"
+   }
+  ]
+ },
+ "q-w1d3-oral": {
+  "title": "Скажите вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Назовите свой возраст.",
+    "answer": "Ich bin zweiundzwanzig (Jahre alt)."
+   },
+   {
+    "type": "text",
+    "q": "Продиктуйте номер телефона по цифрам: 0173 90 76.",
+    "answer": "Null – eins – sieben – drei – neun – null – sieben – sechs."
+   },
+   {
+    "type": "text",
+    "q": "Произнесите по буквам свою фамилию (*buchstabieren*).",
+    "answer": "S – M – I – R – N – O – W – A."
+   },
+   {
+    "type": "text",
+    "q": "Спросите вежливо: «Как Ваш номер телефона?»",
+    "answer": "Wie ist Ihre Telefonnummer?"
+   },
+   {
+    "type": "text",
+    "q": "Спросите на *du*: «Ты живёшь в Берлине?» (вопрос да/нет) и ответьте «Нет, я живу в Казани».",
+    "answer": "Wohnst du in Berlin? — Nein, ich wohne in Kasan."
+   }
+  ]
+ },
+ "q-w1d4-haben": {
+  "title": "haben и притяжательные слова",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Ich ___ einen Bruder. (haben)",
+    "answer": "habe"
+   },
+   {
+    "type": "de",
+    "q": "___ du Geschwister? (haben)",
+    "answer": "Hast"
+   },
+   {
+    "type": "de",
+    "q": "Selma ___ zwei Brüder. (haben)",
+    "answer": "hat"
+   },
+   {
+    "type": "de",
+    "q": "Wir ___ ein Kind. (haben)",
+    "answer": "haben"
+   },
+   {
+    "type": "de",
+    "q": "Ihr ___ eine Oma in Berlin. (haben)",
+    "answer": "habt"
+   },
+   {
+    "type": "de",
+    "q": "Das ist ___ Mutter. (моя)",
+    "answer": "meine"
+   },
+   {
+    "type": "de",
+    "q": "Das ist ___ Vater. (мой)",
+    "answer": "mein"
+   },
+   {
+    "type": "de",
+    "q": "Wie heißt ___ Schwester? (твоя)",
+    "answer": "deine"
+   },
+   {
+    "type": "choice",
+    "q": "Nico sucht ___ Tante. (свою — тётю Нико)",
+    "options": [
+     "seine",
+     "sein",
+     "ihre",
+     "deine"
+    ],
+    "answer": 0,
+    "explain": "Нико — *er* → *sein/seine*. *die Tante* → *seine Tante*."
+   },
+   {
+    "type": "choice",
+    "q": "Lisa und ___ Vater. (её отец)",
+    "options": [
+     "ihr",
+     "ihre",
+     "sein",
+     "seine"
+    ],
+    "answer": 0,
+    "explain": "Лиза — *sie* → *ihr/ihre*. *der Vater* → *ihr Vater*."
+   },
+   {
+    "type": "choice",
+    "q": "Как сказать «мои родители»?",
+    "options": [
+     "meine Eltern",
+     "mein Eltern",
+     "meinen Eltern",
+     "meines Eltern"
+    ],
+    "answer": 0,
+    "explain": "Множественное число → *meine*."
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «У тебя есть дети?»",
+    "answer": [
+     "Hast du Kinder",
+     "Hast du ein Kind"
+    ]
+   }
+  ]
+ },
+ "q-w1d4-listen": {
+  "title": "Folge 61: Meine Familie",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Woher kommt Selma?",
+    "options": [
+     "aus Syrien",
+     "aus Spanien",
+     "aus der Türkei",
+     "aus Russland"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Wie lange lebt Selma schon in Deutschland?",
+    "options": [
+     "fast ein Jahr",
+     "zwei Jahre",
+     "einen Monat",
+     "zehn Jahre"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Mit wem ist Selma in Deutschland?",
+    "options": [
+     "mit ihren Eltern",
+     "allein",
+     "mit ihrem Mann",
+     "mit ihren Großeltern"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Hat Selma Geschwister?",
+    "options": [
+     "Ja, zwei ältere Brüder in Hamburg",
+     "Nein, sie hat keine Geschwister",
+     "Ja, eine Schwester in Berlin",
+     "Ja, einen Bruder in Syrien"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Wo leben Selmas Großeltern?",
+    "options": [
+     "in Syrien",
+     "in Hamburg",
+     "in Berlin",
+     "bei Inge"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Was sucht Selma?",
+    "options": [
+     "ihr Portemonnaie (кошелёк)",
+     "ihre Tasche",
+     "ihren Schlüssel",
+     "ihr Handy"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w1d4-oral": {
+  "title": "Ответьте вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "*Haben Sie Geschwister?*",
+    "answer": "Ja, ich habe einen Bruder und eine Schwester. / Nein, ich habe keine Geschwister."
+   },
+   {
+    "type": "text",
+    "q": "*Wie heißt Ihre Mutter?*",
+    "answer": "Meine Mutter heißt Irina."
+   },
+   {
+    "type": "text",
+    "q": "*Wo wohnen Ihre Eltern?*",
+    "answer": "Meine Eltern wohnen in Samara."
+   },
+   {
+    "type": "text",
+    "q": "*Sind Sie verheiratet?*",
+    "answer": "Ja, ich bin verheiratet. / Nein, ich bin nicht verheiratet."
+   },
+   {
+    "type": "text",
+    "q": "Спросите друга (*du*): есть ли у него дети и как их зовут.",
+    "answer": "Hast du Kinder? Wie heißen sie?"
+   }
+  ]
+ },
+ "q-w1d5-artikel": {
+  "title": "der, ein, kein; профессии",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Артикль: ___ Beruf",
+    "answer": "der"
+   },
+   {
+    "type": "de",
+    "q": "Артикль: ___ Arbeit",
+    "answer": "die"
+   },
+   {
+    "type": "de",
+    "q": "Артикль: ___ Kind",
+    "answer": "das"
+   },
+   {
+    "type": "de",
+    "q": "Das ist ___ Firma. (неопр. артикль)",
+    "answer": "eine"
+   },
+   {
+    "type": "de",
+    "q": "Das ist ___ Computer. (неопр. артикль)",
+    "answer": "ein"
+   },
+   {
+    "type": "de",
+    "q": "Das ist ___ Handy, das ist ein Telefon. (отрицание)",
+    "answer": "kein"
+   },
+   {
+    "type": "de",
+    "q": "Das ist ___ Lehrerin, das ist eine Ärztin. (отрицание)",
+    "answer": "keine"
+   },
+   {
+    "type": "choice",
+    "q": "Как сказать «Я учитель»?",
+    "options": [
+     "Ich bin Lehrer.",
+     "Ich bin ein Lehrer von Beruf.",
+     "Ich bin der Lehrer.",
+     "Ich habe Lehrer."
+    ],
+    "answer": 0,
+    "explain": "С профессией артикль не нужен: *Ich bin Lehrer. Er ist Arzt.*"
+   },
+   {
+    "type": "de",
+    "q": "Женская форма: der Lehrer → die ___",
+    "answer": "Lehrerin"
+   },
+   {
+    "type": "de",
+    "q": "Женская форма: der Arzt → die ___",
+    "answer": "Ärztin",
+    "explain": "*Arzt → Ärztin*: появляется умлаут."
+   },
+   {
+    "type": "choice",
+    "q": "Вежливый вопрос о профессии:",
+    "options": [
+     "Was sind Sie von Beruf?",
+     "Wer sind Sie von Beruf?",
+     "Was ist Ihr von Beruf?",
+     "Wie sind Sie Beruf?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Где Вы работаете?»",
+    "answer": "Wo arbeiten Sie"
+   }
+  ]
+ },
+ "q-w1d5-listen": {
+  "title": "Folge 37: Ich bin Lehrerin",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Was ist Lisa von Beruf?",
+    "options": [
+     "Lehrerin für Deutsch und Englisch",
+     "Ärztin",
+     "Polizistin",
+     "Verkäuferin"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Куда идёт Лиза?",
+    "options": [
+     "на собеседование (Bewerbungsgespräch)",
+     "в школу на урок",
+     "в ресторан",
+     "к врачу"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Was ist Max von Beruf? Одно слово.",
+    "answer": "Bankkaufmann"
+   },
+   {
+    "type": "choice",
+    "q": "Was ist Tarek von Beruf?",
+    "options": [
+     "Elektriker",
+     "Koch",
+     "Lehrer",
+     "Ingenieur"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Какую профессию советуют Нико его родители?",
+    "options": [
+     "Ingenieur",
+     "Lehrer",
+     "Polizist",
+     "Bankkaufmann"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Wo arbeiten Max und Tarek jetzt?",
+    "options": [
+     "Sie haben zusammen ein Restaurant.",
+     "Sie arbeiten in einer Bank.",
+     "Sie arbeiten in einer Schule.",
+     "Sie sind arbeitslos."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w1d5-oral": {
+  "title": "Ответьте вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "*Was sind Sie von Beruf?*",
+    "answer": "Ich bin Programmierer. / Ich bin Studentin."
+   },
+   {
+    "type": "text",
+    "q": "*Wo arbeiten Sie?*",
+    "answer": "Ich arbeite in Kasan, bei einer IT-Firma."
+   },
+   {
+    "type": "text",
+    "q": "Покажите на предмет и скажите: «Это не компьютер, это телефон».",
+    "answer": "Das ist kein Computer, das ist ein Telefon."
+   },
+   {
+    "type": "text",
+    "q": "Расскажите о Лизе: кто она по профессии.",
+    "answer": "Lisa ist Lehrerin. Sie unterrichtet Deutsch und Englisch."
+   }
+  ]
+ },
+ "q-w1d6-plural": {
+  "title": "Множественное число",
+  "questions": [
+   {
+    "type": "de",
+    "q": "der Tisch → die ___",
+    "answer": "Tische"
+   },
+   {
+    "type": "de",
+    "q": "der Stuhl → die ___",
+    "answer": "Stühle"
+   },
+   {
+    "type": "de",
+    "q": "die Tasche → die ___",
+    "answer": "Taschen"
+   },
+   {
+    "type": "de",
+    "q": "das Buch → die ___",
+    "answer": "Bücher"
+   },
+   {
+    "type": "de",
+    "q": "das Foto → die ___",
+    "answer": "Fotos"
+   },
+   {
+    "type": "de",
+    "q": "der Schlüssel → die ___",
+    "answer": "Schlüssel",
+    "explain": "Слова на *-el, -er, -en* часто без окончания: *der Lehrer → die Lehrer*."
+   },
+   {
+    "type": "de",
+    "q": "die Frage → die ___",
+    "answer": "Fragen"
+   },
+   {
+    "type": "de",
+    "q": "das Kind → die ___",
+    "answer": "Kinder"
+   },
+   {
+    "type": "choice",
+    "q": "Какой артикль у всех слов во множественном числе?",
+    "options": [
+     "die",
+     "der",
+     "das",
+     "den"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Как правильно: «две ручки» (der Kugelschreiber)?",
+    "options": [
+     "zwei Kugelschreiber",
+     "zwei Kugelschreibers",
+     "zwei Kugelschreiberen",
+     "zwei Kugelschreibern"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Где мои ключи?»",
+    "answer": "Wo sind meine Schlüssel"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «В сумке два телефона.» (das Handy)",
+    "answer": [
+     "In der Tasche sind zwei Handys",
+     "Zwei Handys sind in der Tasche"
+    ]
+   }
+  ]
+ },
+ "q-w1d6-listen": {
+  "title": "Folge 21: Was ist das?",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Was sucht Lisa?",
+    "options": [
+     "die Brille, die Stifte und das Buch",
+     "die Tasche und das Handy",
+     "den Computer",
+     "die Hausaufgaben"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Wo arbeitet Lisa?",
+    "options": [
+     "Sie gibt Deutschkurse in einer Sprachschule.",
+     "Sie arbeitet in einer Bank.",
+     "Sie arbeitet im Restaurant.",
+     "Sie arbeitet bei der Polizei."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Wer holt Emma?",
+    "options": [
+     "Nina",
+     "Nico",
+     "Lisa",
+     "Max"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Что Лиза чуть не забыла в конце? Одно слово, без артикля.",
+    "answer": "Schlüssel"
+   },
+   {
+    "type": "de",
+    "q": "Адрес Яры: August-Straußberg-Gasse … Напишите номер дома цифрами.",
+    "answer": "23"
+   }
+  ]
+ },
+ "q-w1d6-oral": {
+  "title": "Скажите вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Покажите на ручку и спросите, как это по-немецки.",
+    "answer": "Wie heißt das auf Deutsch? — Das ist ein Kugelschreiber."
+   },
+   {
+    "type": "text",
+    "q": "Попросите у соседа карандаш.",
+    "answer": "Hast du einen Bleistift? / Einen Bleistift, bitte!"
+   },
+   {
+    "type": "text",
+    "q": "Дайте книгу и скажите «Вот, пожалуйста».",
+    "answer": "Hier, bitte. / Bitte schön."
+   },
+   {
+    "type": "text",
+    "q": "Назовите 4 предмета вокруг вас во множественном числе.",
+    "answer": "die Bücher, die Stühle, die Tische, die Fotos"
+   }
+  ]
+ },
+ "q-w1-test": {
+  "title": "Мини-тест: неделя 1",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Wir ___ aus Russland. (sein)",
+    "answer": "sind"
+   },
+   {
+    "type": "de",
+    "q": "Du ___ Lehrerin, oder? (sein)",
+    "answer": "bist"
+   },
+   {
+    "type": "de",
+    "q": "Woher ___ ihr? (kommen)",
+    "answer": "kommt"
+   },
+   {
+    "type": "de",
+    "q": "Er ___ in Wien. (arbeiten)",
+    "answer": "arbeitet"
+   },
+   {
+    "type": "de",
+    "q": "___ du Geschwister? (haben)",
+    "answer": "Hast"
+   },
+   {
+    "type": "de",
+    "q": "Das ist Lisa und ___ Vater. (её)",
+    "answer": "ihr"
+   },
+   {
+    "type": "de",
+    "q": "Nico sucht ___ Tasche. (его)",
+    "answer": "seine"
+   },
+   {
+    "type": "de",
+    "q": "Das ist ___ Kugelschreiber, das ist ein Bleistift. (отрицание)",
+    "answer": "kein"
+   },
+   {
+    "type": "de",
+    "q": "das Buch → die ___",
+    "answer": "Bücher"
+   },
+   {
+    "type": "de",
+    "q": "Напишите словом: 76",
+    "answer": "sechsundsiebzig"
+   },
+   {
+    "type": "choice",
+    "q": "Какой порядок слов правильный?",
+    "options": [
+     "Heute wohnt Max in Berlin.",
+     "Heute Max wohnt in Berlin.",
+     "Heute Max in Berlin wohnt.",
+     "Wohnt heute Max in Berlin."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Вы в учреждении. Как спросить имя?",
+    "options": [
+     "Wie heißen Sie?",
+     "Wie heißt du?",
+     "Wer bist du?",
+     "Was ist dein Name?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Was sind Sie von Beruf?* Лучший ответ:",
+    "options": [
+     "Ich bin Ingenieur.",
+     "Ich bin ein Beruf.",
+     "Ich komme aus Beruf.",
+     "Ich habe Ingenieur."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Wie alt ist Ihre Tochter?*",
+    "options": [
+     "Sie ist zwölf.",
+     "Sie heißt Anna.",
+     "Sie wohnt in Kasan.",
+     "Sie ist Lehrerin."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Как попрощаться с госпожой Шнайдер?",
+    "options": [
+     "Auf Wiedersehen, Frau Schneider!",
+     "Tschüss, Schneider!",
+     "Hallo, Frau Schneider!",
+     "Guten Tag, Frau!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Откуда Вы и где Вы живёте?»",
+    "answer": [
+     "Woher kommen Sie und wo wohnen Sie",
+     "Woher kommen Sie und wo wohnen Sie?"
+    ]
+   }
+  ]
+ },
+ "q-w1d7-listen": {
+  "title": "Folge 12: Auf dem Amt",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Как отец Лизы обращается к Нико?",
+    "options": [
+     "Herr González, … Sie",
+     "Nico, … du",
+     "Nicolás, … du",
+     "Herr Nico, … du"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Чей адрес берут для Нико?",
+    "options": [
+     "Lisas Adresse: Wagnergasse 136",
+     "Yaras Adresse",
+     "die Adresse von Max",
+     "Nico hat eine Adresse"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Почему Нико не может назвать номер паспорта?",
+    "options": [
+     "Sein Pass ist weg.",
+     "Er hat keinen Namen.",
+     "Er spricht kein Deutsch.",
+     "Der Pass ist bei Yara."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Wer ist Yara? «Yara ist Nicos ___.»",
+    "answer": "Tante"
+   }
+  ]
+ },
+ "q-w1d7-oral": {
+  "title": "Sich vorstellen",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Расскажите о себе по 6 подсказкам: Name, Alter, Land, Wohnort, Sprachen, Beruf.",
+    "answer": "Ich heiße Olga Smirnowa. Ich bin 22 Jahre alt. Ich komme aus Russland. Ich wohne in Kasan. Ich spreche Russisch, Englisch und ein bisschen Deutsch. Ich bin Studentin."
+   },
+   {
+    "type": "text",
+    "q": "Произнесите по буквам своё имя.",
+    "answer": "O – L – G – A."
+   },
+   {
+    "type": "text",
+    "q": "Назовите свой номер телефона по цифрам.",
+    "answer": "Null – eins – sieben – drei …"
+   },
+   {
+    "type": "text",
+    "q": "Расскажите о своей семье: 3 предложения.",
+    "answer": "Ich habe einen Bruder. Er heißt Pawel. Meine Eltern wohnen in Samara."
+   }
+  ]
+ },
+ "q-w2d1-akk": {
+  "title": "Akkusativ: den, einen, keinen",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Ich kaufe ___ Apfel. (der Apfel, неопр.)",
+    "answer": "einen"
+   },
+   {
+    "type": "de",
+    "q": "Wir brauchen ___ Salat. (der Salat, опр.)",
+    "answer": "den"
+   },
+   {
+    "type": "de",
+    "q": "Ich esse ___ Banane. (die Banane, неопр.)",
+    "answer": "eine"
+   },
+   {
+    "type": "de",
+    "q": "Hast du ___ Brot? (das Brot, неопр.)",
+    "answer": "ein"
+   },
+   {
+    "type": "de",
+    "q": "Ich habe ___ Fisch. (der Fisch, отрицание)",
+    "answer": "keinen"
+   },
+   {
+    "type": "de",
+    "q": "Er isst ___ Fleisch. (das Fleisch, отрицание)",
+    "answer": "kein"
+   },
+   {
+    "type": "de",
+    "q": "Wo ist ___ Käse? (der Käse — подлежащее!)",
+    "answer": "der",
+    "explain": "*Wo ist …?* — кто/что? Это Nominativ: *der Käse*."
+   },
+   {
+    "type": "choice",
+    "q": "Какой артикль меняется в Akkusativ?",
+    "options": [
+     "только мужской род: der → den, ein → einen",
+     "все артикли",
+     "только женский род",
+     "только множественное число"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Выберите правильное: «Мне нужен ключ.»",
+    "options": [
+     "Ich brauche den Schlüssel.",
+     "Ich brauche der Schlüssel.",
+     "Ich brauche dem Schlüssel.",
+     "Ich brauche des Schlüssels."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «У меня нет хлеба.» (das Brot)",
+    "answer": "Ich habe kein Brot"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Я покупаю помидоры и сыр.» (die Tomaten, der Käse; без артиклей)",
+    "answer": [
+     "Ich kaufe Tomaten und Käse",
+     "Ich kaufe Käse und Tomaten"
+    ]
+   }
+  ]
+ },
+ "q-w2d1-listen": {
+  "title": "Folge 45: Lebensmittel",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Was ist zu klein?",
+    "options": [
+     "der Kühlschrank (холодильник)",
+     "der Teller",
+     "die Küche",
+     "der Tisch"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Чьи груши (*die Birnen*)?",
+    "options": [
+     "сестры Инге",
+     "Нико",
+     "соседа Гюнтера",
+     "Лизы"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Was kommt auf den Teller?",
+    "options": [
+     "die Äpfel, die Orangen und die Birnen",
+     "das Fleisch und der Käse",
+     "die Butter und der Quark",
+     "der Schinken"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "multi",
+    "q": "Was ist für das Frühstück? Выберите все.",
+    "options": [
+     "die Marmelade",
+     "die Butter",
+     "der Quark",
+     "der Schinken",
+     "der Fisch",
+     "die Pizza"
+    ],
+    "answers": [
+     0,
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "type": "choice",
+    "q": "Wer kommt zu Inge zu Besuch?",
+    "options": [
+     "ein junger Mann, für ein paar Tage",
+     "ihre Schwester",
+     "Lisa und Emma",
+     "Günther"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w2d1-oral": {
+  "title": "Скажите вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "*Was ist in Ihrem Kühlschrank?* Назовите 4 продукта.",
+    "answer": "In meinem Kühlschrank sind Milch, Butter, Käse und Tomaten."
+   },
+   {
+    "type": "text",
+    "q": "*Was brauchen Sie heute?* (3 продукта, Akkusativ)",
+    "answer": "Ich brauche einen Salat, ein Brot und eine Gurke."
+   },
+   {
+    "type": "text",
+    "q": "*Haben Sie Fisch?* — ответьте отрицательно.",
+    "answer": "Nein, ich habe keinen Fisch."
+   },
+   {
+    "type": "text",
+    "q": "Спросите друга: что он ест на завтрак?",
+    "answer": "Was isst du zum Frühstück?"
+   }
+  ]
+ },
+ "q-w2d2-moegen": {
+  "title": "mögen и möchten",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Ich ___ Kaffee. (mögen)",
+    "answer": "mag"
+   },
+   {
+    "type": "de",
+    "q": "___ du Tee? (mögen)",
+    "answer": "Magst"
+   },
+   {
+    "type": "de",
+    "q": "Er ___ keinen Fisch. (mögen)",
+    "answer": "mag",
+    "explain": "У *mögen* формы *ich* и *er* одинаковые и без окончания: *ich mag, er mag*."
+   },
+   {
+    "type": "de",
+    "q": "Wir ___ Pizza. (mögen)",
+    "answer": "mögen"
+   },
+   {
+    "type": "de",
+    "q": "Ich ___ ein Wasser, bitte. (möchten)",
+    "answer": "möchte"
+   },
+   {
+    "type": "de",
+    "q": "Was ___ du trinken? (möchten)",
+    "answer": "möchtest"
+   },
+   {
+    "type": "de",
+    "q": "___ Sie einen Kaffee? (möchten)",
+    "answer": "Möchten"
+   },
+   {
+    "type": "choice",
+    "q": "Вежливая просьба в кафе:",
+    "options": [
+     "Ich möchte einen Saft, bitte.",
+     "Ich mag einen Saft, bitte.",
+     "Ich will Saft!",
+     "Gib mir Saft."
+    ],
+    "answer": 0,
+    "explain": "*möchten* — «хотел бы», вежливо. *mögen* — «любить, нравиться» вообще."
+   },
+   {
+    "type": "choice",
+    "q": "Где стоит второй глагол после *möchten*?",
+    "options": [
+     "в конце: Ich möchte einen Tee trinken.",
+     "сразу после möchten: Ich möchte trinken einen Tee.",
+     "в начале",
+     "второй глагол не нужен никогда"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Я не люблю молоко.» (die Milch)",
+    "answer": [
+     "Ich mag keine Milch",
+     "Ich mag Milch nicht"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Что ты хочешь (хотел бы) поесть?»",
+    "answer": "Was möchtest du essen"
+   }
+  ]
+ },
+ "q-w2d2-listen": {
+  "title": "Folge 46: Ich mag (nicht)!",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Почему Лиза сразу уходит?",
+    "options": [
+     "Sie fährt heute in Urlaub.",
+     "Sie muss arbeiten.",
+     "Sie hat keinen Hunger.",
+     "Emma wartet."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Was trinkt Nico?",
+    "options": [
+     "eine Apfelsaftschorle",
+     "einen Apfelsaft",
+     "einen Kaffee",
+     "ein Wasser"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Was ist eine Schorle?",
+    "options": [
+     "Saft mit Mineralwasser",
+     "Tee mit Milch",
+     "Kaffee mit Zucker",
+     "Wasser mit Zitrone"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Was gibt es zu essen?",
+    "options": [
+     "Fleisch, Fisch und Gemüse",
+     "Pizza und Salat",
+     "Brot und Käse",
+     "Kuchen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что Нико ест охотнее, чем морковь?",
+    "options": [
+     "Tomaten",
+     "Kohlrabi",
+     "Fisch",
+     "Kartoffeln"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Нико о кольраби: «Ich finde Kohlrabi nicht so ___.»",
+    "answer": "lecker"
+   }
+  ]
+ },
+ "q-w2d2-oral": {
+  "title": "Скажите вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Гость пришёл. Предложите напиток на выбор (*du*).",
+    "answer": "Möchtest du einen Saft oder lieber ein Wasser?"
+   },
+   {
+    "type": "text",
+    "q": "Ответьте вежливо: хотите чай.",
+    "answer": "Ich möchte einen Tee, bitte."
+   },
+   {
+    "type": "text",
+    "q": "*Was essen Sie gern?*",
+    "answer": "Ich esse gern Fisch und Gemüse."
+   },
+   {
+    "type": "text",
+    "q": "*Mögen Sie Milch?* — нет.",
+    "answer": "Nein, ich mag keine Milch."
+   },
+   {
+    "type": "text",
+    "q": "Скажите, что вы голодны и хотите пить.",
+    "answer": "Ich habe Hunger und Durst."
+   }
+  ]
+ },
+ "q-w2d3-kein-nicht": {
+  "title": "kein / nicht; цены",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Ich habe ___ Geld. (отрицание)",
+    "answer": "kein"
+   },
+   {
+    "type": "de",
+    "q": "Das Brot ist ___ teuer. (отрицание)",
+    "answer": "nicht"
+   },
+   {
+    "type": "de",
+    "q": "Wir kaufen heute ___ Tomaten. (отрицание)",
+    "answer": "keine"
+   },
+   {
+    "type": "de",
+    "q": "Ich kaufe den Käse ___. (отрицание)",
+    "answer": "nicht",
+    "explain": "С определённым артиклем (*den Käse*) — *nicht*."
+   },
+   {
+    "type": "de",
+    "q": "Das ist ___ Bäckerei, das ist ein Supermarkt. (отрицание)",
+    "answer": "keine"
+   },
+   {
+    "type": "de",
+    "q": "Max kommt heute ___. (отрицание)",
+    "answer": "nicht"
+   },
+   {
+    "type": "choice",
+    "q": "Как читается цена 3,20 €?",
+    "options": [
+     "drei Euro zwanzig",
+     "drei Komma zwanzig Euro Cent",
+     "dreiundzwanzig Euro",
+     "zwanzig Euro drei"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*ein Pfund* — это:",
+    "options": [
+     "500 Gramm",
+     "1 Kilo",
+     "100 Gramm",
+     "250 Gramm"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Продавец говорит: *Das macht 8,60 Euro.* Это значит:",
+    "options": [
+     "С вас 8,60 евро.",
+     "Это стоит 6,80 евро.",
+     "Сдача 8,60 евро.",
+     "Скидка 8,60 евро."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Спросите цену: «Сколько стоит хлеб?»",
+    "answer": [
+     "Was kostet das Brot",
+     "Wie viel kostet das Brot"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Это недорого.»",
+    "answer": [
+     "Das ist nicht teuer",
+     "Das ist billig"
+    ]
+   }
+  ]
+ },
+ "q-w2d3-listen": {
+  "title": "Folge 49: Mengen und Preise",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Was möchte Inge kaufen?",
+    "options": [
+     "ein paar Brötchen",
+     "einen Kuchen",
+     "ein Hähnchen",
+     "Milch"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "multi",
+    "q": "Was braucht Max? Выберите все.",
+    "options": [
+     "ein Hähnchen",
+     "drei Gurken",
+     "ein Pfund Tomaten",
+     "ein Kilo Äpfel",
+     "zwei Brote"
+    ],
+    "answers": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Сколько грамм в одном фунте (*Pfund*)? Число цифрами.",
+    "answer": "500"
+   },
+   {
+    "type": "choice",
+    "q": "Для чего Максу помидоры?",
+    "options": [
+     "für sein Abendbrot (ужин)",
+     "für das Restaurant",
+     "für Yara",
+     "für Inge"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что получат Инге и Нико за помощь?",
+    "options": [
+     "das nächste Essen umsonst (бесплатно)",
+     "Geld",
+     "einen Kuchen",
+     "den Schlüssel"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Нико не понял. Закончите его просьбу: «Kannst du das bitte noch einmal ___?»",
+    "answer": "wiederholen"
+   }
+  ]
+ },
+ "q-w2d3-oral": {
+  "title": "Скажите вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Вы в булочной. Попросите хлеб и спросите цену.",
+    "answer": "Ich hätte gern ein Brot. Was kostet das?"
+   },
+   {
+    "type": "text",
+    "q": "Продавец: *Darf es sonst noch etwas sein?* Ответьте: нет, спасибо.",
+    "answer": "Nein, danke. Das ist alles."
+   },
+   {
+    "type": "text",
+    "q": "Скажите цену вслух: 1,60 € и 8,60 €.",
+    "answer": "ein Euro sechzig; acht Euro sechzig"
+   },
+   {
+    "type": "text",
+    "q": "Скажите: «У меня нет наличных. Можно картой?»",
+    "answer": "Ich habe kein Bargeld. Kann ich mit Karte bezahlen?"
+   }
+  ]
+ },
+ "q-w2d4-vokal": {
+  "title": "e → i/ie, a → ä",
+  "questions": [
+   {
+    "type": "de",
+    "q": "du ___ (essen)",
+    "answer": "isst"
+   },
+   {
+    "type": "de",
+    "q": "er ___ (nehmen)",
+    "answer": "nimmt"
+   },
+   {
+    "type": "de",
+    "q": "sie ___ Deutsch. (sprechen)",
+    "answer": "spricht"
+   },
+   {
+    "type": "de",
+    "q": "du ___ (sehen)",
+    "answer": "siehst"
+   },
+   {
+    "type": "de",
+    "q": "er ___ nach Berlin. (fahren)",
+    "answer": "fährt"
+   },
+   {
+    "type": "de",
+    "q": "wir ___ (essen)",
+    "answer": "essen"
+   },
+   {
+    "type": "de",
+    "q": "du ___ lange. (schlafen)",
+    "answer": "schläfst"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Что ты ешь?»",
+    "answer": "Was isst du"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Он берёт тарелку».",
+    "answer": "Er nimmt den Teller"
+   },
+   {
+    "type": "choice",
+    "q": "В какой форме НЕТ смены гласной?",
+    "options": [
+     "wir nehmen",
+     "du nimmst",
+     "er nimmt",
+     "sie nimmt (она)"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w2d4-listen": {
+  "title": "Folge 52: Wie viel Mehl?",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Что режет Инге?",
+    "options": [
+     "die Zwiebeln",
+     "den Käse",
+     "die Tomaten",
+     "den Schinken"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Сколько нужно сыра фета?",
+    "options": [
+     "250 Gramm",
+     "200 Gramm",
+     "500 Gramm",
+     "ein Kilo"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Сколько минут и при какой температуре печь пиццу?",
+    "options": [
+     "20 Minuten bei 180 Grad",
+     "30 Minuten bei 200 Grad",
+     "15 Minuten bei 180 Grad",
+     "20 Minuten bei 250 Grad"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Кто в семье Инге хорошо готовит?",
+    "options": [
+     "ihre Schwester",
+     "Inge",
+     "ihr Mann",
+     "Tarek"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Как Инге говорит «Ты режешь сыр»? Du ___ den Käse.",
+    "answer": "schneidest"
+   }
+  ]
+ },
+ "q-w2d4-oral": {
+  "title": "Кухня вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Was isst du gern zum Frühstück?",
+    "answer": "*Zum Frühstück esse ich gern Brot mit Käse.*"
+   },
+   {
+    "type": "text",
+    "q": "Wer kocht in Ihrer Familie?",
+    "answer": "*Meine Mutter kocht. Sie kocht sehr gut.*"
+   },
+   {
+    "type": "text",
+    "q": "Was nimmt man für eine Suppe? (посуда)",
+    "answer": "*Für eine Suppe nimmt man einen Topf.*"
+   }
+  ]
+ },
+ "q-w2d5-restaurant": {
+  "title": "Заказ и оплата",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Ich hätte gern ___ Kaffee. (der Kaffee)",
+    "answer": "einen"
+   },
+   {
+    "type": "de",
+    "q": "Ich nehme ___ Suppe. (die Suppe)",
+    "answer": "eine"
+   },
+   {
+    "type": "de",
+    "q": "Ich möchte ___ Wasser. (das Wasser)",
+    "answer": "ein"
+   },
+   {
+    "type": "de",
+    "q": "Попросите счёт (2 слова).",
+    "answer": [
+     "Zahlen bitte",
+     "Zahlen, bitte"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Попросите меню: Die ___, bitte.",
+    "answer": "Speisekarte"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Мне, пожалуйста, чай». (Ich hätte gern …)",
+    "answer": "Ich hätte gern einen Tee"
+   },
+   {
+    "type": "choice",
+    "q": "Официант: *Zusammen oder getrennt?* Это:",
+    "options": [
+     "Платите вместе или раздельно?",
+     "Вы вдвоём или один?",
+     "Сесть вместе или отдельно?",
+     "Здесь или с собой?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Stimmt so* значит:",
+    "options": [
+     "Сдачи не надо.",
+     "Всё верно, спасибо за счёт.",
+     "Так нельзя.",
+     "Сколько стоит?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что вежливее в кафе?",
+    "options": [
+     "Ich hätte gern eine Cola.",
+     "Ich will eine Cola.",
+     "Gib mir eine Cola.",
+     "Cola!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "12,50 € читается:",
+    "options": [
+     "zwölf Euro fünfzig",
+     "zwölf Komma fünf",
+     "zwanzig Euro fünfzehn",
+     "zwölf fünfzig Cent"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w2d5-listen": {
+  "title": "Folge 16: Zahlen bitte!",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Лиза платит вместе или раздельно?",
+    "options": [
+     "zusammen",
+     "getrennt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Сколько стоит весь заказ?",
+    "options": [
+     "40,50 €",
+     "45 €",
+     "22,50 €",
+     "18 €"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Как Лиза платит?",
+    "options": [
+     "bar, 45 Euro",
+     "mit Karte",
+     "bar, 40,50 Euro",
+     "mit dem Handy"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Сколько стоит одна пицца, по словам Лизы?",
+    "options": [
+     "zehn Euro plus Trinkgeld",
+     "acht Euro",
+     "zwölf Euro",
+     "zwanzig Euro"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Почему это прощальная вечеринка (*Abschiedsparty*)?",
+    "options": [
+     "Nawin geht weg.",
+     "Nico fährt nach Hause.",
+     "Lisa zieht um.",
+     "Nina hat Geburtstag."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w2d5-oral": {
+  "title": "Кафе вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Was darf es sein?",
+    "answer": "*Ich hätte gern einen Cappuccino und ein Stück Kuchen.*"
+   },
+   {
+    "type": "text",
+    "q": "Möchten Sie noch etwas trinken?",
+    "answer": "*Ja, ein Wasser, bitte.* / *Nein, danke.*"
+   },
+   {
+    "type": "text",
+    "q": "Zusammen oder getrennt?",
+    "answer": "*Zusammen, bitte.* / *Getrennt, bitte.*"
+   }
+  ]
+ },
+ "q-w2d6-pron": {
+  "title": "mich, dich, ihn …",
+  "questions": [
+   {
+    "type": "de",
+    "q": "ich → Akkusativ",
+    "answer": "mich"
+   },
+   {
+    "type": "de",
+    "q": "du → Akkusativ",
+    "answer": "dich"
+   },
+   {
+    "type": "de",
+    "q": "er → Akkusativ",
+    "answer": "ihn"
+   },
+   {
+    "type": "de",
+    "q": "wir → Akkusativ",
+    "answer": "uns"
+   },
+   {
+    "type": "de",
+    "q": "Der Pullover? Ich nehme ___.",
+    "answer": "ihn"
+   },
+   {
+    "type": "de",
+    "q": "Die Jacke? Ich kaufe ___.",
+    "answer": "sie"
+   },
+   {
+    "type": "de",
+    "q": "Das Hemd? Ich finde ___ schön.",
+    "answer": "es"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Я тебя не понимаю».",
+    "answer": "Ich verstehe dich nicht"
+   },
+   {
+    "type": "choice",
+    "q": "*Wie findest du den Rock?* — *Ich finde ___ toll.*",
+    "options": [
+     "ihn",
+     "sie",
+     "es",
+     "ihm"
+    ],
+    "answer": 0,
+    "explain": "*der Rock* — мужской род, поэтому *ihn*, хотя по-русски «юбка» женского рода."
+   },
+   {
+    "type": "choice",
+    "q": "*Das steht dir gut!* — это:",
+    "options": [
+     "Тебе это идёт!",
+     "Это стоит хорошо.",
+     "Это хорошо стоит (о цене).",
+     "Ты хорошо стоишь."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w2d6-listen": {
+  "title": "Folge 59: Das passt gut!",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Сколько стоит рубашка (*das Hemd*)?",
+    "options": [
+     "25 Euro",
+     "15 Euro",
+     "50 Euro",
+     "35 Euro"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Размер L Нико…",
+    "options": [
+     "zu groß",
+     "zu klein",
+     "passt gut",
+     "zu teuer"
+    ],
+    "answer": 0,
+    "explain": "Сельма: *Probier mal M an. Das ist zu groß.*"
+   },
+   {
+    "type": "choice",
+    "q": "Что в итоге покупает Сельма?",
+    "options": [
+     "die Jacke",
+     "das Hemd",
+     "den Pullover",
+     "nichts"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что Сельма хотела купить вначале?",
+    "options": [
+     "gar nichts",
+     "eine Jacke",
+     "ein Hemd für Nico",
+     "Schuhe"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Как сказать «Тебе это идёт»? Das ___ dir gut.",
+    "answer": "steht"
+   }
+  ]
+ },
+ "q-w2d6-oral": {
+  "title": "Магазин одежды вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Wie finden Sie die Jacke?",
+    "answer": "*Ich finde sie schön, aber zu teuer.*"
+   },
+   {
+    "type": "text",
+    "q": "Попросите примерить брюки.",
+    "answer": "*Kann ich die Hose anprobieren?*"
+   },
+   {
+    "type": "text",
+    "q": "Спросите, есть ли этот свитер в размере M.",
+    "answer": "*Haben Sie den Pullover in Größe M?*"
+   }
+  ]
+ },
+ "q-w2d7-test": {
+  "title": "Неделя 2: мини-тест",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Ich kaufe ___ Apfel. (der Apfel, неопределённый)",
+    "answer": "einen"
+   },
+   {
+    "type": "de",
+    "q": "Ich esse ___ Fleisch. (отрицание)",
+    "answer": "kein"
+   },
+   {
+    "type": "de",
+    "q": "Ich esse das ___. (отрицание глагола/предмета)",
+    "answer": "nicht"
+   },
+   {
+    "type": "de",
+    "q": "Ich ___ gern Käse. (mögen)",
+    "answer": "mag"
+   },
+   {
+    "type": "de",
+    "q": "Ich ___ einen Tee. (вежливо хотел бы)",
+    "answer": "möchte"
+   },
+   {
+    "type": "de",
+    "q": "er ___ (essen)",
+    "answer": "isst"
+   },
+   {
+    "type": "de",
+    "q": "du ___ (nehmen)",
+    "answer": "nimmst"
+   },
+   {
+    "type": "de",
+    "q": "Попросите счёт (2 слова).",
+    "answer": [
+     "Zahlen bitte",
+     "Zahlen, bitte"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Die Hose? Ich nehme ___.",
+    "answer": "sie"
+   },
+   {
+    "type": "de",
+    "q": "Der Mantel? Ich finde ___ schön.",
+    "answer": "ihn"
+   },
+   {
+    "type": "choice",
+    "q": "Множественное число *der Apfel*:",
+    "options": [
+     "die Äpfel",
+     "die Apfels",
+     "die Apfeln",
+     "die Äpfeln"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Was kostet das?* — это:",
+    "options": [
+     "Сколько это стоит?",
+     "Что это?",
+     "Что вы хотите?",
+     "Где касса?"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w2d7-listen": {
+  "title": "Folge 15: Eine Pizza bitte!",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Какую пиццу хочет Навин?",
+    "options": [
+     "mit Thunfisch",
+     "mit Salami",
+     "Hawaii",
+     "Tomate Mozzarella"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Какую пиццу берёт Нико?",
+    "options": [
+     "mit Salami",
+     "mit Thunfisch",
+     "Hawaii",
+     "ohne Schinken"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Почему Нина берёт Pizza Hawaii без ветчины?",
+    "options": [
+     "Sie ist Vegetarierin.",
+     "Sie mag keinen Käse.",
+     "Schinken ist zu teuer.",
+     "Sie hat keinen Hunger."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что на Pizza Hawaii?",
+    "options": [
+     "Ananas und Schinken",
+     "Thunfisch und Zwiebeln",
+     "Salami und Käse",
+     "Tomaten und Mozzarella"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d1-adj": {
+  "title": "Прилагательные после sein",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Антоним: groß — ___",
+    "answer": "klein"
+   },
+   {
+    "type": "de",
+    "q": "Антоним: hell — ___",
+    "answer": "dunkel"
+   },
+   {
+    "type": "de",
+    "q": "Антоним: teuer — ___",
+    "answer": [
+     "billig",
+     "günstig"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Антоним: laut — ___",
+    "answer": "ruhig"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Кухня новая».",
+    "answer": "Die Küche ist neu"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Комната не большая».",
+    "answer": [
+     "Das Zimmer ist nicht groß",
+     "Der Raum ist nicht groß"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Квартира слишком дорогая».",
+    "answer": "Die Wohnung ist zu teuer"
+   },
+   {
+    "type": "choice",
+    "q": "Как отрицать прилагательное? *Das Bad ist ___ groß.*",
+    "options": [
+     "nicht",
+     "kein",
+     "keine",
+     "nein"
+    ],
+    "answer": 0,
+    "explain": "*nicht* — перед прилагательным. *kein* — перед существительным."
+   },
+   {
+    "type": "choice",
+    "q": "*Die Stühle sind ___.* Какая форма?",
+    "options": [
+     "bequem",
+     "bequeme",
+     "bequemen",
+     "bequemer"
+    ],
+    "answer": 0,
+    "explain": "После *sein* у прилагательного нет окончания — ни в единственном, ни во множественном числе."
+   },
+   {
+    "type": "choice",
+    "q": "Где обычно стоит das Bett?",
+    "options": [
+     "im Schlafzimmer",
+     "in der Küche",
+     "im Bad",
+     "im Flur"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d1-listen": {
+  "title": "Folge 26: Meine Wohnung",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Сколько комнат в квартире?",
+    "options": [
+     "5 комнат, кухня и ванная",
+     "3 комнаты и кухня",
+     "2 комнаты",
+     "4 комнаты и балкон"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Сколько квадратных метров в комнате (по словам Лизы)?",
+    "options": [
+     "11",
+     "10",
+     "15",
+     "20"
+    ],
+    "answer": 0,
+    "explain": "Навин думает, что 10, Лиза поправляет: *elf Quadratmeter*."
+   },
+   {
+    "type": "choice",
+    "q": "Сколько стоит комната с коммунальными платежами (*mit Nebenkosten*)?",
+    "options": [
+     "400 € в месяц",
+     "300 € в месяц",
+     "500 € в месяц",
+     "400 € в неделю"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Какая кухня, по словам Себастьяна?",
+    "options": [
+     "gemütlich",
+     "zu klein",
+     "dunkel",
+     "neu"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Почему комната тихая?",
+    "options": [
+     "Keine Autos.",
+     "Die Fenster sind klein.",
+     "Niemand wohnt hier.",
+     "Es ist Nacht."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d1-oral": {
+  "title": "Квартира вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Wie viele Zimmer hat Ihre Wohnung?",
+    "answer": "*Meine Wohnung hat zwei Zimmer, eine Küche und ein Bad.*"
+   },
+   {
+    "type": "text",
+    "q": "Wie ist Ihr Wohnzimmer?",
+    "answer": "*Mein Wohnzimmer ist hell und gemütlich. Es ist nicht sehr groß.*"
+   },
+   {
+    "type": "text",
+    "q": "Was ist in Ihrem Zimmer?",
+    "answer": "*In meinem Zimmer sind ein Bett, ein Tisch, ein Stuhl und ein Schrank.*"
+   }
+  ]
+ },
+ "q-w3d2-uhr": {
+  "title": "Uhrzeit",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "*halb acht* — это:",
+    "options": [
+     "7:30",
+     "8:30",
+     "8:00",
+     "7:00"
+    ],
+    "answer": 0,
+    "explain": "*halb acht* = половина до восьми = 7:30."
+   },
+   {
+    "type": "choice",
+    "q": "*Viertel vor drei* — это:",
+    "options": [
+     "2:45",
+     "3:15",
+     "3:45",
+     "2:15"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*zehn nach zwölf* — это:",
+    "options": [
+     "12:10",
+     "11:50",
+     "12:50",
+     "10:12"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Официально 19:20 — это:",
+    "options": [
+     "neunzehn Uhr zwanzig",
+     "zwanzig nach neunzehn",
+     "sieben Uhr zwanzig abends",
+     "zwanzig Uhr neunzehn"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "8:15 разговорно: ___ nach acht",
+    "answer": "Viertel"
+   },
+   {
+    "type": "de",
+    "q": "4:30 разговорно (одно слово + число): ___ fünf",
+    "answer": "halb"
+   },
+   {
+    "type": "de",
+    "q": "Спросите, который час (Wie …?)",
+    "answer": [
+     "Wie spät ist es",
+     "Wie viel Uhr ist es"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Ответьте: «В десять часов». (um …)",
+    "answer": [
+     "Um zehn Uhr",
+     "Um zehn"
+    ]
+   },
+   {
+    "type": "choice",
+    "q": "Как сказать «вечером»?",
+    "options": [
+     "am Abend",
+     "im Abend",
+     "um Abend",
+     "in Abend"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Как сказать «ночью»?",
+    "options": [
+     "in der Nacht",
+     "am Nacht",
+     "im Nacht",
+     "um Nacht"
+    ],
+    "answer": 0,
+    "explain": "Исключение: *in der Nacht*. Остальные части дня — с *am*."
+   }
+  ]
+ },
+ "q-w3d2-listen": {
+  "title": "Folge 33: Wie spät ist es?",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Когда открыт ресторан?",
+    "options": [
+     "вт–вс, 9:00–23:00",
+     "пн–пт, 9:00–23:00",
+     "каждый день, 12:00–23:00",
+     "вт–вс, 10:00–22:00"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Когда ресторан закрыт?",
+    "options": [
+     "am Montag",
+     "am Sonntag",
+     "am Dienstag",
+     "am Wochenende"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Во сколько начинается *Mittagsangebot*?",
+    "options": [
+     "um zwölf Uhr",
+     "um halb zwölf",
+     "um eins",
+     "um elf"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Когда в итоге придёт Лиза?",
+    "options": [
+     "um Viertel vor eins (12:45)",
+     "um halb eins",
+     "um Viertel nach zwölf",
+     "um halb zwölf"
+    ],
+    "answer": 0,
+    "explain": "Тарек: *Sie kommt um Viertel vor eins, also um 12:45 Uhr.*"
+   },
+   {
+    "type": "choice",
+    "q": "Что выбирает Инге в конце?",
+    "options": [
+     "die Rouladen",
+     "den Fisch",
+     "die Suppe",
+     "nichts"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d2-oral": {
+  "title": "Время вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Скажите вслух разговорно: 6:45, 9:30, 11:10, 13:15.",
+    "answer": "*Viertel vor sieben; halb zehn; zehn nach elf; Viertel nach eins.*"
+   },
+   {
+    "type": "text",
+    "q": "Wie spät ist es jetzt? (посмотрите на часы)",
+    "answer": "*Es ist …* — например *Es ist zwanzig nach vier.*"
+   },
+   {
+    "type": "text",
+    "q": "Um wie viel Uhr stehen Sie auf?",
+    "answer": "*Ich stehe um halb sieben auf.*"
+   }
+  ]
+ },
+ "q-w3d3-trennbar": {
+  "title": "Trennbare Verben",
+  "questions": [
+   {
+    "type": "de",
+    "q": "aufstehen: Ich ___ um sieben Uhr ___. (два слова через пробел)",
+    "answer": "stehe auf"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Я встаю в шесть».",
+    "answer": [
+     "Ich stehe um sechs auf",
+     "Ich stehe um sechs Uhr auf"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Курс начинается в девять».",
+    "answer": [
+     "Der Kurs fängt um neun an",
+     "Der Kurs fängt um neun Uhr an"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Мы делаем покупки в субботу».",
+    "answer": [
+     "Wir kaufen am Samstag ein"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Когда ты встаёшь?»",
+    "answer": "Wann stehst du auf"
+   },
+   {
+    "type": "de",
+    "q": "fernsehen, er: Er ___ am Abend ___.",
+    "answer": "sieht fern"
+   },
+   {
+    "type": "choice",
+    "q": "Какой глагол НЕ отделяет приставку?",
+    "options": [
+     "verstehen",
+     "aufstehen",
+     "einkaufen",
+     "anrufen"
+    ],
+    "answer": 0,
+    "explain": "*ver-, be-, er-, ge-* не отделяются: *Ich verstehe.*"
+   },
+   {
+    "type": "choice",
+    "q": "Где ударение в слове *einkaufen*?",
+    "options": [
+     "EIN-kaufen",
+     "ein-KAU-fen",
+     "ein-kau-FEN",
+     "одинаково"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Am Sonntag ___ ich spät ___.*",
+    "options": [
+     "stehe … auf",
+     "aufstehe … —",
+     "stehe auf … —",
+     "auf … stehe"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d3-listen": {
+  "title": "Folge 31: Am Sonntag koche ich",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Что Эмма делает в понедельник?",
+    "options": [
+     "spielt mit Lisa Fußball",
+     "geht zum Musikkurs",
+     "sieht fern",
+     "kocht"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что Эмма делает в среду?",
+    "options": [
+     "wäscht mit Opa das Auto",
+     "räumt ihr Zimmer auf",
+     "steht spät auf",
+     "spielt Flöte"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что Эмма делает в четверг? (Нико не верит!)",
+    "options": [
+     "Sie räumt ihr Zimmer auf.",
+     "Sie sieht fern.",
+     "Sie wäscht das Auto.",
+     "Sie kocht Paella."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что в субботу?",
+    "options": [
+     "Sie steht spät auf.",
+     "Sie steht früh auf.",
+     "Sie geht ins Kino.",
+     "Sie kauft ein."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Как Эмма говорит «В пятницу я смотрю телевизор»? Am Freitag …",
+    "answer": [
+     "Am Freitag sehe ich fern"
+    ]
+   }
+  ]
+ },
+ "q-w3d3-oral": {
+  "title": "Мой день вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Wann stehen Sie auf?",
+    "answer": "*Ich stehe um sieben Uhr auf.*"
+   },
+   {
+    "type": "text",
+    "q": "Wann fängt Ihre Arbeit / Ihr Kurs an?",
+    "answer": "*Meine Arbeit fängt um neun Uhr an.*"
+   },
+   {
+    "type": "text",
+    "q": "Was machen Sie am Abend?",
+    "answer": "*Am Abend koche ich und dann sehe ich fern.*"
+   }
+  ]
+ },
+ "q-w3d4-zeit": {
+  "title": "am, um, im",
+  "questions": [
+   {
+    "type": "de",
+    "q": "___ Montag",
+    "answer": "am"
+   },
+   {
+    "type": "de",
+    "q": "___ acht Uhr",
+    "answer": "um"
+   },
+   {
+    "type": "de",
+    "q": "___ Juli",
+    "answer": "im"
+   },
+   {
+    "type": "de",
+    "q": "___ Winter",
+    "answer": "im"
+   },
+   {
+    "type": "de",
+    "q": "___ Wochenende",
+    "answer": "am"
+   },
+   {
+    "type": "de",
+    "q": "___ Abend",
+    "answer": "am"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «В пятницу в два часа».",
+    "answer": [
+     "am Freitag um zwei Uhr",
+     "am Freitag um zwei"
+    ]
+   },
+   {
+    "type": "choice",
+    "q": "Какой день идёт после *Mittwoch*?",
+    "options": [
+     "Donnerstag",
+     "Dienstag",
+     "Freitag",
+     "Montag"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Herbst* — это:",
+    "options": [
+     "осень",
+     "весна",
+     "лето",
+     "зима"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Im Sommer ___ wir nach Österreich.*",
+    "options": [
+     "fahren",
+     "wir fahren",
+     "fährt",
+     "fahre"
+    ],
+    "answer": 0,
+    "explain": "Время на первом месте → глагол на втором, подлежащее после него: *Im Sommer fahren wir…*"
+   }
+  ]
+ },
+ "q-w3d4-listen": {
+  "title": "Folge 35: Wann spielen wir?",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Почему Янис не может в субботу?",
+    "options": [
+     "Er trifft Anna im Schwimmbad.",
+     "Er arbeitet.",
+     "Er ist krank.",
+     "Er hat Training."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Сколько человек без Нико?",
+    "options": [
+     "sieben",
+     "acht",
+     "sechs",
+     "elf"
+    ],
+    "answer": 0,
+    "explain": "Тарек: *Dann sind wir nur sieben… Wir brauchen eine achte Person.*"
+   },
+   {
+    "type": "choice",
+    "q": "Когда игра?",
+    "options": [
+     "nächste Woche Freitag um zwei",
+     "diese Woche Samstag um eins",
+     "nächste Woche Samstag um zwei",
+     "Freitag um eins"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Почему не в час (*um eins*)?",
+    "options": [
+     "Max kann erst um zwei.",
+     "Robert kann nicht.",
+     "Das Restaurant ist geschlossen.",
+     "Nico arbeitet."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Где они встречаются?",
+    "options": [
+     "hier im Restaurant",
+     "im Park",
+     "im Schwimmbad",
+     "am Bahnhof"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d4-oral": {
+  "title": "Календарь вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Welcher Tag ist heute?",
+    "answer": "*Heute ist Donnerstag.*"
+   },
+   {
+    "type": "text",
+    "q": "Wann haben Sie Geburtstag? (месяц)",
+    "answer": "*Ich habe im Mai Geburtstag.*"
+   },
+   {
+    "type": "text",
+    "q": "Hast du am Freitag Zeit?",
+    "answer": "*Am Freitag kann ich leider nicht. Aber am Samstag um drei geht es.*"
+   }
+  ]
+ },
+ "q-w3d5-koennen": {
+  "title": "können",
+  "questions": [
+   {
+    "type": "de",
+    "q": "ich ___ (können)",
+    "answer": "kann"
+   },
+   {
+    "type": "de",
+    "q": "du ___ (können)",
+    "answer": "kannst"
+   },
+   {
+    "type": "de",
+    "q": "er ___ (können)",
+    "answer": "kann"
+   },
+   {
+    "type": "de",
+    "q": "ihr ___ (können)",
+    "answer": "könnt"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Я умею плавать».",
+    "answer": [
+     "Ich kann schwimmen",
+     "Ich kann gut schwimmen"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Ты умеешь играть на гитаре?»",
+    "answer": "Kannst du Gitarre spielen"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Мы не можем прийти в субботу».",
+    "answer": [
+     "Wir können am Samstag nicht kommen",
+     "Am Samstag können wir nicht kommen"
+    ]
+   },
+   {
+    "type": "choice",
+    "q": "Где стоит инфинитив?",
+    "options": [
+     "в конце предложения",
+     "на втором месте",
+     "в начале",
+     "после подлежащего"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Kannst du mir helfen?* — это:",
+    "options": [
+     "вежливая просьба",
+     "запрет",
+     "вопрос об умении",
+     "приказ"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d5-listen": {
+  "title": "Folge 48: Was macht dir Spaß?",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Что Нико НЕ любит?",
+    "options": [
+     "joggen",
+     "schwimmen",
+     "Musik hören",
+     "Fahrrad fahren"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что Нико любит больше всего?",
+    "options": [
+     "angeln",
+     "Fußball spielen",
+     "ins Kino gehen",
+     "kochen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что Макс и Тарек ещё любят, кроме рыбалки?",
+    "options": [
+     "ins Theater und ins Kino gehen",
+     "joggen und schwimmen",
+     "kochen und tanzen",
+     "Fußball und Tennis"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Кто на фото у Макса?",
+    "options": [
+     "Yara, Nicos Tante",
+     "Lisa",
+     "Emma",
+     "Inge"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d5-oral": {
+  "title": "Хобби вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Was ist Ihr Hobby?",
+    "answer": "*Mein Hobby ist Lesen. Ich lese gern Krimis.*"
+   },
+   {
+    "type": "text",
+    "q": "Können Sie schwimmen?",
+    "answer": "*Ja, ich kann gut schwimmen.* / *Nein, ich kann nicht schwimmen.*"
+   },
+   {
+    "type": "text",
+    "q": "Was können Sie gut?",
+    "answer": "*Ich kann gut kochen und fotografieren.*"
+   }
+  ]
+ },
+ "q-w3d6-gern": {
+  "title": "gern, lieber, am liebsten",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Ich koche ___. (люблю)",
+    "answer": "gern"
+   },
+   {
+    "type": "de",
+    "q": "Ich spüle ___. (больше люблю)",
+    "answer": "lieber"
+   },
+   {
+    "type": "de",
+    "q": "Ich lese ___ ___. (больше всего)",
+    "answer": "am liebsten"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Я не люблю гладить».",
+    "answer": [
+     "Ich bügle nicht gern",
+     "Ich bügele nicht gern"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Что ты любишь делать больше всего?»",
+    "answer": "Was machst du am liebsten"
+   },
+   {
+    "type": "choice",
+    "q": "*Ich ___ Bücher.* (с существительным)",
+    "options": [
+     "mag",
+     "gern",
+     "lieber",
+     "möchte gern"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*staubsaugen* — это:",
+    "options": [
+     "пылесосить",
+     "стирать",
+     "гладить",
+     "мыть посуду"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*den Müll rausbringen* — это:",
+    "options": [
+     "выносить мусор",
+     "мыть пол",
+     "убирать комнату",
+     "готовить"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d6-listen": {
+  "title": "Folge 47: Haushaltsarbeit",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Что Нико выбирает делать?",
+    "options": [
+     "lieber abwaschen",
+     "lieber staubsaugen",
+     "lieber kochen",
+     "lieber putzen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*abwaschen* значит то же, что:",
+    "options": [
+     "das Geschirr spülen",
+     "Wäsche waschen",
+     "den Boden putzen",
+     "abtrocknen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Как Инге относится к домашним делам?",
+    "options": [
+     "Sie hasst Hausarbeit.",
+     "Sie liebt Hausarbeit.",
+     "Sie putzt jeden Tag gern.",
+     "Das sagt sie nicht."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что Инге приносит Нико в конце?",
+    "options": [
+     "den Besen und das Kehrblech",
+     "den Staubsauger",
+     "das Fleisch",
+     "einen Beutel"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d6-oral": {
+  "title": "Дом вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Was machen Sie gern im Haushalt?",
+    "answer": "*Ich koche gern. Ich räume auch gern auf.*"
+   },
+   {
+    "type": "text",
+    "q": "Was machen Sie nicht gern?",
+    "answer": "*Ich bügle nicht gern und ich putze nicht gern das Bad.*"
+   },
+   {
+    "type": "text",
+    "q": "Kochen oder spülen — was machen Sie lieber?",
+    "answer": "*Ich koche lieber.*"
+   }
+  ]
+ },
+ "q-w3d7-test": {
+  "title": "Неделя 3: мини-тест",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Антоним: alt — ___ (о мебели)",
+    "answer": "neu"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Ванная слишком маленькая».",
+    "answer": "Das Bad ist zu klein"
+   },
+   {
+    "type": "choice",
+    "q": "*halb sieben* — это:",
+    "options": [
+     "6:30",
+     "7:30",
+     "6:00",
+     "7:00"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "9:45 разговорно: Viertel ___ zehn",
+    "answer": "vor"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Я встаю в шесть».",
+    "answer": [
+     "Ich stehe um sechs auf",
+     "Ich stehe um sechs Uhr auf"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "einkaufen, wir: Wir ___ am Montag ___.",
+    "answer": "kaufen ein"
+   },
+   {
+    "type": "de",
+    "q": "___ Sonntag ___ zehn Uhr (два предлога через пробел)",
+    "answer": "am um"
+   },
+   {
+    "type": "de",
+    "q": "___ Dezember",
+    "answer": "im"
+   },
+   {
+    "type": "de",
+    "q": "er ___ (können)",
+    "answer": "kann"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Ты можешь мне помочь?»",
+    "answer": "Kannst du mir helfen"
+   },
+   {
+    "type": "de",
+    "q": "Ich tanze ___ ___. (больше всего)",
+    "answer": "am liebsten"
+   },
+   {
+    "type": "choice",
+    "q": "*Ich ___ heute nicht kommen.*",
+    "options": [
+     "kann",
+     "kannst",
+     "können",
+     "könnt"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w3d7-listen": {
+  "title": "Folge 32: Emmas Wochenende",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Что Эмма завтракает (по словам Нико)?",
+    "options": [
+     "Müsli",
+     "Brot",
+     "Eis",
+     "Pizza"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Почему Эмма не хочет делать домашнее задание?",
+    "options": [
+     "Es sind Ferien.",
+     "Sie ist krank.",
+     "Sie ist müde.",
+     "Sie hat keine Bücher."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Порядок Нико: сначала…",
+    "options": [
+     "Hausaufgaben, dann aufräumen, dann fernsehen",
+     "fernsehen, dann Hausaufgaben",
+     "aufräumen, dann Eis",
+     "Kino, dann Hausaufgaben"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что происходит с Эммой в конце?",
+    "options": [
+     "Ihr ist schlecht.",
+     "Sie schläft.",
+     "Sie geht ins Kino.",
+     "Sie kocht."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d1-wo": {
+  "title": "in, an, bei + Dativ",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Ich bin ___ Supermarkt. (in + der Supermarkt)",
+    "answer": "im"
+   },
+   {
+    "type": "de",
+    "q": "Sie ist ___ Apotheke. (in + die Apotheke)",
+    "answer": "in der"
+   },
+   {
+    "type": "de",
+    "q": "Wir sind ___ Kino. (in + das Kino)",
+    "answer": "im"
+   },
+   {
+    "type": "de",
+    "q": "Er ist ___ Arzt. (bei + der Arzt)",
+    "answer": "beim"
+   },
+   {
+    "type": "de",
+    "q": "Ich warte ___ Haltestelle. (an + die Haltestelle)",
+    "answer": "an der"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Я в банке». (die Bank)",
+    "answer": "Ich bin in der Bank"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Он работает в Сименс». (bei …)",
+    "answer": "Er arbeitet bei Siemens"
+   },
+   {
+    "type": "choice",
+    "q": "*Wo ist Anna?* — *Sie ist ___ Schule.*",
+    "options": [
+     "in der",
+     "in die",
+     "im",
+     "in den"
+    ],
+    "answer": 0,
+    "explain": "*Wo?* → Dativ: die Schule → *in der Schule*."
+   },
+   {
+    "type": "choice",
+    "q": "Где покупают лекарства?",
+    "options": [
+     "in der Apotheke",
+     "in der Bäckerei",
+     "im Rathaus",
+     "auf der Post"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d1-listen": {
+  "title": "Folge 41: Wo ist der Bahnhof?",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Где Себастьян делает покупки?",
+    "options": [
+     "im Supermarkt um die Ecke",
+     "auf dem Markt",
+     "im Zentrum",
+     "in der Bäckerei"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "У кого теперь живёт Нико?",
+    "options": [
+     "bei Frau Kohlhaas",
+     "bei Lisa",
+     "bei Max und Tarek",
+     "im Hostel"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Где работает Лиза?",
+    "options": [
+     "neben dem Theater",
+     "am Friedensplatz",
+     "in der Polizeistation",
+     "in der Sprachschule"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Кто работает в полиции (*Polizeistation*)?",
+    "options": [
+     "Opa (Emmas Großvater)",
+     "Sebastian",
+     "Max",
+     "Frau Kohlhaas"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что Эмма дарит Нико?",
+    "options": [
+     "ein Notizbuch und Seifenblasen",
+     "ein Bild",
+     "eine Jacke",
+     "eine Tasche"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d1-oral": {
+  "title": "Места вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Wo kaufen Sie Brot?",
+    "answer": "*Ich kaufe Brot in der Bäckerei.*"
+   },
+   {
+    "type": "text",
+    "q": "Wo arbeiten Sie?",
+    "answer": "*Ich arbeite in einem Büro.* / *Ich arbeite bei …*"
+   },
+   {
+    "type": "text",
+    "q": "Wo sind Sie am Samstag?",
+    "answer": "*Am Samstag bin ich im Fitnessstudio und am Abend im Kino.*"
+   }
+  ]
+ },
+ "q-w4d2-mit": {
+  "title": "mit + Dativ, дорога",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Ich fahre mit ___ Bus.",
+    "answer": "dem"
+   },
+   {
+    "type": "de",
+    "q": "Ich fahre mit ___ U-Bahn.",
+    "answer": "der"
+   },
+   {
+    "type": "de",
+    "q": "Ich fahre mit ___ Fahrrad.",
+    "answer": "dem"
+   },
+   {
+    "type": "de",
+    "q": "Пешком (2 слова)",
+    "answer": "zu Fuß"
+   },
+   {
+    "type": "de",
+    "q": "du ___ (fahren)",
+    "answer": "fährst"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Идите прямо».",
+    "answer": "Gehen Sie geradeaus"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «На светофоре налево».",
+    "answer": "An der Ampel links"
+   },
+   {
+    "type": "choice",
+    "q": "*Wie kommst du zur Arbeit?* — это:",
+    "options": [
+     "Как ты добираешься до работы?",
+     "Когда ты идёшь на работу?",
+     "Где твоя работа?",
+     "Ты идёшь на работу?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*die Kreuzung* — это:",
+    "options": [
+     "перекрёсток",
+     "светофор",
+     "остановка",
+     "мост"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d2-listen": {
+  "title": "Folge 43: Mit Bus und Bahn",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "На чём Юрген и Эмма едут до университета?",
+    "options": [
+     "mit der U-Bahn",
+     "mit dem Bus",
+     "mit dem Auto",
+     "mit dem Fahrrad"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что выбирает Эмма для остатка пути?",
+    "options": [
+     "die Straßenbahn",
+     "zu Fuß",
+     "den Bus",
+     "das Taxi"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Где ближайшая остановка?",
+    "options": [
+     "direkt hinter der Kreuzung",
+     "neben dem Fahrradladen",
+     "an der Uni",
+     "vor dem Bahnhof"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Чей это магазин велосипедов?",
+    "options": [
+     "Yaras Fahrradladen",
+     "Lisas Laden",
+     "Jürgens Laden",
+     "Emmas Laden"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d2-oral": {
+  "title": "Дорога вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Wie kommen Sie zur Arbeit?",
+    "answer": "*Ich fahre mit dem Bus. Das dauert zwanzig Minuten.*"
+   },
+   {
+    "type": "text",
+    "q": "Спросите прохожего, где вокзал.",
+    "answer": "*Entschuldigung, wo ist der Bahnhof?*"
+   },
+   {
+    "type": "text",
+    "q": "Объясните дорогу: прямо, потом на перекрёстке направо.",
+    "answer": "*Gehen Sie geradeaus und dann an der Kreuzung rechts.*"
+   }
+  ]
+ },
+ "q-w4d3-modal": {
+  "title": "müssen, wollen, dürfen",
+  "questions": [
+   {
+    "type": "de",
+    "q": "ich ___ (müssen)",
+    "answer": "muss"
+   },
+   {
+    "type": "de",
+    "q": "du ___ (wollen)",
+    "answer": "willst"
+   },
+   {
+    "type": "de",
+    "q": "er ___ (dürfen)",
+    "answer": "darf"
+   },
+   {
+    "type": "de",
+    "q": "ihr ___ (müssen)",
+    "answer": "müsst"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Здесь нельзя курить». (man)",
+    "answer": [
+     "Hier darf man nicht rauchen",
+     "Man darf hier nicht rauchen"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Мне надо работать в субботу».",
+    "answer": [
+     "Ich muss am Samstag arbeiten",
+     "Am Samstag muss ich arbeiten"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Можно здесь сесть?» (ich)",
+    "answer": "Darf ich hier sitzen"
+   },
+   {
+    "type": "choice",
+    "q": "*Du musst nicht kommen* значит:",
+    "options": [
+     "тебе не обязательно приходить",
+     "тебе нельзя приходить",
+     "ты не хочешь приходить",
+     "ты не можешь прийти"
+    ],
+    "answer": 0,
+    "explain": "«Нельзя» = *nicht dürfen*: *Du darfst nicht kommen.*"
+   },
+   {
+    "type": "choice",
+    "q": "*Wir ___ Deutsch lernen.* (твёрдо хотим)",
+    "options": [
+     "wollen",
+     "wollt",
+     "will",
+     "willst"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d3-listen": {
+  "title": "Folge 36: Zu spät!?",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Почему Лиза опоздала?",
+    "options": [
+     "Sie war eine halbe Stunde im Stau.",
+     "Sie hat verschlafen.",
+     "Der Bus war kaputt.",
+     "Sie hatte einen Termin."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Stau* — это:",
+    "options": [
+     "пробка: слишком много машин",
+     "авария",
+     "ремонт дороги",
+     "плохая погода"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Почему в квартире Лизы ремонт?",
+    "options": [
+     "Die Heizung ist kaputt.",
+     "Das Fenster ist kaputt.",
+     "Die Küche ist alt.",
+     "Sie ziehen um."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Почему Нико не может жить в хостеле?",
+    "options": [
+     "Alle Zimmer sind reserviert.",
+     "Es ist zu teuer.",
+     "Es ist zu weit.",
+     "Er hat keinen Pass."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Кто предлагает Нико жить у себя?",
+    "options": [
+     "Inge",
+     "Tarek",
+     "Max",
+     "Sebastian"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d3-oral": {
+  "title": "Модальные глаголы вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Was müssen Sie heute noch machen?",
+    "answer": "*Ich muss heute noch einkaufen und kochen.*"
+   },
+   {
+    "type": "text",
+    "q": "Was wollen Sie am Wochenende machen?",
+    "answer": "*Am Wochenende will ich meine Freunde treffen.*"
+   },
+   {
+    "type": "text",
+    "q": "Was darf man in Ihrem Kurs nicht machen?",
+    "answer": "*Im Kurs darf man nicht essen.*"
+   }
+  ]
+ },
+ "q-w4d4-imp": {
+  "title": "Imperativ, здоровье",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Sie, kommen: ___ Sie morgen!",
+    "answer": "Kommen"
+   },
+   {
+    "type": "de",
+    "q": "du, nehmen: ___ die Tabletten!",
+    "answer": "Nimm"
+   },
+   {
+    "type": "de",
+    "q": "du, trinken: ___ viel Wasser!",
+    "answer": "Trink"
+   },
+   {
+    "type": "de",
+    "q": "du, sein: ___ ruhig!",
+    "answer": "Sei"
+   },
+   {
+    "type": "de",
+    "q": "ihr, kommen: ___ mit!",
+    "answer": "Kommt"
+   },
+   {
+    "type": "de",
+    "q": "du, aufstehen: ___ ___! (два слова)",
+    "answer": "Steh auf"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «У меня болит голова». (Mir …)",
+    "answer": "Mir tut der Kopf weh"
+   },
+   {
+    "type": "choice",
+    "q": "*Was fehlt Ihnen?* — это:",
+    "options": [
+     "Что вас беспокоит?",
+     "Чего вам не хватает в магазине?",
+     "Где вы были?",
+     "Сколько вам лет?"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Gute Besserung!* — это:",
+    "options": [
+     "Выздоравливайте!",
+     "Приятного аппетита!",
+     "Удачи!",
+     "Хорошего дня!"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*Ich habe Fieber.* — это:",
+    "options": [
+     "У меня температура.",
+     "У меня кашель.",
+     "У меня насморк.",
+     "У меня болит живот."
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d4-listen": {
+  "title": "Folge 72: Nehmen Sie …",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Что сказал врач о ноге Нико?",
+    "options": [
+     "Sie ist nicht gebrochen.",
+     "Sie ist gebrochen.",
+     "Er muss operieren.",
+     "Nico muss ins Krankenhaus."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что прописал врач?",
+    "options": [
+     "Schmerztabletten und eine Salbe",
+     "nur Tee",
+     "Antibiotika",
+     "Hustensaft"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Как часто принимать таблетки?",
+    "options": [
+     "dreimal täglich, nach dem Essen",
+     "einmal täglich, vor dem Essen",
+     "zweimal täglich",
+     "nur abends"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Когда использовать мазь?",
+    "options": [
+     "abends vor dem Schlafengehen",
+     "morgens",
+     "nach dem Essen",
+     "jede Stunde"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Нико хочет пойти с Инге. Что отвечают Инге и Лиза?",
+    "options": [
+     "Du musst dich ausruhen!",
+     "Ja, komm mit!",
+     "Nimm den Bus!",
+     "Ruf den Arzt an!"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d4-oral": {
+  "title": "У врача вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Was fehlt Ihnen?",
+    "answer": "*Ich habe Kopfschmerzen und Fieber.* / *Mir tut der Bauch weh.*"
+   },
+   {
+    "type": "text",
+    "q": "Дайте совет другу (du): пить чай, оставаться в постели.",
+    "answer": "*Trink viel Tee und bleib im Bett!*"
+   },
+   {
+    "type": "text",
+    "q": "Дайте тот же совет на Sie.",
+    "answer": "*Trinken Sie viel Tee und bleiben Sie im Bett!*"
+   }
+  ]
+ },
+ "q-w4d5-perfekt": {
+  "title": "Perfekt mit haben",
+  "questions": [
+   {
+    "type": "de",
+    "q": "machen → ge___",
+    "answer": "gemacht"
+   },
+   {
+    "type": "de",
+    "q": "spielen → Partizip II",
+    "answer": "gespielt"
+   },
+   {
+    "type": "de",
+    "q": "kaufen → Partizip II",
+    "answer": "gekauft"
+   },
+   {
+    "type": "de",
+    "q": "einkaufen → Partizip II",
+    "answer": "eingekauft"
+   },
+   {
+    "type": "de",
+    "q": "essen → Partizip II",
+    "answer": "gegessen"
+   },
+   {
+    "type": "de",
+    "q": "Ich ___ ein Buch gelesen.",
+    "answer": "habe"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Что ты делал в выходные?»",
+    "answer": "Was hast du am Wochenende gemacht"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Мы играли в футбол».",
+    "answer": "Wir haben Fußball gespielt"
+   },
+   {
+    "type": "choice",
+    "q": "Где стоит Partizip II?",
+    "options": [
+     "в конце предложения",
+     "на втором месте",
+     "сразу после haben",
+     "в начале"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Как пригласить друга? «Хочешь пойти в кино?»",
+    "options": [
+     "Hast du Lust, ins Kino zu gehen?",
+     "Du gehst Kino?",
+     "Musst du ins Kino?",
+     "Darfst du Kino?"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d5-listen": {
+  "title": "Folge 53: Wie war dein Urlaub?",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Сколько длился отпуск?",
+    "options": [
+     "zwei Wochen",
+     "eine Woche",
+     "drei Tage",
+     "einen Monat"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Каким был отпуск?",
+    "options": [
+     "großartig",
+     "langweilig",
+     "zu kurz und schlecht",
+     "kalt"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Где пассажир спит сегодня ночью?",
+    "options": [
+     "im Hotel",
+     "zu Hause",
+     "im Zug",
+     "bei Freunden"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что он фотографировал?",
+    "options": [
+     "die Berge, den Strand und das Hotel",
+     "nur das Meer",
+     "nur Menschen",
+     "nichts"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "de",
+    "q": "Он говорит: «Я сделал много фотографий». Ich habe viele Fotos ___.",
+    "answer": "gemacht"
+   }
+  ]
+ },
+ "q-w4d5-oral": {
+  "title": "Perfekt вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Was haben Sie am Wochenende gemacht?",
+    "answer": "*Ich habe am Samstag Freunde getroffen und am Sonntag ein Buch gelesen.*"
+   },
+   {
+    "type": "text",
+    "q": "Was haben Sie gestern gegessen?",
+    "answer": "*Gestern habe ich Pizza gegessen.*"
+   },
+   {
+    "type": "text",
+    "q": "Пригласите коллегу на кофе завтра.",
+    "answer": "*Haben Sie morgen Zeit? Wir können zusammen einen Kaffee trinken.*"
+   }
+  ]
+ },
+ "q-w4d6-hoeren": {
+  "title": "Hören: Folge 56",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Какая погода у Сельмы?",
+    "options": [
+     "etwa 7 Grad und bewölkt",
+     "20 Grad und Sonne",
+     "Schnee",
+     "warm und windig"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что будет вечером?",
+    "options": [
+     "Vielleicht regnet es.",
+     "Es schneit.",
+     "Die Sonne scheint.",
+     "Es wird warm."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Какая погода у Лизы в отпуске?",
+    "options": [
+     "Sonne und 20 Grad",
+     "7 Grad",
+     "Regen",
+     "Gewitter"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Какая сумка у Нико?",
+    "options": [
+     "schwarz, mit einem Aufnäher mit Fahrrad",
+     "rot, mit einem Fahrrad",
+     "blau und groß",
+     "schwarz und klein, ohne Aufnäher"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Что, кажется, нашла Сельма?",
+    "options": [
+     "Nicos Tasche",
+     "Nicos Pass",
+     "Lisas Handy",
+     "ein Fahrrad"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d6-lesen": {
+  "title": "Lesen: короткие тексты",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Табличка на двери: *Praxis Dr. Berg — Mo–Fr 8–12 Uhr, Di und Do auch 15–18 Uhr.* Можно прийти в среду в 16:00?",
+    "options": [
+     "Nein",
+     "Ja"
+    ],
+    "answer": 0,
+    "explain": "После обеда приём только во вторник и четверг."
+   },
+   {
+    "type": "choice",
+    "q": "Объявление: *Wegen Bauarbeiten fährt die U2 bis Sonntag nur bis zum Hauptbahnhof. Bitte nehmen Sie ab Hauptbahnhof den Bus 7.* Что делать после Hauptbahnhof?",
+    "options": [
+     "den Bus 7 nehmen",
+     "zu Fuß gehen",
+     "die U2 nehmen",
+     "ein Taxi nehmen"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Сообщение: *Hallo Jana, ich kann heute nicht ins Kino kommen. Mein Sohn ist krank. Gehen wir am Freitag? Gruß, Mia.* Почему Миа не идёт в кино?",
+    "options": [
+     "Ihr Sohn ist krank.",
+     "Sie ist krank.",
+     "Sie muss arbeiten.",
+     "Das Kino ist geschlossen."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Табличка в магазине: *Heute alle Jacken 30 % billiger!* Это значит:",
+    "options": [
+     "Куртки сегодня дешевле.",
+     "Куртки дороже на 30 %.",
+     "Куртки закончились.",
+     "Скидка только завтра."
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Объявление: *Deutschkurs A1, Montag und Mittwoch, 18:00–19:30, Raum 204. Anmeldung im Sekretariat.* Где записаться на курс?",
+    "options": [
+     "im Sekretariat",
+     "in Raum 204",
+     "am Montag im Kurs",
+     "online"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d6-sprechen": {
+  "title": "Sprechen (Teil 1–3)",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Teil 1. Представьтесь: Name, Alter, Land, Wohnort, Sprachen, Beruf, Hobby.",
+    "answer": "*Ich heiße Olga. Ich bin 30 Jahre alt. Ich komme aus Russland und wohne in Moskau. Ich spreche Russisch, Englisch und ein bisschen Deutsch. Ich bin Ingenieurin. Mein Hobby ist Schwimmen.*"
+   },
+   {
+    "type": "text",
+    "q": "Teil 1. Произнесите по буквам своё имя и скажите номер телефона.",
+    "answer": "*O – L – G – A.* Номер — по одной или по две цифры: *null – eins – sieben …*"
+   },
+   {
+    "type": "text",
+    "q": "Teil 2. Карточка «Wochenende». Задайте вопрос партнёру.",
+    "answer": "*Was machst du am Wochenende?*"
+   },
+   {
+    "type": "text",
+    "q": "Teil 2. Карточка «Essen». Задайте вопрос и ответьте на него сами.",
+    "answer": "*Was isst du gern? — Ich esse gern Fisch und Salat.*"
+   },
+   {
+    "type": "text",
+    "q": "Teil 3. Карточка с картинкой «окно». Попросите вежливо.",
+    "answer": "*Können Sie bitte das Fenster aufmachen?* — *Ja, gern.*"
+   },
+   {
+    "type": "text",
+    "q": "Teil 3. Карточка с картинкой «соль». Попросите.",
+    "answer": "*Gib mir bitte das Salz!* / *Können Sie mir bitte das Salz geben?*"
+   }
+  ]
+ },
+ "q-w4d7-final": {
+  "title": "Месяц 1: итоговый тест",
+  "questions": [
+   {
+    "type": "de",
+    "q": "Wir ___ aus Russland. (sein)",
+    "answer": "sind"
+   },
+   {
+    "type": "de",
+    "q": "Er ___ zwei Kinder. (haben)",
+    "answer": "hat"
+   },
+   {
+    "type": "de",
+    "q": "Ich möchte ___ Kaffee. (ein, Akkusativ, der Kaffee)",
+    "answer": "einen"
+   },
+   {
+    "type": "de",
+    "q": "Das ist ___ Buch, das ist ein Heft. (отрицание)",
+    "answer": "kein"
+   },
+   {
+    "type": "de",
+    "q": "8:30 разговорно",
+    "answer": "halb neun"
+   },
+   {
+    "type": "de",
+    "q": "Переведите: «Я встаю в семь».",
+    "answer": [
+     "Ich stehe um sieben auf",
+     "Ich stehe um sieben Uhr auf"
+    ]
+   },
+   {
+    "type": "de",
+    "q": "Ich ___ gut schwimmen. (können)",
+    "answer": "kann"
+   },
+   {
+    "type": "de",
+    "q": "Sie ist ___ Arzt. (bei + der)",
+    "answer": "beim"
+   },
+   {
+    "type": "de",
+    "q": "Ich fahre mit ___ U-Bahn.",
+    "answer": "der"
+   },
+   {
+    "type": "de",
+    "q": "Hier ___ man nicht rauchen. (нельзя)",
+    "answer": "darf"
+   },
+   {
+    "type": "de",
+    "q": "du, nehmen → императив",
+    "answer": "Nimm"
+   },
+   {
+    "type": "de",
+    "q": "Was hast du gestern ___? (machen)",
+    "answer": "gemacht"
+   },
+   {
+    "type": "choice",
+    "q": "*Die Wohnung ist ___ groß.* (отрицание)",
+    "options": [
+     "nicht",
+     "kein",
+     "keine",
+     "nein"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "*___ Montag ___ acht Uhr*",
+    "options": [
+     "Am … um",
+     "Im … am",
+     "Um … am",
+     "Am … im"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Множественное число *das Kind*:",
+    "options": [
+     "die Kinder",
+     "die Kinds",
+     "die Kinde",
+     "die Kindern"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-w4d7-listen": {
+  "title": "Folge 34: Hast du morgen Zeit?",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Какое число завтра?",
+    "options": [
+     "der Zweiundzwanzigste",
+     "der Dreiundzwanzigste",
+     "der Einundzwanzigste",
+     "der Erste"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Во сколько у Тарека завтра встреча (*Termin*)?",
+    "options": [
+     "um halb eins",
+     "um eins",
+     "um Viertel vor sieben",
+     "um neun"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "Когда у Макса ранние смены (*Frühdienst*)?",
+    "options": [
+     "vom 1. bis zum 7. November",
+     "vom 22. bis zum 23.",
+     "am Wochenende",
+     "im Dezember"
+    ],
+    "answer": 0
+   },
+   {
+    "type": "choice",
+    "q": "На какое время в итоге свободен столик?",
+    "options": [
+     "um Viertel vor acht",
+     "um Viertel vor sieben",
+     "um halb acht",
+     "um acht"
+    ],
+    "answer": 0
+   }
+  ]
+ }
+}

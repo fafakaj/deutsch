@@ -1,0 +1,119 @@
+date: 2026-11-13
+title: "Кафе и ресторан"
+hours: 2
+kind: study
+intro: |
+  Сегодня — заказ в кафе и оплата. Вежливо: *Ich hätte gern…, Zahlen, bitte!*
+steps:
+  - type: theory
+    title: "В кафе и ресторане"
+    minutes: 15
+    article: im-restaurant
+    goals:
+      - "заказать вежливо: *Ich hätte gern einen Tee.*"
+      - "попросить счёт и понять вопрос *Zusammen oder getrennt?*"
+
+  - type: quiz
+    title: "Проверка: в ресторане"
+    minutes: 15
+    quiz:
+      id: q-w2d5-restaurant
+      title: "Заказ и оплата"
+      questions:
+        - {type: de, q: "Ich hätte gern ___ Kaffee. (der Kaffee)", answer: "einen"}
+        - {type: de, q: "Ich nehme ___ Suppe. (die Suppe)", answer: "eine"}
+        - {type: de, q: "Ich möchte ___ Wasser. (das Wasser)", answer: "ein"}
+        - {type: de, q: "Попросите счёт (2 слова).", answer: ["Zahlen bitte", "Zahlen, bitte"]}
+        - {type: de, q: "Попросите меню: Die ___, bitte.", answer: "Speisekarte"}
+        - {type: de, q: "Переведите: «Мне, пожалуйста, чай». (Ich hätte gern …)", answer: "Ich hätte gern einen Tee"}
+        - type: choice
+          q: "Официант: *Zusammen oder getrennt?* Это:"
+          options: ["Платите вместе или раздельно?", "Вы вдвоём или один?", "Сесть вместе или отдельно?", "Здесь или с собой?"]
+          answer: 0
+        - type: choice
+          q: "*Stimmt so* значит:"
+          options: ["Сдачи не надо.", "Всё верно, спасибо за счёт.", "Так нельзя.", "Сколько стоит?"]
+          answer: 0
+        - type: choice
+          q: "Что вежливее в кафе?"
+          options: ["Ich hätte gern eine Cola.", "Ich will eine Cola.", "Gib mir eine Cola.", "Cola!"]
+          answer: 0
+        - type: choice
+          q: "12,50 € читается:"
+          options: ["zwölf Euro fünfzig", "zwölf Komma fünf", "zwanzig Euro fünfzehn", "zwölf fünfzig Cent"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 16: Zahlen bitte!"
+    minutes: 15
+    episode: 16
+    intro: |
+      Друзья получают заказ пиццы. Слушайте цены и как Лиза платит.
+    quiz:
+      id: q-w2d5-listen
+      title: "Folge 16: Zahlen bitte!"
+      questions:
+        - type: choice
+          q: "Лиза платит вместе или раздельно?"
+          options: ["zusammen", "getrennt"]
+          answer: 0
+        - type: choice
+          q: "Сколько стоит весь заказ?"
+          options: ["40,50 €", "45 €", "22,50 €", "18 €"]
+          answer: 0
+        - type: choice
+          q: "Как Лиза платит?"
+          options: ["bar, 45 Euro", "mit Karte", "bar, 40,50 Euro", "mit dem Handy"]
+          answer: 0
+        - type: choice
+          q: "Сколько стоит одна пицца, по словам Лизы?"
+          options: ["zehn Euro plus Trinkgeld", "acht Euro", "zwölf Euro", "zwanzig Euro"]
+          answer: 0
+        - type: choice
+          q: "Почему это прощальная вечеринка (*Abschiedsparty*)?"
+          options: ["Nawin geht weg.", "Nico fährt nach Hause.", "Lisa zieht um.", "Nina hat Geburtstag."]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: диалог в кафе"
+    minutes: 15
+    items:
+      - text: "Напишите диалог в кафе (6–8 реплик): официант спрашивает, вы заказываете еду и напиток, потом просите счёт и платите."
+        write: true
+        sample: |
+          — Guten Tag! Was darf es sein?
+          — Ich hätte gern eine Tomatensuppe und ein Wasser, bitte.
+          — Möchten Sie noch etwas?
+          — Nein, danke.
+          — Zahlen, bitte!
+          — Das macht 9,80 Euro.
+          — 10 Euro. Stimmt so.
+          — Vielen Dank!
+
+  - type: oral
+    title: "Говорение: заказ"
+    minutes: 10
+    quiz:
+      id: q-w2d5-oral
+      title: "Кафе вслух"
+      questions:
+        - {type: text, q: "Was darf es sein?", answer: "*Ich hätte gern einen Cappuccino und ein Stück Kuchen.*"}
+        - {type: text, q: "Möchten Sie noch etwas trinken?", answer: "*Ja, ein Wasser, bitte.* / *Nein, danke.*"}
+        - {type: text, q: "Zusammen oder getrennt?", answer: "*Zusammen, bitte.* / *Getrennt, bitte.*"}
+
+  - type: words
+    title: "Слова дня: кафе и ресторан"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Мне, пожалуйста, кофе.", "Ich hätte gern einen Kaffee."]
+      - ["Меню, пожалуйста.", "Die Speisekarte, bitte."]
+      - ["Счёт, пожалуйста!", "Zahlen, bitte!"]
+      - ["Вместе или раздельно?", "Zusammen oder getrennt?"]
+      - ["Наличными или картой?", "Bar oder mit Karte?"]
+      - ["Сдачи не надо.", "Stimmt so."]
+      - ["Что желаете?", "Was darf es sein?"]
+      - ["Я возьму салат.", "Ich nehme den Salat."]

@@ -1,0 +1,121 @@
+date: 2026-11-10
+title: "Еда и напитки, вкусы. mögen, möchten"
+hours: 2
+kind: study
+intro: |
+  Сегодня: что вы любите есть и пить, как предложить напиток. Грамматика: *mögen* (любить) и *möchten* (хотел бы).
+steps:
+  - type: theory
+    title: "mögen и möchten"
+    minutes: 20
+    article: moegen-moechten
+    alt:
+      - {title: "Wiktionary: Flexion:mögen", url: "https://de.wiktionary.org/wiki/Flexion:m%C3%B6gen", lang: de, type: article, verified: "200 2026-10-31"}
+      - {title: "Lingolia: Modalverben", url: "https://deutsch.lingolia.com/de/grammatik/verben/modalverben", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "сказать, что вы любите и не любите: *Ich mag Kaffee. Ich mag keinen Fisch.*"
+      - "вежливо попросить: *Ich möchte einen Tee, bitte.*"
+
+  - type: quiz
+    title: "Проверка: mögen и möchten"
+    minutes: 15
+    quiz:
+      id: q-w2d2-moegen
+      title: "mögen и möchten"
+      questions:
+        - {type: de, q: "Ich ___ Kaffee. (mögen)", answer: "mag"}
+        - {type: de, q: "___ du Tee? (mögen)", answer: "Magst"}
+        - {type: de, q: "Er ___ keinen Fisch. (mögen)", answer: "mag", explain: "У *mögen* формы *ich* и *er* одинаковые и без окончания: *ich mag, er mag*."}
+        - {type: de, q: "Wir ___ Pizza. (mögen)", answer: "mögen"}
+        - {type: de, q: "Ich ___ ein Wasser, bitte. (möchten)", answer: "möchte"}
+        - {type: de, q: "Was ___ du trinken? (möchten)", answer: "möchtest"}
+        - {type: de, q: "___ Sie einen Kaffee? (möchten)", answer: "Möchten"}
+        - type: choice
+          q: "Вежливая просьба в кафе:"
+          options: ["Ich möchte einen Saft, bitte.", "Ich mag einen Saft, bitte.", "Ich will Saft!", "Gib mir Saft."]
+          answer: 0
+          explain: "*möchten* — «хотел бы», вежливо. *mögen* — «любить, нравиться» вообще."
+        - type: choice
+          q: "Где стоит второй глагол после *möchten*?"
+          options: ["в конце: Ich möchte einen Tee trinken.", "сразу после möchten: Ich möchte trinken einen Tee.", "в начале", "второй глагол не нужен никогда"]
+          answer: 0
+        - {type: de, q: "Переведите: «Я не люблю молоко.» (die Milch)", answer: ["Ich mag keine Milch", "Ich mag Milch nicht"]}
+        - {type: de, q: "Переведите: «Что ты хочешь (хотел бы) поесть?»", answer: "Was möchtest du essen"}
+
+  - type: listen
+    title: "Nicos Weg, Folge 46: Ich mag (nicht)!"
+    minutes: 15
+    episode: 46
+    intro: |
+      Нико приходит жить к Инге. Слушайте, что он хочет пить и что любит есть.
+    quiz:
+      id: q-w2d2-listen
+      title: "Folge 46: Ich mag (nicht)!"
+      questions:
+        - type: choice
+          q: "Почему Лиза сразу уходит?"
+          options: ["Sie fährt heute in Urlaub.", "Sie muss arbeiten.", "Sie hat keinen Hunger.", "Emma wartet."]
+          answer: 0
+        - type: choice
+          q: "Was trinkt Nico?"
+          options: ["eine Apfelsaftschorle", "einen Apfelsaft", "einen Kaffee", "ein Wasser"]
+          answer: 0
+        - type: choice
+          q: "Was ist eine Schorle?"
+          options: ["Saft mit Mineralwasser", "Tee mit Milch", "Kaffee mit Zucker", "Wasser mit Zitrone"]
+          answer: 0
+        - type: choice
+          q: "Was gibt es zu essen?"
+          options: ["Fleisch, Fisch und Gemüse", "Pizza und Salat", "Brot und Käse", "Kuchen"]
+          answer: 0
+        - type: choice
+          q: "Что Нико ест охотнее, чем морковь?"
+          options: ["Tomaten", "Kohlrabi", "Fisch", "Kartoffeln"]
+          answer: 0
+        - {type: de, q: "Нико о кольраби: «Ich finde Kohlrabi nicht so ___.»", answer: "lecker"}
+
+  - type: words
+    title: "Слова дня: еда и напитки"
+    minutes: 20
+    mode: study
+
+  - type: practice
+    title: "Письмо: что я люблю"
+    minutes: 15
+    items:
+      - text: "Напишите 5 предложений: что вы любите и не любите есть и пить (*mögen, gern, nicht gern*)."
+        write: true
+        sample: |
+          Ich mag Kaffee, aber ich mag keinen Tee. Ich esse gern Fisch und Gemüse. Fleisch esse ich nicht so gern. Mein Lieblingsessen ist Pizza. Ich trinke gern Wasser.
+      - text: "Друг приходит в гости. Напишите 3 вопроса-предложения с *möchten*."
+        write: true
+        sample: |
+          Möchtest du etwas trinken? Möchtest du einen Kaffee oder einen Tee? Möchtest du auch etwas essen?
+
+  - type: oral
+    title: "Говорение: в гостях"
+    minutes: 15
+    quiz:
+      id: q-w2d2-oral
+      title: "Скажите вслух"
+      questions:
+        - {type: text, q: "Гость пришёл. Предложите напиток на выбор (*du*).", answer: "Möchtest du einen Saft oder lieber ein Wasser?"}
+        - {type: text, q: "Ответьте вежливо: хотите чай.", answer: "Ich möchte einen Tee, bitte."}
+        - {type: text, q: "*Was essen Sie gern?*", answer: "Ich esse gern Fisch und Gemüse."}
+        - {type: text, q: "*Mögen Sie Milch?* — нет.", answer: "Nein, ich mag keine Milch."}
+        - {type: text, q: "Скажите, что вы голодны и хотите пить.", answer: "Ich habe Hunger und Durst."}
+
+  - type: anki
+    title: "Карточки: mögen и möchten"
+    minutes: 10
+    cards:
+      - ["Ты любишь кофе?", "Magst du Kaffee?"]
+      - ["Я не люблю рыбу.", "Ich mag keinen Fisch."]
+      - ["Хочешь что-нибудь выпить?", "Möchtest du etwas trinken?"]
+      - ["Мне чай, пожалуйста.", "Ich möchte einen Tee, bitte."]
+      - ["Я охотно ем овощи.", "Ich esse gern Gemüse."]
+      - ["Я голоден. / Я хочу пить.", "Ich habe Hunger. / Ich habe Durst."]
+      - ["Вкусно!", "Das schmeckt gut! / Lecker!"]
+      - ["mögen: ich, du, er", "ich mag, du magst, er mag"]
+      - ["möchten: ich, du, er", "ich möchte, du möchtest, er möchte"]
+      - ["möchten + глагол: «Я хотел бы пить воду.»", "Ich möchte Wasser trinken."]

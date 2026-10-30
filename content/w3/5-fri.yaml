@@ -1,0 +1,103 @@
+date: 2026-11-20
+title: "Хобби и свободное время"
+hours: 2
+kind: study
+intro: |
+  Сегодня — модальный глагол *können* и рамка: *Ich **kann** gut **schwimmen**.*
+steps:
+  - type: theory
+    title: "Модальный глагол können"
+    minutes: 15
+    article: koennen
+    alt:
+      - {title: "Lingolia: Modalverben", url: "https://deutsch.lingolia.com/de/grammatik/verben/modalverben", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "спрягать *können*: ich kann, du kannst…"
+      - "поставить инфинитив в конец"
+
+  - type: quiz
+    title: "Проверка: können"
+    minutes: 15
+    quiz:
+      id: q-w3d5-koennen
+      title: "können"
+      questions:
+        - {type: de, q: "ich ___ (können)", answer: "kann"}
+        - {type: de, q: "du ___ (können)", answer: "kannst"}
+        - {type: de, q: "er ___ (können)", answer: "kann"}
+        - {type: de, q: "ihr ___ (können)", answer: "könnt"}
+        - {type: de, q: "Переведите: «Я умею плавать».", answer: ["Ich kann schwimmen", "Ich kann gut schwimmen"]}
+        - {type: de, q: "Переведите: «Ты умеешь играть на гитаре?»", answer: "Kannst du Gitarre spielen"}
+        - {type: de, q: "Переведите: «Мы не можем прийти в субботу».", answer: ["Wir können am Samstag nicht kommen", "Am Samstag können wir nicht kommen"]}
+        - type: choice
+          q: "Где стоит инфинитив?"
+          options: ["в конце предложения", "на втором месте", "в начале", "после подлежащего"]
+          answer: 0
+        - type: choice
+          q: "*Kannst du mir helfen?* — это:"
+          options: ["вежливая просьба", "запрет", "вопрос об умении", "приказ"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 48: Was macht dir Spaß?"
+    minutes: 15
+    episode: 48
+    intro: |
+      Инге спрашивает Нико о свободном времени. Слушайте *gern, nicht gern, am liebsten*.
+    quiz:
+      id: q-w3d5-listen
+      title: "Folge 48: Was macht dir Spaß?"
+      questions:
+        - type: choice
+          q: "Что Нико НЕ любит?"
+          options: ["joggen", "schwimmen", "Musik hören", "Fahrrad fahren"]
+          answer: 0
+        - type: choice
+          q: "Что Нико любит больше всего?"
+          options: ["angeln", "Fußball spielen", "ins Kino gehen", "kochen"]
+          answer: 0
+        - type: choice
+          q: "Что Макс и Тарек ещё любят, кроме рыбалки?"
+          options: ["ins Theater und ins Kino gehen", "joggen und schwimmen", "kochen und tanzen", "Fußball und Tennis"]
+          answer: 0
+        - type: choice
+          q: "Кто на фото у Макса?"
+          options: ["Yara, Nicos Tante", "Lisa", "Emma", "Inge"]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: что я умею"
+    minutes: 15
+    items:
+      - text: "Напишите 5 предложений с *können*: что вы умеете хорошо, что не умеете, что можете в эти выходные. Пример: *Ich kann gut kochen, aber ich kann nicht tanzen.*"
+        write: true
+        sample: |
+          Ich kann gut kochen. Ich kann nicht gut tanzen. Mein Bruder kann Gitarre spielen. Am Samstag kann ich nicht kommen, ich arbeite. Am Sonntag können wir ins Kino gehen.
+
+  - type: oral
+    title: "Говорение: хобби"
+    minutes: 10
+    quiz:
+      id: q-w3d5-oral
+      title: "Хобби вслух"
+      questions:
+        - {type: text, q: "Was ist Ihr Hobby?", answer: "*Mein Hobby ist Lesen. Ich lese gern Krimis.*"}
+        - {type: text, q: "Können Sie schwimmen?", answer: "*Ja, ich kann gut schwimmen.* / *Nein, ich kann nicht schwimmen.*"}
+        - {type: text, q: "Was können Sie gut?", answer: "*Ich kann gut kochen und fotografieren.*"}
+
+  - type: words
+    title: "Слова дня: хобби"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Я умею плавать.", "Ich kann schwimmen."]
+      - ["Ты умеешь танцевать?", "Kannst du tanzen?"]
+      - ["Можешь мне помочь?", "Kannst du mir helfen?"]
+      - ["Сегодня я не могу.", "Heute kann ich nicht."]
+      - ["Моё хобби — фотография.", "Mein Hobby ist Fotografieren."]
+      - ["Что ты делаешь в свободное время?", "Was machst du in deiner Freizeit?"]
+      - ["Есть желание? / Хочешь?", "Hast du Lust?"]
+      - ["Мы можем пойти в кино.", "Wir können ins Kino gehen."]

@@ -1,0 +1,81 @@
+date: 2026-11-29
+title: "Итог месяца"
+hours: 1.5
+kind: review
+intro: |
+  Последний день месяца 1. Итоговый тест по всему месяцу, видео про даты и план на месяц 2.
+steps:
+  - type: quiz
+    title: "Итоговый тест месяца"
+    minutes: 30
+    quiz:
+      id: q-w4d7-final
+      title: "Месяц 1: итоговый тест"
+      questions:
+        - {type: de, q: "Wir ___ aus Russland. (sein)", answer: "sind"}
+        - {type: de, q: "Er ___ zwei Kinder. (haben)", answer: "hat"}
+        - {type: de, q: "Ich möchte ___ Kaffee. (ein, Akkusativ, der Kaffee)", answer: "einen"}
+        - {type: de, q: "Das ist ___ Buch, das ist ein Heft. (отрицание)", answer: "kein"}
+        - {type: de, q: "8:30 разговорно", answer: "halb neun"}
+        - {type: de, q: "Переведите: «Я встаю в семь».", answer: ["Ich stehe um sieben auf", "Ich stehe um sieben Uhr auf"]}
+        - {type: de, q: "Ich ___ gut schwimmen. (können)", answer: "kann"}
+        - {type: de, q: "Sie ist ___ Arzt. (bei + der)", answer: "beim"}
+        - {type: de, q: "Ich fahre mit ___ U-Bahn.", answer: "der"}
+        - {type: de, q: "Hier ___ man nicht rauchen. (нельзя)", answer: "darf"}
+        - {type: de, q: "du, nehmen → императив", answer: "Nimm"}
+        - {type: de, q: "Was hast du gestern ___? (machen)", answer: "gemacht"}
+        - type: choice
+          q: "*Die Wohnung ist ___ groß.* (отрицание)"
+          options: ["nicht", "kein", "keine", "nein"]
+          answer: 0
+        - type: choice
+          q: "*___ Montag ___ acht Uhr*"
+          options: ["Am … um", "Im … am", "Um … am", "Am … im"]
+          answer: 0
+        - type: choice
+          q: "Множественное число *das Kind*:"
+          options: ["die Kinder", "die Kinds", "die Kinde", "die Kindern"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 34: Hast du morgen Zeit?"
+    minutes: 15
+    episode: 34
+    intro: |
+      Тарек и Макс говорят о датах, а потом Тарек принимает бронь столика. Слушайте порядковые числа и время.
+    quiz:
+      id: q-w4d7-listen
+      title: "Folge 34: Hast du morgen Zeit?"
+      questions:
+        - type: choice
+          q: "Какое число завтра?"
+          options: ["der Zweiundzwanzigste", "der Dreiundzwanzigste", "der Einundzwanzigste", "der Erste"]
+          answer: 0
+        - type: choice
+          q: "Во сколько у Тарека завтра встреча (*Termin*)?"
+          options: ["um halb eins", "um eins", "um Viertel vor sieben", "um neun"]
+          answer: 0
+        - type: choice
+          q: "Когда у Макса ранние смены (*Frühdienst*)?"
+          options: ["vom 1. bis zum 7. November", "vom 22. bis zum 23.", "am Wochenende", "im Dezember"]
+          answer: 0
+        - type: choice
+          q: "На какое время в итоге свободен столик?"
+          options: ["um Viertel vor acht", "um Viertel vor sieben", "um halb acht", "um acht"]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: что я умею после месяца 1"
+    minutes: 20
+    items:
+      - text: "Сравните себя сейчас и 2 ноября. Ответьте по-русски: (1) результат входного теста и пробного экзамена, (2) что получается лучше всего, (3) что трудно, (4) 3 цели на месяц 2."
+        write: true
+        sample: |
+          (1) Входной тест — 12 из 18, Lesen в пробном экзамене — 10 из 15. (2) Лучше всего — время и распорядок дня. (3) Трудно — Dativ и слух в быстрой речи. (4) Цели: Perfekt с *sein*, Akkusativ/Dativ с *wohin/wo*, 300 новых слов.
+
+  - type: anki
+    title: "Карточки месяца"
+    minutes: 15
+    cards:
+      - ["Какое сегодня число?", "Der Wievielte ist heute?"]
+      - ["Я хотел бы забронировать столик.", "Ich möchte einen Tisch reservieren."]

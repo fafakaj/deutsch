@@ -1,0 +1,111 @@
+date: 2026-11-26
+title: "Тело и здоровье"
+hours: 2
+kind: study
+intro: |
+  Сегодня — у врача: что болит и что советует врач. Грамматика — повелительное наклонение: *Nimm! Nehmen Sie!*
+steps:
+  - type: theory
+    title: "Повелительное наклонение"
+    minutes: 20
+    article: imperativ
+    alt:
+      - {title: "Lingolia: Imperativ", url: "https://deutsch.lingolia.com/de/grammatik/verben/imperativ", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "дать совет на *Sie* и на *du*: *Trinken Sie viel Tee! Trink viel Tee!*"
+      - "сказать, что болит: *Mir tut der Kopf weh.*"
+
+  - type: quiz
+    title: "Проверка: императив и здоровье"
+    minutes: 15
+    quiz:
+      id: q-w4d4-imp
+      title: "Imperativ, здоровье"
+      questions:
+        - {type: de, q: "Sie, kommen: ___ Sie morgen!", answer: "Kommen"}
+        - {type: de, q: "du, nehmen: ___ die Tabletten!", answer: "Nimm"}
+        - {type: de, q: "du, trinken: ___ viel Wasser!", answer: "Trink"}
+        - {type: de, q: "du, sein: ___ ruhig!", answer: "Sei"}
+        - {type: de, q: "ihr, kommen: ___ mit!", answer: "Kommt"}
+        - {type: de, q: "du, aufstehen: ___ ___! (два слова)", answer: "Steh auf"}
+        - {type: de, q: "Переведите: «У меня болит голова». (Mir …)", answer: "Mir tut der Kopf weh"}
+        - type: choice
+          q: "*Was fehlt Ihnen?* — это:"
+          options: ["Что вас беспокоит?", "Чего вам не хватает в магазине?", "Где вы были?", "Сколько вам лет?"]
+          answer: 0
+        - type: choice
+          q: "*Gute Besserung!* — это:"
+          options: ["Выздоравливайте!", "Приятного аппетита!", "Удачи!", "Хорошего дня!"]
+          answer: 0
+        - type: choice
+          q: "*Ich habe Fieber.* — это:"
+          options: ["У меня температура.", "У меня кашель.", "У меня насморк.", "У меня болит живот."]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 72: Nehmen Sie …"
+    minutes: 15
+    episode: 72
+    intro: |
+      Нико после врача. Лиза объясняет, как принимать лекарства. Слушайте императив: *Nimm die Tabletten…*
+    quiz:
+      id: q-w4d4-listen
+      title: "Folge 72: Nehmen Sie …"
+      questions:
+        - type: choice
+          q: "Что сказал врач о ноге Нико?"
+          options: ["Sie ist nicht gebrochen.", "Sie ist gebrochen.", "Er muss operieren.", "Nico muss ins Krankenhaus."]
+          answer: 0
+        - type: choice
+          q: "Что прописал врач?"
+          options: ["Schmerztabletten und eine Salbe", "nur Tee", "Antibiotika", "Hustensaft"]
+          answer: 0
+        - type: choice
+          q: "Как часто принимать таблетки?"
+          options: ["dreimal täglich, nach dem Essen", "einmal täglich, vor dem Essen", "zweimal täglich", "nur abends"]
+          answer: 0
+        - type: choice
+          q: "Когда использовать мазь?"
+          options: ["abends vor dem Schlafengehen", "morgens", "nach dem Essen", "jede Stunde"]
+          answer: 0
+        - type: choice
+          q: "Нико хочет пойти с Инге. Что отвечают Инге и Лиза?"
+          options: ["Du musst dich ausruhen!", "Ja, komm mit!", "Nimm den Bus!", "Ruf den Arzt an!"]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: я заболел"
+    minutes: 15
+    items:
+      - text: "Напишите сообщение коллеге или преподавателю (4–5 предложений): вы больны, что болит, вы были у врача, вы не придёте завтра."
+        write: true
+        sample: |
+          Liebe Frau Weber, leider bin ich krank. Ich habe Fieber und mir tut der Hals weh. Ich war heute beim Arzt. Ich muss zwei Tage im Bett bleiben. Morgen kann ich leider nicht zum Kurs kommen. Viele Grüße, Max
+
+  - type: oral
+    title: "Говорение: у врача"
+    minutes: 10
+    quiz:
+      id: q-w4d4-oral
+      title: "У врача вслух"
+      questions:
+        - {type: text, q: "Was fehlt Ihnen?", answer: "*Ich habe Kopfschmerzen und Fieber.* / *Mir tut der Bauch weh.*"}
+        - {type: text, q: "Дайте совет другу (du): пить чай, оставаться в постели.", answer: "*Trink viel Tee und bleib im Bett!*"}
+        - {type: text, q: "Дайте тот же совет на Sie.", answer: "*Trinken Sie viel Tee und bleiben Sie im Bett!*"}
+
+  - type: words
+    title: "Слова дня: тело и здоровье"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Что вас беспокоит?", "Was fehlt Ihnen?"]
+      - ["У меня болит голова.", "Mir tut der Kopf weh."]
+      - ["У меня температура.", "Ich habe Fieber."]
+      - ["Принимайте таблетки три раза в день.", "Nehmen Sie die Tabletten dreimal täglich."]
+      - ["Оставайся в постели!", "Bleib im Bett!"]
+      - ["Пейте много чая!", "Trinken Sie viel Tee!"]
+      - ["Выздоравливай!", "Gute Besserung!"]
+      - ["Мне нужно к врачу.", "Ich muss zum Arzt."]

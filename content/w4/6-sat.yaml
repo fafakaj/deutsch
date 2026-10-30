@@ -1,0 +1,128 @@
+date: 2026-11-28
+title: "Погода. Пробный экзамен A1"
+hours: 2.5
+kind: exam
+intro: |
+  Сегодня — погода и пробный экзамен A1 по официальному образцу Goethe (Modellsatz). Сравните результат с входным тестом 2 ноября.
+steps:
+  - type: theory
+    title: "Экзамен A1: как он устроен"
+    minutes: 10
+    article: pruefung-a1
+    alt:
+      - {title: "Goethe: Start Deutsch 1 — Prüfungsziele, Testbeschreibung (PDF)", url: "https://www.goethe.de/pro/relaunch/prf/de/Pruefungsziele_Testbeschreibung_A1_SD1.pdf", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "знать 4 части экзамена и время на каждую"
+
+  - type: listen
+    title: "Hören: Nicos Weg, Folge 56 — Wie wird das Wetter?"
+    minutes: 15
+    episode: 56
+    intro: |
+      Часть «Hören»: послушайте **один раз**, как на экзамене. Потом ответьте. Сельма рассказывает Лизе о погоде.
+    quiz:
+      id: q-w4d6-hoeren
+      title: "Hören: Folge 56"
+      questions:
+        - type: choice
+          q: "Какая погода у Сельмы?"
+          options: ["etwa 7 Grad und bewölkt", "20 Grad und Sonne", "Schnee", "warm und windig"]
+          answer: 0
+        - type: choice
+          q: "Что будет вечером?"
+          options: ["Vielleicht regnet es.", "Es schneit.", "Die Sonne scheint.", "Es wird warm."]
+          answer: 0
+        - type: choice
+          q: "Какая погода у Лизы в отпуске?"
+          options: ["Sonne und 20 Grad", "7 Grad", "Regen", "Gewitter"]
+          answer: 0
+        - type: choice
+          q: "Какая сумка у Нико?"
+          options: ["schwarz, mit einem Aufnäher mit Fahrrad", "rot, mit einem Fahrrad", "blau und groß", "schwarz und klein, ohne Aufnäher"]
+          answer: 0
+        - type: choice
+          q: "Что, кажется, нашла Сельма?"
+          options: ["Nicos Tasche", "Nicos Pass", "Lisas Handy", "ein Fahrrad"]
+          answer: 0
+
+  - type: theory
+    title: "Lesen и Schreiben по Modellsatz"
+    minutes: 45
+    source: {title: "Goethe-Zertifikat A1: Start Deutsch 1 — Modellsatz (PDF)", url: "https://www.goethe.de/pro/relaunch/prf/materialien/A1_sd1/sd_1_modellsatz.pdf", lang: de, type: article, verified: "200 2026-10-31"}
+    do: |
+      1. Откройте PDF. Сделайте часть **Lesen** (Teil 1–3) за **25 минут** по таймеру.
+      2. Сделайте часть **Schreiben** (Teil 1 — бланк, Teil 2 — сообщение ≈ 30 слов) за **20 минут**.
+      3. Проверьте Lesen по ключу (*Lösungen*) в конце PDF. Запишите результат: сколько из 15.
+      4. Своё сообщение из Schreiben перепишите в шаг «Письмо» ниже.
+    goals:
+      - "Lesen: ≥ 9 из 15 — хороший результат на этом этапе"
+      - "Schreiben: ответить на все 3 пункта задания"
+
+  - type: quiz
+    title: "Lesen: таблички и объявления"
+    minutes: 15
+    quiz:
+      id: q-w4d6-lesen
+      title: "Lesen: короткие тексты"
+      questions:
+        - type: choice
+          q: "Табличка на двери: *Praxis Dr. Berg — Mo–Fr 8–12 Uhr, Di und Do auch 15–18 Uhr.* Можно прийти в среду в 16:00?"
+          options: ["Nein", "Ja"]
+          answer: 0
+          explain: "После обеда приём только во вторник и четверг."
+        - type: choice
+          q: "Объявление: *Wegen Bauarbeiten fährt die U2 bis Sonntag nur bis zum Hauptbahnhof. Bitte nehmen Sie ab Hauptbahnhof den Bus 7.* Что делать после Hauptbahnhof?"
+          options: ["den Bus 7 nehmen", "zu Fuß gehen", "die U2 nehmen", "ein Taxi nehmen"]
+          answer: 0
+        - type: choice
+          q: "Сообщение: *Hallo Jana, ich kann heute nicht ins Kino kommen. Mein Sohn ist krank. Gehen wir am Freitag? Gruß, Mia.* Почему Миа не идёт в кино?"
+          options: ["Ihr Sohn ist krank.", "Sie ist krank.", "Sie muss arbeiten.", "Das Kino ist geschlossen."]
+          answer: 0
+        - type: choice
+          q: "Табличка в магазине: *Heute alle Jacken 30 % billiger!* Это значит:"
+          options: ["Куртки сегодня дешевле.", "Куртки дороже на 30 %.", "Куртки закончились.", "Скидка только завтра."]
+          answer: 0
+        - type: choice
+          q: "Объявление: *Deutschkurs A1, Montag und Mittwoch, 18:00–19:30, Raum 204. Anmeldung im Sekretariat.* Где записаться на курс?"
+          options: ["im Sekretariat", "in Raum 204", "am Montag im Kurs", "online"]
+          answer: 0
+
+  - type: practice
+    title: "Schreiben: сообщение (≈ 30 слов)"
+    minutes: 15
+    items:
+      - text: "Задание как на экзамене: вы не можете прийти на курс в понедельник. Напишите преподавателю: (1) почему вы не придёте, (2) когда придёте снова, (3) попросите прислать домашнее задание."
+        write: true
+        sample: |
+          Liebe Frau Schmidt, leider kann ich am Montag nicht zum Kurs kommen. Ich bin krank und muss zum Arzt gehen. Am Mittwoch komme ich wieder. Können Sie mir bitte die Hausaufgaben schicken? Vielen Dank! Viele Grüße, Olga
+
+  - type: oral
+    title: "Sprechen: как на экзамене"
+    minutes: 15
+    why: "Говорите вслух и записывайте себя на телефон. Потом послушайте запись и сравните с образцом."
+    quiz:
+      id: q-w4d6-sprechen
+      title: "Sprechen (Teil 1–3)"
+      questions:
+        - {type: text, q: "Teil 1. Представьтесь: Name, Alter, Land, Wohnort, Sprachen, Beruf, Hobby.", answer: "*Ich heiße Olga. Ich bin 30 Jahre alt. Ich komme aus Russland und wohne in Moskau. Ich spreche Russisch, Englisch und ein bisschen Deutsch. Ich bin Ingenieurin. Mein Hobby ist Schwimmen.*"}
+        - {type: text, q: "Teil 1. Произнесите по буквам своё имя и скажите номер телефона.", answer: "*O – L – G – A.* Номер — по одной или по две цифры: *null – eins – sieben …*"}
+        - {type: text, q: "Teil 2. Карточка «Wochenende». Задайте вопрос партнёру.", answer: "*Was machst du am Wochenende?*"}
+        - {type: text, q: "Teil 2. Карточка «Essen». Задайте вопрос и ответьте на него сами.", answer: "*Was isst du gern? — Ich esse gern Fisch und Salat.*"}
+        - {type: text, q: "Teil 3. Карточка с картинкой «окно». Попросите вежливо.", answer: "*Können Sie bitte das Fenster aufmachen?* — *Ja, gern.*"}
+        - {type: text, q: "Teil 3. Карточка с картинкой «соль». Попросите.", answer: "*Gib mir bitte das Salz!* / *Können Sie mir bitte das Salz geben?*"}
+
+  - type: words
+    title: "Слова дня: погода"
+    minutes: 15
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Какая погода?", "Wie ist das Wetter?"]
+      - ["Светит солнце.", "Die Sonne scheint."]
+      - ["Идёт дождь.", "Es regnet."]
+      - ["Идёт снег.", "Es schneit."]
+      - ["Облачно.", "Es ist bewölkt."]
+      - ["Сегодня 20 градусов.", "Heute sind es 20 Grad."]
+      - ["Завтра будет холоднее.", "Morgen wird es kälter."]

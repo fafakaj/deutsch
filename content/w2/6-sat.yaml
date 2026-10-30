@@ -1,0 +1,104 @@
+date: 2026-11-14
+title: "Одежда и цвета"
+hours: 2
+kind: study
+intro: |
+  Сегодня — одежда, цвета и местоимения в Akkusativ: *Der Pullover? Ich nehme **ihn**.*
+steps:
+  - type: theory
+    title: "Местоимения в Akkusativ"
+    minutes: 20
+    article: akkusativ-pronomen
+    goals:
+      - "заменить вещь местоимением: *den Rock → ihn, die Hose → sie, das Kleid → es*"
+      - "спросить в магазине: *Kann ich das anprobieren?*"
+
+  - type: quiz
+    title: "Проверка: Akkusativ местоимений"
+    minutes: 15
+    quiz:
+      id: q-w2d6-pron
+      title: "mich, dich, ihn …"
+      questions:
+        - {type: de, q: "ich → Akkusativ", answer: "mich"}
+        - {type: de, q: "du → Akkusativ", answer: "dich"}
+        - {type: de, q: "er → Akkusativ", answer: "ihn"}
+        - {type: de, q: "wir → Akkusativ", answer: "uns"}
+        - {type: de, q: "Der Pullover? Ich nehme ___.", answer: "ihn"}
+        - {type: de, q: "Die Jacke? Ich kaufe ___.", answer: "sie"}
+        - {type: de, q: "Das Hemd? Ich finde ___ schön.", answer: "es"}
+        - {type: de, q: "Переведите: «Я тебя не понимаю».", answer: "Ich verstehe dich nicht"}
+        - type: choice
+          q: "*Wie findest du den Rock?* — *Ich finde ___ toll.*"
+          options: ["ihn", "sie", "es", "ihm"]
+          answer: 0
+          explain: "*der Rock* — мужской род, поэтому *ihn*, хотя по-русски «юбка» женского рода."
+        - type: choice
+          q: "*Das steht dir gut!* — это:"
+          options: ["Тебе это идёт!", "Это стоит хорошо.", "Это хорошо стоит (о цене).", "Ты хорошо стоишь."]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 59: Das passt gut!"
+    minutes: 15
+    episode: 59
+    intro: |
+      Сельма и Нико в магазине одежды. Слушайте *Wie findest du…?, Das steht dir gut, anprobieren*.
+    quiz:
+      id: q-w2d6-listen
+      title: "Folge 59: Das passt gut!"
+      questions:
+        - type: choice
+          q: "Сколько стоит рубашка (*das Hemd*)?"
+          options: ["25 Euro", "15 Euro", "50 Euro", "35 Euro"]
+          answer: 0
+        - type: choice
+          q: "Размер L Нико…"
+          options: ["zu groß", "zu klein", "passt gut", "zu teuer"]
+          answer: 0
+          explain: "Сельма: *Probier mal M an. Das ist zu groß.*"
+        - type: choice
+          q: "Что в итоге покупает Сельма?"
+          options: ["die Jacke", "das Hemd", "den Pullover", "nichts"]
+          answer: 0
+        - type: choice
+          q: "Что Сельма хотела купить вначале?"
+          options: ["gar nichts", "eine Jacke", "ein Hemd für Nico", "Schuhe"]
+          answer: 0
+        - {type: de, q: "Как сказать «Тебе это идёт»? Das ___ dir gut.", answer: "steht"}
+
+  - type: practice
+    title: "Письмо: что я ношу"
+    minutes: 15
+    items:
+      - text: "Опишите 5 вещей, которые вы носите сегодня или любите: цвет и ваше мнение. Используйте местоимения: *Meine Jacke ist blau. Ich finde sie sehr bequem.*"
+        write: true
+        sample: |
+          Heute trage ich eine blaue Jeans und einen grauen Pullover. Den Pullover finde ich sehr warm. Meine Schuhe sind schwarz, ich finde sie bequem. Meine Jacke ist rot. Ich trage sie gern. Mein Lieblingskleid ist grün, aber ich trage es selten.
+
+  - type: oral
+    title: "Говорение: в магазине"
+    minutes: 10
+    quiz:
+      id: q-w2d6-oral
+      title: "Магазин одежды вслух"
+      questions:
+        - {type: text, q: "Wie finden Sie die Jacke?", answer: "*Ich finde sie schön, aber zu teuer.*"}
+        - {type: text, q: "Попросите примерить брюки.", answer: "*Kann ich die Hose anprobieren?*"}
+        - {type: text, q: "Спросите, есть ли этот свитер в размере M.", answer: "*Haben Sie den Pullover in Größe M?*"}
+
+  - type: words
+    title: "Слова дня: одежда и цвета"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Свитер? Я его беру.", "Der Pullover? Ich nehme ihn."]
+      - ["Куртку? Я её покупаю.", "Die Jacke? Ich kaufe sie."]
+      - ["Как тебе рубашка?", "Wie findest du das Hemd?"]
+      - ["Тебе это идёт!", "Das steht dir gut!"]
+      - ["Можно примерить?", "Kann ich das anprobieren?"]
+      - ["Это слишком велико.", "Das ist zu groß."]
+      - ["Я тебя не понимаю.", "Ich verstehe dich nicht."]

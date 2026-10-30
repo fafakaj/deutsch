@@ -1,0 +1,113 @@
+date: 2026-11-19
+title: "Дни, месяцы, времена года"
+hours: 2
+kind: study
+intro: |
+  Сегодня — календарь и предлоги *am, um, im*. С ними вы назначите встречу: *am Freitag um zwei Uhr*.
+steps:
+  - type: theory
+    title: "Когда? am, um, im"
+    minutes: 15
+    article: zeitangaben
+    alt:
+      - {title: "Lingolia: Temporale Präpositionen", url: "https://deutsch.lingolia.com/de/grammatik/praepositionen/temporal", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "выбрать *am / um / im*"
+      - "назвать дни недели, месяцы, времена года"
+
+  - type: quiz
+    title: "Проверка: am, um, im"
+    minutes: 15
+    quiz:
+      id: q-w3d4-zeit
+      title: "am, um, im"
+      questions:
+        - {type: de, q: "___ Montag", answer: "am"}
+        - {type: de, q: "___ acht Uhr", answer: "um"}
+        - {type: de, q: "___ Juli", answer: "im"}
+        - {type: de, q: "___ Winter", answer: "im"}
+        - {type: de, q: "___ Wochenende", answer: "am"}
+        - {type: de, q: "___ Abend", answer: "am"}
+        - {type: de, q: "Переведите: «В пятницу в два часа».", answer: ["am Freitag um zwei Uhr", "am Freitag um zwei"]}
+        - type: choice
+          q: "Какой день идёт после *Mittwoch*?"
+          options: ["Donnerstag", "Dienstag", "Freitag", "Montag"]
+          answer: 0
+        - type: choice
+          q: "*Herbst* — это:"
+          options: ["осень", "весна", "лето", "зима"]
+          answer: 0
+        - type: choice
+          q: "*Im Sommer ___ wir nach Österreich.*"
+          options: ["fahren", "wir fahren", "fährt", "fahre"]
+          answer: 0
+          explain: "Время на первом месте → глагол на втором, подлежащее после него: *Im Sommer fahren wir…*"
+
+  - type: listen
+    title: "Nicos Weg, Folge 35: Wann spielen wir?"
+    minutes: 15
+    episode: 35
+    intro: |
+      Друзья договариваются о футболе. Слушайте дни и время.
+    quiz:
+      id: q-w3d4-listen
+      title: "Folge 35: Wann spielen wir?"
+      questions:
+        - type: choice
+          q: "Почему Янис не может в субботу?"
+          options: ["Er trifft Anna im Schwimmbad.", "Er arbeitet.", "Er ist krank.", "Er hat Training."]
+          answer: 0
+        - type: choice
+          q: "Сколько человек без Нико?"
+          options: ["sieben", "acht", "sechs", "elf"]
+          answer: 0
+          explain: "Тарек: *Dann sind wir nur sieben… Wir brauchen eine achte Person.*"
+        - type: choice
+          q: "Когда игра?"
+          options: ["nächste Woche Freitag um zwei", "diese Woche Samstag um eins", "nächste Woche Samstag um zwei", "Freitag um eins"]
+          answer: 0
+        - type: choice
+          q: "Почему не в час (*um eins*)?"
+          options: ["Max kann erst um zwei.", "Robert kann nicht.", "Das Restaurant ist geschlossen.", "Nico arbeitet."]
+          answer: 0
+        - type: choice
+          q: "Где они встречаются?"
+          options: ["hier im Restaurant", "im Park", "im Schwimmbad", "am Bahnhof"]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: моя неделя"
+    minutes: 15
+    items:
+      - text: "Напишите, что вы делаете в 5 разных дней недели. Пример: *Am Montag habe ich um sechs Uhr Deutschkurs.* Добавьте одно предложение про любимое время года: *Im Sommer …*"
+        write: true
+        sample: |
+          Am Montag arbeite ich bis fünf Uhr. Am Dienstag habe ich um sieben Uhr Deutschkurs. Am Mittwoch gehe ich ins Fitnessstudio. Am Freitag treffe ich Freunde. Am Sonntag schlafe ich lange. Im Sommer fahre ich ans Meer.
+
+  - type: oral
+    title: "Говорение: даты и встречи"
+    minutes: 10
+    quiz:
+      id: q-w3d4-oral
+      title: "Календарь вслух"
+      questions:
+        - {type: text, q: "Welcher Tag ist heute?", answer: "*Heute ist Donnerstag.*"}
+        - {type: text, q: "Wann haben Sie Geburtstag? (месяц)", answer: "*Ich habe im Mai Geburtstag.*"}
+        - {type: text, q: "Hast du am Freitag Zeit?", answer: "*Am Freitag kann ich leider nicht. Aber am Samstag um drei geht es.*"}
+
+  - type: words
+    title: "Слова дня: календарь"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["в понедельник", "am Montag"]
+      - ["в восемь часов", "um acht Uhr"]
+      - ["в июле", "im Juli"]
+      - ["зимой", "im Winter"]
+      - ["на выходных", "am Wochenende"]
+      - ["по понедельникам", "montags"]
+      - ["У тебя есть время в пятницу?", "Hast du am Freitag Zeit?"]
+      - ["Это подходит. / Это не подходит.", "Das geht. / Das geht nicht."]

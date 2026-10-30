@@ -1,0 +1,108 @@
+date: 2026-11-23
+title: "Город: места"
+hours: 2
+kind: study
+intro: |
+  Неделя 4 — город. Сегодня: где что находится и предлоги *in, an, bei* с Dativ.
+steps:
+  - type: theory
+    title: "Где? in, an, bei + Dativ"
+    minutes: 20
+    article: wo-dativ
+    alt:
+      - {title: "Lingolia: Lokale Präpositionen", url: "https://deutsch.lingolia.com/de/grammatik/praepositionen/lokal", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "ответить на *Wo?*: *im Supermarkt, in der Apotheke, beim Arzt*"
+      - "слить предлог и артикль: *in dem → im, bei dem → beim*"
+
+  - type: quiz
+    title: "Проверка: wo + Dativ"
+    minutes: 15
+    quiz:
+      id: q-w4d1-wo
+      title: "in, an, bei + Dativ"
+      questions:
+        - {type: de, q: "Ich bin ___ Supermarkt. (in + der Supermarkt)", answer: "im"}
+        - {type: de, q: "Sie ist ___ Apotheke. (in + die Apotheke)", answer: "in der"}
+        - {type: de, q: "Wir sind ___ Kino. (in + das Kino)", answer: "im"}
+        - {type: de, q: "Er ist ___ Arzt. (bei + der Arzt)", answer: "beim"}
+        - {type: de, q: "Ich warte ___ Haltestelle. (an + die Haltestelle)", answer: "an der"}
+        - {type: de, q: "Переведите: «Я в банке». (die Bank)", answer: "Ich bin in der Bank"}
+        - {type: de, q: "Переведите: «Он работает в Сименс». (bei …)", answer: "Er arbeitet bei Siemens"}
+        - type: choice
+          q: "*Wo ist Anna?* — *Sie ist ___ Schule.*"
+          options: ["in der", "in die", "im", "in den"]
+          answer: 0
+          explain: "*Wo?* → Dativ: die Schule → *in der Schule*."
+        - type: choice
+          q: "Где покупают лекарства?"
+          options: ["in der Apotheke", "in der Bäckerei", "im Rathaus", "auf der Post"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 41: Wo ist der Bahnhof?"
+    minutes: 15
+    episode: 41
+    intro: |
+      Нико рассказывает Эмме, где он теперь живёт. На карте вы услышите много мест города.
+    quiz:
+      id: q-w4d1-listen
+      title: "Folge 41: Wo ist der Bahnhof?"
+      questions:
+        - type: choice
+          q: "Где Себастьян делает покупки?"
+          options: ["im Supermarkt um die Ecke", "auf dem Markt", "im Zentrum", "in der Bäckerei"]
+          answer: 0
+        - type: choice
+          q: "У кого теперь живёт Нико?"
+          options: ["bei Frau Kohlhaas", "bei Lisa", "bei Max und Tarek", "im Hostel"]
+          answer: 0
+        - type: choice
+          q: "Где работает Лиза?"
+          options: ["neben dem Theater", "am Friedensplatz", "in der Polizeistation", "in der Sprachschule"]
+          answer: 0
+        - type: choice
+          q: "Кто работает в полиции (*Polizeistation*)?"
+          options: ["Opa (Emmas Großvater)", "Sebastian", "Max", "Frau Kohlhaas"]
+          answer: 0
+        - type: choice
+          q: "Что Эмма дарит Нико?"
+          options: ["ein Notizbuch und Seifenblasen", "ein Bild", "eine Jacke", "eine Tasche"]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: мой район"
+    minutes: 15
+    items:
+      - text: "Опишите свой район в 5 предложениях: что рядом, где вы покупаете продукты, где работаете или учитесь. Используйте *im, in der, beim, an der, in der Nähe von*."
+        write: true
+        sample: |
+          Ich wohne in der Gartenstraße. Der Supermarkt ist gleich um die Ecke. Ich kaufe oft in der Bäckerei ein. Ich arbeite in einem Büro im Zentrum. Die Bushaltestelle ist in der Nähe von meinem Haus.
+
+  - type: oral
+    title: "Говорение: где вы?"
+    minutes: 10
+    quiz:
+      id: q-w4d1-oral
+      title: "Места вслух"
+      questions:
+        - {type: text, q: "Wo kaufen Sie Brot?", answer: "*Ich kaufe Brot in der Bäckerei.*"}
+        - {type: text, q: "Wo arbeiten Sie?", answer: "*Ich arbeite in einem Büro.* / *Ich arbeite bei …*"}
+        - {type: text, q: "Wo sind Sie am Samstag?", answer: "*Am Samstag bin ich im Fitnessstudio und am Abend im Kino.*"}
+
+  - type: words
+    title: "Слова дня: город"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Я в супермаркете.", "Ich bin im Supermarkt."]
+      - ["Она в аптеке.", "Sie ist in der Apotheke."]
+      - ["Он у врача.", "Er ist beim Arzt."]
+      - ["Я жду на остановке.", "Ich warte an der Haltestelle."]
+      - ["рядом с вокзалом", "in der Nähe vom Bahnhof"]
+      - ["за углом", "um die Ecke"]
+      - ["Где здесь банк?", "Wo ist hier eine Bank?"]
+      - ["Мы в кино.", "Wir sind im Kino."]

@@ -1,0 +1,123 @@
+date: 2026-11-17
+title: "Время и части дня"
+hours: 2
+kind: study
+intro: |
+  Сегодня — часы. Официальное время (вокзал, радио) и разговорное (в жизни). Главная ловушка: *halb neun* = 8:30.
+steps:
+  - type: theory
+    title: "Который час? Uhrzeit"
+    minutes: 20
+    article: uhrzeit
+    alt:
+      - {title: "Lingolia: Uhrzeit", url: "https://deutsch.lingolia.com/de/wortschatz/zahlen-datum-uhrzeit", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "назвать время официально и разговорно"
+      - "спросить и ответить: *Wie spät ist es? — Es ist Viertel nach drei.*"
+
+  - type: quiz
+    title: "Проверка: время"
+    minutes: 15
+    quiz:
+      id: q-w3d2-uhr
+      title: "Uhrzeit"
+      questions:
+        - type: choice
+          q: "*halb acht* — это:"
+          options: ["7:30", "8:30", "8:00", "7:00"]
+          answer: 0
+          explain: "*halb acht* = половина до восьми = 7:30."
+        - type: choice
+          q: "*Viertel vor drei* — это:"
+          options: ["2:45", "3:15", "3:45", "2:15"]
+          answer: 0
+        - type: choice
+          q: "*zehn nach zwölf* — это:"
+          options: ["12:10", "11:50", "12:50", "10:12"]
+          answer: 0
+        - type: choice
+          q: "Официально 19:20 — это:"
+          options: ["neunzehn Uhr zwanzig", "zwanzig nach neunzehn", "sieben Uhr zwanzig abends", "zwanzig Uhr neunzehn"]
+          answer: 0
+        - {type: de, q: "8:15 разговорно: ___ nach acht", answer: "Viertel"}
+        - {type: de, q: "4:30 разговорно (одно слово + число): ___ fünf", answer: "halb"}
+        - {type: de, q: "Спросите, который час (Wie …?)", answer: ["Wie spät ist es", "Wie viel Uhr ist es"]}
+        - {type: de, q: "Ответьте: «В десять часов». (um …)", answer: ["Um zehn Uhr", "Um zehn"]}
+        - type: choice
+          q: "Как сказать «вечером»?"
+          options: ["am Abend", "im Abend", "um Abend", "in Abend"]
+          answer: 0
+        - type: choice
+          q: "Как сказать «ночью»?"
+          options: ["in der Nacht", "am Nacht", "im Nacht", "um Nacht"]
+          answer: 0
+          explain: "Исключение: *in der Nacht*. Остальные части дня — с *am*."
+
+  - type: listen
+    title: "Nicos Weg, Folge 33: Wie spät ist es?"
+    minutes: 15
+    episode: 33
+    intro: |
+      Нико ждёт Лизу в ресторане. Слушайте время: когда открыт ресторан и когда придёт Лиза.
+    quiz:
+      id: q-w3d2-listen
+      title: "Folge 33: Wie spät ist es?"
+      questions:
+        - type: choice
+          q: "Когда открыт ресторан?"
+          options: ["вт–вс, 9:00–23:00", "пн–пт, 9:00–23:00", "каждый день, 12:00–23:00", "вт–вс, 10:00–22:00"]
+          answer: 0
+        - type: choice
+          q: "Когда ресторан закрыт?"
+          options: ["am Montag", "am Sonntag", "am Dienstag", "am Wochenende"]
+          answer: 0
+        - type: choice
+          q: "Во сколько начинается *Mittagsangebot*?"
+          options: ["um zwölf Uhr", "um halb zwölf", "um eins", "um elf"]
+          answer: 0
+        - type: choice
+          q: "Когда в итоге придёт Лиза?"
+          options: ["um Viertel vor eins (12:45)", "um halb eins", "um Viertel nach zwölf", "um halb zwölf"]
+          answer: 0
+          explain: "Тарек: *Sie kommt um Viertel vor eins, also um 12:45 Uhr.*"
+        - type: choice
+          q: "Что выбирает Инге в конце?"
+          options: ["die Rouladen", "den Fisch", "die Suppe", "nichts"]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: расписание"
+    minutes: 15
+    items:
+      - text: "Напишите 5 строк: во сколько вы обычно делаете дела (работа, обед, спорт, ужин, сон). Одну строку — официально, остальные — разговорно. Пример: *Ich esse um halb eins zu Mittag.*"
+        write: true
+        sample: |
+          Ich frühstücke um Viertel nach sieben. Um halb neun beginnt die Arbeit. Ich esse um halb eins zu Mittag. Mein Zug fährt um 18:05 Uhr (achtzehn Uhr fünf). Ich schlafe um elf Uhr.
+
+  - type: oral
+    title: "Говорение: время вслух"
+    minutes: 10
+    quiz:
+      id: q-w3d2-oral
+      title: "Время вслух"
+      questions:
+        - {type: text, q: "Скажите вслух разговорно: 6:45, 9:30, 11:10, 13:15.", answer: "*Viertel vor sieben; halb zehn; zehn nach elf; Viertel nach eins.*"}
+        - {type: text, q: "Wie spät ist es jetzt? (посмотрите на часы)", answer: "*Es ist …* — например *Es ist zwanzig nach vier.*"}
+        - {type: text, q: "Um wie viel Uhr stehen Sie auf?", answer: "*Ich stehe um halb sieben auf.*"}
+
+  - type: words
+    title: "Слова дня: время"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Который час?", "Wie spät ist es?"]
+      - ["Сейчас половина восьмого (7:30).", "Es ist halb acht."]
+      - ["Сейчас четверть девятого (8:15).", "Es ist Viertel nach acht."]
+      - ["Без четверти три (2:45).", "Viertel vor drei."]
+      - ["Во сколько?", "Um wie viel Uhr?"]
+      - ["В шесть часов.", "Um sechs Uhr."]
+      - ["вечером", "am Abend"]
+      - ["ночью", "in der Nacht"]

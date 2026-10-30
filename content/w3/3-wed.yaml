@@ -1,0 +1,108 @@
+date: 2026-11-18
+title: "Распорядок дня"
+hours: 2
+kind: study
+intro: |
+  Сегодня — глаголы с отделяемой приставкой: *aufstehen, einkaufen, fernsehen*. Приставка уходит в конец предложения.
+steps:
+  - type: theory
+    title: "Глаголы с отделяемой приставкой"
+    minutes: 20
+    article: trennbare-verben
+    alt:
+      - {title: "Lingolia: Trennbare Verben", url: "https://deutsch.lingolia.com/de/grammatik/verben/trennbare", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "поставить приставку в конец: *Ich stehe um 7 Uhr auf.*"
+      - "рассказать свой день по порядку"
+
+  - type: quiz
+    title: "Проверка: отделяемые приставки"
+    minutes: 15
+    quiz:
+      id: q-w3d3-trennbar
+      title: "Trennbare Verben"
+      questions:
+        - {type: de, q: "aufstehen: Ich ___ um sieben Uhr ___. (два слова через пробел)", answer: "stehe auf"}
+        - {type: de, q: "Переведите: «Я встаю в шесть».", answer: ["Ich stehe um sechs auf", "Ich stehe um sechs Uhr auf"]}
+        - {type: de, q: "Переведите: «Курс начинается в девять».", answer: ["Der Kurs fängt um neun an", "Der Kurs fängt um neun Uhr an"]}
+        - {type: de, q: "Переведите: «Мы делаем покупки в субботу».", answer: ["Wir kaufen am Samstag ein"]}
+        - {type: de, q: "Переведите: «Когда ты встаёшь?»", answer: "Wann stehst du auf"}
+        - {type: de, q: "fernsehen, er: Er ___ am Abend ___.", answer: "sieht fern"}
+        - type: choice
+          q: "Какой глагол НЕ отделяет приставку?"
+          options: ["verstehen", "aufstehen", "einkaufen", "anrufen"]
+          answer: 0
+          explain: "*ver-, be-, er-, ge-* не отделяются: *Ich verstehe.*"
+        - type: choice
+          q: "Где ударение в слове *einkaufen*?"
+          options: ["EIN-kaufen", "ein-KAU-fen", "ein-kau-FEN", "одинаково"]
+          answer: 0
+        - type: choice
+          q: "*Am Sonntag ___ ich spät ___.*"
+          options: ["stehe … auf", "aufstehe … —", "stehe auf … —", "auf … stehe"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 31: Am Sonntag koche ich"
+    minutes: 15
+    episode: 31
+    intro: |
+      Эмма рассказывает свою неделю каникул. Слушайте, что она делает в каждый день.
+    quiz:
+      id: q-w3d3-listen
+      title: "Folge 31: Am Sonntag koche ich"
+      questions:
+        - type: choice
+          q: "Что Эмма делает в понедельник?"
+          options: ["spielt mit Lisa Fußball", "geht zum Musikkurs", "sieht fern", "kocht"]
+          answer: 0
+        - type: choice
+          q: "Что Эмма делает в среду?"
+          options: ["wäscht mit Opa das Auto", "räumt ihr Zimmer auf", "steht spät auf", "spielt Flöte"]
+          answer: 0
+        - type: choice
+          q: "Что Эмма делает в четверг? (Нико не верит!)"
+          options: ["Sie räumt ihr Zimmer auf.", "Sie sieht fern.", "Sie wäscht das Auto.", "Sie kocht Paella."]
+          answer: 0
+        - type: choice
+          q: "Что в субботу?"
+          options: ["Sie steht spät auf.", "Sie steht früh auf.", "Sie geht ins Kino.", "Sie kauft ein."]
+          answer: 0
+        - {type: de, q: "Как Эмма говорит «В пятницу я смотрю телевизор»? Am Freitag …", answer: ["Am Freitag sehe ich fern"]}
+
+  - type: practice
+    title: "Письмо: мой день"
+    minutes: 20
+    items:
+      - text: "Опишите свой обычный день в 6–7 предложениях. Используйте время и минимум 4 глагола: *aufstehen, frühstücken, anfangen, einkaufen, fernsehen, aufräumen, anrufen*."
+        write: true
+        sample: |
+          Ich stehe um halb sieben auf. Dann frühstücke ich. Die Arbeit fängt um acht Uhr an. Um eins esse ich zu Mittag. Nach der Arbeit kaufe ich ein. Am Abend rufe ich meine Mutter an. Dann sehe ich fern und um elf gehe ich ins Bett.
+
+  - type: oral
+    title: "Говорение: ваш день"
+    minutes: 10
+    quiz:
+      id: q-w3d3-oral
+      title: "Мой день вслух"
+      questions:
+        - {type: text, q: "Wann stehen Sie auf?", answer: "*Ich stehe um sieben Uhr auf.*"}
+        - {type: text, q: "Wann fängt Ihre Arbeit / Ihr Kurs an?", answer: "*Meine Arbeit fängt um neun Uhr an.*"}
+        - {type: text, q: "Was machen Sie am Abend?", answer: "*Am Abend koche ich und dann sehe ich fern.*"}
+
+  - type: words
+    title: "Слова дня: распорядок дня"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Я встаю в семь.", "Ich stehe um sieben Uhr auf."]
+      - ["Курс начинается в девять.", "Der Kurs fängt um neun Uhr an."]
+      - ["Мы делаем покупки в субботу.", "Wir kaufen am Samstag ein."]
+      - ["Вечером он смотрит телевизор.", "Am Abend sieht er fern."]
+      - ["Я звоню маме.", "Ich rufe meine Mutter an."]
+      - ["Ты убираешь свою комнату?", "Räumst du dein Zimmer auf?"]
+      - ["Я завтракаю в половине восьмого.", "Ich frühstücke um halb acht."]
+      - ["Потом я иду спать.", "Dann gehe ich ins Bett."]

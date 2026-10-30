@@ -1,0 +1,11 @@
+n: 4
+title: "Город, транспорт, здоровье, встречи. Пробный экзамен A1"
+short: "Город и экзамен"
+blocks: ["Город и транспорт", "Правила и здоровье", "Встречи, погода, пробный экзамен"]
+goal: |
+  - Я могу сказать, где я: *Ich bin in der Apotheke / beim Arzt.*
+  - Я могу спросить дорогу и понять ответ: *Gehen Sie geradeaus, dann links.*
+  - Я могу сказать, что надо, хочу и можно: *Ich muss arbeiten. Hier darf man nicht parken.*
+  - Я могу объяснить врачу, что болит, и понять совет: *Mir tut der Kopf weh. — Trinken Sie viel Tee!*
+  - Я могу рассказать о прошлых выходных: *Ich habe Fußball gespielt.*
+  - Я прохожу пробный экзамен A1: Hören, Lesen, Schreiben, Sprechen.

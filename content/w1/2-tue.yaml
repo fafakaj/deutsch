@@ -1,0 +1,129 @@
+date: 2026-11-03
+title: "Страны, города, языки. Präsens"
+hours: 2
+kind: study
+intro: |
+  Сегодня: откуда вы, где живёте, на каких языках говорите. Грамматика: настоящее время правильных глаголов.
+steps:
+  - type: theory
+    title: "Präsens: kommen, wohnen, heißen"
+    minutes: 20
+    article: praesens-regelmaessig
+    alt:
+      - {title: "Lingolia: Präsens", url: "https://deutsch.lingolia.com/de/grammatik/zeitformen/praesens", lang: de, type: article, verified: "200 2026-10-31"}
+      - {title: "Wiktionary: Flexion:kommen", url: "https://de.wiktionary.org/wiki/Flexion:kommen", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "спрягать правильный глагол: ich komme, du kommst, er kommt, wir kommen, ihr kommt, sie kommen"
+      - "сказать, откуда вы и где живёте: *Ich komme aus … Ich wohne in …*"
+
+  - type: quiz
+    title: "Проверка: Präsens"
+    minutes: 15
+    quiz:
+      id: q-w1d2-praesens
+      title: "Präsens правильных глаголов"
+      questions:
+        - {type: de, q: "Woher ___ du? (kommen)", answer: "kommst"}
+        - {type: de, q: "Ich ___ in Moskau. (wohnen)", answer: "wohne"}
+        - {type: de, q: "Er ___ Max. (heißen)", answer: "heißt", explain: "*heißen*: du heißt, er heißt — без лишнего *s*."}
+        - {type: de, q: "Wir ___ aus Russland. (kommen)", answer: "kommen"}
+        - {type: de, q: "Ihr ___ in Berlin. (wohnen)", answer: "wohnt"}
+        - {type: de, q: "Wie ___ Sie? (heißen)", answer: "heißen"}
+        - {type: de, q: "Du ___ in Wien. (wohnen)", answer: "wohnst"}
+        - {type: de, q: "Lisa ___ aus Deutschland. (kommen)", answer: "kommt"}
+        - {type: de, q: "Wo ___ du? (arbeiten)", answer: "arbeitest", explain: "Основа на *-t*: перед *-st* и *-t* вставляем *e*: du arbeit**e**st, er arbeit**e**t."}
+        - type: choice
+          q: "Как правильно?"
+          options: ["Ich komme aus der Schweiz.", "Ich komme aus Schweiz.", "Ich komme aus die Schweiz.", "Ich komme von Schweiz."]
+          answer: 0
+          explain: "Большинство стран — без артикля: *aus Russland*. С артиклем: *die Schweiz → aus der Schweiz*, *die Türkei → aus der Türkei*, *die USA → aus den USA*."
+        - {type: de, q: "Переведите: «Я говорю по-русски.»", answer: "Ich spreche Russisch"}
+        - {type: de, q: "Переведите: «Откуда Вы?» (вежливо)", answer: "Woher kommen Sie"}
+
+  - type: listen
+    title: "Nicos Weg, Folge 7: Woher kommst du?"
+    minutes: 15
+    episode: 7
+    intro: |
+      Посмотрите видео 2 раза. Слушайте, откуда герои и где они живут.
+    quiz:
+      id: q-w1d2-listen
+      title: "Folge 7: Woher kommst du?"
+      questions:
+        - type: choice
+          q: "Woher kommen Max und Emma?"
+          options: ["aus Deutschland", "aus Spanien", "aus Österreich", "aus Italien"]
+          answer: 0
+        - {type: de, q: "Woher kommt Nico? Ответьте одним словом.", answer: "Spanien"}
+        - type: choice
+          q: "Wo wohnt Nico in Spanien?"
+          options: ["in Sevilla", "in Madrid", "in Barcelona", "in Valencia"]
+          answer: 0
+        - type: choice
+          q: "Что потерял Нико?"
+          options: ["сумку, телефон и номер тёти", "паспорт и ключ", "только телефон", "билет"]
+          answer: 0
+          explain: "*Meine Tasche ist weg. Mein Telefon ist weg. Und die Nummer ist weg.*"
+        - type: choice
+          q: "Wen sucht Nico?"
+          options: ["seine Tante", "seinen Vater", "seine Schwester", "seinen Freund"]
+          answer: 0
+        - type: choice
+          q: "Was ist Lisas Vater von Beruf?"
+          options: ["Polizist", "Lehrer", "Arzt", "Taxifahrer"]
+          answer: 0
+
+  - type: words
+    title: "Слова дня: страны и языки"
+    minutes: 20
+    mode: study
+
+  - type: practice
+    title: "Письмо: анкета и рассказ о себе"
+    minutes: 20
+    intro: "В экзамене Goethe A1 (Schreiben, Teil 1) нужно заполнить формуляр. Тренируемся."
+    items:
+      - text: "Заполните анкету о себе: *Name, Vorname, Land, Wohnort, Sprachen*."
+        write: true
+        sample: |
+          Name: Smirnowa
+          Vorname: Olga
+          Land: Russland
+          Wohnort: Kasan
+          Sprachen: Russisch, Englisch
+      - text: "Напишите о себе 5 предложений: имя, страна, город, языки, что вы учите."
+        write: true
+        sample: |
+          Ich heiße Olga. Ich komme aus Russland. Ich wohne in Kasan. Ich spreche Russisch und ein bisschen Englisch. Ich lerne Deutsch.
+      - text: "Напишите 4 предложения о друге (*er*) или подруге (*sie*)."
+        write: true
+        sample: |
+          Das ist Max. Er kommt aus Deutschland. Er wohnt in Berlin. Er spricht Deutsch und Englisch.
+
+  - type: oral
+    title: "Говорение: откуда вы?"
+    minutes: 15
+    quiz:
+      id: q-w1d2-oral
+      title: "Ответьте вслух"
+      questions:
+        - {type: text, q: "*Woher kommen Sie?*", answer: "Ich komme aus Russland."}
+        - {type: text, q: "*Wo wohnen Sie?*", answer: "Ich wohne in Kasan."}
+        - {type: text, q: "*Welche Sprachen sprechen Sie?*", answer: "Ich spreche Russisch, Englisch und ein bisschen Deutsch."}
+        - {type: text, q: "Спросите собеседника на *du*: откуда он и где живёт.", answer: "Woher kommst du? Wo wohnst du?"}
+        - {type: text, q: "Расскажите о Нико: откуда он и где живёт.", answer: "Das ist Nico. Er kommt aus Spanien. Er wohnt in Sevilla."}
+
+  - type: anki
+    title: "Карточки: страны и Präsens"
+    minutes: 10
+    cards:
+      - ["Откуда ты? / Откуда Вы?", "Woher kommst du? / Woher kommen Sie?"]
+      - ["Я из России.", "Ich komme aus Russland."]
+      - ["Где ты живёшь?", "Wo wohnst du?"]
+      - ["Я живу в Казани.", "Ich wohne in Kasan."]
+      - ["На каких языках ты говоришь?", "Welche Sprachen sprichst du?"]
+      - ["Я говорю по-русски и немного по-немецки.", "Ich spreche Russisch und ein bisschen Deutsch."]
+      - ["Он из Швейцарии.", "Er kommt aus der Schweiz."]
+      - ["kommen: ich, du, er", "ich komme, du kommst, er kommt"]
+      - ["kommen: wir, ihr, sie/Sie", "wir kommen, ihr kommt, sie/Sie kommen"]
+      - ["arbeiten: du, er (вставка e)", "du arbeitest, er arbeitet"]

@@ -1,0 +1,114 @@
+date: 2026-11-16
+title: "Квартира и мебель"
+hours: 2
+kind: study
+intro: |
+  Неделя 3 — дом и время. Сегодня: комнаты, мебель и прилагательные после *sein*.
+steps:
+  - type: theory
+    title: "Прилагательное после sein"
+    minutes: 15
+    article: adjektive-sein
+    alt:
+      - {title: "Lingolia: Adjektive — Verwendung", url: "https://deutsch.lingolia.com/de/grammatik/adjektive", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "описать комнату: *Das Zimmer ist hell und groß.*"
+      - "отрицать прилагательное: *nicht teuer*"
+
+  - type: quiz
+    title: "Проверка: прилагательные"
+    minutes: 15
+    quiz:
+      id: q-w3d1-adj
+      title: "Прилагательные после sein"
+      questions:
+        - {type: de, q: "Антоним: groß — ___", answer: "klein"}
+        - {type: de, q: "Антоним: hell — ___", answer: "dunkel"}
+        - {type: de, q: "Антоним: teuer — ___", answer: ["billig", "günstig"]}
+        - {type: de, q: "Антоним: laut — ___", answer: "ruhig"}
+        - {type: de, q: "Переведите: «Кухня новая».", answer: "Die Küche ist neu"}
+        - {type: de, q: "Переведите: «Комната не большая».", answer: ["Das Zimmer ist nicht groß", "Der Raum ist nicht groß"]}
+        - {type: de, q: "Переведите: «Квартира слишком дорогая».", answer: "Die Wohnung ist zu teuer"}
+        - type: choice
+          q: "Как отрицать прилагательное? *Das Bad ist ___ groß.*"
+          options: ["nicht", "kein", "keine", "nein"]
+          answer: 0
+          explain: "*nicht* — перед прилагательным. *kein* — перед существительным."
+        - type: choice
+          q: "*Die Stühle sind ___.* Какая форма?"
+          options: ["bequem", "bequeme", "bequemen", "bequemer"]
+          answer: 0
+          explain: "После *sein* у прилагательного нет окончания — ни в единственном, ни во множественном числе."
+        - type: choice
+          q: "Где обычно стоит das Bett?"
+          options: ["im Schlafzimmer", "in der Küche", "im Bad", "im Flur"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 26: Meine Wohnung"
+    minutes: 15
+    episode: 26
+    intro: |
+      Марвин смотрит комнату в общей квартире (WG). Посмотрите видео 2 раза: без субтитров и с немецкими субтитрами.
+    quiz:
+      id: q-w3d1-listen
+      title: "Folge 26: Meine Wohnung"
+      questions:
+        - type: choice
+          q: "Сколько комнат в квартире?"
+          options: ["5 комнат, кухня и ванная", "3 комнаты и кухня", "2 комнаты", "4 комнаты и балкон"]
+          answer: 0
+        - type: choice
+          q: "Сколько квадратных метров в комнате (по словам Лизы)?"
+          options: ["11", "10", "15", "20"]
+          answer: 0
+          explain: "Навин думает, что 10, Лиза поправляет: *elf Quadratmeter*."
+        - type: choice
+          q: "Сколько стоит комната с коммунальными платежами (*mit Nebenkosten*)?"
+          options: ["400 € в месяц", "300 € в месяц", "500 € в месяц", "400 € в неделю"]
+          answer: 0
+        - type: choice
+          q: "Какая кухня, по словам Себастьяна?"
+          options: ["gemütlich", "zu klein", "dunkel", "neu"]
+          answer: 0
+        - type: choice
+          q: "Почему комната тихая?"
+          options: ["Keine Autos.", "Die Fenster sind klein.", "Niemand wohnt hier.", "Es ist Nacht."]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: моя квартира"
+    minutes: 20
+    items:
+      - text: "Опишите свою квартиру в 5–6 предложениях: сколько комнат, какие они, что вам нравится и что нет. Используйте *groß, klein, hell, dunkel, neu, alt, (nicht) teuer, zu*."
+        write: true
+        sample: |
+          Meine Wohnung hat drei Zimmer, eine Küche und ein Bad. Das Wohnzimmer ist groß und hell. Das Schlafzimmer ist klein, aber ruhig. Die Küche ist neu. Das Bad ist leider zu klein. Die Miete ist nicht teuer.
+
+  - type: oral
+    title: "Говорение: где вы живёте?"
+    minutes: 10
+    quiz:
+      id: q-w3d1-oral
+      title: "Квартира вслух"
+      questions:
+        - {type: text, q: "Wie viele Zimmer hat Ihre Wohnung?", answer: "*Meine Wohnung hat zwei Zimmer, eine Küche und ein Bad.*"}
+        - {type: text, q: "Wie ist Ihr Wohnzimmer?", answer: "*Mein Wohnzimmer ist hell und gemütlich. Es ist nicht sehr groß.*"}
+        - {type: text, q: "Was ist in Ihrem Zimmer?", answer: "*In meinem Zimmer sind ein Bett, ein Tisch, ein Stuhl und ein Schrank.*"}
+
+  - type: words
+    title: "Слова дня: квартира и мебель"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Квартира большая и светлая.", "Die Wohnung ist groß und hell."]
+      - ["Кухня маленькая, но новая.", "Die Küche ist klein, aber neu."]
+      - ["Комната не тёмная.", "Das Zimmer ist nicht dunkel."]
+      - ["Аренда слишком дорогая.", "Die Miete ist zu teuer."]
+      - ["Моя квартира в центре.", "Meine Wohnung ist im Zentrum."]
+      - ["Сколько комнат в квартире?", "Wie viele Zimmer hat die Wohnung?"]
+      - ["Диван очень удобный.", "Das Sofa ist sehr bequem."]
+      - ["Здесь тихо.", "Hier ist es ruhig."]

@@ -1,0 +1,3635 @@
+{
+ "Abend": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Abende"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Adresse": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Adressen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Alter": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Alter"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Angebot": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Angebote"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Apfel": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Äpfel"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "April": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Aprile"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Arbeit": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Arbeiten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Arm": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Arme"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Arzt": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Ärzte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Aufgabe": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Aufgaben"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Auge": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Augen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "August": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Auguste"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Ausland": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Ausländer": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Ausländer"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Ausweis": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Ausweise"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Auto": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Autos"
+    ]
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Autos"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Baby": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Babys"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Bad": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Bäder"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Bahnhof": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Bahnhöfe"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Balkon": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Balkons",
+     "Balkone"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Banane": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Bananen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Bank": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Bänke"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Banken"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Bauch": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Bäuche"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Baum": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Bäume"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Bein": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Beine"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Beruf": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Berufe"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Bett": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Betten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Birne": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Birnen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Bleistift": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Bleistifte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Blume": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Blumen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Brot": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Brote"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Bruder": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Brüder"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Brötchen": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Brötchen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Buch": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Bücher"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Bus": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Busse"
+    ]
+   },
+   {
+    "genus": [
+     "f",
+     "m"
+    ],
+    "plurals": [
+     "Buses"
+    ]
+   },
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Busse"
+    ]
+   },
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Butter": {
+  "nouns": [
+   {
+    "genus": [
+     "f",
+     "m",
+     "n"
+    ],
+    "plurals": []
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Butters"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Bäckerei": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Bäckereien"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Café": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Cafés"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Chef": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Chefs"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Computer": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Computer"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Dezember": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Dezember"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Dienstag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Dienstage"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Donnerstag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Donnerstage"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Dorf": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Dörfer"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Durst": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "E-Mail": {
+  "nouns": [
+   {
+    "genus": [
+     "f",
+     "n"
+    ],
+    "plurals": [
+     "E-Mails"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Ecke": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Ecken"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Ehefrau": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Ehefrauen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Ehemann": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Ehemänner"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Ei": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Eier"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Einladung": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Einladungen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Eltern": {
+  "nouns": [
+   {
+    "genus": [
+     "0"
+    ],
+    "plurals": [
+     "Eltern"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Entschuldigung": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Entschuldigungen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Essen": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Essen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Euro": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Euros",
+     "Euro"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Euros"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Fahrkarte": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Fahrkarten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Fahrrad": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Fahrräder"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Familie": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Familien"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Familienname": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Familiennamen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Farbe": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Farben"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Februar": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Februare"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Fehler": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Fehler"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Fenster": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Fenster"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Fieber": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Fieber"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Film": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Filme"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Firma": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Firmen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Fisch": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Fische"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Flasche": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Flaschen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Fleisch": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Flughafen": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Flughäfen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Flugzeug": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Flugzeuge"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Formular": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Formulare"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Foto": {
+  "nouns": [
+   {
+    "genus": [
+     "n",
+     "f"
+    ],
+    "plurals": [
+     "Fotos"
+    ]
+   },
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Fotos"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Frage": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Fragen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Frau": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Frauen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Freitag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Freitage"
+    ]
+   },
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Freitage"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Freizeit": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Freizeiten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Freund": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Freunde"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Freundin": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Freundinnen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Frühling": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Frühlinge"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Frühstück": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Frühstücke"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Fuß": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Füße"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Fußball": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Fußbälle"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Gabel": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Gabeln"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Garten": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Gärten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Gast": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Gäste"
+    ]
+   },
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Gasten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Geburtstag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Geburtstage"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Geld": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Gelder"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Gemüse": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Gemüse"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Geschenk": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Geschenke"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Geschwister": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Geschwister"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Geschäft": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Geschäfte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Getränk": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Getränke"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Glas": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Gläser"
+    ]
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Glasen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Grad": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Grade"
+    ]
+   },
+   {
+    "genus": [
+     "m",
+     "n"
+    ],
+    "plurals": [
+     "Grade"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Haar": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Haare"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Haltestelle": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Haltestellen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Hand": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Hände"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Handy": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Handys"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Haus": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Häuser"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Hausaufgabe": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Hausaufgaben"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Heimat": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Heimaten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Hemd": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Hemden"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Herbst": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Herbste"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Herd": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Herde"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Herr": {
+  "nouns": [
+   {
+    "genus": [
+     "m",
+     "m"
+    ],
+    "plurals": [
+     "Herren",
+     "Herrn"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Hobby": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Hobbys"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Hochzeit": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Hochzeiten"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Hochzeiten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Hose": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Hosen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Hotel": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Hotels"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Hund": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Hunde"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Hunger": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Hähnchen": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Hähnchen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Jacke": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Jacken"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Jahr": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Jahre"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Januar": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Januare"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Job": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Jobs"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Juli": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Julis"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Juni": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Junis"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kaffee": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Kaffees"
+    ]
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Kaffees"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kartoffel": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Kartoffeln"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kasse": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Kassen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kilo": {
+  "nouns": [
+   {
+    "genus": [
+     "n",
+     "m"
+    ],
+    "plurals": [
+     "Kilo",
+     "Kilos"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kind": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Kinder"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kindergarten": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Kindergärten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kino": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Kinos"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kleid": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Kleider"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kleidung": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Kleidungen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kollege": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Kollegen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kollegin": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Kolleginnen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kopf": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Köpfe"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Krankenhaus": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Krankenhäuser"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kuchen": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Kuchen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kugelschreiber": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Kugelschreiber"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kurs": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Kurse"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Küche": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Küchen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Kühlschrank": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Kühlschränke"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Laden": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Läden",
+     "Laden"
+    ]
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Lampe": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Lampen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Land": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Länder",
+     "Lande"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Lehrer": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Lehrer"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Lehrerin": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Lehrerinnen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Leute": {
+  "nouns": [
+   {
+    "genus": [
+     "0"
+    ],
+    "plurals": [
+     "Leute"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Lied": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Lieder"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Lokal": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Lokale"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Löffel": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Löffel"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Mai": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Maie"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Mann": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Männer",
+     "Mannen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Meer": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Meere"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Messer": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Messer"
+    ]
+   },
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Messer"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Miete": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Mieten"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Mieten"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Mieten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Milch": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Milche",
+     "Milchen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Minute": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Minuten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Mittag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Mittage"
+    ]
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Mittwoch": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Mittwoche"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Montag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Montage"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Morgen": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Morgen"
+    ]
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Mund": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Münder"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Mutter": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Mütter"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Muttern"
+    ]
+   },
+   {
+    "genus": [
+     "0"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "März": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Märze"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Nachmittag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Nachmittage"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Nacht": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Nächte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Name": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Namen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Nase": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Nasen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Norden": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "November": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "November"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Nummer": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Nummern"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Obst": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Oktober": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Oktober"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Oma": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Omas"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Opa": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Opas"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Ordnung": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Ordnungen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Osten": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Papier": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Papiere"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Party": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Partys"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Pause": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Pausen"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Pausen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Pfund": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Pfunde"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Platz": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Plätze"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Polizei": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Polizeien"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Pommes frites": {
+  "nouns": [
+   {
+    "genus": [
+     "0"
+    ],
+    "plurals": [
+     "Pommes frites"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Post": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Posten"
+    ]
+   },
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Posts"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Postleitzahl": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Postleitzahlen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Praxis": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Praxen",
+     "Praktiken"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Preis": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Preise"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Prüfung": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Prüfungen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Rechnung": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Rechnungen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Regen": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Regen"
+    ]
+   },
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Reis": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Reise"
+    ]
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Reiser"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Reisebüro": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Reisebüros"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Restaurant": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Restaurants"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "S-Bahn": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "S-Bahnen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Saft": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Säfte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Salat": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Salate"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Salz": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Salze"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Samstag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Samstage"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Schinken": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Schinken"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Schlüssel": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Schlüssel"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Schrank": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Schränke"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Schuh": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Schuhe"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Schule": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Schulen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Schwester": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Schwestern"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Schwimmbad": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Schwimmbäder"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "See": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Seen"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Seen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Sehenswürdigkeit": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Sehenswürdigkeiten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Sekunde": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Sekunden"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "September": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "September"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Sofa": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Sofas"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Sohn": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Söhne"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Sommer": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Sommer"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Sonne": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Sonnen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Sonntag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Sonntage"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Speisekarte": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Speisekarten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Sport": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Sporte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Sprache": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Sprachen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Stadt": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Städte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Straße": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Straßen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Straßenbahn": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Straßenbahnen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Student": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Studenten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Stuhl": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Stühle"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Stunde": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Stunden"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Supermarkt": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Supermärkte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Süden": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Tag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Tage"
+    ]
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Tags"
+    ]
+   },
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Tags"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Tasche": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Taschen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Tasse": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Tassen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Taxi": {
+  "nouns": [
+   {
+    "genus": [
+     "n",
+     "m"
+    ],
+    "plurals": [
+     "Taxis",
+     "Taxen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Tee": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Tees"
+    ]
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Tees"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Telefon": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Telefone"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Teller": {
+  "nouns": [
+   {
+    "genus": [
+     "m",
+     "n"
+    ],
+    "plurals": [
+     "Teller"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Termin": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Termine"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Text": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Texte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Tisch": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Tische"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Tochter": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Töchter"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Toilette": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Toiletten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Tomate": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Tomaten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Tür": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Türen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Uhr": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Uhren"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Unterricht": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Unterrichte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Vater": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Väter"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Verkäufer": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Verkäufer"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Viertel": {
+  "nouns": [
+   {
+    "genus": [
+     "n",
+     "m"
+    ],
+    "plurals": [
+     "Viertel"
+    ]
+   },
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Viertel"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Vormittag": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Vormittage"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Vorname": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Vornamen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Wasser": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Wasser",
+     "Wässer"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Wein": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Weine"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Welt": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Welten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Westen": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": []
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Wetter": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Wetter"
+    ]
+   },
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Wetter"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Wind": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Winde"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Winter": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Winter"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Woche": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Wochen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Wochenende": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Wochenenden"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Wohnung": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Wohnungen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Wort": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Wörter"
+    ]
+   },
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Worte"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Zeit": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Zeiten"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Zimmer": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Zimmer"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Zug": {
+  "nouns": [
+   {
+    "genus": [
+     "m"
+    ],
+    "plurals": [
+     "Züge"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Ärztin": {
+  "nouns": [
+   {
+    "genus": [
+     "f"
+    ],
+    "plurals": [
+     "Ärztinnen"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ },
+ "Öl": {
+  "nouns": [
+   {
+    "genus": [
+     "n"
+    ],
+    "plurals": [
+     "Öle"
+    ]
+   }
+  ],
+  "fetched": "2026-10-31"
+ }
+}

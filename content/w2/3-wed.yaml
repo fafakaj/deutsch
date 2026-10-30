@@ -1,0 +1,131 @@
+date: 2026-11-11
+title: "Магазин, цены, количество. kein или nicht"
+hours: 2
+kind: study
+intro: |
+  Сегодня: покупки, цены, вес и количество. Грамматика: отрицание *kein* или *nicht*.
+steps:
+  - type: theory
+    title: "Отрицание: kein или nicht"
+    minutes: 15
+    article: kein-nicht
+    alt:
+      - {title: "Lingolia: Verneinung", url: "https://deutsch.lingolia.com/de/grammatik/satzbau/verneinung", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "выбрать *kein* (существительное без артикля или с *ein*) или *nicht* (всё остальное)"
+
+  - type: theory
+    title: "Цены и количество"
+    minutes: 10
+    article: preise-mengen
+    alt:
+      - {title: "Nicos Weg, Folge 50: Was darf es sein? (YouTube DW)", url: "https://www.youtube.com/watch?v=dOdHXwy0cME", lang: de, type: video, verified: "200 2026-10-31"}
+    goals:
+      - "прочитать цену: *3,20 € = drei Euro zwanzig*"
+      - "спросить цену и сказать количество: *Was kostet …? Ein Pfund Tomaten.*"
+
+  - type: quiz
+    title: "Проверка: kein/nicht и цены"
+    minutes: 15
+    quiz:
+      id: q-w2d3-kein-nicht
+      title: "kein / nicht; цены"
+      questions:
+        - {type: de, q: "Ich habe ___ Geld. (отрицание)", answer: "kein"}
+        - {type: de, q: "Das Brot ist ___ teuer. (отрицание)", answer: "nicht"}
+        - {type: de, q: "Wir kaufen heute ___ Tomaten. (отрицание)", answer: "keine"}
+        - {type: de, q: "Ich kaufe den Käse ___. (отрицание)", answer: "nicht", explain: "С определённым артиклем (*den Käse*) — *nicht*."}
+        - {type: de, q: "Das ist ___ Bäckerei, das ist ein Supermarkt. (отрицание)", answer: "keine"}
+        - {type: de, q: "Max kommt heute ___. (отрицание)", answer: "nicht"}
+        - type: choice
+          q: "Как читается цена 3,20 €?"
+          options: ["drei Euro zwanzig", "drei Komma zwanzig Euro Cent", "dreiundzwanzig Euro", "zwanzig Euro drei"]
+          answer: 0
+        - type: choice
+          q: "*ein Pfund* — это:"
+          options: ["500 Gramm", "1 Kilo", "100 Gramm", "250 Gramm"]
+          answer: 0
+        - type: choice
+          q: "Продавец говорит: *Das macht 8,60 Euro.* Это значит:"
+          options: ["С вас 8,60 евро.", "Это стоит 6,80 евро.", "Сдача 8,60 евро.", "Скидка 8,60 евро."]
+          answer: 0
+        - {type: de, q: "Спросите цену: «Сколько стоит хлеб?»", answer: ["Was kostet das Brot", "Wie viel kostet das Brot"]}
+        - {type: de, q: "Переведите: «Это недорого.»", answer: ["Das ist nicht teuer", "Das ist billig"]}
+
+  - type: listen
+    title: "Nicos Weg, Folge 49: Mengen und Preise"
+    minutes: 15
+    episode: 49
+    intro: |
+      Макс просит Инге и Нико купить продукты. Слушайте количество.
+    quiz:
+      id: q-w2d3-listen
+      title: "Folge 49: Mengen und Preise"
+      questions:
+        - type: choice
+          q: "Was möchte Inge kaufen?"
+          options: ["ein paar Brötchen", "einen Kuchen", "ein Hähnchen", "Milch"]
+          answer: 0
+        - type: multi
+          q: "Was braucht Max? Выберите все."
+          options: ["ein Hähnchen", "drei Gurken", "ein Pfund Tomaten", "ein Kilo Äpfel", "zwei Brote"]
+          answers: [0, 1, 2]
+        - {type: de, q: "Сколько грамм в одном фунте (*Pfund*)? Число цифрами.", answer: "500"}
+        - type: choice
+          q: "Для чего Максу помидоры?"
+          options: ["für sein Abendbrot (ужин)", "für das Restaurant", "für Yara", "für Inge"]
+          answer: 0
+        - type: choice
+          q: "Что получат Инге и Нико за помощь?"
+          options: ["das nächste Essen umsonst (бесплатно)", "Geld", "einen Kuchen", "den Schlüssel"]
+          answer: 0
+        - {type: de, q: "Нико не понял. Закончите его просьбу: «Kannst du das bitte noch einmal ___?»", answer: "wiederholen"}
+
+  - type: words
+    title: "Слова дня: магазин и цены"
+    minutes: 20
+    mode: study
+
+  - type: practice
+    title: "Письмо: записка о покупках"
+    minutes: 15
+    intro: "Goethe A1, Schreiben Teil 2: короткая записка или сообщение."
+    items:
+      - text: "Напишите записку соседу по квартире: что купить, сколько, чего не нужно (*kein/nicht*). 30 слов."
+        write: true
+        sample: |
+          Hallo Max,
+          kannst du bitte einkaufen? Wir brauchen ein Brot, sechs Eier und ein Pfund Tomaten. Milch brauchen wir nicht, wir haben noch zwei Flaschen. Kauf bitte keinen Käse!
+          Danke, Olga
+      - text: "Напишите 3 вопроса продавцу о ценах."
+        write: true
+        sample: |
+          Was kostet ein Kilo Äpfel? Wie viel kostet das Brot? Haben Sie auch Brötchen?
+
+  - type: oral
+    title: "Говорение: в магазине"
+    minutes: 10
+    intro: "Goethe A1, Sprechen Teil 3: попросить что-то и ответить."
+    quiz:
+      id: q-w2d3-oral
+      title: "Скажите вслух"
+      questions:
+        - {type: text, q: "Вы в булочной. Попросите хлеб и спросите цену.", answer: "Ich hätte gern ein Brot. Was kostet das?"}
+        - {type: text, q: "Продавец: *Darf es sonst noch etwas sein?* Ответьте: нет, спасибо.", answer: "Nein, danke. Das ist alles."}
+        - {type: text, q: "Скажите цену вслух: 1,60 € и 8,60 €.", answer: "ein Euro sechzig; acht Euro sechzig"}
+        - {type: text, q: "Скажите: «У меня нет наличных. Можно картой?»", answer: "Ich habe kein Bargeld. Kann ich mit Karte bezahlen?"}
+
+  - type: anki
+    title: "Карточки: магазин и отрицание"
+    minutes: 10
+    cards:
+      - ["Сколько стоит хлеб?", "Was kostet das Brot? / Wie viel kostet das Brot?"]
+      - ["С вас 8,60 евро.", "Das macht 8,60 Euro."]
+      - ["Я бы хотел(а) булочку.", "Ich hätte gern ein Brötchen."]
+      - ["Что-нибудь ещё? — Нет, спасибо, это всё.", "Sonst noch etwas? — Nein, danke. Das ist alles."]
+      - ["фунт = 500 г, полкило", "ein Pfund = 500 Gramm = ein halbes Kilo"]
+      - ["У меня нет денег.", "Ich habe kein Geld."]
+      - ["Это недорого.", "Das ist nicht teuer."]
+      - ["kein или nicht: «Я не покупаю этот сыр.»", "Ich kaufe den Käse nicht."]
+      - ["Повтори, пожалуйста, ещё раз.", "Kannst du das bitte noch einmal wiederholen?"]
+      - ["Можно оплатить картой?", "Kann ich mit Karte bezahlen?"]

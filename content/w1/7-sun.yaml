@@ -1,0 +1,108 @@
+date: 2026-11-08
+title: "Повторение недели 1. Мини-тест"
+hours: 1.5
+kind: review
+intro: |
+  Сегодня новых тем нет. Мини-тест по неделе, рассказ о себе (как в экзамене) и карточки.
+  Ошибки в тесте покажут, какой конспект перечитать.
+steps:
+  - type: quiz
+    title: "Мини-тест недели 1"
+    minutes: 30
+    quiz:
+      id: q-w1-test
+      title: "Мини-тест: неделя 1"
+      questions:
+        - {type: de, q: "Wir ___ aus Russland. (sein)", answer: "sind"}
+        - {type: de, q: "Du ___ Lehrerin, oder? (sein)", answer: "bist"}
+        - {type: de, q: "Woher ___ ihr? (kommen)", answer: "kommt"}
+        - {type: de, q: "Er ___ in Wien. (arbeiten)", answer: "arbeitet"}
+        - {type: de, q: "___ du Geschwister? (haben)", answer: "Hast"}
+        - {type: de, q: "Das ist Lisa und ___ Vater. (её)", answer: "ihr"}
+        - {type: de, q: "Nico sucht ___ Tasche. (его)", answer: "seine"}
+        - {type: de, q: "Das ist ___ Kugelschreiber, das ist ein Bleistift. (отрицание)", answer: "kein"}
+        - {type: de, q: "das Buch → die ___", answer: "Bücher"}
+        - {type: de, q: "Напишите словом: 76", answer: "sechsundsiebzig"}
+        - type: choice
+          q: "Какой порядок слов правильный?"
+          options: ["Heute wohnt Max in Berlin.", "Heute Max wohnt in Berlin.", "Heute Max in Berlin wohnt.", "Wohnt heute Max in Berlin."]
+          answer: 0
+        - type: choice
+          q: "Вы в учреждении. Как спросить имя?"
+          options: ["Wie heißen Sie?", "Wie heißt du?", "Wer bist du?", "Was ist dein Name?"]
+          answer: 0
+        - type: choice
+          q: "*Was sind Sie von Beruf?* Лучший ответ:"
+          options: ["Ich bin Ingenieur.", "Ich bin ein Beruf.", "Ich komme aus Beruf.", "Ich habe Ingenieur."]
+          answer: 0
+        - type: choice
+          q: "*Wie alt ist Ihre Tochter?*"
+          options: ["Sie ist zwölf.", "Sie heißt Anna.", "Sie wohnt in Kasan.", "Sie ist Lehrerin."]
+          answer: 0
+        - type: choice
+          q: "Как попрощаться с госпожой Шнайдер?"
+          options: ["Auf Wiedersehen, Frau Schneider!", "Tschüss, Schneider!", "Hallo, Frau Schneider!", "Guten Tag, Frau!"]
+          answer: 0
+        - {type: de, q: "Переведите: «Откуда Вы и где Вы живёте?»", answer: ["Woher kommen Sie und wo wohnen Sie", "Woher kommen Sie und wo wohnen Sie?"]}
+
+  - type: listen
+    title: "Дополнительно: Nicos Weg, Folge 12: Auf dem Amt"
+    minutes: 15
+    optional: true
+    episode: 12
+    intro: "Отец Лизы помогает Нико в учреждении: вежливая речь (*Sie*), дата рождения, адрес."
+    quiz:
+      id: q-w1d7-listen
+      title: "Folge 12: Auf dem Amt"
+      questions:
+        - type: choice
+          q: "Как отец Лизы обращается к Нико?"
+          options: ["Herr González, … Sie", "Nico, … du", "Nicolás, … du", "Herr Nico, … du"]
+          answer: 0
+        - type: choice
+          q: "Чей адрес берут для Нико?"
+          options: ["Lisas Adresse: Wagnergasse 136", "Yaras Adresse", "die Adresse von Max", "Nico hat eine Adresse"]
+          answer: 0
+        - type: choice
+          q: "Почему Нико не может назвать номер паспорта?"
+          options: ["Sein Pass ist weg.", "Er hat keinen Namen.", "Er spricht kein Deutsch.", "Der Pass ist bei Yara."]
+          answer: 0
+        - {type: de, q: "Wer ist Yara? «Yara ist Nicos ___.»", answer: "Tante"}
+
+  - type: oral
+    title: "Говорение: рассказ о себе (Goethe A1, Sprechen Teil 1)"
+    minutes: 15
+    intro: |
+      На экзамене вы рассказываете о себе по словам-подсказкам: *Name, Alter, Land, Wohnort, Sprachen, Beruf, Hobby*.
+      Затем по буквам называете имя и число (телефон). Скажите вслух, потом сравните.
+    quiz:
+      id: q-w1d7-oral
+      title: "Sich vorstellen"
+      questions:
+        - {type: text, q: "Расскажите о себе по 6 подсказкам: Name, Alter, Land, Wohnort, Sprachen, Beruf.", answer: "Ich heiße Olga Smirnowa. Ich bin 22 Jahre alt. Ich komme aus Russland. Ich wohne in Kasan. Ich spreche Russisch, Englisch und ein bisschen Deutsch. Ich bin Studentin."}
+        - {type: text, q: "Произнесите по буквам своё имя.", answer: "O – L – G – A."}
+        - {type: text, q: "Назовите свой номер телефона по цифрам.", answer: "Null – eins – sieben – drei …"}
+        - {type: text, q: "Расскажите о своей семье: 3 предложения.", answer: "Ich habe einen Bruder. Er heißt Pawel. Meine Eltern wohnen in Samara."}
+
+  - type: practice
+    title: "Письмо: письмо-знакомство"
+    minutes: 15
+    intro: "Goethe A1, Schreiben Teil 2: короткое письмо из 30 слов. Обращение, 3 пункта, прощание."
+    items:
+      - text: "Новая коллега по курсу просит рассказать о себе. Напишите e-mail (~30 слов): кто вы, откуда, где живёте, кем работаете. Начните с *Liebe Anna,* и закончите *Viele Grüße*."
+        write: true
+        sample: |
+          Liebe Anna,
+          ich heiße Olga und komme aus Russland. Ich wohne in Kasan und bin Studentin. Ich spreche Russisch und Englisch. Jetzt lerne ich Deutsch.
+          Viele Grüße
+          Olga
+
+  - type: anki
+    title: "Карточки: повторение недели 1"
+    minutes: 15
+    cards:
+      - ["Письмо: начало (друг / подруга)", "Lieber Tom, / Liebe Anna,"]
+      - ["Письмо: конец", "Viele Grüße / Liebe Grüße"]
+      - ["Я учу немецкий.", "Ich lerne Deutsch."]
+      - ["Я не понимаю.", "Ich verstehe das nicht."]
+      - ["Говорите медленнее, пожалуйста.", "Sprechen Sie bitte langsam."]

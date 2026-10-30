@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 # Smoke test of the site shell on fixture data (tests/fixtures): every step type renders and works,
 # no JS errors, no sideways scroll on a phone. Real data is checked by tools/check_*.py.
-# Run: bash tests/run_smoke.sh   (DATA=data to run on the real data instead of the fixtures)
+# Run: bash tests/run_smoke.sh   (DATA=data: the real data; DATA=data DATA_DIR=dir: data from another folder)
 set -euo pipefail
 APP="$(cd "$(dirname "$0")/.." && pwd)"
 TMP="$(mktemp -d)"
 trap 'kill $SERVER 2>/dev/null; rm -rf "$TMP"' EXIT
 cp -r "$APP"/{index.html,js,css,vendor,words,server.py} "$TMP"/
 mkdir -p "$TMP/data/articles"
-if [ "${DATA:-}" = data ]; then
+if [ -n "${DATA_DIR:-}" ]; then
+  cp -r "$DATA_DIR"/* "$TMP/data/"
+elif [ "${DATA:-}" = data ]; then
   cp -r "$APP"/data/{plan,quizzes,anki,words}.json "$APP"/data/articles "$TMP/data/"
 else
   cp "$APP"/tests/fixtures/*.json "$TMP/data/" && cp "$APP"/tests/fixtures/*.md "$TMP/data/articles/"

@@ -1,0 +1,103 @@
+date: 2026-11-24
+title: "Транспорт и дорога"
+hours: 2
+kind: study
+intro: |
+  Сегодня — транспорт (*mit dem Bus, mit der U-Bahn*) и как спросить дорогу.
+steps:
+  - type: theory
+    title: "mit + Dativ. Как пройти?"
+    minutes: 20
+    article: mit-dativ
+    alt:
+      - {title: "Wiktionary: Flexion:fahren", url: "https://de.wiktionary.org/wiki/Flexion:fahren", lang: de, type: article, verified: "200 2026-10-31"}
+    goals:
+      - "сказать, на чём вы едете: *mit dem Zug, mit der U-Bahn, zu Fuß*"
+      - "спросить дорогу и понять: *geradeaus, links, rechts, an der Ampel*"
+
+  - type: quiz
+    title: "Проверка: транспорт и дорога"
+    minutes: 15
+    quiz:
+      id: q-w4d2-mit
+      title: "mit + Dativ, дорога"
+      questions:
+        - {type: de, q: "Ich fahre mit ___ Bus.", answer: "dem"}
+        - {type: de, q: "Ich fahre mit ___ U-Bahn.", answer: "der"}
+        - {type: de, q: "Ich fahre mit ___ Fahrrad.", answer: "dem"}
+        - {type: de, q: "Пешком (2 слова)", answer: "zu Fuß"}
+        - {type: de, q: "du ___ (fahren)", answer: "fährst"}
+        - {type: de, q: "Переведите: «Идите прямо».", answer: "Gehen Sie geradeaus"}
+        - {type: de, q: "Переведите: «На светофоре налево».", answer: "An der Ampel links"}
+        - type: choice
+          q: "*Wie kommst du zur Arbeit?* — это:"
+          options: ["Как ты добираешься до работы?", "Когда ты идёшь на работу?", "Где твоя работа?", "Ты идёшь на работу?"]
+          answer: 0
+        - type: choice
+          q: "*die Kreuzung* — это:"
+          options: ["перекрёсток", "светофор", "остановка", "мост"]
+          answer: 0
+
+  - type: listen
+    title: "Nicos Weg, Folge 43: Mit Bus und Bahn"
+    minutes: 15
+    episode: 43
+    intro: |
+      Юрген и Эмма едут домой. Слушайте, на чём они едут и где остановка.
+    quiz:
+      id: q-w4d2-listen
+      title: "Folge 43: Mit Bus und Bahn"
+      questions:
+        - type: choice
+          q: "На чём Юрген и Эмма едут до университета?"
+          options: ["mit der U-Bahn", "mit dem Bus", "mit dem Auto", "mit dem Fahrrad"]
+          answer: 0
+        - type: choice
+          q: "Что выбирает Эмма для остатка пути?"
+          options: ["die Straßenbahn", "zu Fuß", "den Bus", "das Taxi"]
+          answer: 0
+        - type: choice
+          q: "Где ближайшая остановка?"
+          options: ["direkt hinter der Kreuzung", "neben dem Fahrradladen", "an der Uni", "vor dem Bahnhof"]
+          answer: 0
+        - type: choice
+          q: "Чей это магазин велосипедов?"
+          options: ["Yaras Fahrradladen", "Lisas Laden", "Jürgens Laden", "Emmas Laden"]
+          answer: 0
+
+  - type: practice
+    title: "Письмо: как ко мне пройти"
+    minutes: 15
+    items:
+      - text: "Друг едет к вам в гости. Напишите 5 предложений: на чём ехать, где выйти, куда идти пешком. Используйте *mit dem/der, bis zur Haltestelle …, geradeaus, links, rechts, an der Ampel*."
+        write: true
+        sample: |
+          Fahr mit der U-Bahn bis zum Marktplatz. Dann nimm den Bus Nummer 5. Steig an der Haltestelle „Parkstraße“ aus. Geh geradeaus und an der Ampel links. Mein Haus ist das zweite Haus rechts.
+
+  - type: oral
+    title: "Говорение: дорога"
+    minutes: 10
+    quiz:
+      id: q-w4d2-oral
+      title: "Дорога вслух"
+      questions:
+        - {type: text, q: "Wie kommen Sie zur Arbeit?", answer: "*Ich fahre mit dem Bus. Das dauert zwanzig Minuten.*"}
+        - {type: text, q: "Спросите прохожего, где вокзал.", answer: "*Entschuldigung, wo ist der Bahnhof?*"}
+        - {type: text, q: "Объясните дорогу: прямо, потом на перекрёстке направо.", answer: "*Gehen Sie geradeaus und dann an der Kreuzung rechts.*"}
+
+  - type: words
+    title: "Слова дня: транспорт"
+    minutes: 20
+
+  - type: anki
+    title: "Карточки"
+    minutes: 10
+    cards:
+      - ["Я еду на автобусе.", "Ich fahre mit dem Bus."]
+      - ["Я еду на метро.", "Ich fahre mit der U-Bahn."]
+      - ["Я иду пешком.", "Ich gehe zu Fuß."]
+      - ["Извините, где вокзал?", "Entschuldigung, wo ist der Bahnhof?"]
+      - ["Идите прямо.", "Gehen Sie geradeaus."]
+      - ["На светофоре налево.", "An der Ampel links."]
+      - ["Это недалеко.", "Das ist nicht weit."]
+      - ["Как ты добираешься до работы?", "Wie kommst du zur Arbeit?"]

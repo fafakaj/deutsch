@@ -1,0 +1,3169 @@
+{
+ "start": "2026-11-02",
+ "github_user": "fafakaj",
+ "weeks": [
+  {
+   "n": 1,
+   "title": "Знакомство: люди, страны, числа, семья, работа",
+   "short": "Знакомство",
+   "goal": "Умения A1 по Goethe «Prüfungsziele» (Kannbeschreibungen):\n\n- Я могу поздороваться, представиться и попрощаться: *Guten Tag! Ich bin Anna. Tschüss!*\n- Я могу представить другого человека: *Das ist Max. Er kommt aus Berlin.*\n- Я могу задать вопросы о человеке и ответить на них: имя, страна, город, языки, возраст, телефон.\n- Я могу назвать числа до 1000, номер телефона и адрес.\n- Я могу рассказать о семье и сказать, кем я работаю.\n- Я могу назвать предметы вокруг меня и сказать, чего у меня нет.\n- Грамматика: *sein*, *haben*, Präsens, W-Fragen, *der/ein/kein*, *mein/dein*, Plural.\n",
+   "days": [
+    {
+     "date": "2026-11-02",
+     "weekday": "mon",
+     "title": "Знакомство: люди, приветствия. Входной тест",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Первый день. Сначала входной тест: он показывает, что вы уже знаете. Ошибки — это нормально.\nПотом: глагол *sein*, видео «Nicos Weg», слова, письмо, говорение и карточки.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-mon-01",
+       "type": "quiz",
+       "title": "Входной тест A0",
+       "minutes": 20,
+       "why": "Тест показывает исходный уровень. Через 4 недели сравните его с пробным экзаменом.",
+       "quiz": "q-w1d1-a0"
+      },
+      {
+       "id": "w01-mon-02",
+       "type": "theory",
+       "title": "Личные местоимения и глагол sein",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Wiktionary: Flexion:sein (все формы)",
+         "url": "https://de.wiktionary.org/wiki/Flexion:sein",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        },
+        {
+         "title": "Lingolia: Personalpronomen",
+         "url": "https://deutsch.lingolia.com/de/grammatik/pronomen/personalpronomen",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "назвать все формы *sein*: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind",
+        "выбрать *du* или *Sie*"
+       ],
+       "source": {
+        "title": "Личные местоимения и глагол sein",
+        "url": "#/read/personalpronomen-sein",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w01-mon-03",
+       "type": "quiz",
+       "title": "Проверка: sein",
+       "minutes": 15,
+       "quiz": "q-w1d1-sein"
+      },
+      {
+       "id": "w01-mon-04",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 1: Hallo!",
+       "minutes": 15,
+       "intro": "Посмотрите видео 2 раза: сначала без субтитров, потом с немецкими субтитрами. Потом ответьте на вопросы.\n",
+       "quiz": "q-w1d1-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 1: Hallo! (YouTube)",
+        "url": "https://www.youtube.com/watch?v=dC6ZGLzdaTs",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Hallo!» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/hallo/l-37250531",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w01-mon-05",
+       "type": "words",
+       "title": "Слова дня: знакомство",
+       "minutes": 20,
+       "mode": "study",
+       "deck": "w1d1"
+      },
+      {
+       "id": "w01-mon-06",
+       "type": "practice",
+       "title": "Письмо: о себе и приветствия",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите 4–5 предложений о себе: приветствие, имя, *ich bin …*, как дела, прощание.",
+         "write": true,
+         "sample": "Hallo! Ich heiße Anna. Ich bin Anna Smirnowa. Mir geht es gut. Tschüss!\n"
+        },
+        {
+         "text": "Напишите диалог: утром вы встречаете соседа, господина Мюллера (на *Sie*). 3–4 реплики.",
+         "write": true,
+         "sample": "— Guten Morgen, Herr Müller! Wie geht es Ihnen?\n— Guten Morgen! Danke, gut. Und Ihnen?\n— Auch gut, danke. Auf Wiedersehen!\n"
+        },
+        {
+         "text": "Тот же диалог с другом Томом (на *du*).",
+         "write": true,
+         "sample": "— Hallo, Tom! Wie geht's?\n— Hi! Super, danke. Und dir?\n— Auch gut. Tschüss!\n"
+        }
+       ]
+      },
+      {
+       "id": "w01-mon-07",
+       "type": "oral",
+       "title": "Говорение: знакомство",
+       "minutes": 10,
+       "quiz": "q-w1d1-oral"
+      },
+      {
+       "id": "w01-mon-08",
+       "type": "anki",
+       "title": "Карточки: приветствия и sein",
+       "minutes": 10,
+       "deck": "Неделя 1"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "weekday": "tue",
+     "title": "Страны, города, языки. Präsens",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня: откуда вы, где живёте, на каких языках говорите. Грамматика: настоящее время правильных глаголов.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-tue-01",
+       "type": "theory",
+       "title": "Präsens: kommen, wohnen, heißen",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Lingolia: Präsens",
+         "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/praesens",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        },
+        {
+         "title": "Wiktionary: Flexion:kommen",
+         "url": "https://de.wiktionary.org/wiki/Flexion:kommen",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "спрягать правильный глагол: ich komme, du kommst, er kommt, wir kommen, ihr kommt, sie kommen",
+        "сказать, откуда вы и где живёте: *Ich komme aus … Ich wohne in …*"
+       ],
+       "source": {
+        "title": "Präsens правильных глаголов",
+        "url": "#/read/praesens-regelmaessig",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w01-tue-02",
+       "type": "quiz",
+       "title": "Проверка: Präsens",
+       "minutes": 15,
+       "quiz": "q-w1d2-praesens"
+      },
+      {
+       "id": "w01-tue-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 7: Woher kommst du?",
+       "minutes": 15,
+       "intro": "Посмотрите видео 2 раза. Слушайте, откуда герои и где они живут.\n",
+       "quiz": "q-w1d2-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 7: Woher kommst du? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=Q7ECRAQrzFc",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Woher kommst du?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/woher-kommst-du/l-37263828",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w01-tue-04",
+       "type": "words",
+       "title": "Слова дня: страны и языки",
+       "minutes": 20,
+       "mode": "study",
+       "deck": "w1d2"
+      },
+      {
+       "id": "w01-tue-05",
+       "type": "practice",
+       "title": "Письмо: анкета и рассказ о себе",
+       "minutes": 20,
+       "intro": "В экзамене Goethe A1 (Schreiben, Teil 1) нужно заполнить формуляр. Тренируемся.",
+       "items": [
+        {
+         "text": "Заполните анкету о себе: *Name, Vorname, Land, Wohnort, Sprachen*.",
+         "write": true,
+         "sample": "Name: Smirnowa\nVorname: Olga\nLand: Russland\nWohnort: Kasan\nSprachen: Russisch, Englisch\n"
+        },
+        {
+         "text": "Напишите о себе 5 предложений: имя, страна, город, языки, что вы учите.",
+         "write": true,
+         "sample": "Ich heiße Olga. Ich komme aus Russland. Ich wohne in Kasan. Ich spreche Russisch und ein bisschen Englisch. Ich lerne Deutsch.\n"
+        },
+        {
+         "text": "Напишите 4 предложения о друге (*er*) или подруге (*sie*).",
+         "write": true,
+         "sample": "Das ist Max. Er kommt aus Deutschland. Er wohnt in Berlin. Er spricht Deutsch und Englisch.\n"
+        }
+       ]
+      },
+      {
+       "id": "w01-tue-06",
+       "type": "oral",
+       "title": "Говорение: откуда вы?",
+       "minutes": 15,
+       "quiz": "q-w1d2-oral"
+      },
+      {
+       "id": "w01-tue-07",
+       "type": "anki",
+       "title": "Карточки: страны и Präsens",
+       "minutes": 10,
+       "deck": "Неделя 1"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "weekday": "wed",
+     "title": "Числа, возраст, контакты. Вопросы и порядок слов",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня: числа до 1000, возраст, номер телефона и адрес. Грамматика: вопросы и место глагола.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-wed-01",
+       "type": "theory",
+       "title": "Числа 0–1000",
+       "minutes": 15,
+       "alt": [
+        {
+         "title": "Nicos Weg, Folge 9: Zahlen von 1 bis 100 (YouTube DW)",
+         "url": "https://www.youtube.com/watch?v=p1dci7nBJRo",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "назвать числа 0–1000, номер телефона по цифрам и возраст"
+       ],
+       "source": {
+        "title": "Числа 0–1000",
+        "url": "#/read/zahlen",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w01-wed-02",
+       "type": "theory",
+       "title": "W-Fragen, Ja/Nein-Fragen, порядок слов",
+       "minutes": 15,
+       "alt": [
+        {
+         "title": "Lingolia: Fragen",
+         "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/fragen",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "задать вопрос с вопросительным словом и вопрос «да/нет»",
+        "поставить глагол на 2-е место в утверждении"
+       ],
+       "source": {
+        "title": "Вопросы и порядок слов",
+        "url": "#/read/fragen-wortstellung",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w01-wed-03",
+       "type": "quiz",
+       "title": "Проверка: числа и вопросы",
+       "minutes": 15,
+       "quiz": "q-w1d3-fragen"
+      },
+      {
+       "id": "w01-wed-04",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 10: Wichtige Nummern",
+       "minutes": 15,
+       "intro": "Слушайте числа: возраст и номер телефона. Номер можно записать на бумаге.\n",
+       "quiz": "q-w1d3-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 10: Wichtige Nummern (YouTube)",
+        "url": "https://www.youtube.com/watch?v=5wyalwdmpzk",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Wichtige Nummern» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/wichtige-nummern/l-37269501",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w01-wed-05",
+       "type": "words",
+       "title": "Слова дня: числа и контакты",
+       "minutes": 20,
+       "mode": "study",
+       "deck": "w1d3"
+      },
+      {
+       "id": "w01-wed-06",
+       "type": "practice",
+       "title": "Письмо: контакты и вопросы",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите словами свой возраст и номер телефона (выдуманный) по цифрам.",
+         "write": true,
+         "sample": "Ich bin zweiundzwanzig Jahre alt. Meine Telefonnummer ist null – eins – sieben – drei – neun – null – sieben – sechs.\n"
+        },
+        {
+         "text": "Напишите 5 вопросов новому однокурснику (на *du*): имя, страна, город, возраст, телефон.",
+         "write": true,
+         "sample": "Wie heißt du? Woher kommst du? Wo wohnst du? Wie alt bist du? Wie ist deine Telefonnummer?\n"
+        }
+       ]
+      },
+      {
+       "id": "w01-wed-07",
+       "type": "oral",
+       "title": "Говорение: вопросы о человеке",
+       "minutes": 10,
+       "intro": "Это задание как в Goethe A1, Sprechen Teil 1: представиться и назвать номер и адрес по буквам.",
+       "quiz": "q-w1d3-oral"
+      },
+      {
+       "id": "w01-wed-08",
+       "type": "anki",
+       "title": "Карточки: числа и вопросы",
+       "minutes": 10,
+       "deck": "Неделя 1"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "weekday": "thu",
+     "title": "Семья. haben; mein, dein, sein, ihr",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня: члены семьи, глагол *haben* и слова «мой, твой, его, её».\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-thu-01",
+       "type": "theory",
+       "title": "haben и притяжательные слова",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Wiktionary: Flexion:haben",
+         "url": "https://de.wiktionary.org/wiki/Flexion:haben",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        },
+        {
+         "title": "Lingolia: Possessivpronomen",
+         "url": "https://deutsch.lingolia.com/de/grammatik/pronomen/possessivpronomen",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "спрягать *haben*: ich habe, du hast, er hat …",
+        "выбрать *mein* или *meine* по роду слова"
+       ],
+       "source": {
+        "title": "Глагол haben и притяжательные слова",
+        "url": "#/read/haben-possessiv",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w01-thu-02",
+       "type": "quiz",
+       "title": "Проверка: haben, mein/meine",
+       "minutes": 15,
+       "quiz": "q-w1d4-haben"
+      },
+      {
+       "id": "w01-thu-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 61: Meine Familie",
+       "minutes": 15,
+       "intro": "Сельма пришла к Инге. Слушайте, что Сельма рассказывает о семье.\n",
+       "quiz": "q-w1d4-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 61: Meine Familie (YouTube)",
+        "url": "https://www.youtube.com/watch?v=6CQ32OWDyq4",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Meine Familie» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/meine-familie/l-37661741",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w01-thu-04",
+       "type": "words",
+       "title": "Слова дня: семья",
+       "minutes": 20,
+       "mode": "study",
+       "deck": "w1d4"
+      },
+      {
+       "id": "w01-thu-05",
+       "type": "practice",
+       "title": "Письмо: моя семья",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите 5–6 предложений о своей семье: кто есть, как зовут, сколько лет, где живут.",
+         "write": true,
+         "sample": "Meine Familie ist klein. Mein Vater heißt Igor, meine Mutter heißt Irina. Ich habe einen Bruder. Er heißt Pawel und ist fünfzehn. Meine Oma wohnt in Samara. Ich habe keine Schwester.\n"
+        },
+        {
+         "text": "Опишите семью друга или подруги (*sein/seine*, *ihr/ihre*): 3 предложения.",
+         "write": true,
+         "sample": "Das ist Selma. Ihre Eltern sind auch in Deutschland. Ihre Brüder wohnen in Hamburg.\n"
+        }
+       ]
+      },
+      {
+       "id": "w01-thu-06",
+       "type": "oral",
+       "title": "Говорение: семья",
+       "minutes": 15,
+       "quiz": "q-w1d4-oral"
+      },
+      {
+       "id": "w01-thu-07",
+       "type": "anki",
+       "title": "Карточки: семья и haben",
+       "minutes": 10,
+       "deck": "Неделя 1"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-06",
+     "weekday": "fri",
+     "title": "Профессии и работа. der, ein, kein",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня: профессии, место работы. Грамматика: определённый, неопределённый и отрицательный артикль в Nominativ.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-fri-01",
+       "type": "theory",
+       "title": "Артикли der / ein / kein (Nominativ)",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Lingolia: Artikel",
+         "url": "https://deutsch.lingolia.com/de/grammatik/nomen/artikel",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "выбрать *der/die/das* и *ein/eine*",
+        "сказать, кем вы работаете: *Ich bin Lehrerin.* (без артикля)"
+       ],
+       "source": {
+        "title": "Артикли der / ein / kein в Nominativ",
+        "url": "#/read/artikel-nominativ",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w01-fri-02",
+       "type": "quiz",
+       "title": "Проверка: артикли и профессии",
+       "minutes": 15,
+       "quiz": "q-w1d5-artikel"
+      },
+      {
+       "id": "w01-fri-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 37: Ich bin Lehrerin",
+       "minutes": 15,
+       "quiz": "q-w1d5-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 37: Ich bin Lehrerin (YouTube)",
+        "url": "https://www.youtube.com/watch?v=rH8HMCr73RM",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Ich bin Lehrerin» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/ich-bin-lehrerin/l-37469204",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w01-fri-04",
+       "type": "words",
+       "title": "Слова дня: профессии",
+       "minutes": 20,
+       "mode": "study",
+       "deck": "w1d5"
+      },
+      {
+       "id": "w01-fri-05",
+       "type": "practice",
+       "title": "Письмо: моя работа",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите 4–5 предложений: кем вы работаете или где учитесь, где, нравится ли работа.",
+         "write": true,
+         "sample": "Ich bin Programmierer von Beruf. Ich arbeite in Kasan. Meine Firma ist klein. Die Arbeit ist interessant. Mein Chef heißt Herr Petrow.\n"
+        },
+        {
+         "text": "Напишите о двух знакомых: кто они по профессии и где работают.",
+         "write": true,
+         "sample": "Meine Mutter ist Ärztin. Sie arbeitet in einem Krankenhaus. Mein Freund Max ist Student. Er hat keinen Job.\n"
+        }
+       ]
+      },
+      {
+       "id": "w01-fri-06",
+       "type": "oral",
+       "title": "Говорение: профессия",
+       "minutes": 10,
+       "quiz": "q-w1d5-oral"
+      },
+      {
+       "id": "w01-fri-07",
+       "type": "anki",
+       "title": "Карточки: профессии и артикли",
+       "minutes": 10,
+       "deck": "Неделя 1"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-07",
+     "weekday": "sat",
+     "title": "Предметы вокруг: в классе и в сумке. Plural",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня: предметы в классе и в сумке. Грамматика: множественное число существительных.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-sat-01",
+       "type": "theory",
+       "title": "Plural: основные типы",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Lingolia: Plural",
+         "url": "https://deutsch.lingolia.com/de/grammatik/nomen/plural",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "узнать 5 типов множественного числа",
+        "помнить: во мн. числе артикль всегда *die*"
+       ],
+       "source": {
+        "title": "Множественное число (Plural)",
+        "url": "#/read/plural",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w01-sat-02",
+       "type": "quiz",
+       "title": "Проверка: Plural",
+       "minutes": 15,
+       "quiz": "q-w1d6-plural"
+      },
+      {
+       "id": "w01-sat-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 21: Was ist das?",
+       "minutes": 15,
+       "quiz": "q-w1d6-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 21: Was ist das? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=9obS6QT10To",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Was ist das?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/was-ist-das/l-37368285",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w01-sat-04",
+       "type": "words",
+       "title": "Слова дня: предметы",
+       "minutes": 20,
+       "mode": "study",
+       "deck": "w1d6"
+      },
+      {
+       "id": "w01-sat-05",
+       "type": "practice",
+       "title": "Письмо: что у меня в сумке",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите, что лежит в вашей сумке или на столе: 5 предложений, с числами и Plural.",
+         "write": true,
+         "sample": "In meiner Tasche sind zwei Bücher und drei Kugelschreiber. Da ist auch ein Handy. Mein Schlüssel ist auch da. Auf dem Tisch sind zwei Fotos. Ich habe keinen Computer.\n"
+        },
+        {
+         "text": "Напишите короткую записку соседу: где лежат ключи и книги (*Der Schlüssel ist … Die Bücher sind …*).",
+         "write": true,
+         "sample": "Hallo Tom, der Schlüssel ist auf dem Tisch. Die Bücher sind in der Tasche. Bis morgen! Anna\n"
+        }
+       ]
+      },
+      {
+       "id": "w01-sat-06",
+       "type": "oral",
+       "title": "Говорение: Was ist das?",
+       "minutes": 10,
+       "intro": "Как в Goethe A1, Sprechen Teil 3: попросить что-то и ответить.",
+       "quiz": "q-w1d6-oral"
+      },
+      {
+       "id": "w01-sat-07",
+       "type": "anki",
+       "title": "Карточки: предметы и Plural",
+       "minutes": 10,
+       "deck": "Неделя 1"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-08",
+     "weekday": "sun",
+     "title": "Повторение недели 1. Мини-тест",
+     "hours": 1.5,
+     "kind": "review",
+     "intro": "Сегодня новых тем нет. Мини-тест по неделе, рассказ о себе (как в экзамене) и карточки.\nОшибки в тесте покажут, какой конспект перечитать.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-sun-01",
+       "type": "quiz",
+       "title": "Мини-тест недели 1",
+       "minutes": 30,
+       "quiz": "q-w1-test"
+      },
+      {
+       "id": "w01-sun-02",
+       "type": "listen",
+       "title": "Дополнительно: Nicos Weg, Folge 12: Auf dem Amt",
+       "minutes": 15,
+       "optional": true,
+       "intro": "Отец Лизы помогает Нико в учреждении: вежливая речь (*Sie*), дата рождения, адрес.",
+       "quiz": "q-w1d7-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 12: Auf dem Amt (YouTube)",
+        "url": "https://www.youtube.com/watch?v=IhLqeX8QjSg",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Auf dem Amt» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/auf-dem-amt/l-37269629",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w01-sun-03",
+       "type": "oral",
+       "title": "Говорение: рассказ о себе (Goethe A1, Sprechen Teil 1)",
+       "minutes": 15,
+       "intro": "На экзамене вы рассказываете о себе по словам-подсказкам: *Name, Alter, Land, Wohnort, Sprachen, Beruf, Hobby*.\nЗатем по буквам называете имя и число (телефон). Скажите вслух, потом сравните.\n",
+       "quiz": "q-w1d7-oral"
+      },
+      {
+       "id": "w01-sun-04",
+       "type": "practice",
+       "title": "Письмо: письмо-знакомство",
+       "minutes": 15,
+       "intro": "Goethe A1, Schreiben Teil 2: короткое письмо из 30 слов. Обращение, 3 пункта, прощание.",
+       "items": [
+        {
+         "text": "Новая коллега по курсу просит рассказать о себе. Напишите e-mail (~30 слов): кто вы, откуда, где живёте, кем работаете. Начните с *Liebe Anna,* и закончите *Viele Grüße*.",
+         "write": true,
+         "sample": "Liebe Anna,\nich heiße Olga und komme aus Russland. Ich wohne in Kasan und bin Studentin. Ich spreche Russisch und Englisch. Jetzt lerne ich Deutsch.\nViele Grüße\nOlga\n"
+        }
+       ]
+      },
+      {
+       "id": "w01-sun-05",
+       "type": "anki",
+       "title": "Карточки: повторение недели 1",
+       "minutes": 15,
+       "deck": "Неделя 1"
+      }
+     ]
+    }
+   ],
+   "blocks": [
+    {
+     "id": "w01-b1",
+     "n": 1,
+     "title": "Знакомство и страны",
+     "due": "2026-11-03",
+     "steps": [
+      "w01-mon-01",
+      "w01-mon-02",
+      "w01-mon-03",
+      "w01-mon-04",
+      "w01-mon-05",
+      "w01-mon-06",
+      "w01-mon-07",
+      "w01-mon-08",
+      "w01-tue-01",
+      "w01-tue-02",
+      "w01-tue-03",
+      "w01-tue-04",
+      "w01-tue-05",
+      "w01-tue-06",
+      "w01-tue-07"
+     ]
+    },
+    {
+     "id": "w01-b2",
+     "n": 2,
+     "title": "Числа и семья",
+     "due": "2026-11-05",
+     "steps": [
+      "w01-wed-01",
+      "w01-wed-02",
+      "w01-wed-03",
+      "w01-wed-04",
+      "w01-wed-05",
+      "w01-wed-06",
+      "w01-wed-07",
+      "w01-wed-08",
+      "w01-thu-01",
+      "w01-thu-02",
+      "w01-thu-03",
+      "w01-thu-04",
+      "w01-thu-05",
+      "w01-thu-06",
+      "w01-thu-07"
+     ]
+    },
+    {
+     "id": "w01-b3",
+     "n": 3,
+     "title": "Работа, предметы, повторение",
+     "due": "2026-11-08",
+     "steps": [
+      "w01-fri-01",
+      "w01-fri-02",
+      "w01-fri-03",
+      "w01-fri-04",
+      "w01-fri-05",
+      "w01-fri-06",
+      "w01-fri-07",
+      "w01-sat-01",
+      "w01-sat-02",
+      "w01-sat-03",
+      "w01-sat-04",
+      "w01-sat-05",
+      "w01-sat-06",
+      "w01-sat-07",
+      "w01-sun-01",
+      "w01-sun-02",
+      "w01-sun-03",
+      "w01-sun-04",
+      "w01-sun-05"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Еда, покупки, кафе, одежда",
+   "short": "Еда и покупки",
+   "goal": "Умения A1 по Goethe «Prüfungsziele» (Kannbeschreibungen):\n\n- Я могу сказать, что я ем и пью, что люблю и чего не люблю.\n- Я могу попросить что-то и дать что-то: *Ich möchte ein Brot. — Hier, bitte.*\n- Я могу понять цены, количество и вес: *Das macht 8,60 Euro. Ein Pfund Tomaten.*\n- Я могу купить продукты, заказать еду в кафе и заплатить.\n- Я могу назвать одежду и цвета и сказать, что мне нравится.\n- Я могу понять простой рецепт и меню (*Speisekarte*).\n- Грамматика: Akkusativ (*den, einen, keinen; mich, dich, ihn*), *mögen/möchten*, *kein/nicht*, глаголы со сменой гласной.\n",
+   "days": [
+    {
+     "date": "2026-11-09",
+     "weekday": "mon",
+     "title": "Продукты. Akkusativ: den, einen",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня: продукты, холодильник, завтрак. Грамматика: винительный падеж (Akkusativ) — «что?» после *haben, brauchen, kaufen, essen*.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w02-mon-01",
+       "type": "theory",
+       "title": "Akkusativ: den / einen / keinen",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Lingolia: Deklination (Kasus)",
+         "url": "https://deutsch.lingolia.com/de/grammatik/nomen/deklination",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "заменить *der → den*, *ein → einen*, *kein → keinen* в Akkusativ",
+        "помнить: *die, das* и мн. число в Akkusativ не меняются"
+       ],
+       "source": {
+        "title": "Akkusativ — den, einen, keinen",
+        "url": "#/read/akkusativ",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w02-mon-02",
+       "type": "quiz",
+       "title": "Проверка: Akkusativ",
+       "minutes": 15,
+       "quiz": "q-w2d1-akk"
+      },
+      {
+       "id": "w02-mon-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 45: Lebensmittel",
+       "minutes": 15,
+       "intro": "Инге убирает продукты в холодильник. Слушайте названия продуктов.\n",
+       "quiz": "q-w2d1-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 45: Lebensmittel (YouTube)",
+        "url": "https://www.youtube.com/watch?v=3tq7bRB9iu0",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Lebensmittel» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/lebensmittel/l-37597045",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w02-mon-04",
+       "type": "words",
+       "title": "Слова дня: продукты",
+       "minutes": 20,
+       "mode": "study",
+       "deck": "w2d1"
+      },
+      {
+       "id": "w02-mon-05",
+       "type": "practice",
+       "title": "Письмо: список покупок и завтрак",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите список покупок на неделю: 8 продуктов с количеством (*ein Kilo, zwei, drei …*).",
+         "write": true,
+         "sample": "ein Kilo Äpfel, sechs Eier, ein Brot, zwei Tomaten, ein Hähnchen, Butter, Käse, eine Flasche Milch\n"
+        },
+        {
+         "text": "Что вы едите на завтрак? Напишите 4 предложения с Akkusativ (*Ich esse einen …, ich trinke …*).",
+         "write": true,
+         "sample": "Zum Frühstück esse ich ein Brötchen mit Butter und Käse. Ich esse auch einen Apfel. Ich trinke einen Kaffee. Fleisch esse ich morgens nicht.\n"
+        }
+       ]
+      },
+      {
+       "id": "w02-mon-06",
+       "type": "oral",
+       "title": "Говорение: что в холодильнике?",
+       "minutes": 15,
+       "quiz": "q-w2d1-oral"
+      },
+      {
+       "id": "w02-mon-07",
+       "type": "anki",
+       "title": "Карточки: продукты и Akkusativ",
+       "minutes": 10,
+       "deck": "Неделя 2"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "weekday": "tue",
+     "title": "Еда и напитки, вкусы. mögen, möchten",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня: что вы любите есть и пить, как предложить напиток. Грамматика: *mögen* (любить) и *möchten* (хотел бы).\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w02-tue-01",
+       "type": "theory",
+       "title": "mögen и möchten",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Wiktionary: Flexion:mögen",
+         "url": "https://de.wiktionary.org/wiki/Flexion:m%C3%B6gen",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        },
+        {
+         "title": "Lingolia: Modalverben",
+         "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "сказать, что вы любите и не любите: *Ich mag Kaffee. Ich mag keinen Fisch.*",
+        "вежливо попросить: *Ich möchte einen Tee, bitte.*"
+       ],
+       "source": {
+        "title": "mögen и möchten",
+        "url": "#/read/moegen-moechten",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w02-tue-02",
+       "type": "quiz",
+       "title": "Проверка: mögen и möchten",
+       "minutes": 15,
+       "quiz": "q-w2d2-moegen"
+      },
+      {
+       "id": "w02-tue-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 46: Ich mag (nicht)!",
+       "minutes": 15,
+       "intro": "Нико приходит жить к Инге. Слушайте, что он хочет пить и что любит есть.\n",
+       "quiz": "q-w2d2-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 46: Ich mag (nicht)! (YouTube)",
+        "url": "https://www.youtube.com/watch?v=sEu2PqmGrgw",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Ich mag (nicht)!» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/ich-mag-nicht/l-37599970",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w02-tue-04",
+       "type": "words",
+       "title": "Слова дня: еда и напитки",
+       "minutes": 20,
+       "mode": "study",
+       "deck": "w2d2"
+      },
+      {
+       "id": "w02-tue-05",
+       "type": "practice",
+       "title": "Письмо: что я люблю",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите 5 предложений: что вы любите и не любите есть и пить (*mögen, gern, nicht gern*).",
+         "write": true,
+         "sample": "Ich mag Kaffee, aber ich mag keinen Tee. Ich esse gern Fisch und Gemüse. Fleisch esse ich nicht so gern. Mein Lieblingsessen ist Pizza. Ich trinke gern Wasser.\n"
+        },
+        {
+         "text": "Друг приходит в гости. Напишите 3 вопроса-предложения с *möchten*.",
+         "write": true,
+         "sample": "Möchtest du etwas trinken? Möchtest du einen Kaffee oder einen Tee? Möchtest du auch etwas essen?\n"
+        }
+       ]
+      },
+      {
+       "id": "w02-tue-06",
+       "type": "oral",
+       "title": "Говорение: в гостях",
+       "minutes": 15,
+       "quiz": "q-w2d2-oral"
+      },
+      {
+       "id": "w02-tue-07",
+       "type": "anki",
+       "title": "Карточки: mögen и möchten",
+       "minutes": 10,
+       "deck": "Неделя 2"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-11",
+     "weekday": "wed",
+     "title": "Магазин, цены, количество. kein или nicht",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня: покупки, цены, вес и количество. Грамматика: отрицание *kein* или *nicht*.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w02-wed-01",
+       "type": "theory",
+       "title": "Отрицание: kein или nicht",
+       "minutes": 15,
+       "alt": [
+        {
+         "title": "Lingolia: Verneinung",
+         "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/verneinung",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "выбрать *kein* (существительное без артикля или с *ein*) или *nicht* (всё остальное)"
+       ],
+       "source": {
+        "title": "Отрицание kein или nicht",
+        "url": "#/read/kein-nicht",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w02-wed-02",
+       "type": "theory",
+       "title": "Цены и количество",
+       "minutes": 10,
+       "alt": [
+        {
+         "title": "Nicos Weg, Folge 50: Was darf es sein? (YouTube DW)",
+         "url": "https://www.youtube.com/watch?v=dOdHXwy0cME",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "прочитать цену: *3,20 € = drei Euro zwanzig*",
+        "спросить цену и сказать количество: *Was kostet …? Ein Pfund Tomaten.*"
+       ],
+       "source": {
+        "title": "Цены и количество",
+        "url": "#/read/preise-mengen",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w02-wed-03",
+       "type": "quiz",
+       "title": "Проверка: kein/nicht и цены",
+       "minutes": 15,
+       "quiz": "q-w2d3-kein-nicht"
+      },
+      {
+       "id": "w02-wed-04",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 49: Mengen und Preise",
+       "minutes": 15,
+       "intro": "Макс просит Инге и Нико купить продукты. Слушайте количество.\n",
+       "quiz": "q-w2d3-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 49: Mengen und Preise (YouTube)",
+        "url": "https://www.youtube.com/watch?v=ySrfaSqtdfw",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Mengen und Preise» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/mengen-und-preise/l-37628421",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w02-wed-05",
+       "type": "words",
+       "title": "Слова дня: магазин и цены",
+       "minutes": 20,
+       "mode": "study",
+       "deck": "w2d3"
+      },
+      {
+       "id": "w02-wed-06",
+       "type": "practice",
+       "title": "Письмо: записка о покупках",
+       "minutes": 15,
+       "intro": "Goethe A1, Schreiben Teil 2: короткая записка или сообщение.",
+       "items": [
+        {
+         "text": "Напишите записку соседу по квартире: что купить, сколько, чего не нужно (*kein/nicht*). 30 слов.",
+         "write": true,
+         "sample": "Hallo Max,\nkannst du bitte einkaufen? Wir brauchen ein Brot, sechs Eier und ein Pfund Tomaten. Milch brauchen wir nicht, wir haben noch zwei Flaschen. Kauf bitte keinen Käse!\nDanke, Olga\n"
+        },
+        {
+         "text": "Напишите 3 вопроса продавцу о ценах.",
+         "write": true,
+         "sample": "Was kostet ein Kilo Äpfel? Wie viel kostet das Brot? Haben Sie auch Brötchen?\n"
+        }
+       ]
+      },
+      {
+       "id": "w02-wed-07",
+       "type": "oral",
+       "title": "Говорение: в магазине",
+       "minutes": 10,
+       "intro": "Goethe A1, Sprechen Teil 3: попросить что-то и ответить.",
+       "quiz": "q-w2d3-oral"
+      },
+      {
+       "id": "w02-wed-08",
+       "type": "anki",
+       "title": "Карточки: магазин и отрицание",
+       "minutes": 10,
+       "deck": "Неделя 2"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-12",
+     "weekday": "thu",
+     "title": "Кухня и посуда",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — кухня и глаголы, у которых меняется гласная: *essen → du isst, nehmen → er nimmt*.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w02-thu-01",
+       "type": "theory",
+       "title": "Глаголы со сменой гласной",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Wiktionary: Flexion:sehen",
+         "url": "https://de.wiktionary.org/wiki/Flexion:sehen",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        },
+        {
+         "title": "Wiktionary: Flexion:fahren",
+         "url": "https://de.wiktionary.org/wiki/Flexion:fahren",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "спрягать *essen, nehmen, sprechen, sehen, fahren* в формах *du* и *er*",
+        "помнить: у *wir* и *sie* смены нет"
+       ],
+       "source": {
+        "title": "Глаголы со сменой гласной",
+        "url": "#/read/vokalwechsel",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w02-thu-02",
+       "type": "quiz",
+       "title": "Проверка: смена гласной",
+       "minutes": 15,
+       "quiz": "q-w2d4-vokal"
+      },
+      {
+       "id": "w02-thu-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 52: Wie viel Mehl?",
+       "minutes": 15,
+       "intro": "Инге и Нико пекут пиццу по кулинарной книге. Слушайте, что и как режут.\n",
+       "quiz": "q-w2d4-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 52: Wie viel Mehl? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=0S3urnio_08",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Wie viel Mehl?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/wie-viel-mehl/l-37647289",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w02-thu-04",
+       "type": "practice",
+       "title": "Письмо: мой рецепт",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите простой рецепт (5–6 предложений): что нужно и что делать. Используйте *man nimmt, man schneidet, man kocht/backt* и названия посуды: *der Topf, die Pfanne, der Teller, die Schüssel*.",
+         "write": true,
+         "sample": "Für einen Salat braucht man Tomaten, eine Gurke und Käse. Man wäscht das Gemüse. Dann schneidet man die Tomaten und die Gurke klein. Man nimmt eine große Schüssel. Man gibt Öl und Salz dazu. Guten Appetit!\n"
+        }
+       ]
+      },
+      {
+       "id": "w02-thu-05",
+       "type": "oral",
+       "title": "Говорение: на кухне",
+       "minutes": 10,
+       "quiz": "q-w2d4-oral"
+      },
+      {
+       "id": "w02-thu-06",
+       "type": "words",
+       "title": "Слова дня: кухня и посуда",
+       "minutes": 20,
+       "deck": "w2d4"
+      },
+      {
+       "id": "w02-thu-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 2"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-13",
+     "weekday": "fri",
+     "title": "Кафе и ресторан",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — заказ в кафе и оплата. Вежливо: *Ich hätte gern…, Zahlen, bitte!*\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w02-fri-01",
+       "type": "theory",
+       "title": "В кафе и ресторане",
+       "minutes": 15,
+       "goals": [
+        "заказать вежливо: *Ich hätte gern einen Tee.*",
+        "попросить счёт и понять вопрос *Zusammen oder getrennt?*"
+       ],
+       "source": {
+        "title": "В кафе и ресторане",
+        "url": "#/read/im-restaurant",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w02-fri-02",
+       "type": "quiz",
+       "title": "Проверка: в ресторане",
+       "minutes": 15,
+       "quiz": "q-w2d5-restaurant"
+      },
+      {
+       "id": "w02-fri-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 16: Zahlen bitte!",
+       "minutes": 15,
+       "intro": "Друзья получают заказ пиццы. Слушайте цены и как Лиза платит.\n",
+       "quiz": "q-w2d5-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 16: Zahlen bitte! (YouTube)",
+        "url": "https://www.youtube.com/watch?v=c7LTbMCKVNo",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Zahlen bitte!» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/zahlen-bitte/l-37280348",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w02-fri-04",
+       "type": "practice",
+       "title": "Письмо: диалог в кафе",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите диалог в кафе (6–8 реплик): официант спрашивает, вы заказываете еду и напиток, потом просите счёт и платите.",
+         "write": true,
+         "sample": "— Guten Tag! Was darf es sein?\n— Ich hätte gern eine Tomatensuppe und ein Wasser, bitte.\n— Möchten Sie noch etwas?\n— Nein, danke.\n— Zahlen, bitte!\n— Das macht 9,80 Euro.\n— 10 Euro. Stimmt so.\n— Vielen Dank!\n"
+        }
+       ]
+      },
+      {
+       "id": "w02-fri-05",
+       "type": "oral",
+       "title": "Говорение: заказ",
+       "minutes": 10,
+       "quiz": "q-w2d5-oral"
+      },
+      {
+       "id": "w02-fri-06",
+       "type": "words",
+       "title": "Слова дня: кафе и ресторан",
+       "minutes": 20,
+       "deck": "w2d5"
+      },
+      {
+       "id": "w02-fri-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 2"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-14",
+     "weekday": "sat",
+     "title": "Одежда и цвета",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — одежда, цвета и местоимения в Akkusativ: *Der Pullover? Ich nehme **ihn**.*\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w02-sat-01",
+       "type": "theory",
+       "title": "Местоимения в Akkusativ",
+       "minutes": 20,
+       "goals": [
+        "заменить вещь местоимением: *den Rock → ihn, die Hose → sie, das Kleid → es*",
+        "спросить в магазине: *Kann ich das anprobieren?*"
+       ],
+       "source": {
+        "title": "Местоимения в Akkusativ",
+        "url": "#/read/akkusativ-pronomen",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w02-sat-02",
+       "type": "quiz",
+       "title": "Проверка: Akkusativ местоимений",
+       "minutes": 15,
+       "quiz": "q-w2d6-pron"
+      },
+      {
+       "id": "w02-sat-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 59: Das passt gut!",
+       "minutes": 15,
+       "intro": "Сельма и Нико в магазине одежды. Слушайте *Wie findest du…?, Das steht dir gut, anprobieren*.\n",
+       "quiz": "q-w2d6-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 59: Das passt gut! (YouTube)",
+        "url": "https://www.youtube.com/watch?v=pCRS-oxE61k",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Das passt gut!» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/das-passt-gut/l-37661740",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w02-sat-04",
+       "type": "practice",
+       "title": "Письмо: что я ношу",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Опишите 5 вещей, которые вы носите сегодня или любите: цвет и ваше мнение. Используйте местоимения: *Meine Jacke ist blau. Ich finde sie sehr bequem.*",
+         "write": true,
+         "sample": "Heute trage ich eine blaue Jeans und einen grauen Pullover. Den Pullover finde ich sehr warm. Meine Schuhe sind schwarz, ich finde sie bequem. Meine Jacke ist rot. Ich trage sie gern. Mein Lieblingskleid ist grün, aber ich trage es selten.\n"
+        }
+       ]
+      },
+      {
+       "id": "w02-sat-05",
+       "type": "oral",
+       "title": "Говорение: в магазине",
+       "minutes": 10,
+       "quiz": "q-w2d6-oral"
+      },
+      {
+       "id": "w02-sat-06",
+       "type": "words",
+       "title": "Слова дня: одежда и цвета",
+       "minutes": 20,
+       "deck": "w2d6"
+      },
+      {
+       "id": "w02-sat-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 2"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-15",
+     "weekday": "sun",
+     "title": "Повторение недели 2",
+     "hours": 1.5,
+     "kind": "review",
+     "intro": "Воскресенье — повторение: еда, покупки, кафе, одежда. Сначала мини-тест, потом видео.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w02-sun-01",
+       "type": "quiz",
+       "title": "Мини-тест недели 2",
+       "minutes": 25,
+       "quiz": "q-w2d7-test"
+      },
+      {
+       "id": "w02-sun-02",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 15: Eine Pizza bitte!",
+       "minutes": 15,
+       "intro": "Друзья заказывают пиццу. Слушайте, кто что берёт.\n",
+       "quiz": "q-w2d7-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 15: Eine Pizza bitte! (YouTube)",
+        "url": "https://www.youtube.com/watch?v=w-Zea1mverM",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Eine Pizza bitte!» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/eine-pizza-bitte/l-37279261",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w02-sun-03",
+       "type": "practice",
+       "title": "Письмо: список покупок и вечер в кафе",
+       "minutes": 20,
+       "items": [
+        {
+         "text": "(1) Напишите список покупок на выходные: 6 продуктов с количеством (*ein Kilo Äpfel, 200 Gramm Käse*). (2) Напишите 3 предложения: что вы обычно заказываете в кафе и что не едите.",
+         "write": true,
+         "sample": "Einkaufsliste: ein Kilo Äpfel, 200 Gramm Käse, ein Liter Milch, sechs Eier, ein Brot, eine Flasche Wasser.\nIm Café nehme ich meistens einen Cappuccino und ein Stück Kuchen. Ich esse keinen Fisch. Ich trinke keinen Alkohol.\n"
+        }
+       ]
+      },
+      {
+       "id": "w02-sun-04",
+       "type": "anki",
+       "title": "Карточки недели",
+       "minutes": 15,
+       "deck": "Неделя 2"
+      }
+     ]
+    }
+   ],
+   "blocks": [
+    {
+     "id": "w02-b1",
+     "n": 1,
+     "title": "Продукты и вкусы",
+     "due": "2026-11-10",
+     "steps": [
+      "w02-mon-01",
+      "w02-mon-02",
+      "w02-mon-03",
+      "w02-mon-04",
+      "w02-mon-05",
+      "w02-mon-06",
+      "w02-mon-07",
+      "w02-tue-01",
+      "w02-tue-02",
+      "w02-tue-03",
+      "w02-tue-04",
+      "w02-tue-05",
+      "w02-tue-06",
+      "w02-tue-07"
+     ]
+    },
+    {
+     "id": "w02-b2",
+     "n": 2,
+     "title": "Магазин и кухня",
+     "due": "2026-11-12",
+     "steps": [
+      "w02-wed-01",
+      "w02-wed-02",
+      "w02-wed-03",
+      "w02-wed-04",
+      "w02-wed-05",
+      "w02-wed-06",
+      "w02-wed-07",
+      "w02-wed-08",
+      "w02-thu-01",
+      "w02-thu-02",
+      "w02-thu-03",
+      "w02-thu-04",
+      "w02-thu-05",
+      "w02-thu-06",
+      "w02-thu-07"
+     ]
+    },
+    {
+     "id": "w02-b3",
+     "n": 3,
+     "title": "Кафе, одежда, повторение",
+     "due": "2026-11-15",
+     "steps": [
+      "w02-fri-01",
+      "w02-fri-02",
+      "w02-fri-03",
+      "w02-fri-04",
+      "w02-fri-05",
+      "w02-fri-06",
+      "w02-fri-07",
+      "w02-sat-01",
+      "w02-sat-02",
+      "w02-sat-03",
+      "w02-sat-04",
+      "w02-sat-05",
+      "w02-sat-06",
+      "w02-sat-07",
+      "w02-sun-01",
+      "w02-sun-02",
+      "w02-sun-03",
+      "w02-sun-04"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Дом, время, распорядок дня, свободное время",
+   "short": "Дом и время",
+   "goal": "- Я могу описать свою квартиру и мебель: *Die Küche ist klein, aber hell.*\n- Я могу назвать время официально и разговорно: *Es ist halb acht.*\n- Я могу рассказать свой день: *Ich stehe um sieben Uhr auf.*\n- Я могу договориться о дне и времени: *am Montag um zehn Uhr*.\n- Я могу сказать, что я умею и что люблю: *Ich kann gut kochen. Ich lese gern.*\n",
+   "days": [
+    {
+     "date": "2026-11-16",
+     "weekday": "mon",
+     "title": "Квартира и мебель",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Неделя 3 — дом и время. Сегодня: комнаты, мебель и прилагательные после *sein*.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w03-mon-01",
+       "type": "theory",
+       "title": "Прилагательное после sein",
+       "minutes": 15,
+       "alt": [
+        {
+         "title": "Lingolia: Adjektive — Verwendung",
+         "url": "https://deutsch.lingolia.com/de/grammatik/adjektive",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "описать комнату: *Das Zimmer ist hell und groß.*",
+        "отрицать прилагательное: *nicht teuer*"
+       ],
+       "source": {
+        "title": "Прилагательное после sein",
+        "url": "#/read/adjektive-sein",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w03-mon-02",
+       "type": "quiz",
+       "title": "Проверка: прилагательные",
+       "minutes": 15,
+       "quiz": "q-w3d1-adj"
+      },
+      {
+       "id": "w03-mon-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 26: Meine Wohnung",
+       "minutes": 15,
+       "intro": "Марвин смотрит комнату в общей квартире (WG). Посмотрите видео 2 раза: без субтитров и с немецкими субтитрами.\n",
+       "quiz": "q-w3d1-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 26: Meine Wohnung (YouTube)",
+        "url": "https://www.youtube.com/watch?v=YRWehEtSPQY",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Meine Wohnung» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/meine-wohnung/l-37425763",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w03-mon-04",
+       "type": "practice",
+       "title": "Письмо: моя квартира",
+       "minutes": 20,
+       "items": [
+        {
+         "text": "Опишите свою квартиру в 5–6 предложениях: сколько комнат, какие они, что вам нравится и что нет. Используйте *groß, klein, hell, dunkel, neu, alt, (nicht) teuer, zu*.",
+         "write": true,
+         "sample": "Meine Wohnung hat drei Zimmer, eine Küche und ein Bad. Das Wohnzimmer ist groß und hell. Das Schlafzimmer ist klein, aber ruhig. Die Küche ist neu. Das Bad ist leider zu klein. Die Miete ist nicht teuer.\n"
+        }
+       ]
+      },
+      {
+       "id": "w03-mon-05",
+       "type": "oral",
+       "title": "Говорение: где вы живёте?",
+       "minutes": 10,
+       "quiz": "q-w3d1-oral"
+      },
+      {
+       "id": "w03-mon-06",
+       "type": "words",
+       "title": "Слова дня: квартира и мебель",
+       "minutes": 20,
+       "deck": "w3d1"
+      },
+      {
+       "id": "w03-mon-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 3"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-17",
+     "weekday": "tue",
+     "title": "Время и части дня",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — часы. Официальное время (вокзал, радио) и разговорное (в жизни). Главная ловушка: *halb neun* = 8:30.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w03-tue-01",
+       "type": "theory",
+       "title": "Который час? Uhrzeit",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Lingolia: Uhrzeit",
+         "url": "https://deutsch.lingolia.com/de/wortschatz/zahlen-datum-uhrzeit",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "назвать время официально и разговорно",
+        "спросить и ответить: *Wie spät ist es? — Es ist Viertel nach drei.*"
+       ],
+       "source": {
+        "title": "Который час? Uhrzeit",
+        "url": "#/read/uhrzeit",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w03-tue-02",
+       "type": "quiz",
+       "title": "Проверка: время",
+       "minutes": 15,
+       "quiz": "q-w3d2-uhr"
+      },
+      {
+       "id": "w03-tue-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 33: Wie spät ist es?",
+       "minutes": 15,
+       "intro": "Нико ждёт Лизу в ресторане. Слушайте время: когда открыт ресторан и когда придёт Лиза.\n",
+       "quiz": "q-w3d2-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 33: Wie spät ist es? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=SEV3kmyQCII",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Wie spät ist es?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/wie-spät-ist-es/l-37453621",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w03-tue-04",
+       "type": "practice",
+       "title": "Письмо: расписание",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите 5 строк: во сколько вы обычно делаете дела (работа, обед, спорт, ужин, сон). Одну строку — официально, остальные — разговорно. Пример: *Ich esse um halb eins zu Mittag.*",
+         "write": true,
+         "sample": "Ich frühstücke um Viertel nach sieben. Um halb neun beginnt die Arbeit. Ich esse um halb eins zu Mittag. Mein Zug fährt um 18:05 Uhr (achtzehn Uhr fünf). Ich schlafe um elf Uhr.\n"
+        }
+       ]
+      },
+      {
+       "id": "w03-tue-05",
+       "type": "oral",
+       "title": "Говорение: время вслух",
+       "minutes": 10,
+       "quiz": "q-w3d2-oral"
+      },
+      {
+       "id": "w03-tue-06",
+       "type": "words",
+       "title": "Слова дня: время",
+       "minutes": 20,
+       "deck": "w3d2"
+      },
+      {
+       "id": "w03-tue-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 3"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-18",
+     "weekday": "wed",
+     "title": "Распорядок дня",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — глаголы с отделяемой приставкой: *aufstehen, einkaufen, fernsehen*. Приставка уходит в конец предложения.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w03-wed-01",
+       "type": "theory",
+       "title": "Глаголы с отделяемой приставкой",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Lingolia: Trennbare Verben",
+         "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "поставить приставку в конец: *Ich stehe um 7 Uhr auf.*",
+        "рассказать свой день по порядку"
+       ],
+       "source": {
+        "title": "Глаголы с отделяемой приставкой",
+        "url": "#/read/trennbare-verben",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w03-wed-02",
+       "type": "quiz",
+       "title": "Проверка: отделяемые приставки",
+       "minutes": 15,
+       "quiz": "q-w3d3-trennbar"
+      },
+      {
+       "id": "w03-wed-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 31: Am Sonntag koche ich",
+       "minutes": 15,
+       "intro": "Эмма рассказывает свою неделю каникул. Слушайте, что она делает в каждый день.\n",
+       "quiz": "q-w3d3-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 31: Am Sonntag koche ich (YouTube)",
+        "url": "https://www.youtube.com/watch?v=f9kkMWEOxo0",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Am Sonntag koche ich» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/am-sonntag-koche-ich/l-37452061",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w03-wed-04",
+       "type": "practice",
+       "title": "Письмо: мой день",
+       "minutes": 20,
+       "items": [
+        {
+         "text": "Опишите свой обычный день в 6–7 предложениях. Используйте время и минимум 4 глагола: *aufstehen, frühstücken, anfangen, einkaufen, fernsehen, aufräumen, anrufen*.",
+         "write": true,
+         "sample": "Ich stehe um halb sieben auf. Dann frühstücke ich. Die Arbeit fängt um acht Uhr an. Um eins esse ich zu Mittag. Nach der Arbeit kaufe ich ein. Am Abend rufe ich meine Mutter an. Dann sehe ich fern und um elf gehe ich ins Bett.\n"
+        }
+       ]
+      },
+      {
+       "id": "w03-wed-05",
+       "type": "oral",
+       "title": "Говорение: ваш день",
+       "minutes": 10,
+       "quiz": "q-w3d3-oral"
+      },
+      {
+       "id": "w03-wed-06",
+       "type": "words",
+       "title": "Слова дня: распорядок дня",
+       "minutes": 20,
+       "deck": "w3d3"
+      },
+      {
+       "id": "w03-wed-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 3"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-19",
+     "weekday": "thu",
+     "title": "Дни, месяцы, времена года",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — календарь и предлоги *am, um, im*. С ними вы назначите встречу: *am Freitag um zwei Uhr*.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w03-thu-01",
+       "type": "theory",
+       "title": "Когда? am, um, im",
+       "minutes": 15,
+       "alt": [
+        {
+         "title": "Lingolia: Temporale Präpositionen",
+         "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen/temporal",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "выбрать *am / um / im*",
+        "назвать дни недели, месяцы, времена года"
+       ],
+       "source": {
+        "title": "Когда? am, um, im",
+        "url": "#/read/zeitangaben",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w03-thu-02",
+       "type": "quiz",
+       "title": "Проверка: am, um, im",
+       "minutes": 15,
+       "quiz": "q-w3d4-zeit"
+      },
+      {
+       "id": "w03-thu-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 35: Wann spielen wir?",
+       "minutes": 15,
+       "intro": "Друзья договариваются о футболе. Слушайте дни и время.\n",
+       "quiz": "q-w3d4-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 35: Wann spielen wir? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=_VUrkdITl8U",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Wann spielen wir?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/wann-spielen-wir/l-37468614",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w03-thu-04",
+       "type": "practice",
+       "title": "Письмо: моя неделя",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите, что вы делаете в 5 разных дней недели. Пример: *Am Montag habe ich um sechs Uhr Deutschkurs.* Добавьте одно предложение про любимое время года: *Im Sommer …*",
+         "write": true,
+         "sample": "Am Montag arbeite ich bis fünf Uhr. Am Dienstag habe ich um sieben Uhr Deutschkurs. Am Mittwoch gehe ich ins Fitnessstudio. Am Freitag treffe ich Freunde. Am Sonntag schlafe ich lange. Im Sommer fahre ich ans Meer.\n"
+        }
+       ]
+      },
+      {
+       "id": "w03-thu-05",
+       "type": "oral",
+       "title": "Говорение: даты и встречи",
+       "minutes": 10,
+       "quiz": "q-w3d4-oral"
+      },
+      {
+       "id": "w03-thu-06",
+       "type": "words",
+       "title": "Слова дня: календарь",
+       "minutes": 20,
+       "deck": "w3d4"
+      },
+      {
+       "id": "w03-thu-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 3"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-20",
+     "weekday": "fri",
+     "title": "Хобби и свободное время",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — модальный глагол *können* и рамка: *Ich **kann** gut **schwimmen**.*\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w03-fri-01",
+       "type": "theory",
+       "title": "Модальный глагол können",
+       "minutes": 15,
+       "alt": [
+        {
+         "title": "Lingolia: Modalverben",
+         "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "спрягать *können*: ich kann, du kannst…",
+        "поставить инфинитив в конец"
+       ],
+       "source": {
+        "title": "Модальный глагол können",
+        "url": "#/read/koennen",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w03-fri-02",
+       "type": "quiz",
+       "title": "Проверка: können",
+       "minutes": 15,
+       "quiz": "q-w3d5-koennen"
+      },
+      {
+       "id": "w03-fri-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 48: Was macht dir Spaß?",
+       "minutes": 15,
+       "intro": "Инге спрашивает Нико о свободном времени. Слушайте *gern, nicht gern, am liebsten*.\n",
+       "quiz": "q-w3d5-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 48: Was macht dir Spaß? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=KeU3-5jr2fI",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Was macht dir Spaß?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/was-macht-dir-spaß/l-37630630",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w03-fri-04",
+       "type": "practice",
+       "title": "Письмо: что я умею",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите 5 предложений с *können*: что вы умеете хорошо, что не умеете, что можете в эти выходные. Пример: *Ich kann gut kochen, aber ich kann nicht tanzen.*",
+         "write": true,
+         "sample": "Ich kann gut kochen. Ich kann nicht gut tanzen. Mein Bruder kann Gitarre spielen. Am Samstag kann ich nicht kommen, ich arbeite. Am Sonntag können wir ins Kino gehen.\n"
+        }
+       ]
+      },
+      {
+       "id": "w03-fri-05",
+       "type": "oral",
+       "title": "Говорение: хобби",
+       "minutes": 10,
+       "quiz": "q-w3d5-oral"
+      },
+      {
+       "id": "w03-fri-06",
+       "type": "words",
+       "title": "Слова дня: хобби",
+       "minutes": 20,
+       "deck": "w3d5"
+      },
+      {
+       "id": "w03-fri-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 3"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-21",
+     "weekday": "sat",
+     "title": "Дела по дому",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — дела по дому и сравнение *gern → lieber → am liebsten*.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w03-sat-01",
+       "type": "theory",
+       "title": "gern, lieber, am liebsten",
+       "minutes": 15,
+       "goals": [
+        "сказать, что нравится больше: *Ich koche lieber.*",
+        "различать *gern* (с глаголом) и *mögen* (с существительным)"
+       ],
+       "source": {
+        "title": "gern, lieber, am liebsten",
+        "url": "#/read/gern-lieber",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w03-sat-02",
+       "type": "quiz",
+       "title": "Проверка: gern, lieber, am liebsten",
+       "minutes": 15,
+       "quiz": "q-w3d6-gern"
+      },
+      {
+       "id": "w03-sat-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 47: Haushaltsarbeit",
+       "minutes": 15,
+       "intro": "Нико помогает Инге по дому. Что Инге думает о домашних делах?\n",
+       "quiz": "q-w3d6-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 47: Haushaltsarbeit (YouTube)",
+        "url": "https://www.youtube.com/watch?v=SIN9PejV-OI",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Haushaltsarbeit» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/haushaltsarbeit/l-37631238",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w03-sat-04",
+       "type": "practice",
+       "title": "Письмо: кто что делает дома",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите 5 предложений: какие дела по дому вы делаете, что любите, что нет, что больше всего. Используйте *gern, nicht gern, lieber, am liebsten*.",
+         "write": true,
+         "sample": "Ich koche gern. Ich putze nicht gern. Mein Mann spült lieber, ich bügle lieber. Am liebsten gehe ich einkaufen. Den Müll bringt mein Sohn raus.\n"
+        }
+       ]
+      },
+      {
+       "id": "w03-sat-05",
+       "type": "oral",
+       "title": "Говорение: дела по дому",
+       "minutes": 10,
+       "quiz": "q-w3d6-oral"
+      },
+      {
+       "id": "w03-sat-06",
+       "type": "words",
+       "title": "Слова дня: дела по дому",
+       "minutes": 20,
+       "deck": "w3d6"
+      },
+      {
+       "id": "w03-sat-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 3"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-22",
+     "weekday": "sun",
+     "title": "Повторение недели 3",
+     "hours": 1.5,
+     "kind": "review",
+     "intro": "Воскресенье — повторение. Сначала мини-тест недели, потом видео и короткий текст.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w03-sun-01",
+       "type": "quiz",
+       "title": "Мини-тест недели 3",
+       "minutes": 25,
+       "quiz": "q-w3d7-test"
+      },
+      {
+       "id": "w03-sun-02",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 32: Emmas Wochenende",
+       "minutes": 15,
+       "intro": "Эмма планирует выходные, а Нико — другой порядок дел. Слушайте отделяемые приставки: *ausschlafen, aufwachen, aufräumen, fernsehen*.\n",
+       "quiz": "q-w3d7-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 32: Emmas Wochenende (YouTube)",
+        "url": "https://www.youtube.com/watch?v=dqtdmvpa8D0",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Emmas Wochenende» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/emmas-wochenende/l-37452629",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w03-sun-03",
+       "type": "practice",
+       "title": "Письмо: моя неделя (итог)",
+       "minutes": 20,
+       "items": [
+        {
+         "text": "Напишите другу сообщение (6–8 предложений): какая у вас квартира, как проходит ваш день, что вы умеете и любите делать на выходных. Пригласите его: *Hast du am Samstag Zeit?*",
+         "write": true,
+         "sample": "Hallo Tim, wie geht's? Ich habe jetzt eine neue Wohnung. Sie ist klein, aber hell und ruhig. Ich stehe jeden Tag um sieben Uhr auf und fange um neun mit der Arbeit an. Am Abend koche ich gern. Am Wochenende schlafe ich lange und am liebsten gehe ich schwimmen. Hast du am Samstag um drei Zeit? Wir können zusammen schwimmen gehen! Viele Grüße, Anna\n"
+        }
+       ]
+      },
+      {
+       "id": "w03-sun-04",
+       "type": "anki",
+       "title": "Карточки недели",
+       "minutes": 15,
+       "deck": "Неделя 3"
+      }
+     ]
+    }
+   ],
+   "blocks": [
+    {
+     "id": "w03-b1",
+     "n": 1,
+     "title": "Квартира и время",
+     "due": "2026-11-17",
+     "steps": [
+      "w03-mon-01",
+      "w03-mon-02",
+      "w03-mon-03",
+      "w03-mon-04",
+      "w03-mon-05",
+      "w03-mon-06",
+      "w03-mon-07",
+      "w03-tue-01",
+      "w03-tue-02",
+      "w03-tue-03",
+      "w03-tue-04",
+      "w03-tue-05",
+      "w03-tue-06",
+      "w03-tue-07"
+     ]
+    },
+    {
+     "id": "w03-b2",
+     "n": 2,
+     "title": "Распорядок дня и календарь",
+     "due": "2026-11-19",
+     "steps": [
+      "w03-wed-01",
+      "w03-wed-02",
+      "w03-wed-03",
+      "w03-wed-04",
+      "w03-wed-05",
+      "w03-wed-06",
+      "w03-wed-07",
+      "w03-thu-01",
+      "w03-thu-02",
+      "w03-thu-03",
+      "w03-thu-04",
+      "w03-thu-05",
+      "w03-thu-06",
+      "w03-thu-07"
+     ]
+    },
+    {
+     "id": "w03-b3",
+     "n": 3,
+     "title": "Хобби, дела по дому, повторение",
+     "due": "2026-11-22",
+     "steps": [
+      "w03-fri-01",
+      "w03-fri-02",
+      "w03-fri-03",
+      "w03-fri-04",
+      "w03-fri-05",
+      "w03-fri-06",
+      "w03-fri-07",
+      "w03-sat-01",
+      "w03-sat-02",
+      "w03-sat-03",
+      "w03-sat-04",
+      "w03-sat-05",
+      "w03-sat-06",
+      "w03-sat-07",
+      "w03-sun-01",
+      "w03-sun-02",
+      "w03-sun-03",
+      "w03-sun-04"
+     ]
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Город, транспорт, здоровье, встречи. Пробный экзамен A1",
+   "short": "Город и экзамен",
+   "goal": "- Я могу сказать, где я: *Ich bin in der Apotheke / beim Arzt.*\n- Я могу спросить дорогу и понять ответ: *Gehen Sie geradeaus, dann links.*\n- Я могу сказать, что надо, хочу и можно: *Ich muss arbeiten. Hier darf man nicht parken.*\n- Я могу объяснить врачу, что болит, и понять совет: *Mir tut der Kopf weh. — Trinken Sie viel Tee!*\n- Я могу рассказать о прошлых выходных: *Ich habe Fußball gespielt.*\n- Я прохожу пробный экзамен A1: Hören, Lesen, Schreiben, Sprechen.\n",
+   "days": [
+    {
+     "date": "2026-11-23",
+     "weekday": "mon",
+     "title": "Город: места",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Неделя 4 — город. Сегодня: где что находится и предлоги *in, an, bei* с Dativ.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w04-mon-01",
+       "type": "theory",
+       "title": "Где? in, an, bei + Dativ",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Lingolia: Lokale Präpositionen",
+         "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen/lokal",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "ответить на *Wo?*: *im Supermarkt, in der Apotheke, beim Arzt*",
+        "слить предлог и артикль: *in dem → im, bei dem → beim*"
+       ],
+       "source": {
+        "title": "Где? in, an, bei + Dativ",
+        "url": "#/read/wo-dativ",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w04-mon-02",
+       "type": "quiz",
+       "title": "Проверка: wo + Dativ",
+       "minutes": 15,
+       "quiz": "q-w4d1-wo"
+      },
+      {
+       "id": "w04-mon-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 41: Wo ist der Bahnhof?",
+       "minutes": 15,
+       "intro": "Нико рассказывает Эмме, где он теперь живёт. На карте вы услышите много мест города.\n",
+       "quiz": "q-w4d1-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 41: Wo ist der Bahnhof? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=Fz_AuTNFa8k",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Wo ist der Bahnhof?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/wo-ist-der-bahnhof/l-37594551",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w04-mon-04",
+       "type": "practice",
+       "title": "Письмо: мой район",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Опишите свой район в 5 предложениях: что рядом, где вы покупаете продукты, где работаете или учитесь. Используйте *im, in der, beim, an der, in der Nähe von*.",
+         "write": true,
+         "sample": "Ich wohne in der Gartenstraße. Der Supermarkt ist gleich um die Ecke. Ich kaufe oft in der Bäckerei ein. Ich arbeite in einem Büro im Zentrum. Die Bushaltestelle ist in der Nähe von meinem Haus.\n"
+        }
+       ]
+      },
+      {
+       "id": "w04-mon-05",
+       "type": "oral",
+       "title": "Говорение: где вы?",
+       "minutes": 10,
+       "quiz": "q-w4d1-oral"
+      },
+      {
+       "id": "w04-mon-06",
+       "type": "words",
+       "title": "Слова дня: город",
+       "minutes": 20,
+       "deck": "w4d1"
+      },
+      {
+       "id": "w04-mon-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 4"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-24",
+     "weekday": "tue",
+     "title": "Транспорт и дорога",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — транспорт (*mit dem Bus, mit der U-Bahn*) и как спросить дорогу.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w04-tue-01",
+       "type": "theory",
+       "title": "mit + Dativ. Как пройти?",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Wiktionary: Flexion:fahren",
+         "url": "https://de.wiktionary.org/wiki/Flexion:fahren",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "сказать, на чём вы едете: *mit dem Zug, mit der U-Bahn, zu Fuß*",
+        "спросить дорогу и понять: *geradeaus, links, rechts, an der Ampel*"
+       ],
+       "source": {
+        "title": "mit + Dativ. Как пройти?",
+        "url": "#/read/mit-dativ",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w04-tue-02",
+       "type": "quiz",
+       "title": "Проверка: транспорт и дорога",
+       "minutes": 15,
+       "quiz": "q-w4d2-mit"
+      },
+      {
+       "id": "w04-tue-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 43: Mit Bus und Bahn",
+       "minutes": 15,
+       "intro": "Юрген и Эмма едут домой. Слушайте, на чём они едут и где остановка.\n",
+       "quiz": "q-w4d2-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 43: Mit Bus und Bahn (YouTube)",
+        "url": "https://www.youtube.com/watch?v=4us1ZoH9K04",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Mit Bus und Bahn» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/mit-bus-und-bahn/l-37595395",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w04-tue-04",
+       "type": "practice",
+       "title": "Письмо: как ко мне пройти",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Друг едет к вам в гости. Напишите 5 предложений: на чём ехать, где выйти, куда идти пешком. Используйте *mit dem/der, bis zur Haltestelle …, geradeaus, links, rechts, an der Ampel*.",
+         "write": true,
+         "sample": "Fahr mit der U-Bahn bis zum Marktplatz. Dann nimm den Bus Nummer 5. Steig an der Haltestelle „Parkstraße“ aus. Geh geradeaus und an der Ampel links. Mein Haus ist das zweite Haus rechts.\n"
+        }
+       ]
+      },
+      {
+       "id": "w04-tue-05",
+       "type": "oral",
+       "title": "Говорение: дорога",
+       "minutes": 10,
+       "quiz": "q-w4d2-oral"
+      },
+      {
+       "id": "w04-tue-06",
+       "type": "words",
+       "title": "Слова дня: транспорт",
+       "minutes": 20,
+       "deck": "w4d2"
+      },
+      {
+       "id": "w04-tue-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 4"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-25",
+     "weekday": "wed",
+     "title": "Учёба и работа: правила",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — *müssen, wollen, dürfen*: что надо, что хочу, что можно. И безличное *man*.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w04-wed-01",
+       "type": "theory",
+       "title": "müssen, wollen, dürfen",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Lingolia: Modalverben",
+         "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        },
+        {
+         "title": "Wiktionary: Flexion:müssen",
+         "url": "https://de.wiktionary.org/wiki/Flexion:m%C3%BCssen",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "спрягать *müssen, wollen, dürfen*",
+        "различать *nicht müssen* и *nicht dürfen*"
+       ],
+       "source": {
+        "title": "müssen, wollen, dürfen",
+        "url": "#/read/modalverben",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w04-wed-02",
+       "type": "quiz",
+       "title": "Проверка: модальные глаголы",
+       "minutes": 15,
+       "quiz": "q-w4d3-modal"
+      },
+      {
+       "id": "w04-wed-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 36: Zu spät!?",
+       "minutes": 15,
+       "intro": "Лиза опоздала. А Нико негде жить. Слушайте, почему.\n",
+       "quiz": "q-w4d3-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 36: Zu spät!? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=2v6H7fnWuts",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Zu spät!?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/zu-spät/l-37460778",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w04-wed-04",
+       "type": "practice",
+       "title": "Письмо: правила",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите 5 правил для вашей работы, учёбы или дома. Используйте *man muss, man darf (nicht), wir wollen*. Пример: *Im Kurs darf man nicht telefonieren.*",
+         "write": true,
+         "sample": "Im Büro muss man pünktlich sein. Man darf nicht laut telefonieren. Am Freitag dürfen wir früher gehen. Man muss die Küche sauber machen. Wir wollen am Montag ein Team-Frühstück machen.\n"
+        }
+       ]
+      },
+      {
+       "id": "w04-wed-05",
+       "type": "oral",
+       "title": "Говорение: надо и хочу",
+       "minutes": 10,
+       "quiz": "q-w4d3-oral"
+      },
+      {
+       "id": "w04-wed-06",
+       "type": "words",
+       "title": "Слова дня: учёба и работа",
+       "minutes": 20,
+       "deck": "w4d3"
+      },
+      {
+       "id": "w04-wed-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 4"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "weekday": "thu",
+     "title": "Тело и здоровье",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — у врача: что болит и что советует врач. Грамматика — повелительное наклонение: *Nimm! Nehmen Sie!*\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w04-thu-01",
+       "type": "theory",
+       "title": "Повелительное наклонение",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Lingolia: Imperativ",
+         "url": "https://deutsch.lingolia.com/de/grammatik/verben/imperativ",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "дать совет на *Sie* и на *du*: *Trinken Sie viel Tee! Trink viel Tee!*",
+        "сказать, что болит: *Mir tut der Kopf weh.*"
+       ],
+       "source": {
+        "title": "Повелительное наклонение",
+        "url": "#/read/imperativ",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w04-thu-02",
+       "type": "quiz",
+       "title": "Проверка: императив и здоровье",
+       "minutes": 15,
+       "quiz": "q-w4d4-imp"
+      },
+      {
+       "id": "w04-thu-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 72: Nehmen Sie …",
+       "minutes": 15,
+       "intro": "Нико после врача. Лиза объясняет, как принимать лекарства. Слушайте императив: *Nimm die Tabletten…*\n",
+       "quiz": "q-w4d4-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 72: Nehmen Sie … (YouTube)",
+        "url": "https://www.youtube.com/watch?v=VWomWeeqsAk",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Nehmen Sie …» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/nehmen-sie/l-37782214",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w04-thu-04",
+       "type": "practice",
+       "title": "Письмо: я заболел",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Напишите сообщение коллеге или преподавателю (4–5 предложений): вы больны, что болит, вы были у врача, вы не придёте завтра.",
+         "write": true,
+         "sample": "Liebe Frau Weber, leider bin ich krank. Ich habe Fieber und mir tut der Hals weh. Ich war heute beim Arzt. Ich muss zwei Tage im Bett bleiben. Morgen kann ich leider nicht zum Kurs kommen. Viele Grüße, Max\n"
+        }
+       ]
+      },
+      {
+       "id": "w04-thu-05",
+       "type": "oral",
+       "title": "Говорение: у врача",
+       "minutes": 10,
+       "quiz": "q-w4d4-oral"
+      },
+      {
+       "id": "w04-thu-06",
+       "type": "words",
+       "title": "Слова дня: тело и здоровье",
+       "minutes": 20,
+       "deck": "w4d4"
+      },
+      {
+       "id": "w04-thu-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 4"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-27",
+     "weekday": "fri",
+     "title": "Встречи и приглашения. Perfekt",
+     "hours": 2,
+     "kind": "study",
+     "intro": "Сегодня — как пригласить и как рассказать о прошлом: *Was hast du am Wochenende gemacht?*\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w04-fri-01",
+       "type": "theory",
+       "title": "Perfekt с haben (знакомство)",
+       "minutes": 20,
+       "alt": [
+        {
+         "title": "Lingolia: Perfekt",
+         "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/perfekt",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "образовать Partizip II: *machen → gemacht*",
+        "рассказать о выходных в Perfekt"
+       ],
+       "source": {
+        "title": "Perfekt с haben (знакомство)",
+        "url": "#/read/perfekt",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w04-fri-02",
+       "type": "quiz",
+       "title": "Проверка: Perfekt",
+       "minutes": 15,
+       "quiz": "q-w4d5-perfekt"
+      },
+      {
+       "id": "w04-fri-03",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 53: Wie war dein Urlaub?",
+       "minutes": 15,
+       "intro": "Пассажир говорит по телефону об отпуске. Слушайте прошедшее время: *war, habe … gemacht*.\n",
+       "quiz": "q-w4d5-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 53: Wie war dein Urlaub? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=3UJeXeiki9g",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Wie war dein Urlaub?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/wie-war-dein-urlaub/l-37648534",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w04-fri-04",
+       "type": "practice",
+       "title": "Письмо: приглашение и выходные",
+       "minutes": 20,
+       "items": [
+        {
+         "text": "Напишите другу: (1) что вы делали в прошлые выходные — 3 предложения в Perfekt; (2) пригласите его на что-то в субботу: где, когда, во сколько.",
+         "write": true,
+         "sample": "Hallo Paul! Am Wochenende habe ich viel gemacht: Am Samstag habe ich eingekauft und gekocht. Am Sonntag habe ich Fußball gespielt. Hast du am Samstag Zeit? Wir können um acht Uhr ins Kino gehen. Der Film ist super! Treffen wir uns um halb acht vor dem Kino? Liebe Grüße, Sara\n"
+        }
+       ]
+      },
+      {
+       "id": "w04-fri-05",
+       "type": "oral",
+       "title": "Говорение: прошлые выходные",
+       "minutes": 10,
+       "quiz": "q-w4d5-oral"
+      },
+      {
+       "id": "w04-fri-06",
+       "type": "words",
+       "title": "Слова дня: встречи и приглашения",
+       "minutes": 20,
+       "deck": "w4d5"
+      },
+      {
+       "id": "w04-fri-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 4"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-28",
+     "weekday": "sat",
+     "title": "Погода. Пробный экзамен A1",
+     "hours": 2.5,
+     "kind": "exam",
+     "intro": "Сегодня — погода и пробный экзамен A1 по официальному образцу Goethe (Modellsatz). Сравните результат с входным тестом 2 ноября.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w04-sat-01",
+       "type": "theory",
+       "title": "Экзамен A1: как он устроен",
+       "minutes": 10,
+       "alt": [
+        {
+         "title": "Goethe: Start Deutsch 1 — Prüfungsziele, Testbeschreibung (PDF)",
+         "url": "https://www.goethe.de/pro/relaunch/prf/de/Pruefungsziele_Testbeschreibung_A1_SD1.pdf",
+         "lang": "de",
+         "type": "article",
+         "verified": "200 2026-10-31"
+        }
+       ],
+       "goals": [
+        "знать 4 части экзамена и время на каждую"
+       ],
+       "source": {
+        "title": "Экзамен A1: как он устроен",
+        "url": "#/read/pruefung-a1",
+        "lang": "ru",
+        "type": "article"
+       }
+      },
+      {
+       "id": "w04-sat-02",
+       "type": "listen",
+       "title": "Hören: Nicos Weg, Folge 56 — Wie wird das Wetter?",
+       "minutes": 15,
+       "intro": "Часть «Hören»: послушайте **один раз**, как на экзамене. Потом ответьте. Сельма рассказывает Лизе о погоде.\n",
+       "quiz": "q-w4d6-hoeren",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 56: Wie wird das Wetter? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=qL1hgrjJScY",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Wie wird das Wetter?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/wie-wird-das-wetter/l-37653197",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w04-sat-03",
+       "type": "theory",
+       "title": "Lesen и Schreiben по Modellsatz",
+       "minutes": 45,
+       "source": {
+        "title": "Goethe-Zertifikat A1: Start Deutsch 1 — Modellsatz (PDF)",
+        "url": "https://www.goethe.de/pro/relaunch/prf/materialien/A1_sd1/sd_1_modellsatz.pdf",
+        "lang": "de",
+        "type": "article",
+        "verified": "200 2026-10-31"
+       },
+       "do": "1. Откройте PDF. Сделайте часть **Lesen** (Teil 1–3) за **25 минут** по таймеру.\n2. Сделайте часть **Schreiben** (Teil 1 — бланк, Teil 2 — сообщение ≈ 30 слов) за **20 минут**.\n3. Проверьте Lesen по ключу (*Lösungen*) в конце PDF. Запишите результат: сколько из 15.\n4. Своё сообщение из Schreiben перепишите в шаг «Письмо» ниже.\n",
+       "goals": [
+        "Lesen: ≥ 9 из 15 — хороший результат на этом этапе",
+        "Schreiben: ответить на все 3 пункта задания"
+       ]
+      },
+      {
+       "id": "w04-sat-04",
+       "type": "quiz",
+       "title": "Lesen: таблички и объявления",
+       "minutes": 15,
+       "quiz": "q-w4d6-lesen"
+      },
+      {
+       "id": "w04-sat-05",
+       "type": "practice",
+       "title": "Schreiben: сообщение (≈ 30 слов)",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Задание как на экзамене: вы не можете прийти на курс в понедельник. Напишите преподавателю: (1) почему вы не придёте, (2) когда придёте снова, (3) попросите прислать домашнее задание.",
+         "write": true,
+         "sample": "Liebe Frau Schmidt, leider kann ich am Montag nicht zum Kurs kommen. Ich bin krank und muss zum Arzt gehen. Am Mittwoch komme ich wieder. Können Sie mir bitte die Hausaufgaben schicken? Vielen Dank! Viele Grüße, Olga\n"
+        }
+       ]
+      },
+      {
+       "id": "w04-sat-06",
+       "type": "oral",
+       "title": "Sprechen: как на экзамене",
+       "minutes": 15,
+       "why": "Говорите вслух и записывайте себя на телефон. Потом послушайте запись и сравните с образцом.",
+       "quiz": "q-w4d6-sprechen"
+      },
+      {
+       "id": "w04-sat-07",
+       "type": "words",
+       "title": "Слова дня: погода",
+       "minutes": 15,
+       "deck": "w4d6"
+      },
+      {
+       "id": "w04-sat-08",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 4"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-29",
+     "weekday": "sun",
+     "title": "Итог месяца",
+     "hours": 1.5,
+     "kind": "review",
+     "intro": "Последний день месяца 1. Итоговый тест по всему месяцу, видео про даты и план на месяц 2.\n",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w04-sun-01",
+       "type": "quiz",
+       "title": "Итоговый тест месяца",
+       "minutes": 30,
+       "quiz": "q-w4d7-final"
+      },
+      {
+       "id": "w04-sun-02",
+       "type": "listen",
+       "title": "Nicos Weg, Folge 34: Hast du morgen Zeit?",
+       "minutes": 15,
+       "intro": "Тарек и Макс говорят о датах, а потом Тарек принимает бронь столика. Слушайте порядковые числа и время.\n",
+       "quiz": "q-w4d7-listen",
+       "source": {
+        "title": "DW «Nicos Weg» A1, Folge 34: Hast du morgen Zeit? (YouTube)",
+        "url": "https://www.youtube.com/watch?v=Vvt6H_EvGX0",
+        "lang": "de",
+        "type": "video",
+        "verified": "200 2026-10-31"
+       },
+       "alt": [
+        {
+         "title": "DW Learn German: урок «Hast du morgen Zeit?» с упражнениями (может требовать VPN)",
+         "url": "https://learngerman.dw.com/en/hast-du-morgen-zeit/l-37461035",
+         "lang": "de",
+         "type": "video",
+         "verified": "200 2026-10-31"
+        }
+       ]
+      },
+      {
+       "id": "w04-sun-03",
+       "type": "practice",
+       "title": "Письмо: что я умею после месяца 1",
+       "minutes": 20,
+       "items": [
+        {
+         "text": "Сравните себя сейчас и 2 ноября. Ответьте по-русски: (1) результат входного теста и пробного экзамена, (2) что получается лучше всего, (3) что трудно, (4) 3 цели на месяц 2.",
+         "write": true,
+         "sample": "(1) Входной тест — 12 из 18, Lesen в пробном экзамене — 10 из 15. (2) Лучше всего — время и распорядок дня. (3) Трудно — Dativ и слух в быстрой речи. (4) Цели: Perfekt с *sein*, Akkusativ/Dativ с *wohin/wo*, 300 новых слов.\n"
+        }
+       ]
+      },
+      {
+       "id": "w04-sun-04",
+       "type": "anki",
+       "title": "Карточки месяца",
+       "minutes": 15,
+       "deck": "Неделя 4"
+      }
+     ]
+    }
+   ],
+   "blocks": [
+    {
+     "id": "w04-b1",
+     "n": 1,
+     "title": "Город и транспорт",
+     "due": "2026-11-24",
+     "steps": [
+      "w04-mon-01",
+      "w04-mon-02",
+      "w04-mon-03",
+      "w04-mon-04",
+      "w04-mon-05",
+      "w04-mon-06",
+      "w04-mon-07",
+      "w04-tue-01",
+      "w04-tue-02",
+      "w04-tue-03",
+      "w04-tue-04",
+      "w04-tue-05",
+      "w04-tue-06",
+      "w04-tue-07"
+     ]
+    },
+    {
+     "id": "w04-b2",
+     "n": 2,
+     "title": "Правила и здоровье",
+     "due": "2026-11-26",
+     "steps": [
+      "w04-wed-01",
+      "w04-wed-02",
+      "w04-wed-03",
+      "w04-wed-04",
+      "w04-wed-05",
+      "w04-wed-06",
+      "w04-wed-07",
+      "w04-thu-01",
+      "w04-thu-02",
+      "w04-thu-03",
+      "w04-thu-04",
+      "w04-thu-05",
+      "w04-thu-06",
+      "w04-thu-07"
+     ]
+    },
+    {
+     "id": "w04-b3",
+     "n": 3,
+     "title": "Встречи, погода, пробный экзамен",
+     "due": "2026-11-29",
+     "steps": [
+      "w04-fri-01",
+      "w04-fri-02",
+      "w04-fri-03",
+      "w04-fri-04",
+      "w04-fri-05",
+      "w04-fri-06",
+      "w04-fri-07",
+      "w04-sat-01",
+      "w04-sat-02",
+      "w04-sat-03",
+      "w04-sat-04",
+      "w04-sat-05",
+      "w04-sat-06",
+      "w04-sat-07",
+      "w04-sat-08",
+      "w04-sun-01",
+      "w04-sun-02",
+      "w04-sun-03",
+      "w04-sun-04"
+     ]
+    }
+   ]
+  }
+ ]
+}
