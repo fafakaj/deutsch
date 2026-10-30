@@ -63,14 +63,22 @@ export async function login(user, password) {
   return s;
 }
 
+/** An error with the HTTP status: 401 means the token in data/auth.json expired or was revoked. */
+function githubError(status) {
+  const err = new Error(status === 401
+    ? "Токен GitHub недействителен. Владелец сайта должен выпустить новый и обновить data/auth.json (tools/make_auth.py)"
+    : `GitHub ответил ${status}`);
+  err.status = status;
+  return err;
+}
+
 function headers(s) {
   return { Authorization: `Bearer ${s.token}`, Accept: "application/vnd.github+json" };
 }
 
 export async function gistLoad(s) {
   const r = await fetch(`https://api.github.com/gists/${s.gist}`, { headers: headers(s), cache: "no-store" });
-  if (r.status === 401) throw new Error("Токен GitHub недействителен — войдите заново");
-  if (!r.ok) throw new Error(`GitHub ответил ${r.status}`);
+  if (!r.ok) throw githubError(r.status);
   const file = (await r.json()).files[GIST_FILE];
   if (!file) return null;
   const text = file.truncated ? await (await fetch(file.raw_url)).text() : file.content;
@@ -83,5 +91,5 @@ export async function gistSave(s, progress) {
     headers: { ...headers(s), "Content-Type": "application/json" },
     body: JSON.stringify({ files: { [GIST_FILE]: { content: JSON.stringify(progress) } } }),
   });
-  if (!r.ok) throw new Error(`GitHub ответил ${r.status}`);
+  if (!r.ok) throw githubError(r.status);
 }

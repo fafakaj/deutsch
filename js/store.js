@@ -1,9 +1,11 @@
 // Data and progress.
 // Progress is saved to every place that is available: the account gist (when the account has a
 // token) and the local server (logs/progress*.json, when the app runs from server.py). localStorage
-// keeps a copy so an offline moment never loses work. On load the newest copy wins. Each account has
-// its own copies; the owner and a session without login share the original ones.
+// keeps a copy so an offline moment never loses work. Copies are merged, never overwritten (merge.js):
+// the gist is read and merged right before every write. Each account has its own copies; the owner
+// and a session without login share the original ones.
 import { gistLoad, gistSave, session } from "./auth.js";
+import { mergeProgress } from "./merge.js";
 
 const LS_KEY = "de-progress-backup";
 /** A site path from any page: the word trainer lives one folder down (words/). */
@@ -15,7 +17,8 @@ export let progress = emptyProgress();
 
 const stepIndex = new Map(); // id -> {step, block, week, order}
 let saveTimer = null;
-let saveState = "saved"; // saved | pending | error
+let saveState = "saved"; // saved | pending | error | local | auth
+let gistBroken = false; // GitHub refused the token: stop writing to the gist, keep the work locally
 const saveListeners = new Set();
 export const backend = { server: false, gist: null, user: null };
 
@@ -26,11 +29,6 @@ const serverURL = () => siteURL(backend.user ? `api/progress?user=${encodeURICom
 
 function emptyProgress() {
   return { version: 1, steps: {}, quiz: {}, checklist: {}, notes: {}, review: {}, words: {}, events: [] };
-}
-
-/** Save time in ms. Old server copies have a zone-less local stamp; Date.parse reads it as local time. */
-function stamp(p) {
-  return Date.parse(p.saved_at || "") || 0;
 }
 
 async function getJSON(url) {
@@ -85,40 +83,37 @@ export async function loadProgress() {
   } catch {
     /* no local copy */
   }
-  const sorted = copies.filter(Boolean).sort((a, b) => stamp(b) - stamp(a));
-  progress = Object.assign(emptyProgress(), sorted[0] || {});
+  const found = copies.filter(Boolean);
+  progress = emptyProgress();
+  // Every copy has something: merge them all; then push the merged copy where it differs.
+  const changed = found.map((c) => mergeProgress(progress, c));
   dropTimes();
-  // Push the newest copy to places that hold an older one.
-  if (sorted.length > 1 && sorted.some((c) => c.saved_at !== sorted[0].saved_at)) scheduleSave(false);
+  if (found.length > 1 && changed.slice(1).some(Boolean)) scheduleSave(false);
+}
+
+/** What the other tab of this browser saved (the word trainer is another page of the site). */
+export function mergeLocal() {
+  try {
+    return mergeProgress(progress, JSON.parse(localStorage.getItem(lsKey()) || "null"));
+  } catch {
+    return false;
+  }
 }
 
 /**
- * Phone and laptop share the gist: when the tab comes back, take a newer remote copy.
- * The word trainer is another page of the same site: its saves arrive through localStorage.
+ * Bring in what other tabs and devices did: localStorage, then the gist. Merges into the open
+ * progress object, so nothing of this tab is lost. True when something new came in.
  */
 export async function pullRemote() {
-  if (saveState === "pending") return false;
-  try {
-    const local = JSON.parse(localStorage.getItem(lsKey()) || "null");
-    if (local && stamp(local) > stamp(progress)) {
-      progress = Object.assign(emptyProgress(), local);
-      return true;
+  let changed = mergeLocal();
+  if (backend.gist && !gistBroken) {
+    try {
+      if (mergeProgress(progress, await gistLoad(backend.gist))) changed = true;
+    } catch (err) {
+      console.warn("gist pull failed", err);
     }
-  } catch {
-    /* no local copy */
   }
-  if (!backend.gist) return false;
-  try {
-    const remote = await gistLoad(backend.gist);
-    if (remote && stamp(remote) > stamp(progress)) {
-      progress = Object.assign(emptyProgress(), remote);
-      dropTimes();
-      return true;
-    }
-  } catch (err) {
-    console.warn("gist pull failed", err);
-  }
-  return false;
+  return changed;
 }
 
 /** The site no longer tracks time: drop what older versions saved (step timers, weekly hours). */
@@ -140,6 +135,7 @@ function setSaveState(s) {
 }
 
 export function scheduleSave(touch = true) {
+  mergeLocal();
   if (touch) progress.saved_at = new Date().toISOString();
   try {
     localStorage.setItem(lsKey(), JSON.stringify(progress));
@@ -158,11 +154,22 @@ async function saveNow() {
       jobs.push(fetch(serverURL(), { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(progress) })
         .then((r) => { if (!r.ok) throw new Error(r.status); }));
     }
-    if (backend.gist) jobs.push(gistSave(backend.gist, progress));
+    if (backend.gist && !gistBroken) {
+      // Read before write: the other device may have saved since our last look.
+      jobs.push(gistLoad(backend.gist).then((remote) => {
+        mergeProgress(progress, remote);
+        return gistSave(backend.gist, progress);
+      }));
+    }
     await Promise.all(jobs);
-    setSaveState(jobs.length ? "saved" : "local");
+    setSaveState(gistBroken ? "auth" : jobs.length ? "saved" : "local");
   } catch (err) {
     console.warn("save failed", err);
+    // A bad token does not get better by retrying: say so and keep the work in this browser.
+    if (err.status === 401) {
+      gistBroken = true;
+      return setSaveState("auth");
+    }
     setSaveState("error");
     saveTimer = setTimeout(saveNow, 8000);
   }

@@ -114,7 +114,7 @@ h2 { font-size: var(--fs-h2); line-height: 1.3; margin: 0 0 8px; }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line-strong); display: inline-block; }
 .dot.py-ready, .dot.save-saved { background: var(--ok-solid); }
 .dot.py-loading, .dot.py-busy, .dot.py-packages, .dot.save-pending { background: var(--warn); }
-.dot.save-error { background: var(--bad); }
+.dot.save-error, .dot.save-auth { background: var(--bad); }
 .dot.save-local { background: var(--muted); }
 .bar { height: 6px; background: var(--sunken); border-radius: 99px; overflow: hidden; min-width: 60px; }
 .bar > div, .bar > i { display: block; height: 100%; background: var(--ok-solid); border-radius: 99px; transition: width .4s; }

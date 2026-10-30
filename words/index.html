@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="theme-color" content="#f7f5f0" />
   <title>Artikel — слова курса A1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -142,7 +142,8 @@
 
   <script type="module">
     import { session } from "../js/auth.js";
-    import { loadProgress, progress, scheduleSave, markDone, onSaveState, pullRemote } from "../js/store.js";
+    import { loadProgress, progress, scheduleSave, markDone, onSaveState, pullRemote, siteURL } from "../js/store.js";
+    import { esc } from "../js/md.js";
 
     /*************************************************************************
      * 1. СЛОВА: КОЛОДЫ КУРСА (w1d1…w4d6) И ДОПОЛНИТЕЛЬНЫЕ (x01…x50) ИЗ data/words.json
@@ -161,6 +162,25 @@
       EXTRA = data.extra;
       DECKS = [...COURSE, ...EXTRA];
       DECKS.forEach(d => DECK_BY_ID.set(d.id, d));
+    }
+
+    // Шаги дорожки из data/plan.json: засчитываем только шаг type "words" этой колоды
+    const PLAN_STEPS = new Map();
+
+    async function loadPlanSteps() {
+      try {
+        const res = await fetch(siteURL("data/plan.json"), { cache: "no-store" });
+        if (!res.ok) throw new Error(`plan.json: ${res.status}`);
+        const plan = await res.json();
+        plan.weeks.forEach(w => w.days.forEach(d => d.steps.forEach(s => PLAN_STEPS.set(s.id, s))));
+      } catch (err) {
+        console.warn("plan load failed: steps are not marked", err); // тренажёр работает и без дорожки
+      }
+    }
+
+    function isWordsStep(stepId, deckId) {
+      const step = PLAN_STEPS.get(stepId);
+      return !!step && step.type === "words" && step.deck === deckId;
     }
 
     const fullWord = (w) => (w.article ? `${w.article} ${w.de}` : w.de);
@@ -248,7 +268,7 @@
       rec.testBest = Math.max(rec.testBest, pct);
       rec.testRun = { seen: [], ok: [] };
       rec.testIndex = 0;
-      if (pct >= PASS_PERCENT && state.stepId && state.stepDeckId === deckId) {
+      if (pct >= PASS_PERCENT && isWordsStep(state.stepId, deckId)) {
         markDone(state.stepId, { words: deckId, score: pct });
       } else {
         scheduleSave();
@@ -291,7 +311,6 @@
       testInput: "",
       testResult: null, // процент полного прохода проверки
       stepId: null, // шаг дорожки из ссылки #deck=…&step=…
-      stepDeckId: null,
       saveState: "saved",
       errorMsg: ""
     };
@@ -325,7 +344,7 @@
           <circle cx="200" cy="132" r="30" fill="${palette.bg2}" opacity="0.55" />
           <circle cx="120" cy="83" r="52" fill="#ffffff" opacity="0.88" />
           <circle cx="120" cy="83" r="52" fill="none" stroke="${palette.accent}" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4" />
-          <text x="120" y="101" text-anchor="middle" font-size="60" style="filter: drop-shadow(0 6px 10px rgba(0,0,0,0.08));">${wordObj.emoji}</text>
+          <text x="120" y="101" text-anchor="middle" font-size="60" style="filter: drop-shadow(0 6px 10px rgba(0,0,0,0.08));">${esc(wordObj.emoji)}</text>
         </svg>
       `;
     }
@@ -484,7 +503,7 @@
               <p class="text-xs text-stone-400 mt-1">Слова курса A1 по дням и 50 тем</p>
             </div>
 
-            <p class="text-sm text-stone-600 text-center ${state.screen === "error" ? "text-rose-600" : ""}">${text}</p>
+            <p class="text-sm text-stone-600 text-center ${state.screen === "error" ? "text-rose-600" : ""}">${esc(text)}</p>
 
             ${state.screen === "nologin" ? `
               <a
@@ -524,15 +543,15 @@
       const barColor = prog.percent >= 80 ? 'bg-emerald-500' : prog.percent >= 40 ? 'bg-blue-500' : 'bg-stone-400';
       return `
         <button
-          data-deck-id="${deck.id}"
+          data-deck-id="${esc(deck.id)}"
           class="deck-card soft-btn w-full text-left bg-white rounded-2xl p-3.5 shadow-sm border border-stone-200/70 flex items-center gap-3.5"
         >
           <div class="w-12 h-12 rounded-2xl bg-stone-50 border border-stone-100 flex items-center justify-center text-2xl shrink-0">
-            ${deck.icon}
+            ${esc(deck.icon)}
           </div>
           <div class="flex-1 min-w-0">
             <div class="flex items-center justify-between gap-2">
-              <span class="text-sm font-semibold text-stone-800 truncate">${deck.title}</span>
+              <span class="text-sm font-semibold text-stone-800 truncate">${esc(deck.title)}</span>
               <span class="text-xs font-bold ${prog.percent > 0 ? 'text-emerald-600' : 'text-stone-400'} shrink-0">${prog.percent}%</span>
             </div>
             <div class="text-[11px] text-stone-400 mt-0.5 mb-1.5">
@@ -550,7 +569,7 @@
     function renderDeckGroup(title, decks) {
       if (!decks.length) return '';
       return `
-        <div class="text-xs font-semibold text-stone-500 px-1 pt-1">${title}</div>
+        <div class="text-xs font-semibold text-stone-500 px-1 pt-1">${esc(title)}</div>
         ${decks.map(renderDeckCard).join('')}
       `;
     }
@@ -572,11 +591,11 @@
             <div class="flex items-center justify-between mb-2.5">
               <div class="flex items-center gap-2.5 min-w-0">
                 <div class="w-9 h-9 rounded-2xl bg-stone-800 text-white flex items-center justify-center text-sm font-bold shrink-0">
-                  ${sess.user.charAt(0).toUpperCase()}
+                  ${esc(sess.user.charAt(0).toUpperCase())}
                 </div>
                 <div class="min-w-0">
                   <div class="flex items-center gap-1.5">
-                    <span class="text-sm font-bold text-stone-800 truncate">${sess.user}</span>
+                    <span class="text-sm font-bold text-stone-800 truncate">${esc(sess.user)}</span>
                     ${saveBadgeHtml()}
                   </div>
                   <div class="text-[11px] text-stone-400">Изучено ${totalLearnedWords} из ${totalWords} слов (${overallPercent}%)</div>
@@ -617,7 +636,7 @@
               <input
                 id="searchInput"
                 type="text"
-                value="${state.searchQuery.replace(/"/g, '&quot;')}"
+                value="${esc(state.searchQuery)}"
                 placeholder="Поиск колоды..."
                 class="w-full pl-9 pr-8 py-2 rounded-2xl bg-stone-50 border border-stone-200/80 text-sm text-stone-700 focus:outline-none focus:border-stone-400 focus:bg-white"
               />
@@ -701,9 +720,9 @@
 
           <div class="bg-white rounded-3xl p-4 shadow-sm border border-stone-200/80 text-center my-auto">
             <div class="w-14 h-14 rounded-2xl bg-stone-50 border border-stone-100 flex items-center justify-center text-3xl mx-auto mb-2">
-              ${deck.icon}
+              ${esc(deck.icon)}
             </div>
-            <h2 class="text-base font-bold text-stone-800">${deck.title}</h2>
+            <h2 class="text-base font-bold text-stone-800">${esc(deck.title)}</h2>
             <p class="text-[11px] text-stone-400 mt-0.5 mb-3.5">
               ${deck.words.length} слов, из них существительных: ${nounCount} · выберите режим
             </p>
@@ -760,7 +779,7 @@
           </div>
 
           <div class="text-center text-[11px] text-stone-400">
-            Профиль: <b>${sess.user}</b>
+            Профиль: <b>${esc(sess.user)}</b>
           </div>
         </div>
       `;
@@ -863,7 +882,7 @@
       } else if (state.mode === "article_quiz") {
         genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-stone-100 text-stone-500">Угадайте артикль · цвет откроется после выбора</span>`;
       } else if (isLearnedQuiz) {
-        genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-stone-100 text-stone-600">${currentDeckTitle}</span>`;
+        genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-stone-100 text-stone-600">${esc(currentDeckTitle)}</span>`;
       } else {
         genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-stone-100 text-stone-500">Проверка без подсказки рода</span>`;
       }
@@ -903,7 +922,7 @@
             <div class="text-center mt-2.5">
               ${isArticleSelectionMode ? `
                 <div class="flex items-center justify-center gap-2">
-                  <h3 class="text-2xl font-bold text-stone-800 tracking-tight">${wordObj.de}</h3>
+                  <h3 class="text-2xl font-bold text-stone-800 tracking-tight">${esc(wordObj.de)}</h3>
                   <button
                     id="MainSpeakButton"
                     type="button"
@@ -914,10 +933,10 @@
                     🎙️
                   </button>
                 </div>
-                <p class="text-sm text-stone-500 mt-0.5">${wordObj.ru}</p>
+                <p class="text-sm text-stone-500 mt-0.5">${esc(wordObj.ru)}</p>
               ` : `
                 <div class="flex items-center justify-center gap-2">
-                  <p class="text-lg font-bold text-stone-800">${wordObj.ru}</p>
+                  <p class="text-lg font-bold text-stone-800">${esc(wordObj.ru)}</p>
                   <button
                     id="MainSpeakButton"
                     type="button"
@@ -1010,8 +1029,8 @@
                 : 'bg-rose-50 text-rose-700 border border-rose-200'
             }">
               ${isOk
-                ? `✓ Верно! ${fullWord(wordObj)}${wordObj.plural ? ` · ${wordObj.plural}` : ''}`
-                : `Ошибка · правильно: ${fullWord(wordObj)}${wordObj.plural ? ` · ${wordObj.plural}` : ''}`}
+                ? `✓ Верно! ${esc(fullWord(wordObj))}${wordObj.plural ? ` · ${esc(wordObj.plural)}` : ''}`
+                : `Ошибка · правильно: ${esc(fullWord(wordObj))}${wordObj.plural ? ` · ${esc(wordObj.plural)}` : ''}`}
             </div>
           `}
 
@@ -1102,8 +1121,8 @@
           <div class="text-center space-y-2.5">
             <div class="py-2.5 px-3 rounded-2xl text-sm font-semibold ${isOk ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-rose-50 text-rose-700 border border-rose-200'}">
               ${isOk
-                ? `Отлично! ${fullWord(wordObj)}${wordObj.plural ? ` · ${wordObj.plural}` : ''}`
-                : `Ваш ответ: «${state.feedback.userAnswer || '—'}»<br/>Верно: <b>${fullWord(wordObj)}</b>${wordObj.plural ? ` · ${wordObj.plural}` : ''}`}
+                ? `Отлично! ${esc(fullWord(wordObj))}${wordObj.plural ? ` · ${esc(wordObj.plural)}` : ''}`
+                : `Ваш ответ: «${esc(state.feedback.userAnswer || '—')}»<br/>Верно: <b>${esc(fullWord(wordObj))}</b>${wordObj.plural ? ` · ${esc(wordObj.plural)}` : ''}`}
             </div>
             <button id="nextCardBtn" class="soft-btn w-full py-3.5 rounded-2xl bg-stone-800 text-white font-semibold text-sm">
               Следующее слово →
@@ -1130,7 +1149,7 @@
             <input
               id="testWordInput"
               type="text"
-              value="${state.testInput.replace(/"/g, '&quot;')}"
+              value="${esc(state.testInput)}"
               placeholder="Напр.: der Tisch"
               autocapitalize="off"
               autocorrect="off"
@@ -1285,7 +1304,7 @@
           : 0;
         badgeEmoji = accuracy >= 80 ? "🏆" : accuracy >= 50 ? "👏" : "🎯";
         title = "Проверка изученных слов";
-        subtitle = `Профиль: ${sess.user} · Всего в пуле: ${state.quizPool.length} сл.`;
+        subtitle = `Профиль: ${esc(sess.user)} · Всего в пуле: ${state.quizPool.length} сл.`;
         statLeftTop = `${state.sessionCorrect} / ${state.sessionAnswered}`;
         statLeftBottom = "Верных ответов в сессии";
         statRightTop = `${accuracy}%`;
@@ -1302,8 +1321,8 @@
           : state.mode === "article_quiz"
             ? "Тренировка артикля"
             : "Проверка";
-        const stepDone = state.stepId && state.stepDeckId === deck.id && progress.steps[state.stepId]?.status === "done";
-        subtitle = `Режим: ${modeTitle} · Профиль: ${sess.user}${stepDone ? ' · ✓ шаг дорожки засчитан' : ''}`;
+        const stepDone = isWordsStep(state.stepId, deck.id) && progress.steps[state.stepId]?.status === "done";
+        subtitle = `Режим: ${modeTitle} · Профиль: ${esc(sess.user)}${stepDone ? ' · ✓ шаг дорожки засчитан' : ''}`;
         statLeftTop = `${deckProg.correct} / ${deck.words.length}`;
         statLeftBottom = "Всего изучено в колоде";
         statRightTop = `${shown}%`;
@@ -1316,7 +1335,7 @@
             <div class="w-16 h-16 rounded-3xl bg-stone-50 border border-stone-100 flex items-center justify-center text-3xl mx-auto mb-2">
               ${badgeEmoji}
             </div>
-            <h2 class="text-lg font-bold text-stone-800">${title}</h2>
+            <h2 class="text-lg font-bold text-stone-800">${esc(title)}</h2>
             <p class="text-xs text-stone-400 mt-0.5">${subtitle}</p>
 
             <div class="grid grid-cols-2 gap-2.5 my-4">
@@ -1359,13 +1378,13 @@
                 return `
                   <div class="w-full bg-white rounded-2xl p-3 border border-stone-200/70 flex items-center justify-between gap-2">
                     <div class="flex items-center gap-2.5 min-w-0">
-                      <span class="text-xl shrink-0">${m.wordObj.emoji}</span>
+                      <span class="text-xl shrink-0">${esc(m.wordObj.emoji)}</span>
                       <div class="min-w-0">
                         <div class="text-xs font-bold text-stone-800 truncate">
-                          ${m.wordObj.article ? `<span class="px-1.5 py-0.5 rounded-md ${badgeColor}">${m.wordObj.article}</span>` : ''}
-                          ${m.wordObj.de}
+                          ${m.wordObj.article ? `<span class="px-1.5 py-0.5 rounded-md ${badgeColor}">${esc(m.wordObj.article)}</span>` : ''}
+                          ${esc(m.wordObj.de)}
                         </div>
-                        <div class="text-[11px] text-stone-400 truncate">${m.wordObj.ru} · <span class="text-rose-500 line-through">${m.userAnswer}</span></div>
+                        <div class="text-[11px] text-stone-400 truncate">${esc(m.wordObj.ru)} · <span class="text-rose-500 line-through">${esc(m.userAnswer)}</span></div>
                       </div>
                     </div>
                     <button
@@ -1436,7 +1455,6 @@
       if (!deckId || !DECK_BY_ID.has(deckId)) return false;
       state.selectedDeckId = deckId;
       state.stepId = params.get("step");
-      state.stepDeckId = state.stepId ? deckId : null;
       const mode = params.get("mode");
       state.screen = "mode_select";
       if (mode === "study" || mode === "test") {
@@ -1460,7 +1478,7 @@
         return;
       }
       try {
-        await Promise.all([loadProgress(), loadDecks()]);
+        await Promise.all([loadProgress(), loadDecks(), loadPlanSteps()]);
       } catch (err) {
         console.warn("trainer load failed", err);
         state.screen = "error";

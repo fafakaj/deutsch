@@ -27,6 +27,7 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
 ITER = 600_000
+MIN_PASSWORD = 12
 OUT = Path(__file__).resolve().parents[1] / "data" / "auth.json"
 
 
@@ -42,6 +43,8 @@ def main():
 
     token = opts.token_file.expanduser().read_text().strip() if opts.token_file else None
     password = os.environ[opts.password_env] if opts.password_env else getpass.getpass("Пароль для сайта: ")
+    if token and len(password) < MIN_PASSWORD:
+        ap.error(f"с токеном нужен пароль от {MIN_PASSWORD} символов: auth.json публичный, короткий пароль подбирается")
     salt, iv = os.urandom(16), os.urandom(12)
     key = PBKDF2HMAC(algorithm=hashes.SHA256(), length=32, salt=salt, iterations=ITER).derive(password.encode())
     payload = json.dumps({"token": token, "gist": opts.gist}).encode()

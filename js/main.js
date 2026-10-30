@@ -3,7 +3,7 @@ import { icon, STEP_ICON } from "./icons.js";
 import { esc, md } from "./md.js";
 import {
   backend, blockLate, blockProgress, calendarWeek, currentStep, data, fmtDate, getStep, isDone, loadData, loadProgress,
-  markDone, nextStepAfter, onSaveState, overallProgress, progress, pullRemote, rateStep, weekProgress,
+  markDone, mergeLocal, nextStepAfter, onSaveState, overallProgress, progress, pullRemote, rateStep, weekProgress,
 } from "./store.js";
 import { renderQuiz } from "./views/quiz.js";
 import { dueCount, renderReview } from "./views/review.js";
@@ -341,7 +341,13 @@ function bindChrome() {
     onSaveState((s) => {
       if (!save.isConnected) return;
       save.className = `dot save-${s}`;
-      save.title = { saved: "Сохранено", pending: "Сохраняю", error: "Не удалось сохранить, повторю", local: "Сохранено только в браузере" }[s];
+      save.title = {
+        saved: "Сохранено",
+        pending: "Сохраняю",
+        error: "Не удалось сохранить, повторю",
+        local: "Сохранено только в браузере",
+        auth: "Токен GitHub недействителен: прогресс сохраняется только в этом браузере. Владелец сайта должен обновить токен",
+      }[s];
     });
   }
   app.querySelector("[data-logout]")?.addEventListener("click", () => {
@@ -417,6 +423,11 @@ async function main() {
   document.addEventListener("visibilitychange", async () => {
     if (document.visibilityState === "visible" && (await pullRemote())) render();
   });
+  // Another tab (the word trainer) saved: take its work in now, so this tab's next save keeps it.
+  // The page is not redrawn here: the student may be typing an answer.
+  window.addEventListener("storage", () => mergeLocal());
+  // The phone may save while this tab stays open and visible.
+  setInterval(() => document.visibilityState === "visible" && pullRemote(), 60000);
   render();
 }
 

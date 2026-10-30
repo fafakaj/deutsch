@@ -190,6 +190,12 @@ export function renderWords(root, step, ctx) {
   });
   bindDone(root, step, ctx.onDone, draw);
   draw();
+  // The deck may have been passed from a bookmark of the trainer, without this step in the link.
+  if (!isDone(step.id) && (progress.words?.[deck.id]?.testBest || 0) >= 80) {
+    markDone(step.id, { words: deck.id, from: "trainer" });
+    draw();
+    ctx.onDone?.();
+  }
 }
 
 /** Listening: a video or audio source, then questions about it. */

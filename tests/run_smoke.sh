@@ -22,3 +22,14 @@ SERVER=$!
 PW="$(dirname "$(find ~/.npm/_npx -maxdepth 3 -type d -path '*node_modules/playwright' | head -1)")"
 for _ in $(seq 30); do curl -fs "http://127.0.0.1:$PORT/" >/dev/null 2>&1 && break; sleep 0.2; done
 NODE_PATH="$PW" BASE="http://127.0.0.1:$PORT" REAL="${DATA:-}" node "$APP/tests/smoke.cjs"
+
+# The same files as GitHub Pages serves them: static, under /deutsch/, with the real data.
+mkdir -p "$TMP/pages/deutsch/data"
+cp -r "$APP"/{index.html,js,css,vendor,words} "$TMP/pages/deutsch/"
+cp -r "$APP"/data/{plan,quizzes,anki,words}.json "$APP"/data/articles "$TMP/pages/deutsch/data/"
+python3 -m http.server "$((PORT + 1))" --bind 127.0.0.1 --directory "$TMP/pages" >/dev/null 2>&1 &
+PAGES=$!
+trap 'kill $SERVER $PAGES 2>/dev/null; rm -rf "$TMP"' EXIT
+for _ in $(seq 30); do curl -fs "http://127.0.0.1:$((PORT + 1))/deutsch/" >/dev/null 2>&1 && break; sleep 0.2; done
+NODE_PATH="$PW" BASE="http://127.0.0.1:$((PORT + 1))/deutsch/" node "$APP/tests/pages.cjs"
+node --test "$APP/tests/merge.test.mjs" 2>&1 | grep -E "^ℹ (pass|fail)"

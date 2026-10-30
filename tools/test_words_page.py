@@ -7,6 +7,7 @@ Run with the site server:
 """
 
 import json
+import re
 import sys
 import urllib.request
 from pathlib import Path
@@ -17,7 +18,10 @@ BASE = "http://localhost:8812"
 ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "data" / "words.json").read_text())
 DECK = DATA["decks"][0]  # w1d1
-STEP = "w01-mon-05"
+PLAN = [s for w in json.loads((ROOT / "data" / "plan.json").read_text())["weeks"] for d in w["days"] for s in d["steps"]]
+STEP = next(s["id"] for s in PLAN if s["type"] == "words" and s["deck"] == DECK["id"])
+OTHER_DECK = DATA["decks"][1]  # w1d2
+NOT_WORDS = next(s["id"] for s in PLAN if s["type"] != "words")
 USER = "wordtest"  # each screen size gets its own account: wordtest390, wordtest1440
 SIZES = [(390, 844), (1440, 900)]
 
@@ -71,12 +75,18 @@ def run_choice_mode(page, button, words):
     page.wait_for_selector("#retryDeckBtn")
 
 
+WRONG = '<b id="xss">falsch</b>'  # a wrong answer with markup must stay text
+
+
 def run_test_mode(page, words, right):
     page.click("#startTestBtn")
     for i, w in enumerate(words):
         page.wait_for_selector("#testWordInput")
-        page.fill("#testWordInput", full(w) if i < right else "falsch")
+        page.fill("#testWordInput", full(w) if i < right else WRONG)
         page.press("#testWordInput", "Enter")
+        if i >= right:
+            check(page.locator("#xss").count() == 0 and WRONG in page.inner_text("#app"),
+                  f"ответ с разметкой показан текстом (карта {i + 1})")
         page.click("#nextCardBtn")
     page.wait_for_selector("#retryDeckBtn")
 
@@ -120,6 +130,15 @@ def main():
             check(page.locator(".deck-card").count() >= 2, f"{tag}: поиск находит колоды")
             page.fill("#searchInput", "")
 
+            # A step link that is not a words step of this deck never marks the step done.
+            for step in (STEP, NOT_WORDS):
+                page.goto(f"{BASE}/words/#deck={OTHER_DECK['id']}&step={step}")
+                page.wait_for_selector("#startTestBtn")
+                run_test_mode(page, OTHER_DECK["words"], len(OTHER_DECK["words"]))
+                page.wait_for_timeout(1200)
+                check(stored(page, user).get("steps", {}).get(step, {}).get("status") != "done",
+                      f"{tag}: {step} с колодой {OTHER_DECK['id']} не засчитан")
+
             # Opening a deck from the step link; article modes show only nouns.
             ctx.close()
             ctx, page, errors = open_page(browser, size, f"#deck={DECK['id']}&step={STEP}")
@@ -138,6 +157,7 @@ def main():
             # Test below 80 %: the step stays open.
             right = int(len(DECK["words"]) * 0.8) - 1
             run_test_mode(page, DECK["words"], right)
+            check(page.locator("#xss").count() == 0 and WRONG in page.inner_text("#app"), f"{tag}: ошибки в итоге — текстом")
             check(stored(page, user).get("steps", {}).get(STEP, {}).get("status") != "done", f"{tag}: тест < 80 % не засчитан")
             page.click("#retryDeckBtn")
             page.wait_for_selector("#testWordInput")
@@ -162,7 +182,9 @@ def main():
             page.click("#startAllLearnedQuizBtn")
             pool = page.evaluate("document.querySelector('#app').innerText")
             check("Слово 1/" in pool, f"{tag}: проверка изученных слов открылась")
-            for _ in range(len(DECK["words"])):
+            size_ = int(re.search(r"Слово 1/(\d+)", pool).group(1))
+            check(size_ == len(DECK["words"]) + len(OTHER_DECK["words"]), f"{tag}: в проверке все изученные слова ({size_})")
+            for _ in range(size_):
                 page.wait_for_selector("#testWordInput")
                 page.fill("#testWordInput", "x")
                 page.press("#testWordInput", "Enter")
