@@ -1,0 +1,38 @@
+{
+ "decks": [
+  {
+   "id": "w1d1",
+   "week": 1,
+   "day": "2026-11-02",
+   "title": "Знакомство",
+   "icon": "👋",
+   "words": [
+    {
+     "de": "Name",
+     "ru": "имя",
+     "emoji": "🪪",
+     "article": "der",
+     "plural": "die Namen",
+     "pos": "noun"
+    },
+    {
+     "de": "Frau",
+     "ru": "женщина",
+     "emoji": "👩",
+     "article": "die",
+     "plural": "die Frauen",
+     "pos": "noun"
+    },
+    {
+     "de": "heißen",
+     "ru": "называться",
+     "emoji": "🗣️",
+     "article": null,
+     "plural": null,
+     "pos": "verb"
+    }
+   ]
+  }
+ ],
+ "extra": []
+}

@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#f7f5f0" />
+  <title>Artikel — 2500 немецких слов</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-soft: #f7f5f0;
+      --card-bg: #ffffff;
+      --der-color: #3b82f6;
+      --der-bg: #eff6ff;
+      --der-ring: rgba(59, 130, 246, 0.25);
+      --die-color: #ec4899;
+      --die-bg: #fdf2f8;
+      --die-ring: rgba(236, 72, 153, 0.25);
+      --das-color: #10b981;
+      --das-bg: #ecfdf5;
+      --das-ring: rgba(16, 185, 129, 0.25);
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent;
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    input, textarea {
+      user-select: text;
+      -webkit-user-select: text;
+      font-size: 16px !important; /* Prevents auto-zoom on iPhone 14 iOS Safari */
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background-color: var(--bg-soft);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #292524;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Mobile container optimized for iPhone 14 (390x844) & Huawei Pura 70 (412x915) */
+    .app-shell {
+      width: 100%;
+      max-width: 430px;
+      height: 100dvh;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      padding-top: max(10px, env(safe-area-inset-top));
+      padding-bottom: max(10px, env(safe-area-inset-bottom));
+      padding-left: 14px;
+      padding-right: 14px;
+      position: relative;
+    }
+
+    .scroll-area {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .scroll-area::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Gender frames for Study Mode */
+    .frame-der {
+      border: 5px solid var(--der-color);
+      background: linear-gradient(145deg, #ffffff 0%, var(--der-bg) 100%);
+      box-shadow: 0 12px 28px -6px var(--der-ring), inset 0 0 0 1px rgba(59,130,246,0.12);
+    }
+    .frame-die {
+      border: 5px solid var(--die-color);
+      background: linear-gradient(145deg, #ffffff 0%, var(--die-bg) 100%);
+      box-shadow: 0 12px 28px -6px var(--die-ring), inset 0 0 0 1px rgba(236,72,153,0.12);
+    }
+    .frame-das {
+      border: 5px solid var(--das-color);
+      background: linear-gradient(145deg, #ffffff 0%, var(--das-bg) 100%);
+      box-shadow: 0 12px 28px -6px var(--das-ring), inset 0 0 0 1px rgba(16,185,129,0.12);
+    }
+    .frame-neutral {
+      border: 2px solid #e7e5e4;
+      background: linear-gradient(145deg, #ffffff 0%, #fafaf9 100%);
+      box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Smooth animations */
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(6px) scale(0.99); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .animate-card {
+      animation: fadeSlideUp 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes shakeError {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-6px); }
+      50% { transform: translateX(6px); }
+      75% { transform: translateX(-4px); }
+    }
+    .shake {
+      animation: shakeError 0.32s ease-in-out;
+    }
+
+    @keyframes pulseAudio {
+      0% { transform: scale(1); }
+      40% { transform: scale(1.035); }
+      100% { transform: scale(1); }
+    }
+    .speaking-pulse {
+      animation: pulseAudio 0.45s ease-in-out;
+    }
+
+    .soft-btn {
+      transition: transform 0.12s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .soft-btn:active {
+      transform: scale(0.96);
+    }
+  </style>
+</head>
+<body>
+  <div id="app" class="app-shell"></div>
+  <audio id="ttsAudio" referrerpolicy="no-referrer" preload="none" class="hidden"></audio>
+
+  <script>
+    /*************************************************************************
+     * 1. БАЗА ДАННЫХ: 50 КАТЕГОРИЙ × 50 СЛОВ = 2500 СУЩЕСТВИТЕЛЬНЫХ
+     * Формат каждой категории:
+     * [Название, ИконкаКатегории, строка_DER(m), строка_DIE(f), строка_DAS(n)]
+     * Каждое слово кодируется как "НемецкоеСлово,Перевод,Эмодзи" и разделяется "|"
+     *************************************************************************/
+    const RAW_DECKS = [
+      [
+        "1. Семья и люди", "👨‍👩‍👧‍👦",
+        "Vater,Отец,👨|Sohn,Сын,👦|Bruder,Брат,🧑|Großvater,Дедушка,👴|Onkel,Дядя,🧔|Cousin,Двоюродный брат,👱‍♂️|Neffe,Племянник,👦|Enkel,Внук,👶|Ehemann,Муж,🤵|Partner,Партнёр,🤝|Freund,Друг,🙋‍♂️|Nachbar,Сосед,🏡|Mensch,Человек,🧍|Mann,Мужчина,👨|Junge,Мальчик,👦|Gast,Гость,🎩|Rentner,Пенсионер,👴|Zwilling,Близнец,👯|Vorfahr,Предок,📜|Vormund,Опекун,🛡️|Bräutigam,Жених,🤵|Witwer,Вдовец,🕯️|Pate,Крёстный отец,🎁|Teenager,Подросток,🛹",
+        "Mutter,Мать,👩|Tochter,Дочь,👧|Schwester,Сестра,👱‍♀️|Großmutter,Бабушка,👵|Tante,Тётя,👩‍🦱|Cousine,Двоюродная сестра,💁‍♀️|Nichte,Племянница,👧|Enkelin,Внучка,👧|Ehefrau,Жена,👰|Familie,Семья,👨‍👩‍👧‍👦|Frau,Женщина,👩|Freundin,Подруга,🙋‍♀️|Braut,Невеста,👰|Witwe,Вдова,🥀|Patin,Крёстная мать,🧚‍♀️|Person,Персона,🪪|Dame,Дама,👒|Jugend,Молодёжь,🌟|Kindheit,Детство,🧸|Verwandtschaft,Родня,🌳",
+        "Kind,Ребёнок,🧒|Baby,Малыш,👶|Mädchen,Девочка,👧|Paar,Пара,💑|Elternteil,Родитель,🧑‍🍼|Mitglied,Член семьи,🪪"
+      ],
+      [
+        "2. Дом и жильё", "🏠",
+        "Flur,Коридор,🚪|Balkon,Балкон,🪴|Keller,Подвал,🧱|Dachboden,Чердак,🪜|Garten,Сад,🌳|Zaun,Забор,🚧|Eingang,Вход,🚶|Ausgang,Выход,🚪|Aufzug,Лифт,🛗|Schlüssel,Ключ,🔑|Boden,Пол,🪵|Raum,Помещение,📐|Hof,Двор,🏡|Schornstein,Дымоход,🏭|Kamin,Камин,🔥|Briefkasten,Почтовый ящик,📫|Schalter,Выключатель,🔘|Stecker,Штекер,🔌|Vorhang,Занавес,🪟|Haushalt,Домашнее хозяйство,🧹",
+        "Wohnung,Квартира,🏢|Treppe,Лестница,🪜|Wand,Стена,🧱|Tür,Дверь,🚪|Decke,Потолок,⬆️|Garage,Гараж,🚗|Terrasse,Терраса,🏖️|Klingel,Дверной звонок,🔔|Heizung,Отопление,♨️|Miete,Аренда,💶|Nachbarschaft,Соседство,🏘️|Steckdose,Розетка,🔌|Jalousie,Жалюзи,🪟|Schwelle,Порог,🦶|Fassade,Фасад,🏛️|Alarmanlage,Сигнализация,🚨|Immobilie,Недвижимость,🔑|Renovierung,Ремонт,🖌️|Etage,Этаж,🏢",
+        "Haus,Дом,🏠|Zimmer,Комната,🛋️|Fenster,Окно,🪟|Dach,Крыша,🔺|Tor,Ворота,⛩️|Schloss,Замок,🔒|Wohnzimmer,Гостиная,🛋️|Schlafzimmer,Спальня,🛏️|Kinderzimmer,Детская,🧸|Stockwerk,Этаж,🏢|Grundstück,Участок,🗺️"
+      ],
+      [
+        "3. Мебель и интерьер", "🛋️",
+        "Tisch,Стол,🪑|Stuhl,Стул,🪑|Schrank,Шкаф,🚪|Sessel,Кресло, armchair|Teppich,Ковёр,🧶|Spiegel,Зеркало,🪞|Vorhang,Штора,🪟|Hocker,Табурет,🪑|Nachttisch,Тумбочка,🛏️|Kleiderschrank,Гардероб,👗|Schreibtisch,Письменный стол,💻|Couchtisch,Журнальный столик,☕|Kronleuchter,Люстра, chandelier|Rahmen,Рамка,🖼️|Korb,Корзина,🧺|Ständer,Подставка,🧍|Safe,Сейф,🔐|Sitzsack,Кресло-мешок,🫘|Kleiderbügel,Вешалка-плечики,🧥|Schemel,Скамеечка,🪑",
+        "Lampe,Лампа,💡|Kommode,Комод,🗄️|Matratze,Матрас,🛏️|Decke,Одеяло,🛌|Uhr,Часы,🕰️|Vase,Ваза,🏺|Couch,Кушетка,🛋️|Garderobe,Прихожая вешалка,🧥|Schublade,Выдвижной ящик,📥|Kerze,Свеча,🕯️|Pflanze,Комнатное растение,🪴|Statue,Статуэтка,🗽|Vitrine,Витрина,🥂|Wiege,Колыбель,👶|bank,Скамья,🪑|Tapete,Обои,📜|Dekoration,Декорация,✨|Polsterung,Обивка,🧵",
+        "Bett,Кровать,🛏️|Sofa,Диван,🛋️|Regal,Полка,📚|Kissen,Подушка,枕|Bild,Картина,🖼️|Bücherregal,Книжный стеллаж,📖|Licht,Свет,💡|Poster,Постер,🖼️|Porzellan,Фарфор,🍽️|Mobiliar,Меблировка,🛋️|Gästebett,Гостевая кровать,🛏️|Polster,Мягкая подушка,🛋️"
+      ],
+      [
+        "4. Кухня и утварь", "🍳",
+        "Löffel,Ложка,🥄|Teller,Тарелка,🍽️|Topf,Кастрюля,🍲|Kühlschrank,Холодильник,🧊|Herd,Плита,🔥|Ofen,Духовка,♨️|Wasserhahn,Водопроводный кран,🚰|Becher,Кружка,☕|Krug,Кувшин,🏺|Korkenzieher,Штопор,🍾|Dosenöffner,Консервный нож,🥫|Wasserkocher,Электрочайник,🫖|Toaster,Тостер,🍞|Mixer,Миксер,🌪️|Flaschenöffner,Открывалка,🍺|Deckel,Крышка,🥘|Teelöffel,Чайная ложка,🥄|Esslöffel,Столовая ложка,🥣|Schwamm,Губка,🧽|Mülleimer,Мусорное ведро,🗑️",
+        "Gabel,Вилка,🍴|Tasse,Чашка,☕|Pfanne,Сковорода,🍳|Schüssel,Миска,🥣|Flasche,Бутылка,🍾|Kanne,Кофейник,🫖|Serviette,Салфетка,🧻|Spülmaschine,Посудомойка,🫧|Mikrowelle,Микроволновка,⏲️|Schürze,Фартук,🎽|Reibe,Тёрка,🧀|Kelle,Половник,🥣|Waage,Кухонные весы,⚖️|Spüle,Раковина,🚰|Tischdecke,Скатерть,🍽️|Thermoskanne,Термос, flasks|Zange,Щипцы,🦞|Folie,Фольга,✨",
+        "Messer,Нож,🔪|Glas,Стакан,🥛|Brett,Разделочная доска,🪵|Geschirr,Посуда,🍽️|Besteck,Столовые приборы,🍴|Tablett,Поднос,🛎️|Sieb,Сито,🕳️|Gefrierfach,Морозилка,❄️|Rezept,Рецепт,📋|Gewürzregal,Полка для специй,🧂|Spülmittel,Средство для мытья,🧴|Backblech,Противень,🍪"
+      ],
+      [
+        "5. Еда и продукты", "🥘",
+        "Käse,Сыр,🧀|Reis,Рис,🍚|Zucker,Сахар,🍬|Honig,Мёд,🍯|Salat,Салат,🥗|Brei,Каша,🥣|Joghurt,Йогурт,🥛|Essig,Уксус,🍶|Senf,Горчица,🌭|Pfeffer,Перец,🌶️|Quark,Творог,🥣|Ketchup,Кетчуп,🍅|Teig,Тесто,🥟|Imbiss,Перекус,🥪|Knödel,Клёцка,🥟|Eintopf,Рагу,🍲|Aufschnitt,Нарезка,🥓|Sirup,Сироп,🥞|Speck,Бекон,🥓|Nachtisch,Десерт,🍮",
+        "Suppe,Суп,🍜|Butter,Масло сливочное,🧈|Milch,Молоко,🥛|Nudel,Макаронина,🍝|Soße,Соус,🥫|Marmelade,Джем,🍓|Wurst,Колбаса,🌭|Pizza,Пицца,🍕|Mahlzeit,Приём пищи,🍽️|Sahne,Сливки,🍦|Margarine,Маргарин,🧈|Mayonnaise,Майонез,🥚|Speise,Блюдо,🥘|Portion,Порция,🍛|Vorspeise,Закуска,🫒|Beilage,Гарнир,🍟|Diät,Диета,🥗|Kalorie,Калория,🔥|Kruste,Корочка,🥖",
+        "Brot,Хлеб,🍞|Ei,Яйцо,🥚|Salz,Соль,🧂|Mehl,Мука,🌾|Öl,Растительное масло,🫒|Frühstück,Завтрак,🥐|Mittagessen,Обед,🍲|Abendessen,Ужин,🍽️|Brötchen,Булочка,🥯|Sandwich,Сэндвич,🥪|Müsli,Мюсли,🥣|Gericht,Блюдо,🍛"
+      ],
+      [
+        "6. Фрукты и ягоды", "🍎",
+        "Apfel,Яблоко,🍎|Pfirsich,Персик,🍑|Granatapfel,Гранат,🔴|Nektarine,Нектарин,🍑|Kern,Косточка,🌰|Saft,Сок,🧃|Zweig,Ветка,🌿|Korb,Корзина фруктов,🧺|Obstgarten,Фруктовый сад,🌳|Geschmack,Вкус,😋|Duft,Аромат,🌸|Stiel,Черенок,🍒|Apfelbaum,Яблоня,🌳|Tropfen,Капля сока,💧|Reifegrad,Степень зрелости,☀️|Vitaminanteil,Доля витаминов,💊",
+        "Banane,Банан,🍌|Birne,Груша,🍐|Orange,Апельсин,🍊|Zitrone,Лимон,🍋|Erdbeere,Клубника,🍓|Kirsche,Вишня,🍒|Traube,Виноград,🍇|Melone,Дыня,🍈|Wassermelone,Арбуз,🍉|Ananas,Ананас,🍍|Pflaume,Слива,🟣|Himbeere,Малина,🍓|Blaubeere,Черника,🫐|Brombeere,Ежевика,🫐|Johannisbeere,Смородина,🍒|Aprikose,Абрикос,🟠|Mango,Манго,🥭|Kiwi,Киви,🥝|Feige,Инжир,🟣|Mandarine,Мандарин,🍊|Grapefruit,Грейпфрут,🍊|Kokosnuss,Кокос,🥥|Papaya,Папайя,🥭|Limette,Лайм,🍋‍🟩|Dattel,Финик,🌴|Preiselbeere,Брусника,🔴|Stachelbeere,Крыжовник,🟢|Quitte,Айва,🍐|Schale,Кожура,🍌|Frucht,Плод,🍎",
+        "Obst,Фрукты,🧺|Beerenobst,Ягоды,🍓|Aroma,Аромат,✨|Fruchtfleisch,Мякоть,🍉"
+      ],
+      [
+        "7. Овощи и зелень", "🥦",
+        "Kopfsalat,Кочанный салат,🥬|Kohl,Капуста,🥬|Knoblauch,Чеснок,🧄|Pilz,Гриб,🍄|Spinat,Шпинат,🌿|Spargel,Спаржа,🌱|Kürbis,Тыква,🎃|Brokkoli,Брокколи,🥦|Mais,Кукуруза,🌽|Rettich,Редька,🫜|Sellerie,Сельдерей,🥬|Lauch,Лук-порей,🧅|Dill,Укроп,🌿|Blumenkohl,Цветная капуста,🥦|Rosenkohl,Брюссельская капуста,🥬|Ingwer,Имбирь,🫚|Meerrettich,Хрен,🌿|Fenchel,Фенхель,🌱|Schnittlauch,Зелёный лук,🌱|Basilikum,Базилик,🌿|Rosmarin,Розмарин,🌿|Koriander,Кориандр,🌿|Keim,Росток,🌱",
+        "Tomate,Помидор,🍅|Gurke,Огурец,🥒|Kartoffel,Картофель,🥔|Zwiebel,Лук,🧅|Karotte,Морковь,🥕|Paprika,Болгарский перец,🫑|Erbse,Горошина,🫛|Bohne,Фасоль,🫘|Aubergine,Баклажан,🍆|Zucchini,Кабачок,🥒|Rübe,Свёкла,🟣|Petersilie,Петрушка,🌿|Minze,Мята,🍃|Linse,Чечевица,🫘|Artischocke,Артишок,🌱|Oliven,Оливки,🫒|Chili,Перец чили,🌶️|Knolle,Клубень,🥔|Wurzel,Корень,🫚|Ernte,Урожай,🚜",
+        "Gemüse,Овощи,🥗|Radieschen,Редис,🔴|Kraut,Зелень,🌿|Blatt,Лист,🍃|Beet,Грядка,🌱|Gewächshaus,Теплица,🏡|Saatgut,Семена,🌾"
+      ],
+      [
+        "8. Напитки", "☕",
+        "Kaffee,Кофе,☕|Tee,Чай,🍵|Saft,Сок,🧃|Wein,Вино,🍷|Sekt,Шампанское,🥂|Kakao,Какао,🍫|Smoothie,Смузи,🥤|Sirup,Сироп,🍯|Likör,Ликёр,🥃|Whisky,Виски,🥃|Rum,Ром,🏴‍☠️|Wodka,Водка,🍸|Cocktail,Коктейль,🍹|Apfelsaft,Яблочный сок,🍎|Orangensaft,Апельсиновый сок,🍊|Eistee,Холодный чай,🧊|Espresso,Эспрессо,☕|Cappuccino,Капучино,☕|Schaum,Пена,🫧|Schluck,Глоток,💧|Durst,Жажда,🥵|Geschmack,Вкус,👅|Alkohol,Алкоголь,🍷|Trinkhalm,Трубочка,🥤",
+        "Milch,Молоко,🥛|Limonade,Лимонад,🍋|Schorle,Шорле,🥂|Cola,Кола,🥤|Brühe,Бульон,🥣|Bowle,Пунш,🍹|Milchshake,Молочный коктейль,🥤|Flasche,Бутылка,🍾|Dose,Жестяная банка,🥫|Tasse,Чашка,☕|Kanne,Чайник,🫖|Erfrischung,Освежение,🌊|Mischung,Смесь,🔄|Temperatur,Температура,🌡️|Sorte,Сорт,🏷️",
+        "Wasser,Вода,💧|Bier,Пиво,🍺|Getränk,Напиток,🥤|Mineralwasser,Минеральная вода,🫧|Eis,Лёд,🧊|Glas,Бокал,🍷|Fass,Бочка,🛢️|Trinkwasser,Питьевая вода,🚰|Leitungswasser,Вода из-под крана,🚰|Koffein,Кофеин,⚡|Aroma,Аромат,🌸"
+      ],
+      [
+        "9. Сладости и выпечка", "🥐",
+        "Kuchen,Пирог,🍰|Keks,Печенье,🍪|Zucker,Сахар,🍬|Honig,Мёд,🍯|Pudding,Пудинг,🍮|Pfannkuchen,Блин,🥞|Stollen,Штоллен,🍞|Strudel,Штрудель,🥧|Teig,Тесто,🥣|Zimt,Корица,🪵|Sirup,Сироп,🍯|Lutscher,Леденец на палочке,🍭|Kaugummi,Жвачка,🫧|Riegel,Батончик,🍫|Muffin,Маффин,🧁|Donut,Пончик,🍩|Zuckerguss,Глазурь,🧁|Marzipan,Марципан,🍬|Biskuit,Бисквит,🍰|lebkuchen,Пряник,🍪|kakao,Какао-порошок,🍫",
+        "Schokolade,Шоколад,🍫|Torte,Торт,🎂|Brezel,Брецель,🥨|Waffel,Вафля,🧇|Praline,Пралине,🍬|Creme,Крем,🍦|Marmelade,Мармелад,🍓|Vanille,Ваниль,🌼|Süßigkeit,Сладость,🍬|Bäckerei,Пекарня,🥖|Sahne,Взбитые сливки,🍰|Glasur,Глазурь,✨|Füllung,Начинка,🍒|Kruste,Хрустящая корочка,🥐|Rosine,Изюминка,🍇|Mandel,Миндаль,🌰|Haselnuss,Фундук,🌰|Kokosflocke,Кокосовая стружка,🥥",
+        "Eis,Мороженое,🍨|Bonbon,Конфета,🍬|Croissant,Круассан,🥐|Brötchen,Булочка,🥯|Gebäck,Выпечка,🥨|Plätzchen,Печеньице,🍪|Dessert,Десерт,🍮|Konfekt,Конфект,🍬|Gelee,Желе,🍮|Rezept,Рецепт,📜|Mehl,Мука,🌾"
+      ],
+      [
+        "10. Мясо, рыба и гастрономия", "🥩",
+        "Fisch,Рыба,🐟|Schinken,Ветчина,🍖|Speck,Бекон,🥓|Lachs,Лосось,🍣|Thunfisch,Тунец,🐟|Hering,Сельдь,🐟|Karpfen,Карп,🐟|Truthahn,Индейка,🦃|Braten,Жаркое,🍖|Aufschnitt,Мясная нарезка,🥓|Spieß,Шашлык,🍢|Kaviar,Икра,🟠|Hummer,Омар,🦞|Krebs,Рак,🦞|Tintenfisch,Кальмар,🦑|Aal,Угорь,🐍|Kabeljau,Треска,🐟|Knochen,Кость,🦴|Geschmack,Вкус,😋|Grill,Гриль,🔥|Rauch,Дым,💨",
+        "Wurst,Колбаса,🌭|Salami,Салями,🍕|Forelle,Форель,🐟|Garnele,Креветка,🦐|Krabbe,Краб,🦀|Muschel,Мидия,🦪|Auster,Устрица,🦪|Ente,Утка,🦆|Gans,Гусь,🪿|Leber,Печень,🥩|Keule,Ножка,🍗|Brust,Грудка,🍗|Rippe,Ребро,🍖|Makrele,Скумбрия,🐟|Sardine,Сардина,🐟|Soße,Подлива,🥣|Marinade,Маринад,🫙|Metzgerei,Мясная лавка,🔪",
+        "Fleisch,Мясо,🥩|Hähnchen,Курица,🍗|Rindfleisch,Говядина,🐄|Schweinefleisch,Свинина,🐖|Lammfleisch,Баранина,🐑|Steak,Стейк,🥩|Schnitzel,Шницель,🥩|Filet,Филе,🍣|Kotelett,Котлета на кости,🍖|Hackfleisch,Фарш,🥩|Würstchen,Сосиска,🌭|Fett,Жир,🧈"
+      ],
+      [
+        "11. Одежда", "👗",
+        "Mantel,Пальто,🧥|Pullover,Свитер,🧶|Rock,Юбка,👗|Anzug,Костюм,🤵|Hut,Шляпа,🎩|Schal,Шарф,🧣|Gürtel,Ремень,👖|Kragen,Воротник,👔|Ärmel,Рукав,💪|Knopf,Пуговица,🔘|Reißverschluss,Молния,🤐|Bademantel,Халат,🧖|Pyjama,Пижама,🛌|Stoff,Ткань,🧵|Pelz,Мех,🦊|Fleck,Пятно,💧|Schnitt,Крой,✂️|Stil,Стиль,✨|Smoking,Смокинг,🤵|Regenmantel,Плащ,☔|Kapuzenpulli,Худи,🧥",
+        "Hose,Брюки,👖|Jacke,Куртка,🧥|Bluse,Блузка,👚|Socke,Носок,🧦|Mütze,Шапка,🧢|Krawatte,Галстук,👔|Tasche,Карман,👖|Jeans,Джинсы,👖|Weste,Жилетка,🦺|Unterwäsche,Нижнее бельё,🩲|Strumpfhose,Колготки,🧦|Badehose,Плавки,🩳|Mode,Мода,👠|Größe,Размер,📏|Naht,Шов,🪡|Seide,Шёлк,🧣|Wolle,Шерсть,🐑|Baumwolle,Хлопок,☁️|Kapuze,Капюшон,🧥|Uniform,Униформа,👮",
+        "Kleid,Платье,👗|Hemd,Рубашка,👔|T-Shirt,Футболка,👕|Kostüm,Женский костюм,👩‍💼|Tuch,Платок,🧣|Leder,Кожа,🧥|Etikett,Бирка,🏷️|Futter,Подкладка,🧥|Muster,Узор,💠|Outfit,Наряд,✨"
+      ],
+      [
+        "12. Обувь и аксессуары", "👟",
+        "Schuh,Туфля,👞|Stiefel,Сапог,🥾|Handschuh,Перчатка,🧤|Rucksack,Рюкзак,🎒|Regenschirm,Зонт,☂️|Ring,Кольцо,💍|Ohrring,Серьга,💎|Schmuck,Украшения,📿|Absatz,Каблук,👠|Schnürsenkel,Шнурок,👟|Hausschuh,Тапочек,🩴|Turnschuh,Кроссовок,👟|Geldbeutel,Кошелёк,👛|Koffer,Чемодан,🧳|Kamm,Расчёска,🪮|Fächer,Веер,🪭|Anhänger,Кулон,📿|Reif,Обруч,👑|Edelstein,Драгоценный камень,💎|Knopf,Запонка,🔘|Riemen,Ремешок,⌚",
+        "Sandale,Сандалия,👡|Tasche,Сумка,👜|Brille,Очки,👓|Sonnenbrille,Солнцезащитные очки,🕶️|Uhr,Наручные часы,⌚|Kette,Цепочка,⛓️|Brosche,Брошь,🧷|Sohle,Подошва,👟|Schnalle,Пряжка,ベルト|Brieftasche,Бумажник,💵|Handtasche,Дамская сумочка,👛|Perle,Жемчужина,⚪|Kappe,Кепка,🧢|Schleife,Бант,🎀|Spange,Заколка,📎|Krone,Корона,👑|Falte,Складка,👜|Kollektion,Коллекция,✨",
+        "Armband,Браслет,📿|Portemonnaie,Портмоне,👛|Paar,Пара обуви,👟|Leder,Кожа,🥾|Gold,Золото,🥇|Silber,Серебро,🥈|Etui,Футляр,👓|Accessoire,Аксессуар,🕶️|Tuch,Шейный платок,🧣|Juwel,Драгоценность,💎|Medaillon,Медальон,🪙"
+      ],
+      [
+        "13. Тело человека", "🫀",
+        "Kopf,Голова,🗣️|Arm,Рука (от плеча),💪|Fuß,Стопа,🦶|Finger,Палец руки,☝️|Rücken,Спина,🧍|Bauch,Живот,🤰|Hals,Шея,🦒|Mund,Рот,👄|Zahn,Зуб,🦷|Bart,Борода,🧔|Knochen,Кость,🦴|Muskel,Мышца,💪|Magen,Желудок,🥣|Ellbogen,Локоть,💪|Daumen,Большой палец,👍|Zeh,Палец ноги,🦶|Knöchel,Лодыжка,🦶|Nacken,Затылок,🧍|Schädel,Череп,💀|Kiefer,Челюсть,🦷|Körper,Тело,🧍|Puls,Пульс,💓|Atem,Дыхание,💨|Schweiß,Пот,💦",
+        "Hand,Кисть руки,✋|Nase,Нос,👃|Schulter,Плечо,🤷|Brust,Грудь,🫁|Zunge,Язык,👅|Lippe,Губа,💋|Stirn,Лоб,🤦|Wange,Щека,😊|Haut,Кожа,🤚|Lunge,Лёгкое,🫁|Leber,Печень,🫀|Niere,Почка,🫘|Kehle,Горло,🗣️|Faust,Кулак,✊|Ferse,Пятка,🦶|Hüfte,Бедро,💃|Taille,Талия,⏳|Augenbraue,Бровь,🤨|Wimper,Ресница,👁️|Ader,Вена,🩸",
+        "Auge,Глаз,👁️|Ohr,Ухо,👂|Bein,Нога,🦵|Haar,Волос,💇|Herz,Сердце,❤️|Gesicht,Лицо,🙂|Knie,Колено,🦵|Gehirn,Мозг,🧠|Blut,Кровь,🩸|Kinn,Подбородок,🧔|Handgelenk,Запястье,⌚|Skelett,Скелет,🦴"
+      ],
+      [
+        "14. Здоровье и медицина", "🩺",
+        "Arzt,Врач,👨‍⚕️|Schmerz,Боль,🤕|Husten,Кашель,😷|Schnupfen,Насморк,🤧|Patient,Пациент,🛌|Zahnarzt,Стоматолог,🦷|Verband,Повязка,🩹|Tropfen,Капли,💧|Sirup,Сироп,🥄|Rollstuhl,Инвалидная коляска,🦽|Notfall,Экстренный случай,🚑|Krankenwagen,Скорая помощь,🚑|Blutdruck,Кровяное давление,🩸|Impfstoff,Вакцина,💉|Bruch,Перелом,🦴|Virus,Вирус,🦠|Termin,Приём у врача,📅|Herzschlag,Сердцебиение,💓|Schlaf,Сон,😴|Zustand,Состояние,📋",
+        "Apotheke,Аптека,🏥|Krankheit,Болезнь,🤒|Tablette,Таблетка,💊|Salbe,Мазь,🧴|Spritze,Шприц,💉|Wunde,Рана,🩹|Grippe,Грипп,🤒|Allergie,Аллергия,🤧|Gesundheit,Здоровье,💚|Operation,Операция,🔪|Klinik,Клиника,🏥|Therapie,Терапия,🧘|Praxis,Врачебный кабинет,🩺|Narbe,Шрам,⚡|Diagnose,Диагноз,📋|Krankenschwester,Медсестра,👩‍⚕️|Erkältung,Простуда,🧣|Heilung,Выздоровление,✨|Pille,Пилюля,💊|Untersuchung,Обследование,🔬",
+        "Krankenhaus,Больница,🏥|Medikament,Лекарство,💊|Fieber,Жар,🌡️|Rezept,Рецепт врача,📄|Pflaster,Пластырь,🩹|Thermometer,Градусник,🌡️|Symptom,Симптом,🔍|Röntgenbild,Рентгеновский снимок,🩻|Immunsystem,Иммунитет,🛡️|Labor,Лаборатория,🧪"
+      ],
+      [
+        "15. Ванная и гигиена", "🛁",
+        "Kamm,Гребень,🪮|Spiegel,Зеркало,🪞|Föhn,Фен,💨|Rasierer,Бритва,🪒|Schwamm,Мочалка,🧽|Schaum,Пена,🫧|Eimer,Ведро,🪣|Wasserhahn,Кран,🚰|Abfluss,Слив,🕳️|Bademantel,Банный халат,🧖|Tropfen,Капля,💧|Dampf,Пар,♨️|Duft,Парфюм,🌸|Lippenstift,Помада,💄|Nagellack,Лак для ногтей,💅|Pinsel,Кисточка,🖌️|Wäschekorb,Корзина для белья,🧺|Stöpsel,Пробка для ванны,🔌|Vorhang,Шторка для душа,🪟|Lappen,Тряпка,🧽",
+        "Seife,Мыло,🧼|Zahnbürste,Зубная щётка,🪥|Zahnpasta,Зубная паста,🦷|Dusche,Душ,🚿|Badewanne,Ванна,🛁|Bürste,Щётка,🪮|Creme,Крем,🧴|Wäsche,Бельё для стирки,🧺|Waschmaschine,Стиральная машина,🫧|Schere,Маникюрные ножницы,✂️|Pinzette,Пинцет,🤏|Lotion,Лосьон,🧴|Maske,Маска для лица,🧖‍♀️|Toilette,Туалет,🚽|Hygiene,Гигиена,✨|Kosmetik,Косметика,💄|Feile,Пилочка для ногтей,💅|Fliese,Кафельная плитка,⬜|Sauberkeit,Чистота,✨",
+        "Handtuch,Полотенце,🧖|Shampoo,Шампунь,🧴|Parfüm,Духи,香水|Waschbecken,Умывальник,🚰|Toilettenpapier,Туалетная бумага,🧻|Bad,Ванная комната,🛁|Deo,Дезодорант,🧴|Duschgel,Гель для душа,🫧|Puder,Пудра,🪞|Gesichtswasser,Тоник для лица,💧|Waschmittel,Стиральный порошок,🧺"
+      ],
+      [
+        "16. Город и улицы", "🏙️",
+        "Platz,Площадь,⛲|Park,Парк,🌳|Turm,Башня,🗼|Bahnhof,Вокзал,🚉|Hafen,Порт,⚓|Markt,Рынок,🎪|Bürgersteig,Тротуар,🚶|Brunnen,Фонтан,⛲|Friedhof,Кладбище,🪦|Zoo,Зоопарк,🦁|Bezirk,Район,🗺️|Vorort,Пригород,🏘️|Supermarkt,Супермаркет,🛒|Kiosk,Киоск,🏪|Palast,Дворец,🏰|Weg,Путь,🛣️|Tunnel,Туннель,🚇|Parkplatz,Парковка,🅿️|Verkehr,Движение,🚦|Müll,Мусор,🗑️|Lärm,Шум,🔊|Einwohner,Житель,🧍",
+        "Stadt,Город,🏙️|Straße,Улица,🛣️|Brücke,Мост,🌉|Kirche,Церковь,⛪|Apotheke,Аптека,🏥|Bank,Банк,🏦|Post,Почта,📮|Polizei,Полиция,🚓|Feuerwehr,Пожарная часть,🚒|Bibliothek,Библиотека,📚|Ampel,Светофор,🚦|Kreuzung,Перекрёсток,➕|Haltestelle,Остановка,🚏|Gasse,Переулок,🏘️|Laterne,Уличный фонарь,🏮|Mauer,Городская стена,🧱|Hauptstadt,Столица,🏛️|Oper,Опера,🎭|Botschaft,Посольство,🏳️|Bäckerei,Булочная,🥐",
+        "Rathaus,Ратуша,🏛️|Museum,Музей,🏺|Theater,Театр,🎭|Kino,Кинотеатр,🍿|Restaurant,Ресторан,🍽️|Café,Кафе,☕|Hotel,Отель,🏨|Zentrum,Центр,🎯|Denkmal,Памятник,🗽|Gebäude,Здание,🏢|Schloss,Дворец-замок,🏰|Viertel,Квартал,🏘️"
+      ],
+      [
+        "17. Транспорт", "🚆",
+        "Zug,Поезд,🚆|Bus,Автобус,🚌|Flugzeug,Самолёт (разг. Flieger),✈️|Wagen,Вагон,🚃|Lkw,Грузовик,🚛|Hubschrauber,Вертолёт,🚁|Roller,Самокат/Скутер,🛴|Fahrer,Водитель,🧑‍✈️|Pilot,Пилот,👨‍✈️|Passagier,Пассажир,🧳|Fahrplan,Расписание,🕒|Fahrschein,Билет,🎫|Sitzplatz,Сидячее место,💺|Bahnhof,Вокзал,🚉|Flughafen,Аэропорт,🛫|Weg,Дорога,🛣️|Stau,Пробка,🚗|Unfall,Авария,💥|Anschluss,Пересадка,🔄|Waggon,Железнодорожный вагон,🚃|Kapitän,Капитан,⚓",
+        "U-Bahn,Метро,🚇|Straßenbahn,Трамвай,🚋|Fähre,Паром,⛴️|Haltestelle,Остановка,🚏|Fahrkarte,Проездной билет,🎟️|Reise,Поездка,🧳|Richtung,Направление,🧭|Geschwindigkeit,Скорость,⚡|Verspätung,Опоздание,⏳|Abfahrt,Отправление, departure|Ankunft,Прибытие,🏁|Linie,Линия маршрута,〰️|Sicherheit,Безопасность,🛡️|Spur,Полоса движения,🛣️|Brücke,Эстакада,🌉|Kontrolle,Проверка билетов,👮|Kabine,Кабина,🚡|Yacht,Яхта,🛥️|Lokomotive,Локомотив,🚂",
+        "Auto,Автомобиль,🚗|Fahrrad,Велосипед,🚲|Schiff,Корабль,🚢|Taxi,Такси,🚕|Motorrad,Мотоцикл,🏍️|Boot,Лодка,🛶|Flugzeug,Самолёт,✈️|Ticket,Билет,🎫|Gleis,Железнодорожный путь,🛤️|Gepäck,Багаж,🧳|Verkehrsmittel,Транспортное средство,🚌"
+      ],
+      [
+        "18. Автомобиль", "🚗",
+        "Motor,Двигатель,⚙️|Reifen,Шина,🛞|Spiegel,Зеркало заднего вида,🪞|Sitz,Сиденье,💺|Kofferraum,Багажник,🧳|Scheibenwischer,Дворник,🌧️|Schlüssel,Ключ зажигания,🔑|Führerschein,Водительские права,🪪|Unfall,ДТП,💥|Stau,Затор,🚦|Parkplatz,Стоянка,🅿️|Mechaniker,Механик,🧑‍🔧|Tank,Топливный бак,⛽|Blinker,Поворотник,🟠|Auspuff,Выхлопная труба,💨|Gang,Передача,🕹️|Tacho,Спидометр,⏱️|Anschnallgurt,Ремень безопасности,🎗️|Wagenheber,Домкрат,🔧|Kratzer,Царапина,⚡",
+        "Bremse,Тормоз,🛑|Tür,Дверь машины,🚪|Tankstelle,Заправка,⛽|Werkstatt,Автосервис,🛠️|Autobahn,Автобан,🛣️|Geschwindigkeit,Скорость,💨|Batterie,Аккумулятор,🔋|Hupe,Сигнал (гудок),📯|Kupplung,Сцепление,⚙️|Windschutzscheibe,Лобовое стекло,🪟|Zündung,Зажигание,🔥|Versicherung,Страховка,📄|Strafe,Штраф,💶|Ampel,Светофор,🚦|Kurve,Поворот,↩️|Panne,Поломка,⚠️|Felge,Колёсный диск,🛞|Garage,Гараж,🏠|Umleitung,Объезд,🚧",
+        "Auto,Машина,🚗|Lenkrad,Руль,🛞|Rad,Колесо,🛞|Benzin,Бензин,⛽|Licht,Фара,🔦|Pedal,Педаль,🦶|Getriebe,Коробка передач,⚙️|Öl,Машинное масло,🛢️|Nummernschild,Номерной знак,🔢|Navi,Навигатор,🗺️|Cabrio,Кабриолет,🏎️"
+      ],
+      [
+        "19. Путешествия и отель", "🧳",
+        "Koffer,Чемодан,🧳|Rucksack,Рюкзак,🎒|Pass,Загранпаспорт,🛂|Flug,Рейс,✈️|Urlaub,Отпуск,🏖️|Strand,Пляж,🏝️|Ausflug,Экскурсия,🚌|Tourist,Турист,📸|Gepäckträger,Носильщик,🛎️|Empfang,Ресепшн,🛎️|Schlüssel,Ключ от номера,🔑|Aufenthalt,Пребывание,🏨|Kompass,Компас,🧭|Zoll,Таможня,🛃|Abflug,Вылет,🛫|Stempel,Штамп в паспорте,💮|Reiseführer,Путеводитель,📖|Pool,Бассейн,🏊|Tresor,Сейф в номере,🔐|Service,Сервис,🛎️|Blick,Вид из окна,🌅",
+        "Reise,Путешествие,🌍|Karte,Карта,🗺️|Reservierung,Бронь,📅|Rezeption,Стойка регистрации,🛎️|Unterkunft,Жильё,🏡|Grenze,Граница,🚧|Insel,Остров,🏝️|Kultur,Культура,🎭|Erinnerung,Воспоминание,💭|Aussicht,Панорама,🔭|Botschaft,Посольство,🏛️|Währung,Валюта,💱|Versicherung,Страховка,🛡️|Klimaanlage,Кондиционер,❄️|Minibar,Мини-бар,🍾|Halbpension,Полупансион,🍽️|Abreise,Отъезд,👋|Ankunft,Приезд,🏁|Route,Маршрут,📍",
+        "Hotel,Отель,🏨|Zimmer,Номер в отеле,🛏️|Gepäck,Багаж,🧳|Visum,Виза,🛂|Ticket,Билет,🎫|Souvenir,Сувенир,🪆|Zelt,Палатка,⛺|Abenteuer,Приключение,🧗|Ausland,Заграница,🌐|Handgepäck,Ручная кладь,👜|Frühstück,Завтрак в отеле,🥐"
+      ],
+      [
+        "20. Природа и ландшафт", "🏔️",
+        "Berg,Гора,🏔️|Wald,Лес,🌲|Fluss,Река,🏞️|See,Озеро,💧|Baum,Дерево,🌳|Stein,Камень,🪨|Himmel,Небо,🌤️|Stern,Звезда,⭐|Mond,Луна,🌙|Sand,Песок,🏖️|Boden,Почва,🌱|Hügel,Холм,⛰️|Wasserfall,Водопад,🌊|Gipfel,Вершина,🏔️|Abgrund,Пропасть,🕳️|Felsen,Скала,🪨|Vulkan,Вулкан,🌋|Horizont,Горизонт,🌅|Ozean,Океан,🌊|Bach,Ручей,💧|Schatten,Тень,👤|Staub,Пыль,💨",
+        "Sonne,Солнце,☀️|Erde,Земля,🌍|Blume,Цветок,🌸|Wiese,Луг,🌾|Insel,Остров,🏝️|Wüste,Пустыня,🏜️|Küste,Побережье,🏖️|Welle,Волна,🌊|Höhle,Пещера,🦇|Quelle,Родник,⛲|Schlucht,Ущелье,🏞️|Landschaft,Ландшафт,🖼️|Natur,Природа,🌿|Luft,Воздух,💨|Umwelt,Окружающая среда,♻️|Pflanze,Растение,🌱|Wurzel,Корень,🫚|Ebene,Равнина,🌾",
+        "Meer,Море,🌊|Tal,Долина,🏞️|Feld,Поле,🌾|Gras,Трава,🌿|Blatt,Лист,🍃|Feuer,Огонь,🔥|Wasser,Вода,💧|Ufer,Берег,🏖️|Eis,Лёд,🧊|Klima,Климат,🌡️|Gebirge,Горная цепь,🏔️|Moos,Мох,🟢"
+      ],
+      [
+        "21. Погода и климат", "🌦️",
+        "Regen,Дождь,🌧️|Schnee,Снег,❄️|Wind,Ветер,💨|Sturm,Шторм,🌪️|Nebel,Туман,🌫️|Frost,Мороз,🥶|Hagel,Град,🌨️|Blitz,Молния,⚡|Donner,Гром,🌩️|Regenbogen,Радуга,🌈|Schatten,Тень,☁️|Himmel,Небо,🌤️|Tropfen,Капля дождя,💧|Orkan,Ураган,🌀|Tau,Роса,💧|Sonnenschein,Солнечный свет,☀️|Klimawandel,Изменение климата,🌍|Grad,Градус,🌡️|Luftdruck,Атмосферное давление,🧭|Bericht,Прогноз,📋",
+        "Sonne,Солнце,☀️|Wolke,Облако,☁️|Hitze,Жара,🥵|Kälte,Холод,🧊|Temperatur,Температура,🌡️|Luft,Воздух,🌬️|Feuchtigkeit,Влажность,💧|Brise,Бриз,🌊|Flocke,Снежинка,❄️|Pfütze,Лужа,💧|Vorhersage,Метеосводка,📺|Dürre,Засуха,🏜️|Überschwemmung,Наводнение,🌊|Lawine,Лавина,🏔️|Jahreszeit,Время года,🍂|Wärme,Тепло,🔆|Frische,Свежесть,🍃|Atmosphäre,Атмосфера,🌏|Schicht,Слой облаков,☁️",
+        "Wetter,Погода,🌦️|Gewitter,Гроза,⛈️|Eis,Гололёд,🧊|Klima,Климат,🌍|Thermometer,Термометр,🌡️|Grad,Деление шкалы,🌡️|Hochwasser,Половодье,🌊|Glatteis,Гололедица,⛸️|Licht,Свет,☀️|Phänomen,Явление природы,🌈|Barometer,Барометр,🧭"
+      ],
+      [
+        "22. Животные", "🦁",
+        "Hund,Собака,🐕|Löwe,Лев,🦁|Tiger,Тигр,🐅|Bär,Медведь,🐻|Wolf,Волк,🐺|Fuchs,Лиса,🦊|Hase,Заяц,🐇|Affe,Обезьяна,🐒|Elefant,Слон,🐘|Esel,Осёл,🫏|Hirsch,Олень,🦌|Igel,Ёж,🦔|Hamster,Хомяк,🐹|Stier,Бык,🐂|Leopard,Леопард,🐆|Gepard,Гепард,🐆|Gorilla,Горилла,🦍|Panda,Панда,🐼|Koala,Коала,🐨|Biber,Бобр,🦫|Dachs,Барсук,🦡|Maulwurf,Крот,🐾|Schwanz,Хвост,🐕|Pelz,Шерсть,🦊",
+        "Katze,Кошка,🐈|Kuh,Корова,🐄|Ziege,Коза,🐐|Maus,Мышь,🐁|Ratte,Крыса,🐀|Giraffe,Жираф,🦒|Pfote,Лапа,🐾|Herde,Стадо,🐑|Jagd,Охота,🏹|Spur,След,🐾|Höhle,Нора/берлога,🕳️|Hyäne,Гиена,🐕|Antilope,Антилопа,🦌|Fledermaus,Летучая мышь,🦇|Robbe,Тюлень,🦭|Otter,Выдра,🦦",
+        "Pferd,Лошадь,🐎|Schwein,Свинья,🐖|Schaf,Овца,🐑|Tier,Животное,🐾|Kaninchen,Кролик,🐰|Kamel,Верблюд,🐪|Zebra,Зебра,🦓|Känguru,Кенгуру,🦘|Nashorn,Носорог,🦏|Nilpferd,Бегемот,🦛|Eichhörnchen,Белка,🐿️|Reh,Косуля,🦌|Fell,Шкура,🐻|Horn,Рог,🦏"
+      ],
+      [
+        "23. Птицы и морской мир", "🐬",
+        "Vogel,Птица,🐦|Adler,Орёл,🦅|Schwan,Лебедь,🦢|Papagei,Попугай,🦜|Pinguin,Пингвин,🐧|Storch,Аист,🦩|Pfau,Павлин,🦚|Strauß,Страус,🦤|Spatz,Воробей,🐦|Rabe,Ворон,🐦‍⬛|Hahn,Петух,🐓|Falke,Сокол,🦅|Specht,Дятел,🐦|Flamingo,Фламинго,🦩|Schnabel,Клюв,🐦|Flügel,Крыло,🪽|Käfig,Клетка,⛓️|Wal,Кит,🐋|Delfin,Дельфин,🐬|Hai,Акула,🦈|Seestern,Морская звезда,⭐|Oktopus,Осьминог,🐙|Lachs,Лосось,🐟|Seehund,Морской котик,🦭",
+        "Taube,Голубь,🕊️|Ente,Утка,🦆|Gans,Гусь,🪿|Eule,Сова,🦉|Möwe,Чайка,🐦|Schwalbe,Ласточка,🐦|Krähe,Ворона,🐦‍⬛|Nachtigall,Соловей,🎵|Elster,Сорока,🐦|Meise,Синица,🐦|Feder,Перо,🪶|Schildkröte,Черепаха,🐢|Qualle,Медуза,🪼|Krabbe,Краб,🦀|Muschel,Ракушка,🐚|Flosse,Плавник,🦈|Koralle,Коралл,🪸|Perle,Жемчужина,⚪|Kieme,Жабра,🐟|Tiefe,Глубина,🌊",
+        "Huhn,Курица,🐔|Küken,Цыплёнок,🐥|Nest,Гнездо,🪹|Ei,Птичье яйцо,🥚|Seepferdchen,Морской конёк, seahorse|Aquarium,Аквариум,🐠|Riff,Коралловый риф,🪸|Ufer,Побережье,🏖️|Futter,Корм,🌾|Netz,Рыболовная сеть,🕸️"
+      ],
+      [
+        "24. Насекомые и рептилии", "🦋",
+        "Käfer,Жук,🪲|Schmetterling,Бабочка,🦋|Floh,Блоха,🦗|Wurm,Червяк,🪱|Skorpion,Скорпион,🦂|Frosch,Лягушка,🐸|Alligator,Аллигатор,🐊|Leguan,Игуана,🦎|Stich,Укус (жалом),🐝|Schwarm,Рой,🐝|Bienenstock,Улей,🍯|Kokon,Кокон,🐛|Panzer,Панцирь,🐢|Stachel,Жало,🐝|Biss,Укус,🐍|Sumpf,Болото,🌿|Teich,Пруд,💧|Regenwurm,Дождевой червь,🪱|Grashüpfer,Кузнечик,🦗|Marienkäfer,Божья коровка,🐞|Hirschkäfer,Жук-олень,🪲",
+        "Biene,Пчела,🐝|Wespe,Оса,🐝|Ameise,Муравей,🐜|Fliege,Муха,🪰|Mücke,Комар,🦟|Spinne,Паук,🕷️|Raupe,Гусеница,🐛|Grille,Сверчок,🦗|Libelle,Стрекоза,蜻|Motte,Моль,🦋|Zecke,Клещ,🕷️|Laus,Вошь,🐜|Hornisse,Шершень,🐝|Schnecke,Улитка,🐌|Schlange,Змея,🐍|Eidechse,Ящерица,🦎|Kröte,Жаба,🐸|Kobra,Кобра,🐍|Viper,Гадюка,🐍|Larve,Личинка,🐛",
+        "Insekt,Насекомое,🐞|Krokodil,Крокодил,🐊|Chamäleon,Хамелеон,🦎|Reptil,Рептилия,🦎|Spinnennetz,Паутина,🕸️|Gift,Яд,🧪|Ameisenhaufen,Муравейник,🐜|Blatt,Лист,🍃|Gewebe,Сплетение паутины,🕸️"
+      ],
+      [
+        "25. Сад, растения и цветы", "🌷",
+        "Garten,Сад,🏡|Baum,Дерево,🌳|Busch,Куст,🌿|Strauch,Кустарник,🌳|Zweig,Ветка,🌿|Ast,Сук,🪵|Stamm,Ствол,🪵|Samen,Семя,🌱|Dorn,Шип,🌹|Rasen,Газон,🟩|Zaun,Садовый забор,🚧|Spaten,Лопата, лопата|Schlauch,Шланг,🚿|Topf,Цветочный горшок,🪴|Flieder,Сирень,🟣|Kaktus,Кактус,🌵|Löwenzahn,Одуванчик,🌼|Mohn,Мак,🌺|Lavendel,Лаванда,🟣|Bambus,Бамбук,🎍|Gärtner,Садовник,🧑‍🌾|Dünger,Удобрение,🌱|Schatten,Тень,🌳",
+        "Blume,Цветок,🌸|Rose,Роза,🌹|Tulpe,Тюльпан,🌷|Lilie,Лилия,⚜️|Orchidee,Орхидея,🌺|Sonnenblume,Подсолнух,🌻|Nelke,Гвоздика,🌺|Narzisse,Нарцисс,🌼|Kamille,Ромашка,🌼|Pflanze,Растение,🪴|Wurzel,Корень,🫚|Knospe,Бутон,🌷|Blüte,Цветение,🌸|Erde,Земля,🌱|Gießkanne,Лейка,🚿|Schaufel,Совок,🛠️|Hecke,Живая изгородь,🌿|Eiche,Дуб,🌳|Birke,Берёза,🌳|Tanne,Ель,🌲|Kiefer,Сосна,🌲",
+        "Blatt,Лист,🍃|Gras,Трава,🌿|Beet,Клумба,🌷|Unkraut,Сорняк,🌱|Gewächshaus,Парник,🏡|Veilchen,Фиалка,🟣|Gänseblümchen,Маргаритка,🌼|Holz,Древесина,🪵"
+      ],
+      [
+        "26. Лес и кемпинг", "⛺",
+        "Wald,Лес,🌲|Baum,Дерево,🌳|Pilz,Гриб,🍄|Pfad,Тропинка,🥾|Rucksack,Рюкзак,🎒|Schlafsack,Спальный мешок,🛌|Kompass,Компас,🧭|Felsen,Утёс,🪨|Bach,Лесной ручей,💧|Schatten,Тень деревьев,🌲|Zweig,Ветка,🌿|Zapfen,Шишка,🌲|Stamm,Ствол дерева,🪵|Förster,Лесник,🧑‍🌾|Jäger,Охотник,🏹|Knoten,Узел,🪢|Funken,Искра,✨|Rauch,Дым костра,💨|Kessel,Котелок,🍲|Hügel,Пригорок,⛰️|Nebel,Лесной туман,🌫️|Sternenhimmel,Звёздное небо,🌌",
+        "Natur,Природа,🌿|Taschenlampe,Фонарик,🔦|Karte,Топографическая карта,🗺️|Flasche,Фляжка,🍶|Hängematte,Гамак,🏝️|Axt,Топор,🪓|Glut,Угли,🔥|Lichtung,Лесная поляна,🌼|Höhle,Пещера,🪨|Quelle,Источник воды,💧|Spur,След зверя,🐾|Stille,Тишина,🤫|Wanderung,Пеший поход,🥾|Ausrüstung,Снаряжение,🎒|Luft,Свежий воздух,🌬️|Beere,Лесная ягода,🍓|Eiche,Дуб,🌳|Fichte,Ель,🌲|Nadel,Хвоинка,🌲",
+        "Zelt,Палатка,⛺|Feuer,Костёр,🔥|Holz,Дрова,🪵|Messer,Складной нож,🔪|Moos,Мох,🟢|Abenteuer,Приключение,🧭|Fernglas,Бинокль,🔭|Streichholz,Спичка,🔥|Seil,Верёвка,🪢|Lager,Лагерь,⛺"
+      ],
+      [
+        "27. Море и пляж", "🏖️",
+        "Strand,Пляж,🏖️|Sand,Песок,⏳|Ozean,Океан,🌊|Hafen,Гавань,⚓|Leuchtturm,Маяк,🗼|Sonnenschirm,Пляжный зонт,⛱️|Liegestuhl,Шезлонг,🪑|Schwimmring,Надувной круг,🛟|Surfer,Сёрфер,🏄|Rettungsschwimmer,Спасатель,🛟|Anker,Якорь,⚓|Wind,Морской ветер,🌬️|Horizont,Горизонт,🌅|Sonnenuntergang,Закат,🌇|Sonnenbrand,Солнечный ожог,🥵|Schatten,Тень под зонтом,⛱️|Ball,Пляжный мяч,🏐|Korb,Пляжная корзина,🧺|Himmel,Ясное небо,☀️|Felsen,Прибрежная скала,🪨|Taucher,Водолаз,🤿",
+        "Welle,Волна,🌊|Küste,Побережье,🏝️|Insel,Остров,🏝️|Muschel,Ракушка,🐚|Sonne,Солнце,☀️|Sonnencreme,Солнцезащитный крем,🧴|Sonnenbrille,Солнцезащитные очки,🕶️|Badehose,Плавки,🩳|Matratze,Надувной матрас,🛟|Bucht,Бухта,🏞️|Flut,Прилив,🌊|Ebbe,Отлив,🏖️|Brise,Морской бриз,🌬️|Möwe,Чайка,🐦|Palme,Пальма,🌴|Koralle,Коралл,🪸|Tiefe,Морская глубина,🌊|Yacht,Яхта,🛥️|Kreuzfahrt,Круиз,🚢",
+        "Meer,Море,🌊|Wasser,Морская вода,💧|Ufer,Берег,🏖️|Boot,Катер,🚤|Schiff,Судно,🚢|Handtuch,Пляжное полотенце,🧖|Eis,Мороженое,🍦|Salz,Морская соль,🧂|Segel,Парус,⛵|Surfbrett,Доска для сёрфинга,🏄"
+      ],
+      [
+        "28. Работа и карьера", "💼",
+        "Beruf,Профессия,👷|Chef,Начальник,👨‍💼|Kollege,Коллега,🤝|Vertrag,Трудовой договор,📄|Lohn,Заработная плата,💵|Erfolg,Успех,🏆|Termin,Встреча/дедлайн,📅|Urlaub,Отпуск,🏖️|Feierabend,Конец рабочего дня,🍻|Streik,Забастовка,🪧|Bewerber,Соискатель,🙋‍♂️|Lebenslauf,Резюме,📋|Arbeitsplatz,Рабочее место,💻|Kunde,Клиент,🛍️|Partner,Деловой партнёр,🤝|Plan,План,📈|Bericht,Отчёт,📊|Auftrag,Заказ,📦|Gewinn,Прибыль,💰|Bonus,Премия,🎁|Ruhestand,Пенсия,👴",
+        "Arbeit,Работа,💼|Firma,Фирма,🏢|Karriere,Карьера,🚀|Erfahrung,Опыт,🧠|Aufgabe,Задача,✅|Pause,Перерыв,☕|Überstunde,Сверхурочный час,⏰|Bewerbung,Заявка на вакансию,✉️|Abteilung,Отдел,🏢|Leitung,Руководство,🎯|Besprechung,Совещание,🗣️|Entscheidung,Решение,⚖️|Verantwortung,Ответственность,🛡️|Fähigkeit,Способность,⭐|Branche,Отрасль,🏭|Kündigung,Увольнение,🚪|Schicht,Рабочая смена,🕒|Pflicht,Обязанность,📌|Chance,Шанс,🍀",
+        "Büro,Офис,🏢|Gehalt,Оклад,💶|Team,Команда,👥|Projekt,Проект,🗂️|Unternehmen,Предприятие,🏛️|Gespräch,Собеседование,💬|Ziel,Цель,🎯|Ergebnis,Результат,📈|Personal,Персонал,👥|Praktikum,Стажировка,🎓|Zeugnis,Сертификат/характеристика,📜"
+      ],
+      [
+        "29. Профессии", "👨‍⚕️",
+        "Arzt,Врач,👨‍⚕️|Lehrer,Учитель,👨‍🏫|Ingenieur,Инженер,👷|Koch,Повар,👨‍🍳|Polizist,Полицейский,👮|Feuerwehrmann,Пожарный,🧑‍🚒|Anwalt,Адвокат,⚖️|Richter,Судья,👨‍⚖️|Pilot,Пилот,👨‍✈️|Fahrer,Водитель,🚌|Kellner,Официант,🤵|Friseur,Парикмахер,💇|Bäcker,Пекарь,🥖|Metzger,Мясник,🥩|Maler,Художник/маляр,🎨|Musiker,Музыкант,🎸|Schauspieler,Актёр,🎭|Sänger,Певец,🎤|Journalist,Журналист,📰|Fotograf,Фотограф,📸|Architekt,Архитектор,📐|Programmierer,Программист,💻|Wissenschaftler,Учёный,🔬|Gärtner,Садовник,🌱|Handwerker,Мастер,🛠️|Mechaniker,Механик,🔧|Zahnarzt,Стоматолог,🦷|Tierarzt,Ветеринар,🐾|Bauer,Фермер,🚜|Soldat,Солдат,🪖|Priester,Священник,⛪|Buchhalter,Бухгалтер,🧮|Verkäufer,Продавец,🛍️|Direktor,Директор,👨‍💼|Autor,Автор,✍️|Übersetzer,Переводчик,🗣️|Designer,Дизайнер,✨|Briefträger,Почтальон,📮|Schneider,Портной,🧵|Tischler,Столяр,🪚",
+        "Ärztin,Женщина-врач,👩‍⚕️|Lehrerin,Учительница,👩‍🏫|Köchin,Женщина-повар,👩‍🍳|Krankenschwester,Медсестра,🩺|Sekretärin,Секретарь,📋|Künstlerin,Художница,🎨|Polizistin,Женщина-полицейский,👮‍♀️|Verkäuferin,Продавщица,🛍️",
+        "Model,Модель,📸|Talent,Талант,🌟"
+      ],
+      [
+        "30. Офис и документы", "📎",
+        "Stift,Ручка/карандаш,🖊️|Kugelschreiber,Шариковая ручка,🖋️|Bleistift,Карандаш,✏️|Ordner,Папка-регистратор,📁|Drucker,Принтер,🖨️|Computer,Компьютер,💻|Bildschirm,Монитор,🖥️|Kalender,Календарь,📅|Rechner,Калькулятор,🧮|Stempel,Печать,💮|Umschlag,Конверт,✉️|Brief,Письмо,📩|Vertrag,Контракт,📄|Bericht,Отчёт,📊|Zettel,Записка,📝|Radiergummi,Ластик,🧽|Kleber,Клей,🧴|Locher,Дырокол,🕳️|Hefter,Степлер,📎|Korb,Корзина для бумаг,🗑️|Tresor,Сейф,🔐|Schreibtisch,Рабочий стол,🪑",
+        "Mappe,Папка,📂|Schere,Ножницы,✂️|Akte,Дело/досье,🗂️|Unterschrift,Подпись,✍️|Rechnung,Счёт на оплату,🧾|Kopie,Копия,📄|Liste,Список,📋|Notiz,Заметка,📝|Seite,Страница,📄|Tastatur,Клавиатура,⌨️|Maus,Компьютерная мышь,🖱️|Büroklammer,Скрепка,📎|tinte,Чернила,🖋️|Tabelle,Таблица,📊|Präsentation,Презентация,📽️|Nachricht,Сообщение,💬|Post,Корреспонденция,📮|Pause,Кофе-брейк,☕",
+        "Papier,Бумага,📄|Dokument,Документ,📃|Heft,Тетрадь,📓|Lineal,Линейка,📏|Blatt,Лист бумаги,📄|Formular,Бланк,📋|Notizbuch,Блокнот,📔|Archiv,Архив,🗄️|Etikett,Наклейка,🏷️|Protokoll,Протокол,📝"
+      ],
+      [
+        "31. Школа и образование", "🎓",
+        "Schüler,Ученик,👦|Student,Студент,🧑‍🎓|Lehrer,Преподаватель,👨‍🏫|Professor,Профессор,👴|Unterricht,Урок,🔔|Kurs,Курс,📚|Test,Тест,📝|Fehler,Ошибка,❌|Stift,Ручка,🖊️|Rucksack,Школьный рюкзак,🎒|Stundenplan,Расписание уроков,📅|Hof,Школьный двор,🏫|Abschluss,Выпуск/диплом,🎓|Wortschatz,Словарный запас,🗣️|Satz,Предложение,✍️|Buchstabe,Буква,🔤|Text,Текст,📄|Vortrag,Доклад,🎤|Zirkel,Циркуль,📐|Radiergummi,Ластик,🧽",
+        "Schule,Школа,🏫|Universität,Университет,🏛️|Klasse,Класс,👥|Aufgabe,Задание,📝|Hausaufgabe,Домашняя работа,🏠|Prüfung,Экзамен,📋|Note,Оценка,5️⃣|Frage,Вопрос,❓|Antwort,Ответ,💡|Tafel,Школьная доска,🟩|Kreide,Мел,🖍️|Pause,Перемена,🔔|Sprache,Язык,🗣️|Grammatik,Грамматика,📖|Regel,Правило,📏|Übung,Упражнение,✍️|Bibliothek,Библиотека,📚|Bildung,Образование,🧠|Wissenschaft,Наука,🔬|Mathematik,Математика,➗",
+        "Buch,Учебник,📘|Heft,Тетрадь,📓|Wörterbuch,Словарь,📕|Wort,Слово,💬|Zeugnis,Аттестат,📜|Studium,Учёба в вузе,🎓|Klassenzimmer,Классная комната,🪑|Lineal,Линейка,📏|Wissen,Знание,💡|Beispiel,Пример,📌"
+      ],
+      [
+        "32. Наука и исследования", "🔬",
+        "Wissenschaftler,Учёный,🧑‍🔬|Forscher,Исследователь,🔍|Versuch,Опыт,🧪|Kern,Ядро,⚛️|Stern,Звезда,⭐|Planet,Планета,🪐|Magnet,Магнит,🧲|Strom,Электрический ток,⚡|Tropfen,Капля,💧|Stoff,Вещество,🧪|Kristall,Кристалл,💎|Kompass,Компас,🧭|Beweis,Доказательство,✅|Fortschritt,Прогресс,🚀|Roboter,Робот,🤖|Laser,Лазер,🔦|Faktor,Фактор,📊|Prozess,Процесс,⚙️|Zyklus,Цикл,🔄|Erfolg,Научный успех,🏆",
+        "Wissenschaft,Наука,🔬|Forschung,Исследование,🔎|Theorie,Теория,📖|Methode,Метод,🧭|Formel,Формула,🧮|Energie,Энергия,⚡|Kraft,Сила,💪|Zelle,Клетка,🦠|Chemie,Химия,🧪|Physik,Физика,⚛️|Biologie,Биология,🌿|Medizin,Медицина,🩺|Entdeckung,Открытие,💡|Erfindung,Изобретение,⚙️|Analyse,Анализ,📊|Temperatur,Температура,🌡️|Strahlung,Излучение,☢️|Substanz,Субстанция,🫙|DNA,ДНК,🧬|Statistik,Статистика,📈",
+        "Labor,Лаборатория,🧪|Experiment,Эксперимент,⚗️|Mikroskop,Микроскоп,🔬|Teleskop,Телескоп,🔭|Atom,Атом,⚛️|Molekül,Молекула,🫧|Element,Элемент,🧪|Ergebnis,Результат,📋|Gesetz,Закон природы,⚖️|Gen,Ген,🧬"
+      ],
+      [
+        "33. Технологии и гаджеты", "📱",
+        "Computer,Компьютер,💻|Laptop,Ноутбук,💻|Bildschirm,Экран,🖥️|Drucker,Принтер,🖨️|Lautsprecher,Динамик,🔊|Kopfhörer,Наушники,🎧|Akku,Аккумулятор,🔋|Stecker,Разъём/штекер,🔌|Schalter,Переключатель,🔘|Roboter,Робот,🤖|Prozessor,Процессор,⚙️|Speicher,Память устройства,💾|Ordner,Папка,📁|Fehler,Системный сбой,⚠️|Ton,Звук,🎵|Knopf,Кнопка,🔘|Sensor,Сенсор,📡|Adapter,Адаптер,🔌|Projektor,Проектор,📽️|Chip,Микрочип,📟",
+        "Tastatur,Клавиатура,⌨️|Maus,Мышь,🖱️|Kamera,Камера,📷|Batterie,Батарейка,🔋|App,Приложение,📱|Datei,Файл,📄|Software,Программное обеспечение,💿|Hardware,Аппаратная часть,🛠️|Technik,Техника,⚙️|Drohne,Дрон,🚁|Konsole,Игровая консоль,🎮|Taste,Клавиша,⌨️|Einstellung,Настройка,⚙️|Qualität,Качество,✨|Leistung,Мощность,⚡|Auflösung,Разрешение экрана,🖥️|Festplatte,Жёсткий диск,💽|Antenne,Антенна,📡|Innovation,Инновация,💡",
+        "Handy,Мобильный телефон,📱|Smartphone,Смартфон,📱|Tablet,Планшет,📲|Gerät,Устройство,📟|Kabel,Кабель,🔌|Ladegerät,Зарядное устройство,🔋|Mikrofon,Микрофон,🎙️|System,Система,⚙️|Display,Дисплей,📱|Programm,Программа,💻|Update,Обновление,🔄"
+      ],
+      [
+        "34. Интернет и связь", "🌐",
+        "Brief,Письмо,✉️|Anruf,Телефонный звонок,📞|Kontakt,Контакт,👤|Link,Ссылка,🔗|Account,Аккаунт,🪪|Server,Сервер,🖥️|Blog,Блог,✍️|Kommentar,Комментарий,💬|Chat,Чат,💭|Nutzer,Пользователь,🧑‍💻|Kanal,Канал,📺|Empfänger,Получатель,📥|Absender,Отправитель,📤|Code,Код доступа,🔢|Virus,Компьютерный вирус,🦠|Zugang,Доступ,🔑|Tarif,Тариф,💶|Browser,Браузер,🌐|Filter,Фильтр,🔍|Beitrag,Пост/публикация,📝",
+        "Nachricht,Сообщение,💬|E-Mail,Электронное письмо,📧|Webseite,Веб-сайт,🌐|Verbindung,Соединение,📶|Suche,Поиск,🔍|Information,Информация,ℹ️|Nummer,Номер телефона,🔢|Post,Почта,📮|Antwort,Ответ,↩️|Sprachnachricht,Голосовое сообщение,🎙️|Plattform,Платформа,📱|Sicherheit,Безопасность,🔒|Werbung,Реклама,📢|Leitung,Линия связи,☎️|Cloud,Облачное хранилище,☁️|Datei,Вложенный файл,📎|Gruppe,Группа в мессенджере,👥|Adresse,Адрес,📍|Seite,Страница,📄",
+        "Internet,Интернет,🌐|Netzwerk,Сеть,🕸️|WLAN,Вай-фай,📶|Passwort,Пароль,🔐|Telefon,Телефон,☎️|Profil,Профиль,👤|Video,Видео,🎬|Foto,Фото,🖼️|Signal,Сигнал,📡|Forum,Форум,💬|Gespräch,Разговор,🗣️"
+      ],
+      [
+        "35. Магазин и покупки", "🛍️",
+        "Laden,Магазин,🏪|Supermarkt,Супермаркет,🛒|Markt,Рынок,🎪|Preis,Цена,🏷️|Rabatt,Скидка,📉|Kunde,Покупатель,🙋‍♂️|Verkäufer,Продавец,🧑‍💼|Korb,Корзина для покупок,🧺|Einkaufswagen,Тележка,🛒|Kassenbon,Кассовый чек,🧾|Gutschein,Подарочный сертификат,🎟️|Beutel,Пакет,🛍️|Ausverkauf,Распродажа,🔥|Eingang,Вход,🚪|Ausgang,Выход,🚪|Katalog,Каталог,📖|Vorrat,Запас товара,📦|Wert,Стоимость,💎|Umtausch,Обмен товара,🔄|Einkauf,Покупка,🛍️",
+        "Kasse,Касса,📠|Rechnung,Счёт,🧾|Tasche,Сумка для покупок,👜|Tüte,Пакет,🛍️|Abteilung,Отдел магазина,🪧|Qualität,Качество,⭐|Auswahl,Выбор,✨|Größe,Размер,📏|Marke,Бренд,🏷️|Garantie,Гарантия,🛡️|Schlange,Очередь,🧍‍♂️|Quittung,Квитанция,🧾|Werbung,Реклама,📢|Bestellung,Заказ,📦|Lieferung,Доставка,🚚|Drogerie,Магазин бытовой химии,🧴|Bäckerei,Булочная,🥖|Apotheke,Аптека,🏥|Mode,Мода,👗",
+        "Geschäft,Магазин,🏬|Einkaufszentrum,Торговый центр,🏢|Angebot,Спецпредложение,🏷️|Produkt,Продукт,📦|Geld,Деньги,💶|Wechselgeld,Сдача,🪙|Regal,Полка с товаром,🥫|Schaufenster,Витрина,🪟|Etikett,Ценник,🏷️|Geschenk,Подарок,🎁|Paket,Посылка,📦"
+      ],
+      [
+        "36. Финансы и деньги", "💶",
+        "Euro,Евро,💶|Cent,Цент,🪙|Schein,Купюра,💵|Kredit,Кредит,🏦|Gewinn,Прибыль,📈|Verlust,Убыток,📉|Preis,Цена,🏷️|Wert,Ценность,💎|Vertrag,Договор,📄|Zins,Процент по вкладу,📊|automat,Банкомат,🏧|Lohn,Зарплата,💵|Haushalt,Бюджет,📒|Markt,Финансовый рынок,📈|Handel,Торговля,🤝|Reichtum,Богатство,👑|Beitrag,Взнос,💶|Fonds,Фонд,💼|Scheck,Чек,🧾|Tresor,Хранилище,🔐|Kurs,Валютный курс,💱",
+        "Bank,Банк,🏦|Münze,Монета,🪙|Karte,Банковская карта,💳|Rechnung,Счёт на оплату,🧾|Steuer,Налог,🏛️|Schuld,Долг,⛓️|Währung,Валюта,💱|Summe,Сумма,➕|Überweisung,Перевод денег,📲|Versicherung,Страховка,🛡️|Wirtschaft,Экономика,🌍|Aktie,Акция,📈|Inflation,Инфляция,🎈|Gebühr,Комиссия,💶|Rente,Пенсия,👵|Kasse,Касса,📠|Spende,Пожертвование,❤️|Ausgabe,Расход,💸|Einnahme,Доход,💰",
+        "Geld,Деньги,💶|Konto,Банковский счёт,🏦|Bargeld,Наличные,💵|Gehalt,Жалованье,💶|Vermögen,Состояние,💰|Kapital,Капитал,🏛️|Sparschwein,Копилка,🐷|Budget,Бюджет,📊|Risiko,Риск,🎲|Prozent,Процент,➗"
+      ],
+      [
+        "37. Время и календарь", "🕰️",
+        "Tag,День,☀️|Monat,Месяц,📅|Morgen,Утро,🌅|Vormittag,Первая половина дня,🕙|Mittag,Полдень,🕛|Nachmittag,После полудня,🕓|Abend,Вечер,🌆|Moment,Момент,⚡|Augenblick,Мгновение,✨|Termin,Назначенное время,📌|Anfang,Начало,▶️|Kalender,Календарь,📆|Frühling,Весна,🌸|Sommer,Лето,☀️|Herbst,Осень,🍂|Winter,Зима,❄️|Montag,Понедельник,1️⃣|Dienstag,Вторник,2️⃣|Mittwoch,Среда,3️⃣|Donnerstag,Четверг,4️⃣|Freitag,Пятница,5️⃣|Samstag,Суббота,6️⃣|Sonntag,Воскресенье,7️⃣|Geburtstag,День рождения,🎂|Alltag,Будни,💼",
+        "Uhr,Часы,⌚|Stunde,Час,⏳|Minute,Минута,⏱️|Sekunde,Секунда,⚡|Woche,Неделя,🗓️|Nacht,Ночь,🌙|Mitternacht,Полночь,🕛|Zeit,Время,🕰️|Zukunft,Будущее,🚀|Vergangenheit,Прошлое,📜|Gegenwart,Настоящее,📍|Pause,Пауза,⏸️|Dauer,Длительность,📏|Epoche,Эпоха,🏛️|Jahreszeit,Сезон,🍃|Verspätung,Задержка,⏳|Frist,Срок,📅",
+        "Jahr,Год,🎆|Wochenende,Выходные,🏖️|Datum,Дата,📅|Jahrhundert,Век,🏛️|Jahrzehnt,Десятилетие,🔟|Ende,Конец,⏹️|Alter,Возраст,🎂|Tempo,Темп,🏃"
+      ],
+      [
+        "38. Чувства и эмоции", "❤️",
+        "Ärger,Досада/злость,😠|Zorn,Гнев,😡|Stolz,Гордость,🦁|Neid,Зависть,😒|Mut,Смелость,🦸|Schreck,Испуг,😱|Schmerz,Боль,💔|Trost,Утешение,🫂|Spaß,Веселье,🥳|Humor,Юмор,😄|Stress,Стресс,🤯|Zweifel,Сомнение,🤔|Respekt,Уважение,🫡|Wunsch,Желание,🌠|Traum,Мечта,💭|Kuss,Поцелуй,💋|Seufzer,Вздох,😮‍💨|Hass,Ненависть,💢|Schock,Шок,⚡|Eindruck,Впечатление,✨|Frieden,Душевный покой,🕊️",
+        "Liebe,Любовь,❤️|Freude,Радость,😊|Angst,Страх,😨|Trauer,Печаль,😢|Wut,Ярость,🤬|Hoffnung,Надежда,🌱|Überraschung,Удивление,😮|Scham,Стыд,😳|Schuld,Вина,😔|Eifersucht,Ревность,😤|Geduld,Терпение,⏳|Ruhe,Спокойствие,🧘|Einsamkeit,Одиночество,🌙|Laune,Настроение,🎭|Zufriedenheit,Удовлетворённость,😌|Begeisterung,Восторг,🤩|Sympathie,Симпатия,💕|Träne,Слеза,💧|Umarmung,Объятие,🫂|Sorge,Тревога/забота,😟",
+        "Gefühl,Чувство,💓|Glück,Счастье,🍀|Lächeln,Улыбка,🙂|Herz,Сердце,❤️|Lachen,Смех,😂|Mitgefühl,Сочувствие,🤲|Vertrauen,Доверие,🤝|Interesse,Интерес,🔍|Gewissen,Совесть,⚖️|Heimweh,Тоска по дому,🏠"
+      ],
+      [
+        "39. Характер и мышление", "🧠",
+        "Charakter,Характер,🗿|Geist,Ум/дух,🧠|Verstand,Разум,💡|Gedanke,Мысль,💭|Wille,Воля,💪|Sinn,Смысл,🧭|Plan,Замысел,📋|Erfolg,Успех,🏆|Fehler,Ошибка,❌|Rat,Совет,💬|Grund,Причина,📌|Zweck,Цель,🎯|Wert,Ценность,💎|Fleiß,Трудолюбие,🐝|Ehrgeiz,Амбициозность,🚀|Geiz,Скупость,🪙|Humor,Чувство юмора,🎭|Stil,Манера/стиль,✨|Egoismus,Эгоизм,🪞|Optimismus,Оптимизм,☀️|Glaube,Вера,🕯️",
+        "Idee,Идея,💡|Meinung,Мнение,🗣️|Vernunft,Благоразумие,⚖️|Weisheit,Мудрость,🦉|Intelligenz,Интеллект,🧠|Fähigkeit,Способность,⭐|Eigenschaft,Черта характера,🧩|Ehrlichkeit,Честность,🤝|Freundlichkeit,Доброжелательность,😊|Höflichkeit,Вежливость,🎩|Faulheit,Лень,🦥|Neugier,Любопытство,🔍|Fantasie,Фантазия,🌈|Logik,Логика,♟️|Aufmerksamkeit,Внимание,👀|Erinnerung,Память/воспоминание,🎞️|Entscheidung,Решение,✅|Wahrheit,Правда,🪞|Lüge,Ложь,🤥",
+        "Gedächtnis,Память,🧠|Wissen,Знание,📚|Talent,Талант,🌟|Genie,Гений,💡|Verhalten,Поведение,🧍|Vorurteil,Предрассудок,🙈|Urteil,Суждение,⚖️|Ziel,Жизненная цель,🎯|Geheimnis,Секрет,🤫|Prinzip,Принцип,🏛️"
+      ],
+      [
+        "40. Спорт и фитнес", "⚽",
+        "Sport,Спорт,🏃|Ball,Мяч,⚽|Fußball,Футбол,⚽|Basketball,Баскетбол,🏀|Volleyball,Волейбол,🏐|Sieg,Победа,🏆|Sieger,Победитель,🥇|Spieler,Игрок,⛹️|Trainer,Тренер,📋|Schiedsrichter,Судья, whistle|Lauf,Забег,🏃|Sprung,Прыжок,🦘|Wurf,Бросок,🤾|Rekord,Рекорд,⏱️|Pokal,Кубок,🏆|Wettbewerb,Соревнование,🏁|Verein,Спортивный клуб,🛡️|Muskel,Мышца,💪|Schweiß,Пот,💦|Punkt,Очко,1️⃣|Start,Старт,🚩",
+        "Mannschaft,Команда,👥|Übung,Упражнение,🤸|Bewegung,Движение,🏃‍♀️|Kraft,Сила,🏋️|Ausdauer,Выносливость,🔋|Pause,Тайм-аут,⏸️|Niederlage,Поражение,📉|Medaille,Медаль,🏅|Meisterschaft,Чемпионат,🏆|Regel,Правило игры,📏|Runde,Раунд,🔔|Strecke,Дистанция,🛣️|Halle,Спортивный зал,🏟️|Pfeife,Свисток,📢|Kurve,Вираж,↩️|Geschwindigkeit,Скорость,⚡|Technik,Техника,🥋|Fitness,Фитнес,💪",
+        "Spiel,Игра/матч,⚽|Tor,Ворота/гол,🥅|Stadion,Стадион,🏟️|Training,Тренировка,🏋️|Fitnessstudio,Тренажёрный зал,🏋️‍♀️|Team,Команда,🤝|Ziel,Финиш,🏁|Netz,Сетка,🎾|Schwimmbad,Бассейн,🏊|Fahrrad,Велосипед,🚴|Tennis,Теннис,🎾|Yoga,Йога,🧘"
+      ],
+      [
+        "41. Музыка и инструменты", "🎸",
+        "Ton,Звук/нота,🎵|Klang,Звучание,🔔|Rhythmus,Ритм,🥁|Takt,Такт,🎼|Chor,Хор,🎶|Sänger,Певец,🎤|Musiker,Музыкант,🎻|Dirigent,Дирижёр,🪄|Komponist,Композитор,✍️|Flügel,Рояль,🎹|Bass,Бас,🎸|Bogen,Смычок,🎻|Lautsprecher,Колонка,🔊|Kopfhörer,Наушники,🎧|Auftritt,Выступление,🎭|Applaus,Аплодисменты,👏|Hit,Хит,🔥|Text,Текст песни,📄|Tanz,Танец,💃|Stil,Музыкальный стиль,🎷",
+        "Musik,Музыка,🎶|Melodie,Мелодия,🎵|Stimme,Голос,🗣️|Gitarre,Гитара,🎸|Geige,Скрипка,🎻|Flöte,Флейта,🪈|Trompete,Труба,🎺|Trommel,Барабан,🥁|Harfe,Арфа,🪕|Note,Нота,🎵|Pause,Пауза в нотах,🎼|Saite,Струна,🎸|Taste,Клавиша,🎹|Bühne,Сцена,🎭|Band,Музыкальная группа,🎸|Oper,Опера,🏛️|CD,Компакт-диск,💿|Platte,Виниловая пластинка,レコード|Harmonie,Гармония,✨|Probe,Репетиция,🎤",
+        "Klavier,Пианино,🎹|Lied,Песня,🎤|Konzert,Концерт,🎟️|Instrument,Инструмент,🎷|Orchester,Оркестр,🎻|Schlagzeug,Ударная установка,🥁|Mikrofon,Микрофон,🎙️|Saxofon,Саксофон,🎷|Akkordeon,Аккордеон,🪗|Album,Альбом,💿"
+      ],
+      [
+        "42. Искусство и живопись", "🎨",
+        "Maler,Художник,👨‍🎨|Künstler,Творец,🎨|Pinsel,Кисть,🖌️|Rahmen,Рама,🖼️|Stift,Карандаш,✏️|Hintergrund,Фон,🌄|Schatten,Тень,🌓|Kontrast,Контраст,🌗|Stil,Стиль,✨|Ton,Оттенок,🎨|Entwurf,Эскиз,📐|Druck,Гравюра/печать,🖨️|Sammler,Коллекционер,🧐|Wert,Художественная ценность,💎|Besucher,Посетитель музея,🚶|Saal,Выставочный зал,🏛️|Blick,Взгляд,👁️|Ausdruck,Выразительность,🎭|Meister,Мастер,👑|katalog,Каталог выставки,📖",
+        "Kunst,Искусство,🎨|Farbe,Краска/цвет,🌈|Zeichnung,Рисунок,✏️|Skulptur,Скульптура,🗿|Statue,Статуя,🗽|Ausstellung,Выставка,🖼️|Galerie,Галерея,🏛️|Leinwand,Холст,🖼️|Form,Форма,🔷|Linie,Линия,〰️|Kultur,Культура,🏛️|Idee,Замысел,💡|Schönheit,Красота,✨|Technik,Техника письма,🖌️|Palette,Палитра,🎨|Keramik,Керамика,🏺|Epoche,Эпоха,⏳|Kritik,Критика,📰|Inspiration,Вдохновение,🌟|Kopie,Репродукция,🖼️",
+        "Bild,Картина,🖼️|Museum,Музей,🏛️|Porträt,Портрет,🧑|Meisterwerk,Шедевр,🏆|Atelier,Мастерская,🎨|Licht,Свет,☀️|Modell,Натурщик/модель,🧍|Denkmal,Монумент,🗽|Muster,Орнамент,💠|Aquarell,Акварель,💧"
+      ],
+      [
+        "43. Кино, театр и сцена", "🎬",
+        "Film,Фильм,🎬|Schauspieler,Актёр,🎭|Regisseur,Режиссёр,📢|Zuschauer,Зритель,👀|Saal,Зрительный зал,💺|Vorhang,Театральный занавес,🟥|Platz,Место в зале,💺|Eingang,Вход,🚪|Ton,Звук,🔊|Effekt,Спецэффект,💥|Held,Герой,🦸|Bösewicht,Злодей,🦹|Dialog,Диалог,💬|Humor,Юмор,😄|Applaus,Аплодисменты,👏|Preis,Кинопремия,🏆|Star,Звезда экрана,⭐|Trailer,Трейлер,🎞️|Untertitel,Субтитры,📝|Abspann,Титры,🎬",
+        "Bühne,Сцена,🎭|Rolle,Роль,📜|Szene,Сцена/эпизод,🎬|Karte,Билет в кино/театр,🎟️|Reihe,Ряд,💺|Pause,Антракт,☕|Komödie,Комедия,😂|Tragödie,Трагедия,😢|Oper,Опера,🎼|Kamera,Кинокамера,🎥|Leinwand,Киноэкран,📽️|Premiere,Премьера,✨|Maske,Грим/маска,🎭|Kritik,Рецензия,📰|Handlung,Сюжет,📖|Spannung,Саспенс/интрига,😬|Serie,Сериал,📺|Stimme,Озвучка,🎙️|Garderobe,Гримёрка,🪞|Kulisse,Декорация,🏰",
+        "Kino,Кинотеатр,🍿|Theater,Театр,🎭|Drama,Драма,🎭|Kostüm,Костюм,👗|Drehbuch,Сценарий,📑|Publikum,Публика,👏|Licht,Софиты,🔦|Ticket,Билет,🎫|Popcorn,Попкорн,🍿|Ballett,Балет,🩰|Finale,Финал,🏁"
+      ],
+      [
+        "44. Книги и пресса", "📚",
+        "Roman,Роман,📖|Autor,Автор,✍️|Schriftsteller,Писатель,🖋️|Dichter,Поэт,📜|Leser,Читатель,🤓|Verlag,Издательство,🏢|Artikel,Статья,📰|Text,Текст,📄|Titel,Заголовок,🏷️|Inhalt,Содержание,📋|Satz,Предложение,✍️|Buchstabe,Буква,🔤|Band,Том,📘|Krimi,Детектив,🕵️|Druck,Печать,🖨️|Heldenmut,Героизм,🦸|Bericht,Репортаж,🎤|Journalist,Журналист,📰|Kiosk,Газетный киоск,🏪|Bestseller,Бестселлер,🔥|Umschlag,Обложка,📕",
+        "Zeitung,Газета,📰|Zeitschrift,Журнал, magazine|Seite,Страница,📄|Geschichte,История/рассказ,📖|Erzählung,Повесть,📘|Bibliothek,Библиотека,🏛️|Buchhandlung,Книжный магазин,📚|Literatur,Литература,🪶|Poesie,Поэзия,🌹|Zeile,Строка,📏|Sprache,Язык,🗣️|Übersetzung,Перевод,🌐|Ausgabe,Издание/выпуск,🗞️|Nachricht,Новость,📢|Presse,Пресса,📰|Kritik,Рецензия,📝|Fantasie,Вымысел,🌈|Biografie,Биография,👤|Fabel,Басня,🦊",
+        "Buch,Книга,📗|Märchen,Сказка,🏰|Gedicht,Стихотворение,📜|Kapitel,Глава,🔖|Wort,Слово,💬|Wörterbuch,Словарь,📕|Zitat,Цитата,💬|Lexikon,Энциклопедия,📚|Magazin,Иллюстрированный журнал,📖|Lesezeichen,Закладка,🔖"
+      ],
+      [
+        "45. Хобби и досуг", "🎲",
+        "Spaß,Удовольствие,🥳|Tanz,Танец,💃|Spaziergang,Прогулка,🚶|Ausflug,Поездка на выходных,🧺|Garten,Садоводство,🪴|Sport,Спорт,🏃|Film,Кинопросмотр,🎬|Chor,Пение в хоре,🎶|Sammler,Коллекционер,🪙|Würfel,Игральный кубик,🎲|Sieg,Выигрыш,🏆|Pinsel,Кисточка,🖌️|Faden,Нитка,🧵|Knoten,Узел,🪢|Ton,Глина для лепки,🏺|Drachen,Воздушный змей,🪁|Angelhaken,Рыболовный крючок,🪝|Freund,Друг по интересам,🤝|Treffpunkt,Место встречи,📍|Abend,Свободный вечер,🌆",
+        "Freizeit,Свободное время,⏳|Reise,Путешествие,✈️|Musik,Музыка,🎧|Kunst,Творчество,🎨|Fotografie,Фотография,📷|Karte,Игральная карта,🃏|Sammlung,Коллекция,🦋|Briefmarke,Почтовая марка,📮|Münze,Монета,🪙|Nadel,Спица/игла,🪡|Wolle,Пряжа,🧶|Kerze,Свеча,🕯️|Bühne,Сцена,🎭|Party,Вечеринка,🎉|Pause,Отдых,☕|Natur,Выезд на природу,🌲|Idee,Творческая идея,💡|Geduld,Терпение,🧘|Freude,Радость,😊",
+        "Hobby,Хобби,🎨|Spiel,Настольная игра,🎲|Buch,Чтение книги,📖|Schach,Шахматы,♟️|Puzzle,Пазл,🧩|Rätsel,Головоломка/кроссворд,✏️|Konzert,Поход на концерт,🎟️|Zelt,Кемпинг,⛺|Fahrrad,Велопрогулка,🚲|Videospiel,Видеоигра,🎮|Kochen,Кулинария,🍳"
+      ],
+      [
+        "46. Праздники и традиции", "🎄",
+        "Feiertag,Праздничный день,🎉|Geburtstag,День рождения,🎂|Wunsch,Пожелание,🌠|Gast,Гость,🎩|Kuchen,Праздничный пирог,🍰|Strauß,Букет цветов,💐|Ring,Обручальное кольцо,💍|Bräutigam,Жених,🤵|Tanz,Танец,💃|Wein,Вино,🍷|Sekt,Шампанское,🥂|Weihnachtsbaum,Рождественская ёлка,🎄|Schneemann,Снеговик,⛄|Osterhase,Пасхальный заяц,🐰|Karneval,Карнавал,🎭|Umzug,Праздничное шествие,🥁|Stern,Рождественская звезда,⭐|Engel,Ангел,👼|Kalender,Адвент-календарь,📅|Brauch,Обычай,📜|Glückwunsch,Поздравление,🎊",
+        "Feier,Торжество,🥂|Party,Вечеринка,🎈|Hochzeit,Свадьба,💒|Braut,Невеста,👰|Torte,Праздничный торт,🎂|Kerze,Свеча,🕯️|Karte,Открытка,💌|Musik,Праздничная музыка,🎶|Tradition,Традиция,🏛️|Überraschung,Сюрприз,🎁|Einladung,Приглашение,✉️|Dekoration,Украшение,✨|Glocke,Колокольчик,🔔|Kugel,Ёлочный шар,🔮|Maske,Карнавальная маска,🎭|Stimmung,Праздничное настроение,🥳|Familie,Семья за столом,👨‍👩‍👧‍👦|Freude,Радость,😊|rede,Тост/речь,🥂",
+        "Fest,Праздник,🎪|Geschenk,Подарок,🎁|Feuerwerk,Фейерверк,🎆|Neujahr,Новый год,🥂|Weihnachten,Рождество,🎄|Ostern,Пасха,🥚|Kostüm,Карнавальный костюм,🦸|Lied,Праздничная песня,🎵|Band,Лента для упаковки,🎀|Essen,Праздничное угощение,🍽️"
+      ],
+      [
+        "47. Бытовая техника", "🧺",
+        "Kühlschrank,Холодильник,🧊|Herd,Кухонная плита,🔥|Ofen,Духовой шкаф,♨️|Wasserkocher,Электрочайник,🫖|Toaster,Тостер,🍞|Mixer,Блендер/миксер,🌪️|Staubsauger,Пылесос,🧹|Föhn,Фен,💨|Fernseher,Телевизор,📺|Ventilator,Вентилятор,🌀|kaffeeautomat,Кофемашина,☕|Trockner,Сушильная машина,👕|Geschirrspüler,Посудомоечная машина,🍽️|Stecker,Вилка питания,🔌|Schalter,Тумблер,🔘|Motor,Мотор,⚙️|Filter,Фильтр,🕸️|Beutel,Мешок для пыли,🛍️|Bildschirm,Экран,🖥️|Rasierer,Электробритва,🪒|Dampfgarer,Пароварка,♨️",
+        "Waschmaschine,Стиральная машина,🫧|Mikrowelle,Микроволновка,⏲️|Kaffeemaschine,Кофеварка,☕|Spülmaschine,Посудомойка,🫧|Lampe,Светильник,💡|Klimaanlage,Кондиционер,❄️|Heizung,Обогреватель,🌡️|Waage,Электронные весы,⚖️|Fernbedienung,Пульт управления,リモコン|Antenne,Антенна,📡|Batterie,Батарейка,🔋|Steckdose,Электрическая розетка,🔌|Leistung,Мощность,⚡|Garantie,Гарантия,🛡️|Anleitung,Инструкция,📖|Temperatur,Температура,🌡️|Taste,Кнопка на панели,🔘|Düse,Насадка пылесоса,🧹|Trommel,Барабан стиральной машины,🫧",
+        "Bügeleisen,Утюг,👕|Gerät,Бытовой прибор,🔌|Gefrierfach,Морозильная камера,❄️|Kabel,Шнур питания,🔌|Radio,Радиоприёмник,📻|Licht,Подсветка,💡|Waffeleisen,Вафельница,🧇|Thermostat,Термостат,🌡️|Stromkabel,Сетевой шнур,⚡|Ersatzteil,Запчасть,⚙️"
+      ],
+      [
+        "48. Инструменты и ремонт", "🛠️",
+        "Hammer,Молоток,🔨|Nagel,Гвоздь,📌|Schlüssel,Гаечный ключ,🔧|Schraubenzieher,Отвёртка,🪛|Bohrer,Дрель/сверло,🔩|Pinsel,Малярная кисть,🖌️|Eimer,Ведро,🪣|Kleber,Клей,🧴|Faden,Шпагат,🧵|Draht,Проволока,➰|Balken,Брус,🪵|Stein,Кирпич/камень,🧱|Zement,Цемент,🪨|Sand,Песок,⏳|Lack,Лак,✨|Meißel,Стамеска,🛠️|Hobel,Рубанок,🪚|Spaten,Лопата,🛠️|Zollstock,Складной метр,📏|Helm,Строительная каска,👷|Handschuh,Рабочая перчатка,🧤|Kasten,Ящик для инструментов,🧰",
+        "Säge,Пила,🪚|Zange,Плоскогубцы,钳|Schraube,Шуруп/винт,🔩|Mutter,Гайка,🔩|Axt,Топор,🪓|Schaufel,Лопата,🛠️|Leiter,Лестница-стремянка,🪜|Farbe,Краска,🎨|Tapete,Обои,📜|Wand,Стена,🧱|Schere,Ножницы по металлу,✂️|Feile,Напильник,🛠️|Kette,Цепь,⛓️|Röhre,Труба,🚰|Dichtung,Прокладка,⭕|Renovierung,Ремонт,🖌️|Baustelle,Стройплощадка,🏗️|Arbeit,Ремонтная работа,💪",
+        "Werkzeug,Инструмент,🛠️|Messer,Строительный нож,🔪|Seil,Канат,🪢|Brett,Доска,🪵|Holz,Дерево,🪵|Metall,Металл,🔩|Eisen,Железо,⛓️|Rohr,Труба,🔧|Maßband,Рулетка,📏|Schleifpapier,Наждачная бумага,🟨"
+      ],
+      [
+        "49. Закон, право и общество", "⚖️",
+        "Staat,Государство,🏛️|Präsident,Президент,🎙️|Minister,Министр,💼|Bürger,Гражданин,🪪|Anwalt,Адвокат,⚖️|Richter,Судья,👨‍⚖️|Zeuge,Свидетель,👁️|Täter,Преступник,🥷|Dieb,Вор,💰|Polizist,Полицейский,👮|Vertrag,Договор,📄|Frieden,Мир,🕊️|Krieg,Война,⚔️|Konflikt,Конфликт,⚡|Schutz,Защита,🛡️|Beweis,Улика/доказательство,🔍|Prozess,Судебный процесс,⚖️|Fall,Дело,📁|Paragraph,Параграф,§|Pass,Паспорт,🛂",
+        "Regierung,Правительство,🏛️|Polizei,Полиция,🚓|Gesellschaft,Общество,👥|Freiheit,Свобода,🕊️|Gerechtigkeit,Справедливость,⚖️|Regel,Правило,📏|Pflicht,Обязанность,📌|Strafe,Наказание/штраф,💶|Schuld,Вина,⛓️|Tat,Поступок/деяние,👣|Wahl,Выборы,🗳️|Partei,Партия,🏳️|Demokratie,Демократия,🏛️|Verfassung,Конституция,📜|Grenze,Граница,🚧|Steuer,Налог,💶|Sicherheit,Безопасность,🔒|Ordnung,Порядок,✅|Klage,Иск,📄|Wahrheit,Истина,🪞",
+        "Gesetz,Закон,⚖️|Recht,Право,📜|Gericht,Суд,🏛️|Urteil,Приговор/решение суда,🔨|Gefängnis,Тюрьма,⛓️|Verbrechen,Преступление,🚨|Opfer,Жертва,🩹|Parlament,Парламент,🏛️|Volk,Народ,👥|Dokument,Удостоверение,🪪"
+      ],
+      [
+        "50. Космос и Вселенная", "🪐",
+        "Stern,Звезда,⭐|Mond,Луна,🌙|Planet,Планета,🪐|Himmel,Небосвод,🌌|Kosmos,Космос,✨|Astronaut,Астронавт,👨‍🚀|Satellit,Спутник,🛰️|Komet,Комета,☄️|Asteroid,Астероид,🪨|Krater,Кратер,🌑|Mars,Марс,🔴|Jupiter,Юпитер,🟠|Saturn,Сатурн,🪐|Merkur,Меркурий,⚪|Uranus,Уран,🔵|Neptun,Нептун,🔵|Raumanzug,Скафандр,👨‍🚀|Start,Запуск,🚀|Schatten,Тень затмения,🌒|Horizont,Горизонт,🌅|Kern,Ядро планеты,🔥|Staub,Космическая пыль,✨",
+        "Sonne,Солнце,☀️|Erde,Земля,🌍|Venus,Венера,🟡|Rakete,Ракета,🚀|Galaxie,Галактика,🌀|Milchstraße,Млечный Путь,🌌|Umlaufbahn,Орбита,🔄|Schwerkraft,Гравитация,🍎|Station,Орбитальная станция,🛰️|Finsternis,Затмение,🌑|Atmosphäre,Атмосфера,🌏|Strahlung,Радиация,☢️|Entfernung,Расстояние,📏|Geschwindigkeit,Скорость света,⚡|Tiefe,Глубина космоса,🌌|Mission,Миссия,🎯|Landung,Посадка,🛬|Forschung,Исследование космоса,🔭",
+        "Universum,Вселенная,🌌|Weltall,Космическое пространство,✨|Raumschiff,Космический корабль,🛸|Teleskop,Телескоп,🔭|Licht,Свет звезды,🌟|Lichtjahr,Световой год,⏳|System,Солнечная система,☀️|Schwarzes Loch,Чёрная дыра,🕳️|Vakuum,Вакуум,🫧|Signal,Радиосигнал,📡"
+      ]
+    ];
+
+    /*************************************************************************
+     * 2. РАСПАКОВКА БАЗЫ В 50 КАТЕГОРИЙ × 50 СЛОВ С ДЕТЕРМИНИРОВАННЫМ ПОРЯДКОМ
+     *************************************************************************/
+    function buildDecks() {
+      return RAW_DECKS.map((raw, catIndex) => {
+        const [title, icon, derStr, dieStr, dasStr] = raw;
+        const parseGroup = (str, article) => {
+          if (!str) return [];
+          return str.split('|').map(item => {
+            const [de, ru, emoji] = item.split(',');
+            return { de: de.trim(), ru: ru.trim(), emoji: (emoji || icon).trim(), article };
+          });
+        };
+
+        const words = [
+          ...parseGroup(derStr, 'der'),
+          ...parseGroup(dieStr, 'die'),
+          ...parseGroup(dasStr, 'das')
+        ];
+
+        // Детерминированное перемешивание, чтобы рода der/die/das шли вперемешку
+        const mixed = [...words];
+        let seed = (catIndex + 1) * 1337;
+        for (let i = mixed.length - 1; i > 0; i--) {
+          seed = (seed * 16807) % 2147483647;
+          const j = seed % (i + 1);
+          const temp = mixed[i];
+          mixed[i] = mixed[j];
+          mixed[j] = temp;
+        }
+
+        return {
+          id: catIndex,
+          title,
+          icon,
+          words: mixed.slice(0, 50)
+        };
+      });
+    }
+
+    const DECKS = buildDecks();
+
+    /*************************************************************************
+     * 3. НАДЁЖНОЕ ХРАНИЛИЩЕ ПРОГРЕССА (LOCALSTORAGE + INDEXEDDB + АВТОСОХРАНЕНИЕ)
+     * Поддержка двух профилей: "olo" (пароль "7ololo7") и "максим" (пароль "olo666")
+     *************************************************************************/
+    const VALID_USERS = {
+      "olo": { pass: "7ololo7", displayName: "olo" },
+      "максим": { pass: "olo666", displayName: "Максим" }
+    };
+
+    const SESSION_KEY = "de_active_user_v3";
+    const PROGRESS_PREFIX = "de_progress_v3_";
+    const LEGACY_PREFIX = "de_app_progress_v1_";
+
+    // Кэш данных текущего пользователя в оперативной памяти для мгновенного отклика
+    let memoryProgressCache = {
+      olo: {},
+      "максим": {}
+    };
+
+    // Инициализация IndexedDB для дублирования данных (защита от сброса кэша на iOS / Huawei)
+    const IDB_NAME = "GermanLearnerDB";
+    const IDB_STORE = "user_data";
+    let idbInstance = null;
+
+    function openDatabase() {
+      return new Promise((resolve) => {
+        if (!window.indexedDB) return resolve(null);
+        try {
+          const req = indexedDB.open(IDB_NAME, 1);
+          req.onupgradeneeded = (e) => {
+            const db = e.target.result;
+            if (!db.objectStoreNames.contains(IDB_STORE)) {
+              db.createObjectStore(IDB_STORE);
+            }
+          };
+          req.onsuccess = (e) => {
+            idbInstance = e.target.result;
+            resolve(idbInstance);
+          };
+          req.onerror = () => resolve(null);
+        } catch (err) {
+          resolve(null);
+        }
+      });
+    }
+
+    function idbGet(key) {
+      return new Promise((resolve) => {
+        if (!idbInstance) return resolve(null);
+        try {
+          const tx = idbInstance.transaction(IDB_STORE, "readonly");
+          const store = tx.objectStore(IDB_STORE);
+          const req = store.get(key);
+          req.onsuccess = () => resolve(req.result || null);
+          req.onerror = () => resolve(null);
+        } catch (e) {
+          resolve(null);
+        }
+      });
+    }
+
+    function idbSet(key, val) {
+      return new Promise((resolve) => {
+        if (!idbInstance) return resolve(false);
+        try {
+          const tx = idbInstance.transaction(IDB_STORE, "readwrite");
+          const store = tx.objectStore(IDB_STORE);
+          store.put(val, key);
+          tx.oncomplete = () => resolve(true);
+          tx.onerror = () => resolve(false);
+        } catch (e) {
+          resolve(false);
+        }
+      });
+    }
+
+    // Нормализация и слияние прогресса из разных источников (чтобы никогда не терять выученные слова)
+    function normalizeDeckRecord(rec) {
+      if (!rec || typeof rec !== "object") {
+        return {
+          learnedIds: [],
+          correct: 0,
+          percent: 0,
+          studyIndex: 0,
+          articleQuizIndex: 0,
+          testIndex: 0,
+          updatedAt: 0
+        };
+      }
+      const learnedSet = new Set(Array.isArray(rec.learnedIds) ? rec.learnedIds : []);
+      // Если есть старый формат { correct, percent } без learnedIds, сконвертируем его
+      let legacyCorrect = typeof rec.correct === "number" ? rec.correct : 0;
+      if (legacyCorrect === 0 && typeof rec.percent === "number" && rec.percent > 0) {
+        legacyCorrect = Math.round((rec.percent / 100) * 50);
+      }
+      if (learnedSet.size < legacyCorrect) {
+        for (let i = 0; i < legacyCorrect && i < 50; i++) {
+          learnedSet.add(i);
+        }
+      }
+      const learnedIds = Array.from(learnedSet).filter(n => Number.isInteger(n) && n >= 0 && n < 50);
+      const correct = learnedIds.length;
+      const percent = Math.min(100, Math.round((correct / 50) * 100));
+      return {
+        learnedIds,
+        correct,
+        percent,
+        studyIndex: Number.isInteger(rec.studyIndex) && rec.studyIndex >= 0 && rec.studyIndex < 50 ? rec.studyIndex : 0,
+        articleQuizIndex: Number.isInteger(rec.articleQuizIndex) && rec.articleQuizIndex >= 0 && rec.articleQuizIndex < 50 ? rec.articleQuizIndex : 0,
+        testIndex: Number.isInteger(rec.testIndex) && rec.testIndex >= 0 && rec.testIndex < 50 ? rec.testIndex : 0,
+        updatedAt: rec.updatedAt || Date.now()
+      };
+    }
+
+    function mergeUserProgressMaps(mapA = {}, mapB = {}) {
+      const result = {};
+      const allDeckIds = new Set([...Object.keys(mapA), ...Object.keys(mapB)]);
+      allDeckIds.forEach(deckId => {
+        const a = normalizeDeckRecord(mapA[deckId]);
+        const b = normalizeDeckRecord(mapB[deckId]);
+        const mergedSet = new Set([...a.learnedIds, ...b.learnedIds]);
+        const learnedIds = Array.from(mergedSet);
+        const correct = learnedIds.length;
+        const percent = Math.min(100, Math.round((correct / 50) * 100));
+        const newer = (b.updatedAt || 0) > (a.updatedAt || 0) ? b : a;
+        result[deckId] = {
+          learnedIds,
+          correct,
+          percent,
+          studyIndex: newer.studyIndex || 0,
+          articleQuizIndex: newer.articleQuizIndex || 0,
+          testIndex: newer.testIndex || 0,
+          updatedAt: Math.max(a.updatedAt || 0, b.updatedAt || 0, Date.now())
+        };
+      });
+      return result;
+    }
+
+    // Загрузка прогресса пользователя из localStorage (включая миграцию со старого ключа v1)
+    function loadProgressFromLocalStorage(username) {
+      if (!username) return {};
+      let current = {};
+      let legacy = {};
+      try {
+        const rawCur = localStorage.getItem(PROGRESS_PREFIX + username);
+        if (rawCur) current = JSON.parse(rawCur);
+      } catch (e) {}
+      try {
+        const rawLeg = localStorage.getItem(LEGACY_PREFIX + username);
+        if (rawLeg) legacy = JSON.parse(rawLeg);
+      } catch (e) {}
+      return mergeUserProgressMaps(legacy, current);
+    }
+
+    // Инициализация всех пользователей при старте
+    Object.keys(VALID_USERS).forEach(u => {
+      memoryProgressCache[u] = loadProgressFromLocalStorage(u);
+    });
+
+    function normalizeUserKey(raw) {
+      if (!raw || typeof raw !== "string") return null;
+      const clean = raw.trim().toLowerCase();
+      return VALID_USERS[clean] ? clean : null;
+    }
+
+    const initialSavedUser = normalizeUserKey(
+      localStorage.getItem(SESSION_KEY) || localStorage.getItem("de_app_active_user_v1")
+    );
+
+    let autoAdvanceTimer = null;
+    function clearAutoAdvanceTimer() {
+      if (autoAdvanceTimer) {
+        clearTimeout(autoAdvanceTimer);
+        autoAdvanceTimer = null;
+      }
+    }
+
+    const state = {
+      user: initialSavedUser,
+      screen: initialSavedUser ? "categories" : "login", // "login" | "categories" | "mode_select" | "session" | "summary"
+      searchQuery: "",
+      selectedDeckId: 0,
+      mode: "study", // "study" | "article_quiz" | "test" | "learned_quiz"
+      quizPool: [], // Список всех выученных слов для режима "Проверка изученных слов"
+      cardIndex: 0,
+      sessionCorrect: 0,
+      sessionAnswered: 0,
+      mistakes: [],
+      feedback: null, // { isCorrect, userAnswer, correctFull }
+      testInput: "",
+      loginError: "",
+      showSyncModal: false,
+      syncStatusMsg: ""
+    };
+
+    function getUserProgress(username = state.user) {
+      if (!username) return {};
+      if (!memoryProgressCache[username]) {
+        memoryProgressCache[username] = loadProgressFromLocalStorage(username);
+      }
+      return memoryProgressCache[username];
+    }
+
+    function persistUserProgressNow(username = state.user) {
+      if (!username || !VALID_USERS[username]) return;
+      const data = getUserProgress(username);
+      const serialized = JSON.stringify(data);
+      try {
+        localStorage.setItem(PROGRESS_PREFIX + username, serialized);
+      } catch (e) {}
+      // Дублируем в IndexedDB
+      idbSet(PROGRESS_PREFIX + username, data);
+    }
+
+    function getDeckState(deckId, username = state.user) {
+      const all = getUserProgress(username);
+      if (!all[deckId]) {
+        all[deckId] = normalizeDeckRecord(null);
+      } else {
+        all[deckId] = normalizeDeckRecord(all[deckId]);
+      }
+      return all[deckId];
+    }
+
+    // Мгновенное сохранение ответа по конкретной карточке (не теряется при закрытии вкладки!)
+    function recordCardProgress(deckId, wordIdx, isCorrect, nextCardIdx, mode) {
+      if (!state.user) return;
+      const deckRec = getDeckState(deckId);
+      const learnedSet = new Set(deckRec.learnedIds);
+
+      if (isCorrect) {
+        learnedSet.add(wordIdx);
+      }
+
+      deckRec.learnedIds = Array.from(learnedSet);
+      deckRec.correct = deckRec.learnedIds.length;
+      deckRec.percent = Math.min(100, Math.round((deckRec.correct / 50) * 100));
+
+      if (typeof nextCardIdx === "number" && (mode === "study" || mode === "article_quiz" || mode === "test")) {
+        const safeNextIdx = nextCardIdx >= 50 ? 0 : nextCardIdx;
+        if (mode === "study") {
+          deckRec.studyIndex = safeNextIdx;
+        } else if (mode === "article_quiz") {
+          deckRec.articleQuizIndex = safeNextIdx;
+        } else if (mode === "test") {
+          deckRec.testIndex = safeNextIdx;
+        }
+      }
+      deckRec.updatedAt = Date.now();
+
+      memoryProgressCache[state.user][deckId] = deckRec;
+      persistUserProgressNow(state.user);
+    }
+
+    function resetSingleDeckProgress(deckId) {
+      if (!state.user) return;
+      memoryProgressCache[state.user][deckId] = normalizeDeckRecord(null);
+      persistUserProgressNow(state.user);
+    }
+
+    // Сбор всех изученных слов пользователя по всем 50 категориям
+    function collectAllLearnedWords(username = state.user) {
+      if (!username) return [];
+      const progressMap = getUserProgress(username);
+      const list = [];
+      for (let deckId = 0; deckId < DECKS.length; deckId++) {
+        const deck = DECKS[deckId];
+        const rec = normalizeDeckRecord(progressMap[deckId]);
+        if (rec.learnedIds && rec.learnedIds.length > 0) {
+          rec.learnedIds.forEach(wordIdx => {
+            const wordObj = deck.words[wordIdx];
+            if (wordObj) {
+              list.push({
+                deckId,
+                wordIdx,
+                wordObj,
+                deckTitle: deck.title
+              });
+            }
+          });
+        }
+      }
+      return list;
+    }
+
+    // Асинхронная синхронизация с IndexedDB при загрузке страницы
+    openDatabase().then(async () => {
+      for (const u of Object.keys(VALID_USERS)) {
+        const idbData = await idbGet(PROGRESS_PREFIX + u);
+        if (idbData) {
+          memoryProgressCache[u] = mergeUserProgressMaps(memoryProgressCache[u], idbData);
+          try {
+            localStorage.setItem(PROGRESS_PREFIX + u, JSON.stringify(memoryProgressCache[u]));
+          } catch (e) {}
+        } else {
+          await idbSet(PROGRESS_PREFIX + u, memoryProgressCache[u]);
+        }
+      }
+      const idbUser = await idbGet(SESSION_KEY);
+      if (!state.user && idbUser && VALID_USERS[idbUser]) {
+        state.user = idbUser;
+        localStorage.setItem(SESSION_KEY, idbUser);
+        state.screen = "categories";
+      }
+      render();
+    });
+
+    // Сохранение при сворачивании вкладки или закрытии Safari / Huawei Browser
+    window.addEventListener("pagehide", () => {
+      if (state.user) persistUserProgressNow(state.user);
+    });
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden" && state.user) {
+        persistUserProgressNow(state.user);
+      }
+    });
+
+    /*************************************************************************
+     * 4. ГЕНЕРАТОР МГНОВЕННЫХ ВЕКТОРНЫХ SVG-КАРТОЧЕК (0 МС ЗАГРУЗКИ)
+     *************************************************************************/
+    function renderSvgIllustration(wordObj, showGenderColor, article) {
+      let palette = { bg1: "#f5f5f4", bg2: "#e7e5e4", accent: "#a8a29e" };
+      if (showGenderColor) {
+        if (article === "der") palette = { bg1: "#eff6ff", bg2: "#dbeafe", accent: "#3b82f6" };
+        if (article === "die") palette = { bg1: "#fdf2f8", bg2: "#fce7f3", accent: "#ec4899" };
+        if (article === "das") palette = { bg1: "#ecfdf5", bg2: "#d1fae5", accent: "#10b981" };
+      }
+
+      return `
+        <svg viewBox="0 0 240 165" class="w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="gradCard" cx="50%" cy="45%" r="60%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.96"/>
+              <stop offset="100%" stop-color="${palette.bg1}" stop-opacity="0.65"/>
+            </radialGradient>
+          </defs>
+          <rect width="240" height="165" rx="22" fill="url(#gradCard)" />
+          <circle cx="40" cy="34" r="22" fill="${palette.bg2}" opacity="0.55" />
+          <circle cx="200" cy="132" r="30" fill="${palette.bg2}" opacity="0.55" />
+          <circle cx="120" cy="83" r="52" fill="#ffffff" opacity="0.88" />
+          <circle cx="120" cy="83" r="52" fill="none" stroke="${palette.accent}" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4" />
+          <text x="120" y="101" text-anchor="middle" font-size="60" style="filter: drop-shadow(0 6px 10px rgba(0,0,0,0.08));">${wordObj.emoji}</text>
+        </svg>
+      `;
+    }
+
+    /*************************************************************************
+     * 5. НАДЁЖНАЯ НЕМЕЦКАЯ ОЗВУЧКА СТРОГО С АРТИКЛЕМ (iPhone 14 + Huawei Pura 70)
+     * 1) Всегда произносит "${article} ${de}" (например, "der Tisch", "die Lampe").
+     * 2) Запускается СТРОГО синхронно по нажатию на кнопку микрофона через
+     *    <audio id="ttsAudio" referrerpolicy="no-referrer"> с потоком Google German TTS,
+     *    благодаря чему iPhone 14 (iOS Safari) и Huawei Pura 70 произносят слова
+     *    эталонным немецким голосом, а не читают латиницу русским голосом.
+     * 3) Если телефон полностью офлайн, используется fallback на Web Speech API
+     *    ТОЛЬКО при наличии подлинного немецкого голоса (Anna, Helena, Petra, Martin и т.д.).
+     *************************************************************************/
+    let cachedGermanVoice = null;
+
+    function findGenuineGermanVoice() {
+      if (!("speechSynthesis" in window)) return null;
+      const voices = window.speechSynthesis.getVoices() || [];
+      if (!voices.length) return null;
+
+      const noveltyRegex = /albert|bad news|bahh|bells|boing|bubbles|cellos|deranged|good news|hysterical|pipe organ|trinoids|whisper|zarvox|jester|superstar|wobble/i;
+      const deVoices = voices.filter(v => {
+        if (!v || !v.lang) return false;
+        const normLang = v.lang.replace('_', '-').toLowerCase();
+        return normLang.startsWith('de') && !noveltyRegex.test(v.name || '');
+      });
+
+      if (!deVoices.length) return null;
+
+      const preferredNames = ['anna', 'helena', 'petra', 'viktor', 'martin', 'markus', 'google deutsch', 'siri', 'marlene'];
+      for (const pref of preferredNames) {
+        const match = deVoices.find(v => (v.name || '').toLowerCase().includes(pref));
+        if (match) return match;
+      }
+
+      return deVoices.find(v => v.lang.replace('_', '-').toLowerCase() === 'de-de') || deVoices[0];
+    }
+
+    if ("speechSynthesis" in window) {
+      cachedGermanVoice = findGenuineGermanVoice();
+      if (typeof window.speechSynthesis.onvoiceschanged !== "undefined") {
+        window.speechSynthesis.onvoiceschanged = () => {
+          cachedGermanVoice = findGenuineGermanVoice();
+        };
+      }
+    }
+
+    function speakOfflineGermanFallback(phrase) {
+      if (!("speechSynthesis" in window)) return;
+      const genuineVoice = cachedGermanVoice || findGenuineGermanVoice();
+      // Никогда не запускаем синтез без явно найденного немецкого голоса,
+      // чтобы iOS не читала немецкие буквы русским голосом
+      if (!genuineVoice) return;
+
+      try {
+        window.speechSynthesis.cancel();
+        const utter = new SpeechSynthesisUtterance(phrase);
+        utter.voice = genuineVoice;
+        utter.lang = "de-DE";
+        utter.rate = 0.9;
+        utter.pitch = 1.0;
+        window.speechSynthesis.speak(utter);
+      } catch (e) {}
+    }
+
+    function speakGermanWordWithArticle(wordObj, buttonEl = null) {
+      if (!wordObj || !wordObj.article || !wordObj.de) return;
+      const phrase = `${wordObj.article} ${wordObj.de}`.trim();
+
+      const targetBtn = buttonEl || document.getElementById("MainSpeakButton");
+      if (targetBtn) {
+        targetBtn.classList.remove("speaking-pulse");
+        void targetBtn.offsetWidth;
+        targetBtn.classList.add("speaking-pulse");
+      }
+
+      if ("speechSynthesis" in window) {
+        try { window.speechSynthesis.cancel(); } catch (e) {}
+      }
+
+      const audioEl = document.getElementById("ttsAudio");
+      if (!audioEl) {
+        speakOfflineGermanFallback(phrase);
+        return;
+      }
+
+      const encoded = encodeURIComponent(phrase);
+      const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=de&q=${encoded}`;
+      const backupTtsUrl = `https://dict.youdao.com/dictvoice?audio=${encoded}&le=de`;
+
+      try {
+        audioEl.pause();
+        audioEl.onerror = () => {
+          audioEl.onerror = () => {
+            speakOfflineGermanFallback(phrase);
+          };
+          audioEl.src = backupTtsUrl;
+          const p2 = audioEl.play();
+          if (p2 !== undefined) {
+            p2.catch(() => speakOfflineGermanFallback(phrase));
+          }
+        };
+
+        audioEl.src = googleTtsUrl;
+        const playPromise = audioEl.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            audioEl.onerror = null;
+            audioEl.src = backupTtsUrl;
+            const p2 = audioEl.play();
+            if (p2 !== undefined) {
+              p2.catch(() => speakOfflineGermanFallback(phrase));
+            }
+          });
+        }
+      } catch (err) {
+        speakOfflineGermanFallback(phrase);
+      }
+    }
+
+    /*************************************************************************
+     * 6. ЭКСПОРТ / ИМПОРТ КОДА ПРОГРЕССА (ДЛЯ ПЕРЕНОСА МЕЖДУ БРАУЗЕРОМ И ИКОНКОЙ ДОМОЙ)
+     *************************************************************************/
+    function generateBackupCode() {
+      if (!state.user) return "";
+      const prog = getUserProgress(state.user);
+      const compact = {};
+      Object.keys(prog).forEach(deckId => {
+        const rec = prog[deckId];
+        if (rec && rec.learnedIds && rec.learnedIds.length > 0) {
+          compact[deckId] = [rec.learnedIds, rec.studyIndex || 0, rec.testIndex || 0, rec.articleQuizIndex || 0];
+        }
+      });
+      const payload = JSON.stringify({ u: state.user, d: compact });
+      return btoa(unescape(encodeURIComponent(payload)));
+    }
+
+    function restoreFromBackupCode(codeStr) {
+      try {
+        const jsonStr = decodeURIComponent(escape(atob(codeStr.trim())));
+        const parsed = JSON.parse(jsonStr);
+        if (!parsed || !parsed.d || typeof parsed.d !== "object") return false;
+
+        const targetUser = state.user;
+        const importedMap = {};
+        Object.keys(parsed.d).forEach(deckId => {
+          const arr = parsed.d[deckId];
+          if (Array.isArray(arr)) {
+            importedMap[deckId] = normalizeDeckRecord({
+              learnedIds: arr[0] || [],
+              studyIndex: arr[1] || 0,
+              testIndex: arr[2] || 0,
+              articleQuizIndex: arr[3] || 0,
+              updatedAt: Date.now()
+            });
+          }
+        });
+
+        memoryProgressCache[targetUser] = mergeUserProgressMaps(getUserProgress(targetUser), importedMap);
+        persistUserProgressNow(targetUser);
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    /*************************************************************************
+     * 7. РЕНДЕРИНГ ЭКРАНОВ ПРИЛОЖЕНИЯ (БЕЗ ХЭДЕРА И ФУТЕРА)
+     *************************************************************************/
+    const appEl = document.getElementById("app");
+
+    function render() {
+      if (state.screen === "login") {
+        renderLogin();
+      } else if (state.screen === "categories") {
+        renderCategories();
+      } else if (state.screen === "mode_select") {
+        renderModeSelect();
+      } else if (state.screen === "session") {
+        renderSession();
+      } else if (state.screen === "summary") {
+        renderSummary();
+      }
+    }
+
+    /* ЭКРАН 1: ВХОД */
+    function renderLogin() {
+      appEl.innerHTML = `
+        <div class="flex-1 flex flex-col justify-center items-center px-2 animate-card">
+          <div class="w-full bg-white rounded-3xl p-6 shadow-sm border border-stone-200/80">
+            <div class="flex flex-col items-center text-center mb-6">
+              <div class="w-16 h-16 rounded-2xl bg-stone-100 flex items-center justify-center text-3xl mb-3 shadow-inner">
+                🇩🇪
+              </div>
+              <h1 class="text-xl font-bold text-stone-800 tracking-tight">Artikel Trainer</h1>
+              <p class="text-xs text-stone-400 mt-1">2 500 немецких существительных в 50 темах</p>
+            </div>
+
+            <form id="loginForm" class="space-y-3.5" autocomplete="off">
+              <div>
+                <label class="block text-xs font-medium text-stone-500 mb-1.5 ml-1">Логин</label>
+                <input
+                  id="loginInput"
+                  type="text"
+                  placeholder="olo или максим"
+                  autocapitalize="none"
+                  autocorrect="off"
+                  required
+                  class="w-full px-4 py-3.5 rounded-2xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:border-stone-400 focus:bg-white transition"
+                />
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-stone-500 mb-1.5 ml-1">Пароль</label>
+                <input
+                  id="passwordInput"
+                  type="password"
+                  placeholder="Введите пароль"
+                  required
+                  class="w-full px-4 py-3.5 rounded-2xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:border-stone-400 focus:bg-white transition"
+                />
+              </div>
+
+              ${state.loginError ? `
+                <div class="text-xs text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-3.5 py-2.5 text-center shake">
+                  ${state.loginError}
+                </div>
+              ` : ''}
+
+              <button
+                type="submit"
+                class="soft-btn w-full py-3.5 rounded-2xl bg-stone-800 text-white font-semibold text-sm shadow-sm hover:bg-stone-700 mt-2"
+              >
+                Войти в профиль
+              </button>
+            </form>
+
+            <div class="mt-5 pt-4 border-t border-stone-100 flex items-center justify-center gap-2 text-[11px] text-stone-400">
+              <span class="inline-block w-2 h-2 rounded-full bg-blue-400"></span> der
+              <span class="inline-block w-2 h-2 rounded-full bg-pink-400 ml-2"></span> die
+              <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 ml-2"></span> das
+            </div>
+          </div>
+        </div>
+      `;
+
+      document.getElementById("loginForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const rawLogin = document.getElementById("loginInput").value.trim().toLowerCase();
+        const rawPass = document.getElementById("passwordInput").value.trim();
+
+        if (VALID_USERS[rawLogin] && VALID_USERS[rawLogin].pass === rawPass) {
+          state.user = rawLogin;
+          state.loginError = "";
+          try {
+            localStorage.setItem(SESSION_KEY, rawLogin);
+          } catch (err) {}
+          idbSet(SESSION_KEY, rawLogin);
+          memoryProgressCache[rawLogin] = loadProgressFromLocalStorage(rawLogin);
+          state.screen = "categories";
+          render();
+        } else {
+          state.loginError = "Неверный логин или пароль";
+          render();
+        }
+      });
+    }
+
+    /* ЭКРАН 2: СПИСОК 50 КАТЕГОРИЙ + БАННЕР ПРОВЕРКИ ПО ВСЕМ ИЗУЧЕННЫМ СЛОВАМ */
+    function renderCategories() {
+      const progressMap = getUserProgress();
+      const userObj = VALID_USERS[state.user];
+      const allLearnedList = collectAllLearnedWords(state.user);
+      const totalLearnedWords = allLearnedList.length;
+      const overallPercent = Math.round((totalLearnedWords / 2500) * 100);
+
+      const filteredDecks = DECKS.filter(d =>
+        d.title.toLowerCase().includes(state.searchQuery.trim().toLowerCase())
+      );
+
+      appEl.innerHTML = `
+        <div class="flex flex-col h-full animate-card">
+          <!-- Компактная панель профиля, общей проверки и поиска -->
+          <div class="bg-white rounded-3xl p-3.5 shadow-sm border border-stone-200/70 mb-2.5">
+            <div class="flex items-center justify-between mb-2.5">
+              <div class="flex items-center gap-2.5 min-w-0">
+                <div class="w-9 h-9 rounded-2xl bg-stone-800 text-white flex items-center justify-center text-sm font-bold shrink-0">
+                  ${userObj.displayName.charAt(0).toUpperCase()}
+                </div>
+                <div class="min-w-0">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-sm font-bold text-stone-800 truncate">${userObj.displayName}</span>
+                    <span class="inline-flex items-center px-1.5 py-0.5 rounded-md text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/60">
+                      ✓ Сохранено
+                    </span>
+                  </div>
+                  <div class="text-[11px] text-stone-400">Изучено ${totalLearnedWords} из 2500 слов (${overallPercent}%)</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-1.5 shrink-0">
+                <button id="openSyncBtn" class="soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-600 text-xs font-medium" title="Код бэкапа прогресса">
+                  ☁️ Код
+                </button>
+                <button id="logoutBtn" class="soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-600 text-xs font-medium">
+                  Выйти
+                </button>
+              </div>
+            </div>
+
+            <!-- Баннер/кнопка: Проверка по всем изученным словам -->
+            <div class="mb-2.5">
+              <button
+                id="startAllLearnedQuizBtn"
+                type="button"
+                ${totalLearnedWords === 0 ? 'disabled' : ''}
+                class="soft-btn w-full py-2.5 px-3.5 rounded-2xl flex items-center justify-between text-xs font-semibold transition ${
+                  totalLearnedWords > 0
+                    ? 'bg-stone-800 text-white shadow-sm'
+                    : 'bg-stone-100 text-stone-400 cursor-not-allowed'
+                }"
+              >
+                <span class="flex items-center gap-2">
+                  <span>🎯</span>
+                  <span>Проверка изученных слов</span>
+                </span>
+                <span class="px-2 py-0.5 rounded-lg text-[11px] ${
+                  totalLearnedWords > 0 ? 'bg-white/15 text-white' : 'bg-stone-200/70 text-stone-400'
+                }">
+                  ${totalLearnedWords > 0 ? `${totalLearnedWords} сл. →` : '0 слов'}
+                </span>
+              </button>
+            </div>
+
+            <div class="relative">
+              <input
+                id="searchInput"
+                type="text"
+                value="${state.searchQuery.replace(/"/g, '&quot;')}"
+                placeholder="Поиск из 50 категорий..."
+                class="w-full pl-9 pr-8 py-2 rounded-2xl bg-stone-50 border border-stone-200/80 text-sm text-stone-700 focus:outline-none focus:border-stone-400 focus:bg-white"
+              />
+              <span class="absolute left-3 top-1/2 -translate-y-1/2 text-stone-400 text-sm">🔍</span>
+              ${state.searchQuery ? `
+                <button id="clearSearchBtn" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-stone-400 text-xs px-1">✕</button>
+              ` : ''}
+            </div>
+          </div>
+
+          <!-- Прокручиваемая сетка из 50 колод -->
+          <div id="categoriesList" class="scroll-area space-y-2 pb-3">
+            ${filteredDecks.map(deck => {
+              const prog = normalizeDeckRecord(progressMap[deck.id]);
+              const barColor = prog.percent >= 80 ? 'bg-emerald-500' : prog.percent >= 40 ? 'bg-blue-500' : 'bg-stone-400';
+              return `
+                <button
+                  data-deck-id="${deck.id}"
+                  class="deck-card soft-btn w-full text-left bg-white rounded-2xl p-3.5 shadow-sm border border-stone-200/70 flex items-center gap-3.5"
+                >
+                  <div class="w-12 h-12 rounded-2xl bg-stone-50 border border-stone-100 flex items-center justify-center text-2xl shrink-0">
+                    ${deck.icon}
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-2">
+                      <span class="text-sm font-semibold text-stone-800 truncate">${deck.title}</span>
+                      <span class="text-xs font-bold ${prog.percent > 0 ? 'text-emerald-600' : 'text-stone-400'} shrink-0">${prog.percent}%</span>
+                    </div>
+                    <div class="text-[11px] text-stone-400 mt-0.5 mb-1.5">
+                      Изучено слов: <b class="text-stone-600">${prog.correct}/50</b>
+                      ${prog.studyIndex > 0 ? ` · Карта #${prog.studyIndex + 1}` : ''}
+                    </div>
+                    <div class="w-full h-1.5 bg-stone-100 rounded-full overflow-hidden">
+                      <div class="h-full ${barColor} rounded-full transition-all duration-300" style="width: ${prog.percent}%"></div>
+                    </div>
+                  </div>
+                </button>
+              `;
+            }).join('')}
+          </div>
+
+          ${state.showSyncModal ? renderSyncModal() : ''}
+        </div>
+      `;
+
+      document.getElementById("logoutBtn").addEventListener("click", () => {
+        persistUserProgressNow(state.user);
+        try {
+          localStorage.removeItem(SESSION_KEY);
+          localStorage.removeItem("de_app_active_user_v1");
+        } catch (e) {}
+        idbSet(SESSION_KEY, null);
+        state.user = null;
+        state.screen = "login";
+        render();
+      });
+
+      document.getElementById("openSyncBtn").addEventListener("click", () => {
+        state.showSyncModal = true;
+        state.syncStatusMsg = "";
+        render();
+      });
+
+      const allLearnedBtn = document.getElementById("startAllLearnedQuizBtn");
+      if (allLearnedBtn) {
+        allLearnedBtn.addEventListener("click", () => {
+          startAllLearnedQuiz();
+        });
+      }
+
+      if (state.showSyncModal) {
+        bindSyncModalEvents();
+      }
+
+      const searchInput = document.getElementById("searchInput");
+      searchInput.addEventListener("input", (e) => {
+        state.searchQuery = e.target.value;
+        const cursorPos = e.target.selectionStart;
+        renderCategories();
+        const nextInput = document.getElementById("searchInput");
+        if (nextInput) {
+          nextInput.focus();
+          nextInput.setSelectionRange(cursorPos, cursorPos);
+        }
+      });
+
+      const clearBtn = document.getElementById("clearSearchBtn");
+      if (clearBtn) {
+        clearBtn.addEventListener("click", () => {
+          state.searchQuery = "";
+          renderCategories();
+        });
+      }
+
+      document.querySelectorAll(".deck-card").forEach(btn => {
+        btn.addEventListener("click", () => {
+          state.selectedDeckId = parseInt(btn.getAttribute("data-deck-id"), 10);
+          state.screen = "mode_select";
+          render();
+        });
+      });
+    }
+    /* ЭКРАН 3: ВЫБОР РЕЖИМА ДЛЯ КАТЕГОРИИ (3 ВАРИАНТА ВЗАИМОДЕЙСТВИЯ) */
+    function renderModeSelect() {
+      clearAutoAdvanceTimer();
+      const deck = DECKS[state.selectedDeckId];
+      const prog = getDeckState(deck.id);
+
+      appEl.innerHTML = `
+        <div class="flex-1 flex flex-col justify-between py-1 animate-card">
+          <div class="flex items-center justify-between">
+            <button id="backToCatsBtn" class="soft-btn px-3.5 py-2 rounded-2xl bg-white border border-stone-200/80 text-xs font-medium text-stone-600 shadow-sm">
+              ← Категории
+            </button>
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200/70 px-2.5 py-1 rounded-xl">
+                Изучено: ${prog.percent}% (${prog.correct}/50)
+              </span>
+              ${prog.correct > 0 ? `
+                <button id="resetDeckBtn" class="soft-btn px-2.5 py-1 rounded-xl bg-stone-100 text-stone-500 text-[11px]" title="Сбросить прогресс этой колоды">
+                  Сброс
+                </button>
+              ` : ''}
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-4 shadow-sm border border-stone-200/80 text-center my-auto">
+            <div class="w-14 h-14 rounded-2xl bg-stone-50 border border-stone-100 flex items-center justify-center text-3xl mx-auto mb-2">
+              ${deck.icon}
+            </div>
+            <h2 class="text-base font-bold text-stone-800">${deck.title}</h2>
+            <p class="text-[11px] text-stone-400 mt-0.5 mb-3.5">
+              50 самых нужных существительных · выберите режим
+            </p>
+
+            <div class="space-y-2 text-left">
+              <!-- Режим 1: Изучение с цветной подсказкой -->
+              <button id="startStudyBtn" class="soft-btn w-full p-3.5 rounded-2xl bg-stone-50 hover:bg-stone-100/80 border border-stone-200/90 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg shrink-0">
+                  🎨
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-xs font-bold text-stone-800">1. Изучение (с подсказкой)</span>
+                    ${prog.studyIndex > 0 ? `<span class="text-[10px] font-semibold text-blue-600 shrink-0">С #${prog.studyIndex + 1} →</span>` : ''}
+                  </div>
+                  <div class="text-[11px] text-stone-500 leading-snug mt-0.5">
+                    Рамка сразу подсказывает род (<span class="text-blue-600 font-semibold">der</span>, <span class="text-pink-600 font-semibold">die</span>, <span class="text-emerald-600 font-semibold">das</span>) + выбор из 3 кнопок
+                  </div>
+                </div>
+              </button>
+
+              <!-- Режим 2: Угадывание артикля без подсказки рамкой (рамка загорается после ответа) -->
+              <button id="startArticleQuizBtn" class="soft-btn w-full p-3.5 rounded-2xl bg-stone-50 hover:bg-stone-100/80 border border-stone-200/90 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center text-lg shrink-0">
+                  🎯
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-xs font-bold text-stone-800">2. Тренировка артикля (без рамки)</span>
+                    ${prog.articleQuizIndex > 0 ? `<span class="text-[10px] font-semibold text-pink-600 shrink-0">С #${prog.articleQuizIndex + 1} →</span>` : ''}
+                  </div>
+                  <div class="text-[11px] text-stone-500 leading-snug mt-0.5">
+                    Выбор цветной кнопки <span class="text-blue-600 font-semibold">der</span> / <span class="text-pink-600 font-semibold">die</span> / <span class="text-emerald-600 font-semibold">das</span> · цвет рамки откроется после ответа
+                  </div>
+                </div>
+              </button>
+
+              <!-- Режим 3: Письменная проверка -->
+              <button id="startTestBtn" class="soft-btn w-full p-3.5 rounded-2xl bg-stone-50 hover:bg-stone-100/80 border border-stone-200/90 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg shrink-0">
+                  ✍️
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-xs font-bold text-stone-800">3. Проверка (письменно)</span>
+                    ${prog.testIndex > 0 ? `<span class="text-[10px] font-semibold text-emerald-600 shrink-0">С #${prog.testIndex + 1} →</span>` : ''}
+                  </div>
+                  <div class="text-[11px] text-stone-500 leading-snug mt-0.5">
+                    Картинка без цветной рамки + ввод артикля вместе со словом
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="text-center text-[11px] text-stone-400">
+            Профиль: <b>${VALID_USERS[state.user].displayName}</b>
+          </div>
+        </div>
+      `;
+
+      document.getElementById("backToCatsBtn").addEventListener("click", () => {
+        state.screen = "categories";
+        render();
+      });
+
+      const resetBtn = document.getElementById("resetDeckBtn");
+      if (resetBtn) {
+        resetBtn.addEventListener("click", () => {
+          resetSingleDeckProgress(deck.id);
+          render();
+        });
+      }
+
+      document.getElementById("startStudyBtn").addEventListener("click", () => {
+        startDeckSession("study", prog.studyIndex || 0);
+      });
+
+      document.getElementById("startArticleQuizBtn").addEventListener("click", () => {
+        startDeckSession("article_quiz", prog.articleQuizIndex || 0);
+      });
+
+      document.getElementById("startTestBtn").addEventListener("click", () => {
+        startDeckSession("test", prog.testIndex || 0);
+      });
+    }
+
+    function startDeckSession(mode, startIdx = 0) {
+      clearAutoAdvanceTimer();
+      state.mode = mode;
+      state.cardIndex = startIdx >= 0 && startIdx < 50 ? startIdx : 0;
+      state.sessionCorrect = 0;
+      state.sessionAnswered = 0;
+      state.mistakes = [];
+      state.feedback = null;
+      state.testInput = "";
+      state.screen = "session";
+      render();
+    }
+
+    /* ЭКРАН 4: ТРЕНИРОВКА (ИЗУЧЕНИЕ / ТРЕНИРОВКА АРТИКЛЯ / ПРОВЕРКА КОЛОДЫ / ПРОВЕРКА ВСЕХ ИЗУЧЕННЫХ СЛОВ) */
+    function renderSession() {
+      const isLearnedQuiz = state.mode === "learned_quiz";
+      const isArticleSelectionMode = state.mode === "study" || state.mode === "article_quiz";
+      let wordObj = null;
+      let total = 0;
+      let headerInfoHtml = "";
+      let isAlreadyLearned = false;
+      let currentDeckTitle = "";
+
+      if (isLearnedQuiz) {
+        total = state.quizPool.length;
+        const item = state.quizPool[state.cardIndex];
+        wordObj = item.wordObj;
+        currentDeckTitle = item.deckTitle;
+        isAlreadyLearned = true;
+        headerInfoHtml = `
+          Слово ${state.cardIndex + 1}/${total} · <span class="text-emerald-600 font-bold">Верно: ${state.sessionCorrect}/${state.sessionAnswered}</span>
+        `;
+      } else {
+        const deck = DECKS[state.selectedDeckId];
+        wordObj = deck.words[state.cardIndex];
+        total = deck.words.length;
+        const deckProg = getDeckState(deck.id);
+        isAlreadyLearned = deckProg.learnedIds.includes(state.cardIndex);
+        headerInfoHtml = `
+          Карта ${state.cardIndex + 1}/${total} · <span class="text-emerald-600 font-bold">Изучено: ${deckProg.correct}/50 (${deckProg.percent}%)</span>
+        `;
+      }
+
+      const progressPct = Math.round(((state.cardIndex + 1) / total) * 100);
+
+      // В режиме "study" цвет рамки виден сразу.
+      // В режиме "article_quiz" рамка нейтральная до ответа и окрашивается в цвет рода сразу после выбора артикля.
+      const showGenderFrame = state.mode === "study" || (state.mode === "article_quiz" && Boolean(state.feedback));
+
+      let frameClass = "frame-neutral";
+      let genderBadge = "";
+      if (showGenderFrame) {
+        if (wordObj.article === "der") {
+          frameClass = "frame-der";
+          genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-blue-100 text-blue-700">мужской род · синий</span>`;
+        } else if (wordObj.article === "die") {
+          frameClass = "frame-die";
+          genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-pink-100 text-pink-700">женский род · розовый</span>`;
+        } else {
+          frameClass = "frame-das";
+          genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-100 text-emerald-700">средний род · зелёный</span>`;
+        }
+      } else if (state.mode === "article_quiz") {
+        genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-stone-100 text-stone-500">Угадайте артикль · цвет откроется после выбора</span>`;
+      } else if (isLearnedQuiz) {
+        genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-stone-100 text-stone-600">${currentDeckTitle}</span>`;
+      } else {
+        genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-stone-100 text-stone-500">Проверка без подсказки рода</span>`;
+      }
+
+      appEl.innerHTML = `
+        <div class="flex-1 flex flex-col justify-between h-full animate-card">
+          <!-- Верхняя строка навигации и сохраняемого прогресса -->
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <button id="exitSessionBtn" class="soft-btn px-3 py-1.5 rounded-xl bg-white border border-stone-200/80 text-xs font-medium text-stone-600">
+                ← Категории
+              </button>
+              <div class="text-xs font-semibold text-stone-500">
+                ${headerInfoHtml}
+              </div>
+              <button id="finishNowBtn" class="soft-btn px-3 py-1.5 rounded-xl bg-white border border-stone-200/80 text-xs font-medium text-stone-600">
+                Итог
+              </button>
+            </div>
+            <div class="w-full h-1.5 bg-stone-200/70 rounded-full overflow-hidden">
+              <div class="h-full bg-stone-700 rounded-full transition-all duration-200" style="width: ${progressPct}%"></div>
+            </div>
+          </div>
+
+          <!-- Центральная область: чистая картинка без оверлеев и кнопка микрофона рядом со словом -->
+          <div class="my-auto py-1 flex flex-col items-center">
+            <div class="mb-2 flex items-center gap-1.5">
+              ${genderBadge}
+              ${!isLearnedQuiz && isAlreadyLearned ? `<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">✓ Выучено</span>` : ''}
+            </div>
+
+            <div class="relative w-full max-w-[265px] aspect-[240/165] rounded-3xl p-2 transition-all duration-300 ${frameClass}">
+              ${renderSvgIllustration(wordObj, showGenderFrame, wordObj.article)}
+            </div>
+
+            <!-- Слово и аккуратная круглая кнопка микрофона (строго по нажатию) -->
+            <div class="text-center mt-2.5">
+              ${isArticleSelectionMode ? `
+                <div class="flex items-center justify-center gap-2">
+                  <h3 class="text-2xl font-bold text-stone-800 tracking-tight">${wordObj.de}</h3>
+                  <button
+                    id="MainSpeakButton"
+                    type="button"
+                    aria-label="Озвучить артикль и слово по-немецки"
+                    class="soft-btn w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 border border-stone-200/80 text-stone-700 flex items-center justify-center text-base shadow-xs"
+                    title="Озвучить с артиклем"
+                  >
+                    🎙️
+                  </button>
+                </div>
+                <p class="text-sm text-stone-500 mt-0.5">${wordObj.ru}</p>
+              ` : `
+                <div class="flex items-center justify-center gap-2">
+                  <p class="text-lg font-bold text-stone-800">${wordObj.ru}</p>
+                  <button
+                    id="MainSpeakButton"
+                    type="button"
+                    aria-label="Озвучить артикль и слово по-немецки"
+                    class="soft-btn w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 border border-stone-200/80 text-stone-700 flex items-center justify-center text-base shadow-xs"
+                    title="Озвучить с артиклем"
+                  >
+                    🎙️
+                  </button>
+                </div>
+                <p class="text-xs text-stone-400 mt-0.5">Впишите артикль и немецкое слово</p>
+              `}
+            </div>
+          </div>
+
+          <!-- Нижний блок взаимодействия -->
+          <div class="bg-white rounded-3xl p-3.5 shadow-sm border border-stone-200/80">
+            ${isArticleSelectionMode ? renderStudyControls(wordObj) : renderTestControls(wordObj)}
+          </div>
+        </div>
+      `;
+
+      document.getElementById("exitSessionBtn").addEventListener("click", () => {
+        clearAutoAdvanceTimer();
+        persistUserProgressNow(state.user);
+        state.screen = "categories";
+        render();
+      });
+
+      document.getElementById("finishNowBtn").addEventListener("click", () => {
+        clearAutoAdvanceTimer();
+        persistUserProgressNow(state.user);
+        state.screen = "summary";
+        render();
+      });
+
+      // Озвучка СТРОГО по нажатию на кнопку микрофона и СТРОГО с артиклем (der/die/das + Wort)
+      const speakBtn = document.getElementById("MainSpeakButton");
+      if (speakBtn) {
+        speakBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          speakGermanWordWithArticle(wordObj, speakBtn);
+        });
+      }
+
+      if (isArticleSelectionMode) {
+        bindStudyEvents(wordObj);
+      } else {
+        bindTestEvents(wordObj);
+      }
+    }
+
+    function renderStudyControls(wordObj) {
+      const hasFeedback = Boolean(state.feedback);
+      const chosenArt = hasFeedback ? state.feedback.userAnswer : null;
+      const isOk = hasFeedback ? state.feedback.isCorrect : false;
+
+      const getArtBtnClasses = (art, baseClasses, activeCorrectClasses, activeWrongClasses) => {
+        if (!hasFeedback) return baseClasses;
+        if (art === wordObj.article) return activeCorrectClasses;
+        if (art === chosenArt && !isOk) return activeWrongClasses;
+        return baseClasses + " opacity-45";
+      };
+
+      const derClasses = getArtBtnClasses(
+        "der",
+        "bg-blue-50 hover:bg-blue-100 border-2 border-blue-300 text-blue-700",
+        "bg-blue-600 border-2 border-blue-600 text-white ring-4 ring-blue-200",
+        "bg-rose-50 border-2 border-rose-400 text-rose-700 line-through"
+      );
+      const dieClasses = getArtBtnClasses(
+        "die",
+        "bg-pink-50 hover:bg-pink-100 border-2 border-pink-300 text-pink-700",
+        "bg-pink-500 border-2 border-pink-500 text-white ring-4 ring-pink-200",
+        "bg-rose-50 border-2 border-rose-400 text-rose-700 line-through"
+      );
+      const dasClasses = getArtBtnClasses(
+        "das",
+        "bg-emerald-50 hover:bg-emerald-100 border-2 border-emerald-300 text-emerald-700",
+        "bg-emerald-500 border-2 border-emerald-500 text-white ring-4 ring-emerald-200",
+        "bg-rose-50 border-2 border-rose-400 text-rose-700 line-through"
+      );
+
+      return `
+        <div class="space-y-2.5">
+          ${!hasFeedback ? `
+            <div class="text-center text-xs text-stone-400">Выберите правильный артикль:</div>
+          ` : `
+            <div class="py-1.5 px-3 rounded-xl text-xs font-semibold text-center ${
+              isOk
+                ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                : 'bg-rose-50 text-rose-700 border border-rose-200'
+            }">
+              ${isOk
+                ? `✓ Верно! ${wordObj.article} ${wordObj.de}`
+                : `Ошибка · правильно: ${wordObj.article} ${wordObj.de}`}
+            </div>
+          `}
+
+          <div class="grid grid-cols-3 gap-2.5">
+            <button
+              data-art="der"
+              ${hasFeedback ? 'disabled' : ''}
+              class="art-btn soft-btn py-3.5 rounded-2xl font-bold text-base shadow-sm transition-all ${derClasses}"
+            >
+              ${hasFeedback && wordObj.article === 'der' ? '✓ der' : 'der'}
+            </button>
+            <button
+              data-art="die"
+              ${hasFeedback ? 'disabled' : ''}
+              class="art-btn soft-btn py-3.5 rounded-2xl font-bold text-base shadow-sm transition-all ${dieClasses}"
+            >
+              ${hasFeedback && wordObj.article === 'die' ? '✓ die' : 'die'}
+            </button>
+            <button
+              data-art="das"
+              ${hasFeedback ? 'disabled' : ''}
+              class="art-btn soft-btn py-3.5 rounded-2xl font-bold text-base shadow-sm transition-all ${dasClasses}"
+            >
+              ${hasFeedback && wordObj.article === 'das' ? '✓ das' : 'das'}
+            </button>
+          </div>
+
+          ${hasFeedback ? `
+            <button id="nextCardBtn" class="soft-btn w-full py-3 rounded-2xl bg-stone-800 text-white font-semibold text-sm">
+              Дальше →
+            </button>
+          ` : ''}
+        </div>
+      `;
+    }
+
+    function bindStudyEvents(wordObj) {
+      document.querySelectorAll(".art-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          if (state.feedback) return;
+          const chosen = btn.getAttribute("data-art");
+          const isCorrect = chosen === wordObj.article;
+          state.sessionAnswered++;
+          if (isCorrect) {
+            state.sessionCorrect++;
+          } else {
+            state.mistakes.push({
+              wordObj,
+              userAnswer: `${chosen} ${wordObj.de}`
+            });
+          }
+
+          // Мгновенно сохраняем результат этой карточки в localStorage и IndexedDB
+          recordCardProgress(
+            state.selectedDeckId,
+            state.cardIndex,
+            isCorrect,
+            state.cardIndex + 1,
+            state.mode
+          );
+
+          state.feedback = {
+            isCorrect,
+            userAnswer: chosen,
+            correctFull: `${wordObj.article} ${wordObj.de}`
+          };
+          render();
+
+          // Автоматическая озвучка слова с артиклем сразу после выбора ответа
+          speakGermanWordWithArticle(wordObj);
+        });
+      });
+
+      const nextBtn = document.getElementById("nextCardBtn");
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          clearAutoAdvanceTimer();
+          state.feedback = null;
+          advanceOrSummarize();
+        });
+      }
+    }
+
+    function renderTestControls(wordObj) {
+      if (state.feedback) {
+        const isOk = state.feedback.isCorrect;
+        return `
+          <div class="text-center space-y-2.5">
+            <div class="py-2.5 px-3 rounded-2xl text-sm font-semibold ${isOk ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-rose-50 text-rose-700 border border-rose-200'}">
+              ${isOk
+                ? `Отлично! ${wordObj.article} ${wordObj.de}`
+                : `Ваш ответ: «${state.feedback.userAnswer || '—'}»<br/>Верно: <b>${wordObj.article} ${wordObj.de}</b>`}
+            </div>
+            <button id="nextCardBtn" class="soft-btn w-full py-3.5 rounded-2xl bg-stone-800 text-white font-semibold text-sm">
+              Следующее слово →
+            </button>
+          </div>
+        `;
+      }
+
+      return `
+        <form id="testAnswerForm" class="space-y-2.5" autocomplete="off">
+          <!-- Быстрые кнопки умлаутов и артиклей для удобного ввода с телефона -->
+          <div class="flex items-center justify-between gap-1">
+            <button type="button" data-prefix="der " class="prefix-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">der</button>
+            <button type="button" data-prefix="die " class="prefix-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">die</button>
+            <button type="button" data-prefix="das " class="prefix-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">das</button>
+            <div class="h-4 w-px bg-stone-200 mx-0.5"></div>
+            <button type="button" data-char="ä" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ä</button>
+            <button type="button" data-char="ö" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ö</button>
+            <button type="button" data-char="ü" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ü</button>
+            <button type="button" data-char="ß" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ß</button>
+          </div>
+
+          <div class="flex gap-2">
+            <input
+              id="testWordInput"
+              type="text"
+              value="${state.testInput.replace(/"/g, '&quot;')}"
+              placeholder="Напр.: der Tisch"
+              autocapitalize="off"
+              autocorrect="off"
+              spellcheck="false"
+              class="flex-1 px-4 py-3 rounded-2xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:border-stone-400 focus:bg-white"
+            />
+            <button type="submit" class="soft-btn px-5 py-3 rounded-2xl bg-stone-800 text-white font-semibold text-sm shrink-0">
+              ОК
+            </button>
+          </div>
+        </form>
+      `;
+    }
+
+    function normalizeGermanAnswer(str) {
+      return str
+        .trim()
+        .replace(/\s+/g, ' ')
+        .toLowerCase();
+    }
+
+    function bindTestEvents(wordObj) {
+      const inputEl = document.getElementById("testWordInput");
+      if (inputEl) {
+        inputEl.addEventListener("input", (e) => {
+          state.testInput = e.target.value;
+        });
+      }
+
+      document.querySelectorAll(".prefix-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const pref = btn.getAttribute("data-prefix");
+          if (!inputEl) return;
+          const clean = inputEl.value.replace(/^(der|die|das)\s+/i, "");
+          inputEl.value = pref + clean;
+          state.testInput = inputEl.value;
+          inputEl.focus();
+        });
+      });
+
+      document.querySelectorAll(".char-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const ch = btn.getAttribute("data-char");
+          if (!inputEl) return;
+          const start = inputEl.selectionStart || inputEl.value.length;
+          const end = inputEl.selectionEnd || inputEl.value.length;
+          inputEl.value = inputEl.value.slice(0, start) + ch + inputEl.value.slice(end);
+          state.testInput = inputEl.value;
+          inputEl.focus();
+          inputEl.setSelectionRange(start + 1, start + 1);
+        });
+      });
+
+      const form = document.getElementById("testAnswerForm");
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const userRaw = (inputEl ? inputEl.value : state.testInput).trim();
+          if (!userRaw) return;
+
+          const expected = normalizeGermanAnswer(`${wordObj.article} ${wordObj.de}`);
+          const expectedAlt = expected.replace(/ß/g, "ss");
+          const actual = normalizeGermanAnswer(userRaw);
+
+          const isCorrect = actual === expected || actual === expectedAlt;
+          state.sessionAnswered++;
+          if (isCorrect) {
+            state.sessionCorrect++;
+          } else {
+            state.mistakes.push({
+              wordObj,
+              userAnswer: userRaw
+            });
+          }
+
+          if (state.mode === "learned_quiz") {
+            const item = state.quizPool[state.cardIndex];
+            if (item) {
+              recordCardProgress(item.deckId, item.wordIdx, isCorrect, null, "learned_quiz");
+            }
+          } else {
+            recordCardProgress(
+              state.selectedDeckId,
+              state.cardIndex,
+              isCorrect,
+              state.cardIndex + 1,
+              "test"
+            );
+          }
+
+          state.feedback = {
+            isCorrect,
+            userAnswer: userRaw,
+            correctFull: `${wordObj.article} ${wordObj.de}`
+          };
+          state.testInput = "";
+          render();
+
+          // Автоматическая озвучка слова с артиклем сразу после отправки ответа
+          speakGermanWordWithArticle(wordObj);
+        });
+      }
+
+      const nextBtn = document.getElementById("nextCardBtn");
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          state.feedback = null;
+          state.testInput = "";
+          advanceOrSummarize();
+        });
+      }
+    }
+
+    function advanceOrSummarize() {
+      const totalLen = state.mode === "learned_quiz"
+        ? state.quizPool.length
+        : DECKS[state.selectedDeckId].words.length;
+
+      if (state.cardIndex + 1 < totalLen) {
+        state.cardIndex++;
+        render();
+      } else {
+        persistUserProgressNow(state.user);
+        state.screen = "summary";
+        render();
+      }
+    }
+
+    /* ЭКРАН 5: ИТОГ ПО КОЛОДЕ ИЛИ ПО ВСЕМ ИЗУЧЕННЫМ СЛОВАМ */
+    function renderSummary() {
+      clearAutoAdvanceTimer();
+      const isLearnedQuiz = state.mode === "learned_quiz";
+      let title = "";
+      let subtitle = "";
+      let statLeftTop = "";
+      let statLeftBottom = "";
+      let statRightTop = "";
+      let statRightBottom = "";
+      let badgeEmoji = "🌱";
+
+      if (isLearnedQuiz) {
+        const accuracy = state.sessionAnswered > 0
+          ? Math.round((state.sessionCorrect / state.sessionAnswered) * 100)
+          : 0;
+        badgeEmoji = accuracy >= 80 ? "🏆" : accuracy >= 50 ? "👏" : "🎯";
+        title = "Проверка изученных слов";
+        subtitle = `Профиль: ${VALID_USERS[state.user].displayName} · Всего в пуле: ${state.quizPool.length} сл.`;
+        statLeftTop = `${state.sessionCorrect} / ${state.sessionAnswered}`;
+        statLeftBottom = "Верных ответов в сессии";
+        statRightTop = `${accuracy}%`;
+        statRightBottom = "Точность проверки";
+      } else {
+        const deck = DECKS[state.selectedDeckId];
+        const deckProg = getDeckState(deck.id);
+        badgeEmoji = deckProg.percent >= 80 ? "🏆" : deckProg.percent >= 50 ? "👏" : "🌱";
+        title = deck.title;
+        const modeTitle = state.mode === "study"
+          ? "Изучение"
+          : state.mode === "article_quiz"
+            ? "Тренировка артикля"
+            : "Проверка";
+        subtitle = `Режим: ${modeTitle} · Профиль: ${VALID_USERS[state.user].displayName}`;
+        statLeftTop = `${deckProg.correct} / 50`;
+        statLeftBottom = "Всего изучено в колоде";
+        statRightTop = `${deckProg.percent}%`;
+        statRightBottom = "Сохранённый прогресс";
+      }
+
+      appEl.innerHTML = `
+        <div class="flex-1 flex flex-col h-full animate-card">
+          <div class="bg-white rounded-3xl p-5 shadow-sm border border-stone-200/80 text-center mb-3">
+            <div class="w-16 h-16 rounded-3xl bg-stone-50 border border-stone-100 flex items-center justify-center text-3xl mx-auto mb-2">
+              ${badgeEmoji}
+            </div>
+            <h2 class="text-lg font-bold text-stone-800">${title}</h2>
+            <p class="text-xs text-stone-400 mt-0.5">${subtitle}</p>
+
+            <div class="grid grid-cols-2 gap-2.5 my-4">
+              <div class="p-3 rounded-2xl bg-stone-50 border border-stone-100">
+                <div class="text-xl font-bold text-stone-800">${statLeftTop}</div>
+                <div class="text-[11px] text-stone-400">${statLeftBottom}</div>
+              </div>
+              <div class="p-3 rounded-2xl bg-stone-50 border border-stone-100">
+                <div class="text-xl font-bold text-emerald-600">${statRightTop}</div>
+                <div class="text-[11px] text-stone-400">${statRightBottom}</div>
+              </div>
+            </div>
+
+            <div class="flex gap-2">
+              <button id="retryDeckBtn" class="soft-btn flex-1 py-3 rounded-2xl bg-stone-100 text-stone-700 font-semibold text-xs">
+                ${isLearnedQuiz ? 'Ещё раз' : 'Пройти сначала'}
+              </button>
+              <button id="toCategoriesBtn" class="soft-btn flex-1 py-3 rounded-2xl bg-stone-800 text-white font-semibold text-xs">
+                К 50 категориям
+              </button>
+            </div>
+          </div>
+
+          <!-- Список ошибок (с кнопкой микрофона для озвучки каждого слова с артиклем) -->
+          <div class="scroll-area space-y-2 pb-4">
+            ${state.mistakes.length === 0 ? `
+              <div class="bg-white rounded-2xl p-5 text-center border border-stone-200/60 text-xs text-stone-400">
+                Ни одной ошибки в этой сессии!
+              </div>
+            ` : `
+              <div class="text-xs font-semibold text-stone-500 px-1 mb-1">
+                Ошибки в сессии:
+              </div>
+              ${state.mistakes.map((m, idx) => {
+                const badgeColor = m.wordObj.article === 'der'
+                  ? 'bg-blue-100 text-blue-700'
+                  : m.wordObj.article === 'die'
+                    ? 'bg-pink-100 text-pink-700'
+                    : 'bg-emerald-100 text-emerald-700';
+                return `
+                  <div class="w-full bg-white rounded-2xl p-3 border border-stone-200/70 flex items-center justify-between gap-2">
+                    <div class="flex items-center gap-2.5 min-w-0">
+                      <span class="text-xl shrink-0">${m.wordObj.emoji}</span>
+                      <div class="min-w-0">
+                        <div class="text-xs font-bold text-stone-800 truncate">
+                          <span class="px-1.5 py-0.5 rounded-md ${badgeColor}">${m.wordObj.article}</span>
+                          ${m.wordObj.de}
+                        </div>
+                        <div class="text-[11px] text-stone-400 truncate">${m.wordObj.ru} · <span class="text-rose-500 line-through">${m.userAnswer}</span></div>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      data-mistake-idx="${idx}"
+                      aria-label="Озвучить с артиклем"
+                      class="mistake-mic-btn soft-btn w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 border border-stone-200/80 text-stone-700 flex items-center justify-center text-sm shrink-0"
+                    >
+                      🎙️
+                    </button>
+                  </div>
+                `;
+              }).join('')}
+            `}
+          </div>
+        </div>
+      `;
+
+      document.querySelectorAll(".mistake-mic-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const idx = parseInt(btn.getAttribute("data-mistake-idx"), 10);
+          const mistake = state.mistakes[idx];
+          if (mistake && mistake.wordObj) {
+            speakGermanWordWithArticle(mistake.wordObj, btn);
+          }
+        });
+      });
+
+      document.getElementById("retryDeckBtn").addEventListener("click", () => {
+        if (isLearnedQuiz) {
+          startAllLearnedQuiz();
+        } else {
+          startDeckSession(state.mode, 0);
+        }
+      });
+
+      document.getElementById("toCategoriesBtn").addEventListener("click", () => {
+        state.screen = "categories";
+        render();
+      });
+    }
+
+    // Запуск приложения
+    render();
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+ "q-sein": {
+  "title": "sein",
+  "questions": [
+   {
+    "type": "de",
+    "q": "ich ___ (sein)",
+    "answer": "bin",
+    "explain": "ich bin"
+   },
+   {
+    "type": "de",
+    "q": "Скажите: «Я из Германии».",
+    "answer": [
+     "Ich komme aus Deutschland"
+    ]
+   },
+   {
+    "type": "choice",
+    "q": "du ___",
+    "options": [
+     "bist",
+     "ist",
+     "sind"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-listen": {
+  "title": "Эпизод 1",
+  "questions": [
+   {
+    "type": "choice",
+    "q": "Как зовут героя?",
+    "options": [
+     "Nico",
+     "Max"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ "q-oral": {
+  "title": "Знакомство вслух",
+  "questions": [
+   {
+    "type": "text",
+    "q": "Представьтесь вслух.",
+    "answer": "Ich heiße … Ich komme aus …"
+   }
+  ]
+ }
+}

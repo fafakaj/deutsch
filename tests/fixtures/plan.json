@@ -1,0 +1,276 @@
+{
+ "start": "2026-11-02",
+ "github_user": "fafakaj",
+ "weeks": [
+  {
+   "n": 1,
+   "title": "Знакомство и семья",
+   "short": "Знакомство",
+   "goal": "- Я могу представиться.",
+   "days": [
+    {
+     "date": "2026-11-02",
+     "weekday": "mon",
+     "title": "День 1",
+     "hours": 2,
+     "kind": "study",
+     "intro": "",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-mon-01",
+       "type": "theory",
+       "title": "Глагол sein",
+       "minutes": 15,
+       "source": {
+        "title": "Конспект: sein",
+        "url": "#/read/sein",
+        "lang": "ru",
+        "type": "article"
+       },
+       "alt": [
+        {
+         "title": "DW Nicos Weg",
+         "url": "https://learngerman.dw.com/de/nicos-weg/c-36519789",
+         "lang": "de",
+         "type": "video"
+        }
+       ]
+      },
+      {
+       "id": "w01-mon-02",
+       "type": "quiz",
+       "title": "sein: формы",
+       "minutes": 10,
+       "quiz": "q-sein"
+      },
+      {
+       "id": "w01-mon-03",
+       "type": "listen",
+       "title": "Nicos Weg, эпизод 1",
+       "minutes": 15,
+       "quiz": "q-listen",
+       "source": {
+        "title": "Nicos Weg A1, эпизод 1",
+        "url": "https://learngerman.dw.com/de/nicos-weg/c-36519789",
+        "lang": "de",
+        "type": "video"
+       }
+      },
+      {
+       "id": "w01-mon-04",
+       "type": "practice",
+       "title": "Напишите о себе",
+       "minutes": 15,
+       "items": [
+        {
+         "text": "Представьтесь в 3 предложениях.",
+         "write": true,
+         "sample": "Ich heiße Anna. Ich komme aus Russland. Ich wohne in Moskau."
+        }
+       ]
+      },
+      {
+       "id": "w01-mon-05",
+       "type": "oral",
+       "title": "Вслух: знакомство",
+       "minutes": 10,
+       "quiz": "q-oral"
+      },
+      {
+       "id": "w01-mon-06",
+       "type": "words",
+       "title": "Слова: знакомство",
+       "minutes": 20,
+       "deck": "w1d1"
+      },
+      {
+       "id": "w01-mon-07",
+       "type": "anki",
+       "title": "Карточки",
+       "minutes": 10,
+       "deck": "Неделя 1"
+      }
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "weekday": "tue",
+     "title": "День 2",
+     "hours": 2,
+     "kind": "study",
+     "intro": "",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-tue-01",
+       "type": "theory",
+       "title": "Тема tue",
+       "minutes": 10,
+       "source": {
+        "title": "Источник",
+        "url": "https://example.org",
+        "lang": "ru",
+        "type": "article"
+       }
+      }
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "weekday": "wed",
+     "title": "День 3",
+     "hours": 2,
+     "kind": "study",
+     "intro": "",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-wed-01",
+       "type": "theory",
+       "title": "Тема wed",
+       "minutes": 10,
+       "source": {
+        "title": "Источник",
+        "url": "https://example.org",
+        "lang": "ru",
+        "type": "article"
+       }
+      }
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "weekday": "thu",
+     "title": "День 4",
+     "hours": 2,
+     "kind": "study",
+     "intro": "",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-thu-01",
+       "type": "theory",
+       "title": "Тема thu",
+       "minutes": 10,
+       "source": {
+        "title": "Источник",
+        "url": "https://example.org",
+        "lang": "ru",
+        "type": "article"
+       }
+      }
+     ]
+    },
+    {
+     "date": "2026-11-06",
+     "weekday": "fri",
+     "title": "День 5",
+     "hours": 2,
+     "kind": "study",
+     "intro": "",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-fri-01",
+       "type": "theory",
+       "title": "Тема fri",
+       "minutes": 10,
+       "source": {
+        "title": "Источник",
+        "url": "https://example.org",
+        "lang": "ru",
+        "type": "article"
+       }
+      }
+     ]
+    },
+    {
+     "date": "2026-11-07",
+     "weekday": "sat",
+     "title": "День 6",
+     "hours": 2,
+     "kind": "study",
+     "intro": "",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-sat-01",
+       "type": "theory",
+       "title": "Тема sat",
+       "minutes": 10,
+       "source": {
+        "title": "Источник",
+        "url": "https://example.org",
+        "lang": "ru",
+        "type": "article"
+       }
+      }
+     ]
+    },
+    {
+     "date": "2026-11-08",
+     "weekday": "sun",
+     "title": "День 7",
+     "hours": 2,
+     "kind": "study",
+     "intro": "",
+     "optional": [],
+     "steps": [
+      {
+       "id": "w01-sun-01",
+       "type": "theory",
+       "title": "Тема sun",
+       "minutes": 10,
+       "source": {
+        "title": "Источник",
+        "url": "https://example.org",
+        "lang": "ru",
+        "type": "article"
+       }
+      }
+     ]
+    }
+   ],
+   "blocks": [
+    {
+     "id": "w01-b1",
+     "n": 1,
+     "title": "Знакомство",
+     "due": "2026-11-03",
+     "steps": [
+      "w01-mon-01",
+      "w01-mon-02",
+      "w01-mon-03",
+      "w01-mon-04",
+      "w01-mon-05",
+      "w01-mon-06",
+      "w01-mon-07",
+      "w01-tue-01"
+     ]
+    },
+    {
+     "id": "w01-b2",
+     "n": 2,
+     "title": "Числа и семья",
+     "due": "2026-11-05",
+     "steps": [
+      "w01-wed-01",
+      "w01-thu-01"
+     ]
+    },
+    {
+     "id": "w01-b3",
+     "n": 3,
+     "title": "Профессии",
+     "due": "2026-11-08",
+     "steps": [
+      "w01-fri-01",
+      "w01-sat-01",
+      "w01-sun-01"
+     ]
+    }
+   ]
+  }
+ ]
+}

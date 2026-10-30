@@ -1,0 +1,6836 @@
+{
+ "source": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+ "verified": "200 2026-10-31",
+ "entries": [
+  {
+   "lemma": "ab",
+   "article": null,
+   "plural": null,
+   "raw": "ab",
+   "examples": [
+    "Ab morgen muss ich arbeiten."
+   ]
+  },
+  {
+   "lemma": "aber",
+   "article": null,
+   "plural": null,
+   "raw": "aber",
+   "examples": [
+    "Ich bin oft im Büro, aber nur für wenige Stunden."
+   ]
+  },
+  {
+   "lemma": "abfahren",
+   "article": null,
+   "plural": null,
+   "raw": "abfahren",
+   "examples": [
+    "Wir fahren um zwölf Uhr ab."
+   ]
+  },
+  {
+   "lemma": "Abfahrt",
+   "article": "die",
+   "plural": null,
+   "raw": "die Abfahrt",
+   "examples": [
+    "Vor der Abfahrt rufe ich an."
+   ]
+  },
+  {
+   "lemma": "abgeben",
+   "article": null,
+   "plural": null,
+   "raw": "abgeben",
+   "examples": [
+    "Ich muss meine Schlüssel abgeben."
+   ]
+  },
+  {
+   "lemma": "abholen",
+   "article": null,
+   "plural": null,
+   "raw": "abholen",
+   "examples": [
+    "Wann kann ich den Schrank bei dir abholen?",
+    "Wir müssen noch meinen Bruder abholen."
+   ]
+  },
+  {
+   "lemma": "Absender",
+   "article": "der",
+   "plural": null,
+   "raw": "der Absender",
+   "examples": [
+    "Da ist ein Brief für dich ohne Absender."
+   ]
+  },
+  {
+   "lemma": "Achtung",
+   "article": null,
+   "plural": null,
+   "raw": "Achtung",
+   "examples": [
+    "Achtung! Das dürfen Sie nicht tun."
+   ]
+  },
+  {
+   "lemma": "Adresse",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Adresse,-en",
+   "examples": [
+    "Können Sie mir seine Adresse sagen?"
+   ]
+  },
+  {
+   "lemma": "all-",
+   "article": null,
+   "plural": null,
+   "raw": "all-",
+   "examples": [
+    "Alles Gute!",
+    "Das ist alles.",
+    "Sind alle da?",
+    "Alle Freunde kommen.",
+    "Hast du alles?"
+   ]
+  },
+  {
+   "lemma": "allein",
+   "article": null,
+   "plural": null,
+   "raw": "allein",
+   "examples": [
+    "Er kommt allein."
+   ]
+  },
+  {
+   "lemma": "also",
+   "article": null,
+   "plural": null,
+   "raw": "also",
+   "examples": [
+    "Also, es ist so: ...",
+    "Er hat Zeit, also muss er uns helfen."
+   ]
+  },
+  {
+   "lemma": "alt",
+   "article": null,
+   "plural": null,
+   "raw": "alt",
+   "examples": [
+    "Wie alt sind Sie?",
+    "Sie sehen aber nicht so alt aus.",
+    "Mein Auto ist schon sehr alt.",
+    "Wir wohnen in einem sehr alten Haus.",
+    "Köln ist eine alte Stadt."
+   ]
+  },
+  {
+   "lemma": "Alter",
+   "article": "das",
+   "plural": null,
+   "raw": "das Alter",
+   "examples": [
+    "Alter: 26 Jahre."
+   ]
+  },
+  {
+   "lemma": "an",
+   "article": null,
+   "plural": null,
+   "raw": "an",
+   "examples": [
+    "Fahren Sie an der nächsten Straße nach rechts.",
+    "Wir treffen uns am Bahnhof.",
+    "Am nächsten Montag geht es leider nicht."
+   ]
+  },
+  {
+   "lemma": "anbieten",
+   "article": null,
+   "plural": null,
+   "raw": "anbieten",
+   "examples": [
+    "Was darf ich dir anbieten?"
+   ]
+  },
+  {
+   "lemma": "Angebot",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Angebot, -e",
+   "examples": [
+    "Heute sind Sportschuhe im Angebot."
+   ]
+  },
+  {
+   "lemma": "ander-",
+   "article": null,
+   "plural": null,
+   "raw": "ander-",
+   "examples": [
+    "WiIlst du diese Jacke?",
+    "– Nein, ich möchte die andere."
+   ]
+  },
+  {
+   "lemma": "anfangen",
+   "article": null,
+   "plural": null,
+   "raw": "anfangen",
+   "examples": [
+    "Hier fängt die Bahnhofstraße an.",
+    "Der Unterricht fängt gleich an."
+   ]
+  },
+  {
+   "lemma": "Anfang",
+   "article": "der",
+   "plural": null,
+   "raw": "der Anfang",
+   "examples": [
+    "Sie wohnt am Anfang der Straße.",
+    "Wir machen Anfang Juli Urlaub."
+   ]
+  },
+  {
+   "lemma": "anklicken",
+   "article": null,
+   "plural": null,
+   "raw": "anklicken",
+   "examples": [
+    "Da musst du dieses Wort anklicken."
+   ]
+  },
+  {
+   "lemma": "ankommen",
+   "article": null,
+   "plural": null,
+   "raw": "ankommen",
+   "examples": [
+    "Wann kommt dieser Zug in Hamburg an?"
+   ]
+  },
+  {
+   "lemma": "Ankunft",
+   "article": "die",
+   "plural": null,
+   "raw": "die Ankunft",
+   "examples": [
+    "Auf diesem Plan steht nur die Ankunft(-szeit) der",
+    "Züge."
+   ]
+  },
+  {
+   "lemma": "ankreuzen",
+   "article": null,
+   "plural": null,
+   "raw": "ankreuzen",
+   "examples": [
+    "Auf dem Formular müssen Sie an mehreren Stellen",
+    "etwas ankreuzen."
+   ]
+  },
+  {
+   "lemma": "anmachen",
+   "article": null,
+   "plural": null,
+   "raw": "anmachen",
+   "examples": [
+    "Mach bitte das Licht an!"
+   ]
+  },
+  {
+   "lemma": "anmelden",
+   "article": null,
+   "plural": null,
+   "raw": "(sich) anmelden",
+   "examples": [
+    "Wo kann ich mich anmelden?"
+   ]
+  },
+  {
+   "lemma": "Anmeldung",
+   "article": "die",
+   "plural": null,
+   "raw": "die Anmeldung",
+   "examples": [
+    "Eine Anmeldung für diesen Kurs ist nicht mehr möglich."
+   ]
+  },
+  {
+   "lemma": "Anrede",
+   "article": "die",
+   "plural": null,
+   "raw": "die Anrede",
+   "examples": [
+    "Schreiben Sie auch eine Anrede und einen Gruß."
+   ]
+  },
+  {
+   "lemma": "anrufen",
+   "article": null,
+   "plural": null,
+   "raw": "anrufen",
+   "examples": [
+    "Kann man Sie anrufen?",
+    "Peter ruft kurz seine Freundin an."
+   ]
+  },
+  {
+   "lemma": "Anruf",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Anruf, -e",
+   "examples": [
+    "Sie bekommt viele Anrufe auf ihrem Handy."
+   ]
+  },
+  {
+   "lemma": "Anrufbeantworter",
+   "article": "der",
+   "plural": null,
+   "raw": "der Anrufbeantworter",
+   "examples": [
+    "Wir sind im Moment nicht da. Sprechen Sie bitte auf",
+    "den Anrufbeantworter."
+   ]
+  },
+  {
+   "lemma": "Ansage",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Ansage, -n",
+   "examples": [
+    "Hören Sie die Ansagen."
+   ]
+  },
+  {
+   "lemma": "Anschluss",
+   "article": "der",
+   "plural": null,
+   "raw": "der Anschluss",
+   "examples": [
+    "In Mannheim haben Sie Anschluss nach Saarbrücken.",
+    "Ist das die Anmeldung für einen Telefonanschluss?"
+   ]
+  },
+  {
+   "lemma": "an sein",
+   "article": null,
+   "plural": null,
+   "raw": "an sein",
+   "examples": [
+    "Heute Nacht war das Licht an."
+   ]
+  },
+  {
+   "lemma": "antworten",
+   "article": null,
+   "plural": null,
+   "raw": "antworten",
+   "examples": [
+    "Er antwortet nicht."
+   ]
+  },
+  {
+   "lemma": "Antwort",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Antwort, -en",
+   "examples": [
+    "Er gibt leider keine Antwort."
+   ]
+  },
+  {
+   "lemma": "Anzeige",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Anzeige, -n",
+   "examples": [
+    "Ich habe Ihre Anzeige in der Zeitung gelesen."
+   ]
+  },
+  {
+   "lemma": "anziehen",
+   "article": null,
+   "plural": null,
+   "raw": "(sich) anziehen",
+   "examples": [
+    "Ich muss mich noch anziehen."
+   ]
+  },
+  {
+   "lemma": "Apartment",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Apartment, -s",
+   "examples": [
+    "Wir haben ein Apartment gemietet."
+   ]
+  },
+  {
+   "lemma": "Apfel",
+   "article": "der",
+   "plural": "-Ä",
+   "raw": "der Apfel, -Ä",
+   "examples": [
+    "Ein Pfund Äpfel bitte."
+   ]
+  },
+  {
+   "lemma": "Appetit",
+   "article": "der",
+   "plural": null,
+   "raw": "der Appetit",
+   "examples": [
+    "Guten Appetit!"
+   ]
+  },
+  {
+   "lemma": "arbeiten",
+   "article": null,
+   "plural": null,
+   "raw": "arbeiten",
+   "examples": [
+    "Wo arbeiten Sie?"
+   ]
+  },
+  {
+   "lemma": "Arbeit",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Arbeit, -en",
+   "examples": [
+    "Mein Bruder sucht Arbeit."
+   ]
+  },
+  {
+   "lemma": "arbeitslos",
+   "article": null,
+   "plural": null,
+   "raw": "arbeitslos",
+   "examples": [
+    "Es gibt bei uns viele Leute, die schon lange arbeitslos",
+    "sind."
+   ]
+  },
+  {
+   "lemma": "Arbeitsplatz",
+   "article": "der",
+   "plural": "-ä, e An meinem Arbeitsplatz fehlt ein Drucker.",
+   "raw": "der Arbeitsplatz, -ä, e An meinem Arbeitsplatz fehlt ein Drucker.",
+   "examples": []
+  },
+  {
+   "lemma": "Arm",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Arm, -e",
+   "examples": [
+    "Mein Arm tut weh."
+   ]
+  },
+  {
+   "lemma": "Arzt",
+   "article": "der",
+   "plural": "-Ä, e",
+   "raw": "der Arzt, -Ä, e",
+   "examples": [
+    "Morgen habe ich einen Termin bei meiner Ärztin."
+   ]
+  },
+  {
+   "lemma": "auch",
+   "article": null,
+   "plural": null,
+   "raw": "auch",
+   "examples": [
+    "Ich bin auch Spanier."
+   ]
+  },
+  {
+   "lemma": "auf",
+   "article": null,
+   "plural": null,
+   "raw": "auf",
+   "examples": [
+    "Die Kinder spielen auf der Straße.",
+    "Auf Wiedersehen.",
+    "Wie heißt das auf Deutsch?"
+   ]
+  },
+  {
+   "lemma": "Aufgabe",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Aufgabe, -n",
+   "examples": [
+    "Das ist eine schwere Aufgabe."
+   ]
+  },
+  {
+   "lemma": "aufhören",
+   "article": null,
+   "plural": null,
+   "raw": "aufhören",
+   "examples": [
+    "Der Kurs hört in einer Woche auf.",
+    "Hier hört die Bahnhofstraße auf."
+   ]
+  },
+  {
+   "lemma": "auf sein",
+   "article": null,
+   "plural": null,
+   "raw": "auf sein",
+   "examples": [
+    "Du brauchst den Schlüssel nicht. Die Wohnung ist auf."
+   ]
+  },
+  {
+   "lemma": "aufstehen",
+   "article": null,
+   "plural": null,
+   "raw": "aufstehen",
+   "examples": [
+    "Ich muss immer um vier Uhr aufstehen.",
+    "Soll ich aufstehen?"
+   ]
+  },
+  {
+   "lemma": "Aufzug",
+   "article": "der",
+   "plural": "-ü, e",
+   "raw": "der Aufzug, -ü, e",
+   "examples": [
+    "In diesem Haus gibt es keinen Aufzug."
+   ]
+  },
+  {
+   "lemma": "Auge",
+   "article": "das",
+   "plural": "-n",
+   "raw": "das Auge, -n",
+   "examples": [
+    "Er hat blaue Augen."
+   ]
+  },
+  {
+   "lemma": "aus",
+   "article": null,
+   "plural": null,
+   "raw": "aus",
+   "examples": [
+    "Er kommt aus Brasilien."
+   ]
+  },
+  {
+   "lemma": "Ausflug",
+   "article": "der",
+   "plural": null,
+   "raw": "der Ausflug",
+   "examples": [
+    "Morgen machen wir einen Ausflug nach Heidelberg."
+   ]
+  },
+  {
+   "lemma": "ausfüllen",
+   "article": null,
+   "plural": null,
+   "raw": "ausfüllen",
+   "examples": [
+    "Füllen Sie bitte dieses Formular aus."
+   ]
+  },
+  {
+   "lemma": "Ausgang",
+   "article": "der",
+   "plural": null,
+   "raw": "der Ausgang",
+   "examples": [
+    "Wo ist der Ausgang?"
+   ]
+  },
+  {
+   "lemma": "Auskunft",
+   "article": "die",
+   "plural": "-ü, e",
+   "raw": "die Auskunft, -ü, e",
+   "examples": [
+    "Können Sie mir eine Auskunft geben?"
+   ]
+  },
+  {
+   "lemma": "Ausland",
+   "article": "das",
+   "plural": null,
+   "raw": "das Ausland",
+   "examples": [
+    "Fahren Sie ins Ausland?"
+   ]
+  },
+  {
+   "lemma": "Ausländer",
+   "article": "der",
+   "plural": "ausländisch",
+   "raw": "der Ausländer, ausländisch",
+   "examples": [
+    "SInd Sie Ausländerin?",
+    "Leider habe ich nur ausländisches Geld."
+   ]
+  },
+  {
+   "lemma": "ausmachen",
+   "article": null,
+   "plural": null,
+   "raw": "ausmachen",
+   "examples": [
+    "Mach bitte das Licht aus!"
+   ]
+  },
+  {
+   "lemma": "Aussage",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Aussage, -n",
+   "examples": [
+    "Ist die Aussage richtig oder falsch?"
+   ]
+  },
+  {
+   "lemma": "aussehen",
+   "article": null,
+   "plural": null,
+   "raw": "aussehen",
+   "examples": [
+    "Das sieht schön aus."
+   ]
+  },
+  {
+   "lemma": "aus sein",
+   "article": null,
+   "plural": null,
+   "raw": "aus sein",
+   "examples": [
+    "Das Licht ist aus.",
+    "Die Schule ist aus."
+   ]
+  },
+  {
+   "lemma": "aussteigen",
+   "article": null,
+   "plural": null,
+   "raw": "aussteigen",
+   "examples": [
+    "Wo muss ich aussteigen?"
+   ]
+  },
+  {
+   "lemma": "Ausweis",
+   "article": "der",
+   "plural": null,
+   "raw": "der Ausweis",
+   "examples": [
+    "Hier ist mein Ausweis."
+   ]
+  },
+  {
+   "lemma": "ausziehen",
+   "article": null,
+   "plural": null,
+   "raw": "(sich) ausziehen",
+   "examples": [
+    "Zieh die Schuhe aus, bitte!"
+   ]
+  },
+  {
+   "lemma": "Auto",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Auto, -s",
+   "examples": [
+    "Er kommt mit dem Auto."
+   ]
+  },
+  {
+   "lemma": "Autobahn",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Autobahn, -en",
+   "examples": [
+    "Wo geht‘s hier bitte zur Autobahn?"
+   ]
+  },
+  {
+   "lemma": "Automat",
+   "article": "der",
+   "plural": null,
+   "raw": "der Automat",
+   "examples": [
+    "Die Fahrkarten gibt es nur am Automaten."
+   ]
+  },
+  {
+   "lemma": "automatisch",
+   "article": null,
+   "plural": null,
+   "raw": "automatisch",
+   "examples": [
+    "Du musst nichts machen. Das geht automatisch."
+   ]
+  },
+  {
+   "lemma": "Baby",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Baby, -s",
+   "examples": [
+    "Mein Kind ist noch ein Baby."
+   ]
+  },
+  {
+   "lemma": "Bäckerei",
+   "article": "die",
+   "plural": null,
+   "raw": "die Bäckerei",
+   "examples": [
+    "Ich geh mal schnell zur Bäckerei."
+   ]
+  },
+  {
+   "lemma": "Bad",
+   "article": "das",
+   "plural": null,
+   "raw": "das Bad",
+   "examples": [
+    "Wir haben kein großes Bad."
+   ]
+  },
+  {
+   "lemma": "baden",
+   "article": null,
+   "plural": null,
+   "raw": "baden",
+   "examples": [
+    "Ich bade nicht so gern, ich dusche lieber."
+   ]
+  },
+  {
+   "lemma": "Bahn",
+   "article": "die",
+   "plural": null,
+   "raw": "die Bahn",
+   "examples": [
+    "Wir fahren lieber mit der Bahn.",
+    "Ich nehme die nächste Bahn."
+   ]
+  },
+  {
+   "lemma": "Bahnhof",
+   "article": "der",
+   "plural": null,
+   "raw": "der Bahnhof",
+   "examples": [
+    "Komme ich hier zum Bahnhof?"
+   ]
+  },
+  {
+   "lemma": "Bahnsteig",
+   "article": "der",
+   "plural": null,
+   "raw": "der Bahnsteig",
+   "examples": [
+    "Auf welchem Bahnsteig fährt der Zug?"
+   ]
+  },
+  {
+   "lemma": "bald",
+   "article": null,
+   "plural": null,
+   "raw": "bald",
+   "examples": [
+    "Ich komme bald."
+   ]
+  },
+  {
+   "lemma": "Balkon",
+   "article": "der",
+   "plural": null,
+   "raw": "der Balkon",
+   "examples": [
+    "Die Wohnung hat auch einen kleinen Balkon."
+   ]
+  },
+  {
+   "lemma": "Banane",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Banane, -n",
+   "examples": [
+    "Drei Bananen, bitte!"
+   ]
+  },
+  {
+   "lemma": "Bank",
+   "article": "die",
+   "plural": null,
+   "raw": "die Bank",
+   "examples": [
+    "Die Bank schließt schon um vier Uhr.",
+    "Er sitzt im Park auf einer Bank und liest."
+   ]
+  },
+  {
+   "lemma": "bar",
+   "article": null,
+   "plural": null,
+   "raw": "bar",
+   "examples": [
+    "Muss ich bar zahlen oder geht‘s auch mit Karte?"
+   ]
+  },
+  {
+   "lemma": "Bauch",
+   "article": "der",
+   "plural": null,
+   "raw": "der Bauch",
+   "examples": [
+    "Seit gestern tut mir der Bauch weh."
+   ]
+  },
+  {
+   "lemma": "Baum",
+   "article": "der",
+   "plural": "-ä, e",
+   "raw": "der Baum, -ä, e",
+   "examples": [
+    "Vorsicht, fahr nicht an den Baum!"
+   ]
+  },
+  {
+   "lemma": "Beamte",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der Beamte, -n",
+   "examples": [
+    "Fragen Sie die Beamtin an Schalter acht!"
+   ]
+  },
+  {
+   "lemma": "bedeuten",
+   "article": null,
+   "plural": null,
+   "raw": "bedeuten",
+   "examples": [
+    "Was bedeutet das Wort?"
+   ]
+  },
+  {
+   "lemma": "beginnen",
+   "article": null,
+   "plural": null,
+   "raw": "beginnen",
+   "examples": [
+    "Das Spiel beginnt um 15.30 Uhr."
+   ]
+  },
+  {
+   "lemma": "bei",
+   "article": null,
+   "plural": null,
+   "raw": "bei",
+   "examples": [
+    "Offenbach liegt bei Frankfurt.",
+    "Ich wohne bei meinen Eltern.",
+    "Bei uns regnet es heute.",
+    "Er arbeitet bei der Polizei."
+   ]
+  },
+  {
+   "lemma": "beide",
+   "article": null,
+   "plural": null,
+   "raw": "beide",
+   "examples": [
+    "Beide Eltern arbeiten.",
+    "Wir kommen beide."
+   ]
+  },
+  {
+   "lemma": "Bein",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Bein, -e",
+   "examples": [
+    "Mein rechtes Bein tut weh."
+   ]
+  },
+  {
+   "lemma": "Beispiel",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Beispiel, -e",
+   "examples": [
+    "Kannst du mir ein Beispiel sagen?"
+   ]
+  },
+  {
+   "lemma": "zum Beispiel/z. B.",
+   "article": null,
+   "plural": null,
+   "raw": "zum Beispiel/z. B.",
+   "examples": [
+    "Viele meiner Verwandten, z. B. meine beiden",
+    "Brüder, arbeiten auch hier."
+   ]
+  },
+  {
+   "lemma": "bekannt",
+   "article": null,
+   "plural": null,
+   "raw": "bekannt",
+   "examples": [
+    "Picasso ist sehr bekannt."
+   ]
+  },
+  {
+   "lemma": "Bekannte",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der/die Bekannte, -n",
+   "examples": [
+    "Ein Bekannter von mir heißt Klaus."
+   ]
+  },
+  {
+   "lemma": "bekommen",
+   "article": null,
+   "plural": null,
+   "raw": "bekommen",
+   "examples": [
+    "Haben Sie meinen Brief bekommen?",
+    "Was bekommen Sie?",
+    "Dieses Medikament bekommen Sie in der Apotheke."
+   ]
+  },
+  {
+   "lemma": "benutzen",
+   "article": null,
+   "plural": null,
+   "raw": "benutzen",
+   "examples": [
+    "Die Aufzüge bitte nicht benutzen!"
+   ]
+  },
+  {
+   "lemma": "Beruf",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Beruf, -e",
+   "examples": [
+    "Was sind Sie von Beruf?",
+    "Was ist Ihr Beruf?"
+   ]
+  },
+  {
+   "lemma": "besetzt",
+   "article": null,
+   "plural": null,
+   "raw": "besetzt",
+   "examples": [
+    "Die Nummer ist immer besetzt.",
+    "Der Platz ist besetzt."
+   ]
+  },
+  {
+   "lemma": "besichtigen",
+   "article": null,
+   "plural": null,
+   "raw": "besichtigen",
+   "examples": [
+    "Ich möchte gern den Dom besichtigen."
+   ]
+  },
+  {
+   "lemma": "besser",
+   "article": null,
+   "plural": null,
+   "raw": "besser",
+   "examples": [
+    "Es geht mir schon besser."
+   ]
+  },
+  {
+   "lemma": "best-",
+   "article": null,
+   "plural": null,
+   "raw": "best-",
+   "examples": [
+    "Am besten treffen wir uns morgen."
+   ]
+  },
+  {
+   "lemma": "bestellen",
+   "article": null,
+   "plural": null,
+   "raw": "bestellen",
+   "examples": [
+    "Wir möchten bestellen, bitte.",
+    "Dieses Buch haben wir nicht – sollen wir es für Sie",
+    "bestellen?"
+   ]
+  },
+  {
+   "lemma": "besuchen",
+   "article": null,
+   "plural": null,
+   "raw": "besuchen",
+   "examples": [
+    "Darf ich dich besuchen?"
+   ]
+  },
+  {
+   "lemma": "Bett",
+   "article": "das",
+   "plural": "-en",
+   "raw": "das Bett, -en",
+   "examples": [
+    "Wir brauchen noch ein Kinderbett."
+   ]
+  },
+  {
+   "lemma": "bezahlen",
+   "article": null,
+   "plural": null,
+   "raw": "bezahlen",
+   "examples": [
+    "Wo muss ich bezahlen?"
+   ]
+  },
+  {
+   "lemma": "Bier",
+   "article": "das",
+   "plural": null,
+   "raw": "das Bier",
+   "examples": [
+    "Noch ein Bier bitte."
+   ]
+  },
+  {
+   "lemma": "Bild",
+   "article": "das",
+   "plural": "-er",
+   "raw": "das Bild, -er",
+   "examples": [
+    "Hast du ein Bild von deinem Sohn?"
+   ]
+  },
+  {
+   "lemma": "billig",
+   "article": null,
+   "plural": null,
+   "raw": "billig",
+   "examples": [
+    "Die Jacke kostet nur 10 Euro! Die ist aber billig!"
+   ]
+  },
+  {
+   "lemma": "Birne",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Birne, -n",
+   "examples": [
+    "Ein Kilo Birnen, bitte!"
+   ]
+  },
+  {
+   "lemma": "bis",
+   "article": null,
+   "plural": null,
+   "raw": "bis",
+   "examples": [
+    "Ich fahre nur bis Stuttgart.",
+    "Ich warte bis morgen."
+   ]
+  },
+  {
+   "lemma": "bisschen",
+   "article": null,
+   "plural": null,
+   "raw": "bisschen",
+   "examples": [
+    "Ich spreche Englisch, Französisch und ein bisschen",
+    "Deutsch."
+   ]
+  },
+  {
+   "lemma": "bitte",
+   "article": null,
+   "plural": null,
+   "raw": "bitte",
+   "examples": [
+    "Eine Tasse Kaffee, bitte!",
+    "Sprechen Sie bitte leise!"
+   ]
+  },
+  {
+   "lemma": "Bitte",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Bitte, -n",
+   "examples": [
+    "Ich habe noch eine Bitte."
+   ]
+  },
+  {
+   "lemma": "bitten",
+   "article": null,
+   "plural": null,
+   "raw": "bitten",
+   "examples": [
+    "Darf ich Sie um etwas bitten?"
+   ]
+  },
+  {
+   "lemma": "bitter",
+   "article": null,
+   "plural": null,
+   "raw": "bitter",
+   "examples": [
+    "Der Kaffee schmeckt bitter."
+   ]
+  },
+  {
+   "lemma": "bleiben",
+   "article": null,
+   "plural": null,
+   "raw": "bleiben",
+   "examples": [
+    "Ich bleibe heute zu Hause.",
+    "Wir bleiben nur bis morgen."
+   ]
+  },
+  {
+   "lemma": "Bleistift",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Bleistift, -e",
+   "examples": [
+    "Hast du einen Bleistift?"
+   ]
+  },
+  {
+   "lemma": "Blick",
+   "article": "der",
+   "plural": null,
+   "raw": "der Blick",
+   "examples": [
+    "Von diesem Hotel hat man einen guten Blick auf den",
+    "Rhein."
+   ]
+  },
+  {
+   "lemma": "Blume",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Blume, -n",
+   "examples": [
+    "Gefallen dir die Blumen?"
+   ]
+  },
+  {
+   "lemma": "Bogen",
+   "article": "der",
+   "plural": null,
+   "raw": "der Bogen",
+   "examples": [
+    "Schreiben Sie Ihre Lösungen bitte auf den Antwortbogen."
+   ]
+  },
+  {
+   "lemma": "böse",
+   "article": null,
+   "plural": null,
+   "raw": "böse",
+   "examples": [
+    "Sie ist böse auf mich."
+   ]
+  },
+  {
+   "lemma": "brauchen",
+   "article": null,
+   "plural": null,
+   "raw": "brauchen",
+   "examples": [
+    "Brauchst du die Zeitung noch?"
+   ]
+  },
+  {
+   "lemma": "breit",
+   "article": null,
+   "plural": null,
+   "raw": "breit",
+   "examples": [
+    "Wie breit ist der Schrank?"
+   ]
+  },
+  {
+   "lemma": "Brief",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Brief, -e",
+   "examples": [
+    "Haben Sie einen Brief für mich?"
+   ]
+  },
+  {
+   "lemma": "Briefmarke",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Briefmarke, -n",
+   "examples": [
+    "Kaufst du bitte Briefmarken bei der Post."
+   ]
+  },
+  {
+   "lemma": "bringen",
+   "article": null,
+   "plural": null,
+   "raw": "bringen",
+   "examples": [
+    "Bringen Sie mir bitte noch einen Kaffee!",
+    "Wir müssen ihn zum Arzt bringen."
+   ]
+  },
+  {
+   "lemma": "Brot",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Brot, -e",
+   "examples": [
+    "Haben Sie auch Weißbrot?",
+    "Nimm noch ein paar Brote für die Fahrt mit."
+   ]
+  },
+  {
+   "lemma": "Brötchen",
+   "article": "das",
+   "plural": "–",
+   "raw": "das Brötchen, –",
+   "examples": [
+    "Möchtest du Brötchen zum Frühstück?"
+   ]
+  },
+  {
+   "lemma": "Bruder",
+   "article": "der",
+   "plural": "-ü",
+   "raw": "der Bruder, -ü",
+   "examples": [
+    "Sein Bruder arbeitet auch hier."
+   ]
+  },
+  {
+   "lemma": "Buch",
+   "article": "das",
+   "plural": "-ü, er",
+   "raw": "das Buch, -ü, er",
+   "examples": [
+    "Gute Bücher sind oft sehr teuer.",
+    "In diesem Wörterbuch finden Sie mehr als 20.000 Wörter."
+   ]
+  },
+  {
+   "lemma": "Buchstabe",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der Buchstabe, -n",
+   "examples": [
+    "Diesen Buchstaben gibt es in meiner Sprache nicht."
+   ]
+  },
+  {
+   "lemma": "buchstabieren",
+   "article": null,
+   "plural": null,
+   "raw": "buchstabieren",
+   "examples": [
+    "Bitte buchstabieren Sie Ihren Namen."
+   ]
+  },
+  {
+   "lemma": "Bus",
+   "article": "der",
+   "plural": "-se",
+   "raw": "der Bus, -se",
+   "examples": [
+    "Wann kommt der nächste Bus?"
+   ]
+  },
+  {
+   "lemma": "Butter",
+   "article": "die",
+   "plural": null,
+   "raw": "die Butter",
+   "examples": [
+    "Für mich bitte ein Brötchen mit Butter und Käse."
+   ]
+  },
+  {
+   "lemma": "Café",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Café, -s",
+   "examples": [
+    "Sollen wir uns im Café treffen?"
+   ]
+  },
+  {
+   "lemma": "CD",
+   "article": "die",
+   "plural": "-s",
+   "raw": "die CD, -s",
+   "examples": [
+    "Bring bitte deine Lieblings-CD mit."
+   ]
+  },
+  {
+   "lemma": "Chef",
+   "article": "der",
+   "plural": null,
+   "raw": "der Chef",
+   "examples": [
+    "Wir haben eine neue Chefin."
+   ]
+  },
+  {
+   "lemma": "circa/ca.",
+   "article": null,
+   "plural": null,
+   "raw": "circa/ca.",
+   "examples": [
+    "Von Mainz nach Frankfurt sind es circa fünfzig",
+    "Kilometer."
+   ]
+  },
+  {
+   "lemma": "Computer",
+   "article": "der",
+   "plural": "–",
+   "raw": "der Computer, –",
+   "examples": [
+    "Wann bekommst du deinen neuen Computer?"
+   ]
+  },
+  {
+   "lemma": "da",
+   "article": null,
+   "plural": null,
+   "raw": "da",
+   "examples": [
+    "Da hinten ist er ja.",
+    "Wir sprechen gerade über Paul. Da kommt er ja gerade.",
+    "Ich nehme das da.",
+    "Ist Herr Klein schon da?"
+   ]
+  },
+  {
+   "lemma": "Dame",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Dame, -n",
+   "examples": [
+    "Damen (an der Toilette)",
+    "Sehr geehrte Damen und Herren!"
+   ]
+  },
+  {
+   "lemma": "daneben",
+   "article": null,
+   "plural": null,
+   "raw": "daneben",
+   "examples": [
+    "Du kennst doch die Post. Daneben ist die Bank."
+   ]
+  },
+  {
+   "lemma": "danken",
+   "article": null,
+   "plural": null,
+   "raw": "danken",
+   "examples": [
+    "Ich danke Ihnen für die Einladung."
+   ]
+  },
+  {
+   "lemma": "Dank",
+   "article": "der",
+   "plural": null,
+   "raw": "der Dank",
+   "examples": [
+    "Vielen Dank!",
+    "Herzlichen Dank!"
+   ]
+  },
+  {
+   "lemma": "danke",
+   "article": null,
+   "plural": null,
+   "raw": "danke",
+   "examples": [
+    "Soll ich Ihnen helfen? - Nein, danke!"
+   ]
+  },
+  {
+   "lemma": "dann",
+   "article": null,
+   "plural": null,
+   "raw": "dann",
+   "examples": [
+    "Ich muss noch schnell zur Post, dann komme ich."
+   ]
+  },
+  {
+   "lemma": "Datum",
+   "article": "das",
+   "plural": null,
+   "raw": "das Datum",
+   "examples": [
+    "Bitte schreiben Sie noch das Datum auf das Formular."
+   ]
+  },
+  {
+   "lemma": "dauern",
+   "article": null,
+   "plural": null,
+   "raw": "dauern",
+   "examples": [
+    "Wie lange dauert der Film?"
+   ]
+  },
+  {
+   "lemma": "dein-",
+   "article": null,
+   "plural": null,
+   "raw": "dein-",
+   "examples": [
+    "Ist das dein Auto?",
+    "Ist das deins?"
+   ]
+  },
+  {
+   "lemma": "denn",
+   "article": null,
+   "plural": null,
+   "raw": "denn",
+   "examples": [
+    "Ich kann nicht kommen, denn ich bin krank."
+   ]
+  },
+  {
+   "lemma": "der",
+   "article": null,
+   "plural": "die, das",
+   "raw": "der, die, das",
+   "examples": [
+    "Ich nehme das da.",
+    "Hier ist der Brief, den du suchst.",
+    "Die Fahrkarte bekommst du am Bahnhof."
+   ]
+  },
+  {
+   "lemma": "dich",
+   "article": null,
+   "plural": null,
+   "raw": "dich",
+   "examples": [
+    "Die Blumen sind für dich."
+   ]
+  },
+  {
+   "lemma": "dies-",
+   "article": null,
+   "plural": null,
+   "raw": "dies-",
+   "examples": [
+    "Ich nehme lieber diesen Kuchen."
+   ]
+  },
+  {
+   "lemma": "dir",
+   "article": null,
+   "plural": null,
+   "raw": "dir",
+   "examples": [
+    "Gefallen dir die Blumen?"
+   ]
+  },
+  {
+   "lemma": "Disco",
+   "article": "die",
+   "plural": null,
+   "raw": "die Disco",
+   "examples": [
+    "Heute abend gehen wir in die Disco tanzen."
+   ]
+  },
+  {
+   "lemma": "Doktor",
+   "article": "der",
+   "plural": null,
+   "raw": "der Doktor",
+   "examples": [
+    "Meine Tochter ist krank. Wir gehen zum Doktor."
+   ]
+  },
+  {
+   "lemma": "Doppelzimmer",
+   "article": "das",
+   "plural": null,
+   "raw": "das Doppelzimmer",
+   "examples": [
+    "Wollen Sie ein Doppelzimmer oder ein Einzelzimmer?"
+   ]
+  },
+  {
+   "lemma": "Dorf",
+   "article": "das",
+   "plural": "-ö, er",
+   "raw": "das Dorf, -ö, er",
+   "examples": [
+    "Meine Familie lebt in einem Dorf."
+   ]
+  },
+  {
+   "lemma": "dort",
+   "article": null,
+   "plural": "-her, -hin",
+   "raw": "dort, -her, -hin",
+   "examples": [
+    "Deine Tasche kannst du dorthin stellen.",
+    "Dort ist unser Haus."
+   ]
+  },
+  {
+   "lemma": "draußen",
+   "article": null,
+   "plural": null,
+   "raw": "draußen",
+   "examples": [
+    "Wollen wir draußen sitzen?"
+   ]
+  },
+  {
+   "lemma": "drucken",
+   "article": null,
+   "plural": null,
+   "raw": "drucken",
+   "examples": [
+    "Bitte drucke das Formular für mich."
+   ]
+  },
+  {
+   "lemma": "Drucker",
+   "article": "der",
+   "plural": "–",
+   "raw": "der Drucker, –",
+   "examples": [
+    "Mein Drucker ist kaputt."
+   ]
+  },
+  {
+   "lemma": "drücken",
+   "article": null,
+   "plural": null,
+   "raw": "drücken",
+   "examples": [
+    "Drück hier, dann geht der Computer an."
+   ]
+  },
+  {
+   "lemma": "durch",
+   "article": null,
+   "plural": null,
+   "raw": "durch",
+   "examples": [
+    "Am besten gehen Sie durch die Breite Straße."
+   ]
+  },
+  {
+   "lemma": "Durchsage",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Durchsage, -n",
+   "examples": [
+    "Ich habe die Durchsage nicht verstanden."
+   ]
+  },
+  {
+   "lemma": "dürfen",
+   "article": null,
+   "plural": null,
+   "raw": "dürfen",
+   "examples": [
+    "Sie dürfen hier nicht rauchen.",
+    "Darf ich Sie zu einem Kaffee einladen?",
+    "Es darf nicht mehr als 15 Euro kosten."
+   ]
+  },
+  {
+   "lemma": "Durst",
+   "article": "der",
+   "plural": null,
+   "raw": "der Durst",
+   "examples": [
+    "Hast du etwas zu trinken? Ich habe großen Durst."
+   ]
+  },
+  {
+   "lemma": "duschen",
+   "article": null,
+   "plural": null,
+   "raw": "(sich) duschen",
+   "examples": [
+    "Ich bade nicht so gern, ich dusche lieber."
+   ]
+  },
+  {
+   "lemma": "Dusche",
+   "article": "die",
+   "plural": null,
+   "raw": "die Dusche",
+   "examples": [
+    "Unsere Wohnung hat nur eine Dusche."
+   ]
+  },
+  {
+   "lemma": "Ecke",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Ecke, -n",
+   "examples": [
+    "An der nächsten Ecke links."
+   ]
+  },
+  {
+   "lemma": "Ehefrau",
+   "article": "die",
+   "plural": "-en/",
+   "raw": "die Ehefrau, -en/",
+   "examples": []
+  },
+  {
+   "lemma": "Ehemann",
+   "article": "der",
+   "plural": "ä, er",
+   "raw": "der Ehemann, ä, er",
+   "examples": [
+    "Das ist mein (Ehe-) Mann/meine (Ehe-) Frau."
+   ]
+  },
+  {
+   "lemma": "Ei",
+   "article": "das",
+   "plural": "-er",
+   "raw": "das Ei, -er",
+   "examples": [
+    "Möchtest du ein Ei zum Frühstück?"
+   ]
+  },
+  {
+   "lemma": "eilig",
+   "article": null,
+   "plural": null,
+   "raw": "eilig",
+   "examples": [
+    "Hast du es eilig?"
+   ]
+  },
+  {
+   "lemma": "ein-",
+   "article": null,
+   "plural": null,
+   "raw": "ein-",
+   "examples": [
+    "Ich nehme ein Bier. Willst du auch eins?",
+    "Ist hier einer, der das kann?"
+   ]
+  },
+  {
+   "lemma": "einfach",
+   "article": null,
+   "plural": null,
+   "raw": "einfach",
+   "examples": [
+    "Die Prüfung ist ganz einfach.",
+    "Hin und zurück? – Nein, bitte nur einfach.",
+    "Ich brauche nur ein einfaches Zimmer."
+   ]
+  },
+  {
+   "lemma": "Eingang",
+   "article": "der",
+   "plural": null,
+   "raw": "der Eingang",
+   "examples": [
+    "Der Eingang ist um die Ecke."
+   ]
+  },
+  {
+   "lemma": "einkaufen",
+   "article": null,
+   "plural": null,
+   "raw": "einkaufen",
+   "examples": [
+    "Ich muss noch für morgen einkaufen."
+   ]
+  },
+  {
+   "lemma": "einladen",
+   "article": null,
+   "plural": null,
+   "raw": "einladen",
+   "examples": [
+    "Darf ich Sie zu einem Kaffee einladen?"
+   ]
+  },
+  {
+   "lemma": "Einladung",
+   "article": "die",
+   "plural": null,
+   "raw": "die Einladung",
+   "examples": [
+    "Danke für die Einladung!"
+   ]
+  },
+  {
+   "lemma": "einmal",
+   "article": null,
+   "plural": null,
+   "raw": "einmal",
+   "examples": [
+    "Diese Prüfung mache ich nicht noch einmal."
+   ]
+  },
+  {
+   "lemma": "einsteigen",
+   "article": null,
+   "plural": null,
+   "raw": "einsteigen",
+   "examples": [
+    "Schnell, steig ein, der Zug fährt gleich."
+   ]
+  },
+  {
+   "lemma": "Eintritt",
+   "article": "der",
+   "plural": null,
+   "raw": "der Eintritt",
+   "examples": [
+    "Der Preis für den Eintritt ist 5 Euro."
+   ]
+  },
+  {
+   "lemma": "Einzelzimmer",
+   "article": "das",
+   "plural": null,
+   "raw": "das Einzelzimmer",
+   "examples": [
+    "Haben Sie noch ein Einzelzimmer?"
+   ]
+  },
+  {
+   "lemma": "Eltern (pl.)",
+   "article": "die",
+   "plural": null,
+   "raw": "die Eltern (pl.)",
+   "examples": [
+    "Meine Eltern leben in Spanien."
+   ]
+  },
+  {
+   "lemma": "E-Mail",
+   "article": "die",
+   "plural": "-s",
+   "raw": "die E-Mail, -s",
+   "examples": [
+    "Ich habe Ihre E-Mail nicht bekommen."
+   ]
+  },
+  {
+   "lemma": "Empfänger",
+   "article": "der",
+   "plural": "–",
+   "raw": "der Empfänger, –",
+   "examples": [
+    "Auf dem Brief steht dein Name, also bist du der",
+    "Empfänger."
+   ]
+  },
+  {
+   "lemma": "empfehlen",
+   "article": null,
+   "plural": null,
+   "raw": "empfehlen",
+   "examples": [
+    "Welchen Wein können Sie mir empfehlen?"
+   ]
+  },
+  {
+   "lemma": "enden",
+   "article": null,
+   "plural": null,
+   "raw": "enden",
+   "examples": [
+    "Die Straße endet hier."
+   ]
+  },
+  {
+   "lemma": "Ende",
+   "article": "das",
+   "plural": null,
+   "raw": "das Ende",
+   "examples": [
+    "Sie wohnt am Ende der Straße.",
+    "Er bekommt sein Geld am Ende des Monats."
+   ]
+  },
+  {
+   "lemma": "entschuldigen",
+   "article": null,
+   "plural": null,
+   "raw": "entschuldigen",
+   "examples": [
+    "Entschuldigen Sie bitte!"
+   ]
+  },
+  {
+   "lemma": "Entschuldigung",
+   "article": "die",
+   "plural": null,
+   "raw": "die Entschuldigung",
+   "examples": [
+    "Entschuldigung! – Bitte."
+   ]
+  },
+  {
+   "lemma": "er",
+   "article": null,
+   "plural": null,
+   "raw": "er",
+   "examples": [
+    "Er heißt Ali."
+   ]
+  },
+  {
+   "lemma": "Ergebnis",
+   "article": "das",
+   "plural": "-se",
+   "raw": "das Ergebnis, -se",
+   "examples": [
+    "Das Ergebnis des Tests bekommen Sie in zwei Wochen."
+   ]
+  },
+  {
+   "lemma": "erklären",
+   "article": null,
+   "plural": null,
+   "raw": "erklären",
+   "examples": [
+    "Kannst du mir das erklären?"
+   ]
+  },
+  {
+   "lemma": "erlauben",
+   "article": null,
+   "plural": null,
+   "raw": "erlauben",
+   "examples": [
+    "Rauchen ist hier nicht erlaubt."
+   ]
+  },
+  {
+   "lemma": "Erwachsene",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der Erwachsene, -n",
+   "examples": [
+    "Dieser Film ist nur für Erwachsene."
+   ]
+  },
+  {
+   "lemma": "erzählen",
+   "article": null,
+   "plural": null,
+   "raw": "erzählen",
+   "examples": [
+    "Wir müssen euch etwas erzählen!"
+   ]
+  },
+  {
+   "lemma": "es",
+   "article": null,
+   "plural": null,
+   "raw": "es",
+   "examples": [
+    "Es regnet."
+   ]
+  },
+  {
+   "lemma": "essen",
+   "article": null,
+   "plural": null,
+   "raw": "essen",
+   "examples": [
+    "Was gibt es zu essen?"
+   ]
+  },
+  {
+   "lemma": "Essen",
+   "article": "das",
+   "plural": null,
+   "raw": "das Essen",
+   "examples": [
+    "Das Essen ist heute sehr gut."
+   ]
+  },
+  {
+   "lemma": "euer",
+   "article": null,
+   "plural": null,
+   "raw": "euer",
+   "examples": [
+    "Euer Kurs beginnt heute."
+   ]
+  },
+  {
+   "lemma": "fahren",
+   "article": null,
+   "plural": null,
+   "raw": "fahren",
+   "examples": [
+    "Ich fahre mit dem Auto zur Arbeit."
+   ]
+  },
+  {
+   "lemma": "Fahrer",
+   "article": "der",
+   "plural": null,
+   "raw": "der Fahrer",
+   "examples": [
+    "Bitte nicht mit dem Fahrer sprechen!"
+   ]
+  },
+  {
+   "lemma": "Fahrkarte",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Fahrkarte, -n",
+   "examples": [
+    "Hast du schon eine Fahrkarte?"
+   ]
+  },
+  {
+   "lemma": "Fahrrad",
+   "article": "das",
+   "plural": "-ä, er",
+   "raw": "das Fahrrad, -ä, er",
+   "examples": [
+    "Fährst du mit dem Fahrrad oder mit dem Auto?"
+   ]
+  },
+  {
+   "lemma": "falsch",
+   "article": null,
+   "plural": null,
+   "raw": "falsch",
+   "examples": [
+    "Das ist falsch."
+   ]
+  },
+  {
+   "lemma": "Familie",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Familie, -n",
+   "examples": [
+    "Meine Familie lebt in Spanien."
+   ]
+  },
+  {
+   "lemma": "Familienname",
+   "article": "der",
+   "plural": null,
+   "raw": "der Familienname",
+   "examples": [
+    "Meine Familiennamen sind García González."
+   ]
+  },
+  {
+   "lemma": "Familienstand",
+   "article": "der",
+   "plural": null,
+   "raw": "der Familienstand",
+   "examples": [
+    "Bei „Familienstand“ musst du „ledig“ ankreuzen."
+   ]
+  },
+  {
+   "lemma": "Farbe",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Farbe, -n",
+   "examples": [
+    "Die Farbe gefällt mir gut."
+   ]
+  },
+  {
+   "lemma": "Fax",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Fax, -e",
+   "examples": [
+    "Schicken Sie uns einfach ein Fax!"
+   ]
+  },
+  {
+   "lemma": "Feier-",
+   "article": null,
+   "plural": null,
+   "raw": "Feier-",
+   "examples": [
+    "z. B. Feierabend, Feiertag",
+    "Am Montag ist Feiertag."
+   ]
+  },
+  {
+   "lemma": "feiern",
+   "article": null,
+   "plural": null,
+   "raw": "feiern",
+   "examples": [
+    "Wir feiern heute meinen Geburtstag."
+   ]
+  },
+  {
+   "lemma": "fehlen",
+   "article": null,
+   "plural": null,
+   "raw": "fehlen",
+   "examples": [
+    "Herr Müller ist nicht da, er fehlt schon seit drei Tagen.",
+    "Was fehlt Ihnen?"
+   ]
+  },
+  {
+   "lemma": "Fehler",
+   "article": "der",
+   "plural": "–",
+   "raw": "der Fehler, –",
+   "examples": [
+    "Diesen Fehler mache ich immer."
+   ]
+  },
+  {
+   "lemma": "fernsehen",
+   "article": null,
+   "plural": null,
+   "raw": "fernsehen",
+   "examples": [
+    "Wollen wir heute Abend mal fernsehen?"
+   ]
+  },
+  {
+   "lemma": "fertig",
+   "article": null,
+   "plural": null,
+   "raw": "fertig",
+   "examples": [
+    "Bist du fertig?",
+    "Ist mein Auto schon fertig?"
+   ]
+  },
+  {
+   "lemma": "Feuer",
+   "article": "das",
+   "plural": null,
+   "raw": "das Feuer",
+   "examples": [
+    "Haben Sie Feuer?"
+   ]
+  },
+  {
+   "lemma": "Fieber",
+   "article": "das",
+   "plural": null,
+   "raw": "das Fieber",
+   "examples": [
+    "Mein Mann hat noch immer Fieber."
+   ]
+  },
+  {
+   "lemma": "Film",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Film, -e",
+   "examples": [
+    "Ich möchte gern diesen Film sehen."
+   ]
+  },
+  {
+   "lemma": "finden",
+   "article": null,
+   "plural": null,
+   "raw": "finden",
+   "examples": [
+    "Wir müssen den Schlüssel finden."
+   ]
+  },
+  {
+   "lemma": "Firma",
+   "article": "die",
+   "plural": null,
+   "raw": "die Firma",
+   "examples": [
+    "Er arbeitet jetzt bei einer anderen Firma."
+   ]
+  },
+  {
+   "lemma": "Fisch",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Fisch, -e",
+   "examples": [
+    "Ich esse gern Fisch. Fleisch mag ich nicht."
+   ]
+  },
+  {
+   "lemma": "Flasche",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Flasche, -n",
+   "examples": [
+    "Eine Flasche Bier, bitte."
+   ]
+  },
+  {
+   "lemma": "Fleisch",
+   "article": "das",
+   "plural": null,
+   "raw": "das Fleisch",
+   "examples": [
+    "Fleisch mag ich nicht."
+   ]
+  },
+  {
+   "lemma": "fliegen",
+   "article": null,
+   "plural": null,
+   "raw": "fliegen",
+   "examples": [
+    "Ich fliege nicht gern. Deshalb fahre ich mit dem Zug."
+   ]
+  },
+  {
+   "lemma": "abfliegen",
+   "article": null,
+   "plural": null,
+   "raw": "abfliegen",
+   "examples": [
+    "Wann fliegst du ab?"
+   ]
+  },
+  {
+   "lemma": "Abflug",
+   "article": "der",
+   "plural": null,
+   "raw": "der Abflug",
+   "examples": [
+    "Der Abflug ist um 11.20 Uhr."
+   ]
+  },
+  {
+   "lemma": "Flughafen",
+   "article": "der",
+   "plural": null,
+   "raw": "der Flughafen",
+   "examples": [
+    "Kannst du mich zum Flughafen bringen?"
+   ]
+  },
+  {
+   "lemma": "Flugzeug",
+   "article": "das",
+   "plural": null,
+   "raw": "das Flugzeug",
+   "examples": [
+    "Das Flugzeug aus Berlin kommt heute später an."
+   ]
+  },
+  {
+   "lemma": "Formular",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Formular, -e",
+   "examples": [
+    "Sie müssen dieses Formular ausfüllen."
+   ]
+  },
+  {
+   "lemma": "Foto",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Foto, -s",
+   "examples": [
+    "Darf ich ein Foto machen?"
+   ]
+  },
+  {
+   "lemma": "fragen",
+   "article": null,
+   "plural": null,
+   "raw": "fragen",
+   "examples": [
+    "Er möchte Sie etwas fragen. Wann kommen Sie?"
+   ]
+  },
+  {
+   "lemma": "Frage",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Frage, -n",
+   "examples": [
+    "Ich habe eine Frage."
+   ]
+  },
+  {
+   "lemma": "Frau",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Frau, -en",
+   "examples": [
+    "Das ist Frau Becker.",
+    "Guten Tag, Frau Schmitt!",
+    "Hier arbeiten mehr Frauen als Männer."
+   ]
+  },
+  {
+   "lemma": "frei",
+   "article": null,
+   "plural": null,
+   "raw": "frei",
+   "examples": [
+    "Ist der Platz noch frei?"
+   ]
+  },
+  {
+   "lemma": "Freizeit",
+   "article": "die",
+   "plural": null,
+   "raw": "die Freizeit",
+   "examples": [
+    "In meiner Freizeit spiele ich oft Fußball."
+   ]
+  },
+  {
+   "lemma": "fremd",
+   "article": null,
+   "plural": null,
+   "raw": "fremd",
+   "examples": [
+    "Das weiß ich nicht; ich bin fremd hier."
+   ]
+  },
+  {
+   "lemma": "freuen",
+   "article": null,
+   "plural": null,
+   "raw": "(sich) freuen",
+   "examples": [
+    "Ich freue mich auf den Urlaub."
+   ]
+  },
+  {
+   "lemma": "Freund",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Freund, -e",
+   "examples": [
+    "Das ist ein Freund von mir.",
+    "Das ist meine Freundin."
+   ]
+  },
+  {
+   "lemma": "früher",
+   "article": null,
+   "plural": null,
+   "raw": "früher",
+   "examples": [
+    "Früher waren wir oft zusammen im Kino."
+   ]
+  },
+  {
+   "lemma": "frühstücken",
+   "article": null,
+   "plural": null,
+   "raw": "frühstücken",
+   "examples": [
+    "Am Sonntag frühstücke ich gern im Bett."
+   ]
+  },
+  {
+   "lemma": "Frühstück",
+   "article": "das",
+   "plural": null,
+   "raw": "das Frühstück",
+   "examples": [
+    "Möchtest du ein Ei zum Frühstück?"
+   ]
+  },
+  {
+   "lemma": "Führung",
+   "article": "die",
+   "plural": null,
+   "raw": "die Führung",
+   "examples": [
+    "Die Führung durch das Haus beginnt in 3 Minuten."
+   ]
+  },
+  {
+   "lemma": "für",
+   "article": null,
+   "plural": null,
+   "raw": "für",
+   "examples": [
+    "Das ist für Sie.",
+    "Das ist der Schlüssel für die Haustür.",
+    "Das ist das Brot für morgen."
+   ]
+  },
+  {
+   "lemma": "Fuß",
+   "article": "der",
+   "plural": "-ü, e",
+   "raw": "der Fuß, -ü, e",
+   "examples": [
+    "Der linke Fuß tut mir weh."
+   ]
+  },
+  {
+   "lemma": "Fußball",
+   "article": "der",
+   "plural": null,
+   "raw": "der Fußball",
+   "examples": [
+    "Spielt ihr gerne Fußball?"
+   ]
+  },
+  {
+   "lemma": "Garten",
+   "article": "der",
+   "plural": null,
+   "raw": "der Garten",
+   "examples": [
+    "Wir haben leider keinen Garten."
+   ]
+  },
+  {
+   "lemma": "Gast",
+   "article": "der",
+   "plural": "-ä, e",
+   "raw": "der Gast, -ä, e",
+   "examples": [
+    "Am Wochenende haben wir mehrere Gäste."
+   ]
+  },
+  {
+   "lemma": "geben",
+   "article": null,
+   "plural": null,
+   "raw": "geben",
+   "examples": [
+    "Kannst du mir bitte deinen Kugelschreiber geben?",
+    "Es gibt keine Karten mehr."
+   ]
+  },
+  {
+   "lemma": "geboren",
+   "article": null,
+   "plural": null,
+   "raw": "geboren",
+   "examples": [
+    "Ich bin in Zagreb geboren."
+   ]
+  },
+  {
+   "lemma": "Geburtsjahr",
+   "article": "das",
+   "plural": null,
+   "raw": "das Geburtsjahr",
+   "examples": [
+    "Das Geburtsjahr Ihres Sohnes, bitte?"
+   ]
+  },
+  {
+   "lemma": "Geburtsort",
+   "article": "der",
+   "plural": null,
+   "raw": "der Geburtsort",
+   "examples": [
+    "Bitte schreiben Sie Ihren Geburtsort auf das Formular."
+   ]
+  },
+  {
+   "lemma": "Geburtstag",
+   "article": "der",
+   "plural": null,
+   "raw": "der Geburtstag",
+   "examples": [
+    "Herzlichen Glückwunsch zum Geburtstag!"
+   ]
+  },
+  {
+   "lemma": "gefallen",
+   "article": null,
+   "plural": null,
+   "raw": "gefallen",
+   "examples": [
+    "Das gefällt mir."
+   ]
+  },
+  {
+   "lemma": "gegen",
+   "article": null,
+   "plural": null,
+   "raw": "gegen",
+   "examples": [
+    "Fahr nicht gegen den Baum!",
+    "Ich bin gegen diese Lösung.",
+    "Wer spielt gegen wen?"
+   ]
+  },
+  {
+   "lemma": "gehen",
+   "article": null,
+   "plural": null,
+   "raw": "gehen",
+   "examples": [
+    "Ich weiß nicht, wie das geht.",
+    "Wie geht‘s?",
+    "Jetzt muss ich (aber) leider gehen.",
+    "Ich muss zum Arzt gehen.",
+    "Das geht nicht!"
+   ]
+  },
+  {
+   "lemma": "gehören",
+   "article": null,
+   "plural": null,
+   "raw": "gehören",
+   "examples": [
+    "Wem gehört das?"
+   ]
+  },
+  {
+   "lemma": "Geld",
+   "article": "das",
+   "plural": null,
+   "raw": "das Geld",
+   "examples": [
+    "Hast du noch Geld?"
+   ]
+  },
+  {
+   "lemma": "Gemüse",
+   "article": "das",
+   "plural": null,
+   "raw": "das Gemüse",
+   "examples": [
+    "Gemüse brauchen wir auch noch."
+   ]
+  },
+  {
+   "lemma": "Gepäck",
+   "article": "das",
+   "plural": null,
+   "raw": "das Gepäck",
+   "examples": [
+    "Wollen Sie Ihr Gepäck mitnehmen?"
+   ]
+  },
+  {
+   "lemma": "gerade",
+   "article": null,
+   "plural": null,
+   "raw": "gerade",
+   "examples": [
+    "Da kommt er ja gerade."
+   ]
+  },
+  {
+   "lemma": "geradeaus",
+   "article": null,
+   "plural": null,
+   "raw": "geradeaus",
+   "examples": [
+    "Gehen Sie immer geradeaus!"
+   ]
+  },
+  {
+   "lemma": "gern(e)",
+   "article": null,
+   "plural": null,
+   "raw": "gern(e)",
+   "examples": [
+    "Ich gehe gerne einkaufen."
+   ]
+  },
+  {
+   "lemma": "Geschäft",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Geschäft, -e",
+   "examples": [
+    "Die Geschäfte schließen um 18.30 Uhr."
+   ]
+  },
+  {
+   "lemma": "Geschenk",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Geschenk, -e",
+   "examples": [
+    "Danke für das schöne Geschenk."
+   ]
+  },
+  {
+   "lemma": "Geschwister (pl.)",
+   "article": "die",
+   "plural": null,
+   "raw": "die Geschwister (pl.)",
+   "examples": [
+    "Ich habe leider keine Geschwister."
+   ]
+  },
+  {
+   "lemma": "Gespräch",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Gespräch, -e",
+   "examples": [
+    "Das Gespräch mit Frau Kunz ist um 14 Uhr."
+   ]
+  },
+  {
+   "lemma": "gestern",
+   "article": null,
+   "plural": null,
+   "raw": "gestern",
+   "examples": [
+    "Gestern war ich krank."
+   ]
+  },
+  {
+   "lemma": "gestorben",
+   "article": null,
+   "plural": null,
+   "raw": "gestorben",
+   "examples": [
+    "Meine Frau ist gestern gestorben."
+   ]
+  },
+  {
+   "lemma": "Getränk",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Getränk, -e",
+   "examples": [
+    "Mein Lieblingsgetränk ist Tomatensaft."
+   ]
+  },
+  {
+   "lemma": "Gewicht",
+   "article": "das",
+   "plural": null,
+   "raw": "das Gewicht",
+   "examples": [
+    "Bei „Gewicht“ schreibst du: 62 Kilo."
+   ]
+  },
+  {
+   "lemma": "gewinnen",
+   "article": null,
+   "plural": null,
+   "raw": "gewinnen",
+   "examples": [
+    "Wer gewinnt das Spiel?"
+   ]
+  },
+  {
+   "lemma": "Glas",
+   "article": "das",
+   "plural": "-ä, er",
+   "raw": "das Glas, -ä, er",
+   "examples": [
+    "Bitte noch ein Glas Wein!",
+    "Wir brauchen noch drei Gläser."
+   ]
+  },
+  {
+   "lemma": "glauben",
+   "article": null,
+   "plural": null,
+   "raw": "glauben",
+   "examples": [
+    "Sie können mir glauben, es ist so.",
+    "Ich glaube, er kommt gleich."
+   ]
+  },
+  {
+   "lemma": "gleich",
+   "article": null,
+   "plural": null,
+   "raw": "gleich",
+   "examples": [
+    "Das ist mir gleich.",
+    "Das ist der gleiche Preis.",
+    "Ich komme gleich."
+   ]
+  },
+  {
+   "lemma": "Gleis",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Gleis, -e",
+   "examples": [
+    "Der ICE nach Berlin hält heute an Gleis 12."
+   ]
+  },
+  {
+   "lemma": "Glück",
+   "article": "das",
+   "plural": null,
+   "raw": "das Glück",
+   "examples": [
+    "Viel Glück!"
+   ]
+  },
+  {
+   "lemma": "glücklich",
+   "article": null,
+   "plural": null,
+   "raw": "glücklich",
+   "examples": [
+    "Meine Kinder sind glücklich verheiratet."
+   ]
+  },
+  {
+   "lemma": "Glückwunsch",
+   "article": "der",
+   "plural": null,
+   "raw": "der Glückwunsch",
+   "examples": [
+    "Herzlichen Glückwunsch zum Geburtstag."
+   ]
+  },
+  {
+   "lemma": "Grad (Celsius)",
+   "article": null,
+   "plural": null,
+   "raw": "Grad (Celsius)",
+   "examples": [
+    "Heute haben wir dreißig Grad."
+   ]
+  },
+  {
+   "lemma": "gratulieren",
+   "article": null,
+   "plural": null,
+   "raw": "gratulieren",
+   "examples": [
+    "Ich gratuliere dir!"
+   ]
+  },
+  {
+   "lemma": "grillen",
+   "article": null,
+   "plural": null,
+   "raw": "grillen",
+   "examples": [
+    "Heute grillen wir im Garten."
+   ]
+  },
+  {
+   "lemma": "groß",
+   "article": null,
+   "plural": null,
+   "raw": "groß",
+   "examples": [
+    "Mein Bruder und ich sind gleich groß.",
+    "Frankfurt ist eine große Stadt."
+   ]
+  },
+  {
+   "lemma": "Größe",
+   "article": "die",
+   "plural": null,
+   "raw": "die Größe",
+   "examples": [
+    "Haben Sie das auch in Größe 40?"
+   ]
+  },
+  {
+   "lemma": "Großeltern (pl.)",
+   "article": "die",
+   "plural": null,
+   "raw": "die Großeltern (pl.)",
+   "examples": [
+    "Meine Großeltern leben in Japan."
+   ]
+  },
+  {
+   "lemma": "Großmutter",
+   "article": "die",
+   "plural": null,
+   "raw": "die Großmutter",
+   "examples": [
+    "Meine Großmutter heißt Eva."
+   ]
+  },
+  {
+   "lemma": "Großvater",
+   "article": "der",
+   "plural": null,
+   "raw": "der Großvater",
+   "examples": [
+    "Mein Großvater ist schon 80."
+   ]
+  },
+  {
+   "lemma": "Gruppe",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Gruppe, -n",
+   "examples": [
+    "Die erste Gruppe beginnt um 16 Uhr."
+   ]
+  },
+  {
+   "lemma": "Gruß",
+   "article": "der",
+   "plural": "-ü, e",
+   "raw": "der Gruß, -ü, e",
+   "examples": [
+    "Viele Grüße an Ihre Frau.",
+    "Mit freundlichen Grüßen"
+   ]
+  },
+  {
+   "lemma": "gültig",
+   "article": null,
+   "plural": null,
+   "raw": "gültig",
+   "examples": [
+    "Der Pass ist nicht mehr gültig."
+   ]
+  },
+  {
+   "lemma": "günstig",
+   "article": null,
+   "plural": null,
+   "raw": "günstig",
+   "examples": [
+    "Dort gibt es günstige Angebote."
+   ]
+  },
+  {
+   "lemma": "gut",
+   "article": null,
+   "plural": null,
+   "raw": "gut",
+   "examples": [
+    "Das finde ich gut.",
+    "Ich komme um 13 Uhr. – Gut!",
+    "Guten Morgen!",
+    "Ein gutes neues Jahr!",
+    "Guten Appetit!"
+   ]
+  },
+  {
+   "lemma": "Haar",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Haar, -e",
+   "examples": [
+    "Sie hat lange Haare."
+   ]
+  },
+  {
+   "lemma": "haben",
+   "article": null,
+   "plural": null,
+   "raw": "haben",
+   "examples": [
+    "Ich habe ein neues Auto."
+   ]
+  },
+  {
+   "lemma": "Hähnchen",
+   "article": "das",
+   "plural": "die Halbpension",
+   "raw": "das Hähnchen, die Halbpension",
+   "examples": [
+    "Ein Hähnchen mit Pommes bitte!",
+    "Möchten Sie Vollpension oder Halbpension?"
+   ]
+  },
+  {
+   "lemma": "Halle",
+   "article": "die",
+   "plural": null,
+   "raw": "die Halle",
+   "examples": [
+    "Wir treffen uns in Halle B"
+   ]
+  },
+  {
+   "lemma": "hallo",
+   "article": null,
+   "plural": null,
+   "raw": "hallo",
+   "examples": [
+    "Hallo Inge! Wie geht’s?"
+   ]
+  },
+  {
+   "lemma": "halten",
+   "article": null,
+   "plural": null,
+   "raw": "halten",
+   "examples": [
+    "Dieser Zug hält nicht in Rüdesheim."
+   ]
+  },
+  {
+   "lemma": "Haltestelle",
+   "article": "die",
+   "plural": null,
+   "raw": "die Haltestelle",
+   "examples": [
+    "An der nächsten Haltestelle müssen Sie aussteigen."
+   ]
+  },
+  {
+   "lemma": "Hand",
+   "article": "die",
+   "plural": "-ä, e",
+   "raw": "die Hand, -ä, e",
+   "examples": [
+    "Er gibt mir die Hand."
+   ]
+  },
+  {
+   "lemma": "Handy",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Handy, -s",
+   "examples": [
+    "In der Schule bitte die Handys ausmachen!"
+   ]
+  },
+  {
+   "lemma": "Haus",
+   "article": "das",
+   "plural": "-ä, er",
+   "raw": "das Haus, -ä, er",
+   "examples": [
+    "In welchem Haus wohnst du?",
+    "Ich gehe jetzt nach Hause.",
+    "Paul ist nicht zu Hause."
+   ]
+  },
+  {
+   "lemma": "Hausaufgabe",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Hausaufgabe,-n",
+   "examples": [
+    "Kannst du mir bei den Hausaufgaben helfen?"
+   ]
+  },
+  {
+   "lemma": "Hausfrau",
+   "article": "die",
+   "plural": "-en/",
+   "raw": "die Hausfrau, -en/",
+   "examples": []
+  },
+  {
+   "lemma": "Hausmann",
+   "article": "der",
+   "plural": null,
+   "raw": "der Hausmann",
+   "examples": [
+    "Die Hausfrau/der Hausmann wäscht, kocht und kauft",
+    "ein."
+   ]
+  },
+  {
+   "lemma": "Heimat",
+   "article": "die",
+   "plural": null,
+   "raw": "die Heimat",
+   "examples": [
+    "Ich komme aus der Schweiz. Das ist meine Heimat."
+   ]
+  },
+  {
+   "lemma": "heiraten",
+   "article": null,
+   "plural": null,
+   "raw": "heiraten",
+   "examples": [
+    "Meine Schwester heiratet einen Japaner."
+   ]
+  },
+  {
+   "lemma": "heißen",
+   "article": null,
+   "plural": null,
+   "raw": "heißen",
+   "examples": [
+    "Ich heiße Charlotte Meier.",
+    "Wie heißt das auf Deutsch?"
+   ]
+  },
+  {
+   "lemma": "helfen",
+   "article": null,
+   "plural": null,
+   "raw": "helfen",
+   "examples": [
+    "Können Sie mir helfen, bitte?"
+   ]
+  },
+  {
+   "lemma": "hell",
+   "article": null,
+   "plural": null,
+   "raw": "hell",
+   "examples": [
+    "Im Sommer ist es bis 21 Uhr hell."
+   ]
+  },
+  {
+   "lemma": "Herd",
+   "article": "der",
+   "plural": null,
+   "raw": "der Herd",
+   "examples": [
+    "In der neuen Küche fehlt noch der Herd."
+   ]
+  },
+  {
+   "lemma": "Herr",
+   "article": "der",
+   "plural": "-en",
+   "raw": "der Herr, -en",
+   "examples": [
+    "Guten Tag, Herr Sommer!"
+   ]
+  },
+  {
+   "lemma": "herzlich",
+   "article": null,
+   "plural": null,
+   "raw": "herzlich",
+   "examples": [
+    "Herzlichen Glückwunsch!"
+   ]
+  },
+  {
+   "lemma": "heute",
+   "article": null,
+   "plural": null,
+   "raw": "heute",
+   "examples": [
+    "Heute ist ein schöner Tag."
+   ]
+  },
+  {
+   "lemma": "hier",
+   "article": null,
+   "plural": null,
+   "raw": "hier",
+   "examples": [
+    "Hier ist 06131-553221, Pamela Linke.",
+    "Hier wohne ich."
+   ]
+  },
+  {
+   "lemma": "Hilfe",
+   "article": "die",
+   "plural": null,
+   "raw": "die Hilfe",
+   "examples": [
+    "Hilfe! Bitte helfen Sie mir!",
+    "Brauchen Sie meine Hilfe?"
+   ]
+  },
+  {
+   "lemma": "hinten",
+   "article": null,
+   "plural": null,
+   "raw": "hinten",
+   "examples": [
+    "Die Tür zum Aussteigen ist hinten."
+   ]
+  },
+  {
+   "lemma": "Hobby",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Hobby, -s",
+   "examples": [
+    "Meine Hobbys sind Wandern und Schwimmen."
+   ]
+  },
+  {
+   "lemma": "hoch",
+   "article": null,
+   "plural": null,
+   "raw": "hoch",
+   "examples": [
+    "Der Mount Everest ist 8.880 Meter hoch."
+   ]
+  },
+  {
+   "lemma": "Hochzeit",
+   "article": "die",
+   "plural": null,
+   "raw": "die Hochzeit",
+   "examples": [
+    "Zur dieser Hochzeit kommen mehr als fünfzig Gäste."
+   ]
+  },
+  {
+   "lemma": "holen",
+   "article": null,
+   "plural": null,
+   "raw": "holen",
+   "examples": [
+    "Ich hole zwei Flaschen Wasser aus der Küche."
+   ]
+  },
+  {
+   "lemma": "hören",
+   "article": null,
+   "plural": null,
+   "raw": "hören",
+   "examples": [
+    "Hör mal! Was ist das?",
+    "Ich habe das Lied schon mal gehört."
+   ]
+  },
+  {
+   "lemma": "Hotel",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Hotel, -s",
+   "examples": [
+    "Im Urlaub sind wir in einem Hotel am Meer."
+   ]
+  },
+  {
+   "lemma": "Hund",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Hund, -e",
+   "examples": [
+    "Der Hund ist noch jung."
+   ]
+  },
+  {
+   "lemma": "Hunger",
+   "article": "der",
+   "plural": null,
+   "raw": "der Hunger",
+   "examples": [
+    "Ich habe Hunger! Wann ist das Essen fertig?"
+   ]
+  },
+  {
+   "lemma": "ich",
+   "article": null,
+   "plural": null,
+   "raw": "ich",
+   "examples": [
+    "Ich heiße Veronika."
+   ]
+  },
+  {
+   "lemma": "ihr/ihm/ihn",
+   "article": null,
+   "plural": null,
+   "raw": "ihr/ihm/ihn",
+   "examples": [
+    "Gib ihr/ihm bitte das Buch.",
+    "Ruf ihn bitte an."
+   ]
+  },
+  {
+   "lemma": "immer",
+   "article": null,
+   "plural": null,
+   "raw": "immer",
+   "examples": [
+    "Frau Bast kommt immer zu spät."
+   ]
+  },
+  {
+   "lemma": "in",
+   "article": null,
+   "plural": null,
+   "raw": "in",
+   "examples": [
+    "Ich wohne in Wiesbaden.",
+    "Der Zug kommt in fünf Minuten.",
+    "Frau Rausch arbeitet in einem Geschäft.",
+    "Komm, wir gehen ins Kino."
+   ]
+  },
+  {
+   "lemma": "Information",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Information, -en",
+   "examples": [
+    "Wenn Sie Fragen haben, gehen Sie zur Information.",
+    "Wir haben hier wichtige Informationen für Sie."
+   ]
+  },
+  {
+   "lemma": "international",
+   "article": null,
+   "plural": null,
+   "raw": "international",
+   "examples": [
+    "Unser Deutschkurs ist international: Silvana kommt",
+    "aus Italien, Conchi aus Spanien, Yin aus China ..."
+   ]
+  },
+  {
+   "lemma": "Internet",
+   "article": "das",
+   "plural": null,
+   "raw": "das Internet",
+   "examples": [
+    "Das findest du im Internet."
+   ]
+  },
+  {
+   "lemma": "ja",
+   "article": null,
+   "plural": null,
+   "raw": "ja",
+   "examples": [
+    "Sind Sie Herr Watanabe? – Ja."
+   ]
+  },
+  {
+   "lemma": "Jacke",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Jacke, -n",
+   "examples": [
+    "Zieh dir eine Jacke an. Es ist kalt."
+   ]
+  },
+  {
+   "lemma": "jed-",
+   "article": null,
+   "plural": null,
+   "raw": "jed-",
+   "examples": [
+    "Blumen kannst du in jedem Bahnhof kaufen."
+   ]
+  },
+  {
+   "lemma": "jetzt",
+   "article": null,
+   "plural": null,
+   "raw": "jetzt",
+   "examples": [
+    "Jetzt machen wir eine Pause."
+   ]
+  },
+  {
+   "lemma": "Job",
+   "article": "der",
+   "plural": "-s",
+   "raw": "der Job, -s",
+   "examples": [
+    "Jenny hat einen neuen Job bei der Post."
+   ]
+  },
+  {
+   "lemma": "Jugendliche",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der Jugendliche, -n",
+   "examples": [
+    "Viele Jugendliche kaufen gern ein."
+   ]
+  },
+  {
+   "lemma": "jung",
+   "article": null,
+   "plural": null,
+   "raw": "jung",
+   "examples": [
+    "Claudia ist 21. – Was? Noch so jung?"
+   ]
+  },
+  {
+   "lemma": "Junge",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der Junge, -n",
+   "examples": [
+    "Ich habe zwei Kinder. Einen Jungen und ein Mädchen."
+   ]
+  },
+  {
+   "lemma": "Kaffee",
+   "article": "der",
+   "plural": null,
+   "raw": "der Kaffee",
+   "examples": [
+    "Zum Frühstück trinke ich immer Kaffee."
+   ]
+  },
+  {
+   "lemma": "kaputt",
+   "article": null,
+   "plural": null,
+   "raw": "kaputt",
+   "examples": [
+    "Das Glas war teuer. Es geht sehr leicht kaputt."
+   ]
+  },
+  {
+   "lemma": "Karte",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Karte, -n",
+   "examples": [
+    "Ich schreibe meinen Bekannten eine Karte aus dem",
+    "Urlaub.",
+    "Wollen wir Karten spielen?",
+    "Ich möchte auch etwas essen. Bringen Sie mir die Karte,",
+    "bitte."
+   ]
+  },
+  {
+   "lemma": "(Kredit)-Karte",
+   "article": null,
+   "plural": "-n",
+   "raw": "(Kredit)-Karte, -n",
+   "examples": [
+    "Kann ich auch mit Karte (be-) zahlen?"
+   ]
+  },
+  {
+   "lemma": "Kartoffel",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Kartoffel, -n",
+   "examples": [
+    "Für Pommes frites braucht man Kartoffeln."
+   ]
+  },
+  {
+   "lemma": "Kasse",
+   "article": "die",
+   "plural": null,
+   "raw": "die Kasse",
+   "examples": [
+    "Zahlen Sie bitte an der Kasse."
+   ]
+  },
+  {
+   "lemma": "kaufen",
+   "article": null,
+   "plural": null,
+   "raw": "kaufen",
+   "examples": [
+    "Tim kauft sich ein neues Auto."
+   ]
+  },
+  {
+   "lemma": "kein",
+   "article": null,
+   "plural": null,
+   "raw": "kein",
+   "examples": [
+    "Es gibt keine Eintrittskarten mehr."
+   ]
+  },
+  {
+   "lemma": "kennen",
+   "article": null,
+   "plural": null,
+   "raw": "kennen",
+   "examples": [
+    "Kennen Sie diese Frau? – Nein, leider nicht."
+   ]
+  },
+  {
+   "lemma": "kennenlernen",
+   "article": null,
+   "plural": null,
+   "raw": "kennenlernen",
+   "examples": [
+    "Wir sind neu hier. Wir möchten Sie kennenlernen."
+   ]
+  },
+  {
+   "lemma": "Kind",
+   "article": "das",
+   "plural": "-er",
+   "raw": "das Kind, -er",
+   "examples": [
+    "Wie viele Kinder haben Sie?"
+   ]
+  },
+  {
+   "lemma": "Kindergarten",
+   "article": "der",
+   "plural": null,
+   "raw": "der Kindergarten",
+   "examples": [
+    "Die kleine Laura geht schon in den Kindergarten."
+   ]
+  },
+  {
+   "lemma": "Kino",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Kino, -s",
+   "examples": [
+    "Wir sehen heute Abend im Kino einen schönen Film."
+   ]
+  },
+  {
+   "lemma": "Kiosk",
+   "article": "der",
+   "plural": null,
+   "raw": "der Kiosk",
+   "examples": [
+    "Am Kiosk bekommen Sie Getränke, Zigaretten und",
+    "Zeitungen."
+   ]
+  },
+  {
+   "lemma": "klar",
+   "article": null,
+   "plural": null,
+   "raw": "klar",
+   "examples": [
+    "Kommst du mit? – Klar!"
+   ]
+  },
+  {
+   "lemma": "Klasse",
+   "article": "die",
+   "plural": null,
+   "raw": "die Klasse",
+   "examples": [
+    "In unserer Klasse sind fünfundzwanzig Schüler.",
+    "Im Zug fahre ich immer 2. Klasse."
+   ]
+  },
+  {
+   "lemma": "Kleidung",
+   "article": "die",
+   "plural": null,
+   "raw": "die Kleidung",
+   "examples": [
+    "Wo finde ich Kleidung? – Jacken im ersten, Jeans im",
+    "zweiten Stock."
+   ]
+  },
+  {
+   "lemma": "klein",
+   "article": null,
+   "plural": null,
+   "raw": "klein",
+   "examples": [
+    "Eltville ist eine kleine Stadt am Rhein."
+   ]
+  },
+  {
+   "lemma": "kochen",
+   "article": null,
+   "plural": null,
+   "raw": "kochen",
+   "examples": [
+    "Herr Georgi kann gut kochen."
+   ]
+  },
+  {
+   "lemma": "Koffer",
+   "article": "der",
+   "plural": "–",
+   "raw": "der Koffer, –",
+   "examples": [
+    "Ist das Ihr Koffer?"
+   ]
+  },
+  {
+   "lemma": "Kollege",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der Kollege, -n",
+   "examples": [
+    "Wie heißt die neue Kollegin?"
+   ]
+  },
+  {
+   "lemma": "kommen",
+   "article": null,
+   "plural": null,
+   "raw": "kommen",
+   "examples": [
+    "Woher kommen Sie? – Aus Frankreich.",
+    "Kommst du mit ins Schwimmbad?"
+   ]
+  },
+  {
+   "lemma": "können",
+   "article": null,
+   "plural": null,
+   "raw": "können",
+   "examples": [
+    "Ich kann Deutsch und Russisch.",
+    "Können Sie mir helfen?"
+   ]
+  },
+  {
+   "lemma": "Konto",
+   "article": "das",
+   "plural": null,
+   "raw": "das Konto",
+   "examples": [
+    "Das Geld überweisen wir am ersten März auf Ihr Konto."
+   ]
+  },
+  {
+   "lemma": "Kopf",
+   "article": "der",
+   "plural": null,
+   "raw": "der Kopf",
+   "examples": [
+    "Mein Kopf tut weh!"
+   ]
+  },
+  {
+   "lemma": "kosten",
+   "article": null,
+   "plural": null,
+   "raw": "kosten",
+   "examples": [
+    "Wie viel kostet das? – 10 Euro."
+   ]
+  },
+  {
+   "lemma": "krank",
+   "article": null,
+   "plural": null,
+   "raw": "krank",
+   "examples": [
+    "Ich kann heute nicht zur Arbeit kommen, ich bin krank",
+    "und liege im Bett."
+   ]
+  },
+  {
+   "lemma": "kriegen",
+   "article": null,
+   "plural": null,
+   "raw": "kriegen",
+   "examples": [
+    "Ich kriege 15 Euro in der Stunde für meine Arbeit."
+   ]
+  },
+  {
+   "lemma": "Küche",
+   "article": "die",
+   "plural": null,
+   "raw": "die Küche",
+   "examples": [
+    "Der neue Herd kommt in die Küche."
+   ]
+  },
+  {
+   "lemma": "Kuchen",
+   "article": "der",
+   "plural": null,
+   "raw": "der Kuchen",
+   "examples": [
+    "Ich nehme ein Stück Kuchen."
+   ]
+  },
+  {
+   "lemma": "Kugelschreiber",
+   "article": "der",
+   "plural": null,
+   "raw": "der Kugelschreiber",
+   "examples": [
+    "Hast du einen Kugelschreiber für mich?"
+   ]
+  },
+  {
+   "lemma": "Kühlschrank",
+   "article": "der",
+   "plural": null,
+   "raw": "der Kühlschrank",
+   "examples": [
+    "Haben wir noch Milch? – Ja, im Kühlschrank."
+   ]
+  },
+  {
+   "lemma": "kulturell",
+   "article": null,
+   "plural": null,
+   "raw": "kulturell",
+   "examples": [
+    "Ich bin kulturell interessiert. Ich gehe oft ins Museum."
+   ]
+  },
+  {
+   "lemma": "sich kümmern",
+   "article": null,
+   "plural": null,
+   "raw": "sich kümmern",
+   "examples": [
+    "Jede Mutter kümmert sich um ihre kleinen Kinder."
+   ]
+  },
+  {
+   "lemma": "Kunde",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der Kunde, -n",
+   "examples": [
+    "Einen Moment, bitte. Ich habe eine Kundin."
+   ]
+  },
+  {
+   "lemma": "Kurs",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Kurs, -e",
+   "examples": [
+    "Der Deutschkurs geht bis zum Sommer."
+   ]
+  },
+  {
+   "lemma": "kurz",
+   "article": null,
+   "plural": null,
+   "raw": "kurz",
+   "examples": [
+    "Ricardo hat kurzes Haar."
+   ]
+  },
+  {
+   "lemma": "lachen",
+   "article": null,
+   "plural": null,
+   "raw": "lachen",
+   "examples": [
+    "Die Kinder lachen viel."
+   ]
+  },
+  {
+   "lemma": "Laden",
+   "article": "der",
+   "plural": "-ä",
+   "raw": "der Laden, -ä",
+   "examples": [
+    "Im Buchladen können Sie Bücher kaufen."
+   ]
+  },
+  {
+   "lemma": "Land",
+   "article": "das",
+   "plural": "-ä, er",
+   "raw": "das Land, -ä, er",
+   "examples": [
+    "Italien ist ein schönes Land."
+   ]
+  },
+  {
+   "lemma": "lang",
+   "article": null,
+   "plural": null,
+   "raw": "lang",
+   "examples": [
+    "Die Jeans ist zu lang."
+   ]
+  },
+  {
+   "lemma": "lange",
+   "article": null,
+   "plural": null,
+   "raw": "lange",
+   "examples": [
+    "Wie lange fährt der Zug von Hamburg nach Berlin?"
+   ]
+  },
+  {
+   "lemma": "langsam",
+   "article": null,
+   "plural": null,
+   "raw": "langsam",
+   "examples": [
+    "Könnten Sie bitte etwas langsamer sprechen?"
+   ]
+  },
+  {
+   "lemma": "laufen",
+   "article": null,
+   "plural": null,
+   "raw": "laufen",
+   "examples": [
+    "Ich möchte nicht Auto fahren, ich möchte laufen."
+   ]
+  },
+  {
+   "lemma": "laut",
+   "article": null,
+   "plural": null,
+   "raw": "laut",
+   "examples": [
+    "Nicht so laut! Das Baby schläft."
+   ]
+  },
+  {
+   "lemma": "leben",
+   "article": null,
+   "plural": null,
+   "raw": "leben",
+   "examples": [
+    "Sie lebt bei ihrer Schwester.",
+    "Ihre Eltern leben nicht mehr."
+   ]
+  },
+  {
+   "lemma": "Leben",
+   "article": "das",
+   "plural": null,
+   "raw": "das Leben",
+   "examples": [
+    "Das Leben in diesem Land ist teuer."
+   ]
+  },
+  {
+   "lemma": "Lebensmittel (pl.)",
+   "article": "die",
+   "plural": null,
+   "raw": "die Lebensmittel (pl.)",
+   "examples": [
+    "Lebensmittel bekommen Sie im Supermarkt."
+   ]
+  },
+  {
+   "lemma": "ledig",
+   "article": null,
+   "plural": null,
+   "raw": "ledig",
+   "examples": [
+    "Sind Sie verheiratet? – Nein. Ledig."
+   ]
+  },
+  {
+   "lemma": "legen",
+   "article": null,
+   "plural": null,
+   "raw": "legen",
+   "examples": [
+    "Legen Sie das Buch auf den Tisch."
+   ]
+  },
+  {
+   "lemma": "Lehrer",
+   "article": "der",
+   "plural": "–",
+   "raw": "der Lehrer, –",
+   "examples": [
+    "Unsere Deutschlehrerin heißt Frau Müller."
+   ]
+  },
+  {
+   "lemma": "leicht",
+   "article": null,
+   "plural": null,
+   "raw": "leicht",
+   "examples": [
+    "Der Koffer ist leicht.",
+    "Deutsch ist nicht leicht."
+   ]
+  },
+  {
+   "lemma": "leider",
+   "article": null,
+   "plural": null,
+   "raw": "leider",
+   "examples": [
+    "Leider kann ich nicht kommen. Ich muss zum Arzt."
+   ]
+  },
+  {
+   "lemma": "leise",
+   "article": null,
+   "plural": null,
+   "raw": "leise",
+   "examples": [
+    "Seid leise. Die anderen schlafen schon."
+   ]
+  },
+  {
+   "lemma": "lernen",
+   "article": null,
+   "plural": null,
+   "raw": "lernen",
+   "examples": [
+    "Wie lange lernen Sie schon Deutsch?"
+   ]
+  },
+  {
+   "lemma": "lesen",
+   "article": null,
+   "plural": null,
+   "raw": "lesen",
+   "examples": [
+    "Ich lese ein Buch von García Márquez."
+   ]
+  },
+  {
+   "lemma": "letzt-",
+   "article": null,
+   "plural": null,
+   "raw": "letzt-",
+   "examples": [
+    "Morgen ist der letzte Kurstag."
+   ]
+  },
+  {
+   "lemma": "Leute (pl.)",
+   "article": "die",
+   "plural": null,
+   "raw": "die Leute (pl.)",
+   "examples": [
+    "In der Disko sind viele Leute."
+   ]
+  },
+  {
+   "lemma": "Licht",
+   "article": "das",
+   "plural": null,
+   "raw": "das Licht",
+   "examples": [
+    "Wo macht man hier das Licht an?"
+   ]
+  },
+  {
+   "lemma": "lieb-",
+   "article": null,
+   "plural": null,
+   "raw": "lieb-",
+   "examples": [
+    "Liebe Susanne, lieber Hans,"
+   ]
+  },
+  {
+   "lemma": "lieben",
+   "article": null,
+   "plural": null,
+   "raw": "lieben",
+   "examples": [
+    "Ich liebe dich!"
+   ]
+  },
+  {
+   "lemma": "lieber",
+   "article": null,
+   "plural": null,
+   "raw": "lieber",
+   "examples": [
+    "Sie fährt lieber mit der Bahn."
+   ]
+  },
+  {
+   "lemma": "Lieblings-",
+   "article": null,
+   "plural": null,
+   "raw": "Lieblings-",
+   "examples": [
+    "Mein Lieblingsfilm ist „Schwarze Augen“."
+   ]
+  },
+  {
+   "lemma": "Lied",
+   "article": "das",
+   "plural": "-er",
+   "raw": "das Lied, -er",
+   "examples": [
+    "Welches ist dein Lieblingslied?"
+   ]
+  },
+  {
+   "lemma": "liegen",
+   "article": null,
+   "plural": null,
+   "raw": "liegen",
+   "examples": [
+    "Um neun Uhr liegt Judith noch im Bett.",
+    "Frankfurt liegt am Main."
+   ]
+  },
+  {
+   "lemma": "links",
+   "article": null,
+   "plural": null,
+   "raw": "links",
+   "examples": [
+    "Gehen Sie die nächste Straße links."
+   ]
+  },
+  {
+   "lemma": "Lkw",
+   "article": "der",
+   "plural": "-s",
+   "raw": "der Lkw, -s",
+   "examples": [
+    "Dieser Lastkraftwagen ist sehr groß."
+   ]
+  },
+  {
+   "lemma": "Lokal",
+   "article": "das",
+   "plural": null,
+   "raw": "das Lokal",
+   "examples": [
+    "In unserer Straße gibt es ein neues Lokal."
+   ]
+  },
+  {
+   "lemma": "Lösung",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Lösung, -en",
+   "examples": [
+    "Die Lösung ist ganz einfach."
+   ]
+  },
+  {
+   "lemma": "lustig",
+   "article": null,
+   "plural": null,
+   "raw": "lustig",
+   "examples": [
+    "Frau Mertens ist lustig. Sie lacht immer."
+   ]
+  },
+  {
+   "lemma": "machen",
+   "article": null,
+   "plural": null,
+   "raw": "machen",
+   "examples": [
+    "Was machst du heute Abend?",
+    "Ich muss jetzt das Essen machen.",
+    "Das macht 5 Euro 95.",
+    "Das macht nichts."
+   ]
+  },
+  {
+   "lemma": "Mädchen",
+   "article": "das",
+   "plural": "–",
+   "raw": "das Mädchen, –",
+   "examples": [
+    "Familie Kurz bekommt ein Baby. – Junge oder Mädchen?"
+   ]
+  },
+  {
+   "lemma": "man",
+   "article": null,
+   "plural": null,
+   "raw": "man",
+   "examples": [
+    "Hier darf man nicht rauchen."
+   ]
+  },
+  {
+   "lemma": "Mann",
+   "article": "der",
+   "plural": "-ä, er",
+   "raw": "der Mann, -ä, er",
+   "examples": [
+    "Mein Mann arbeitet bei der Polizei."
+   ]
+  },
+  {
+   "lemma": "männlich",
+   "article": null,
+   "plural": null,
+   "raw": "männlich",
+   "examples": [
+    "Kreuzen Sie bitte an: „weiblich“ oder „männlich“."
+   ]
+  },
+  {
+   "lemma": "Maschine",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Maschine, -n",
+   "examples": [
+    "Die Waschmaschine ist günstig."
+   ]
+  },
+  {
+   "lemma": "Meer",
+   "article": "das",
+   "plural": null,
+   "raw": "das Meer",
+   "examples": [
+    "Wir machen Urlaub am Meer."
+   ]
+  },
+  {
+   "lemma": "mehr",
+   "article": null,
+   "plural": null,
+   "raw": "mehr",
+   "examples": [
+    "Dieses Auto kostet 1.000 Euro mehr als das andere."
+   ]
+  },
+  {
+   "lemma": "mein",
+   "article": null,
+   "plural": null,
+   "raw": "mein",
+   "examples": [
+    "Mein Vater ist Arzt."
+   ]
+  },
+  {
+   "lemma": "meist-",
+   "article": null,
+   "plural": null,
+   "raw": "meist-",
+   "examples": [
+    "Die meisten Norddeutschen sind sehr groß."
+   ]
+  },
+  {
+   "lemma": "Mensch",
+   "article": "der",
+   "plural": "-en",
+   "raw": "der Mensch, -en",
+   "examples": [
+    "Die Menschen sind hier anders als bei uns."
+   ]
+  },
+  {
+   "lemma": "mieten",
+   "article": null,
+   "plural": null,
+   "raw": "mieten",
+   "examples": [
+    "Ich möchte ein Auto mieten."
+   ]
+  },
+  {
+   "lemma": "Miete",
+   "article": "die",
+   "plural": null,
+   "raw": "die Miete",
+   "examples": [
+    "Die Miete für diese Wohnung ist 600 Euro."
+   ]
+  },
+  {
+   "lemma": "Milch",
+   "article": "die",
+   "plural": null,
+   "raw": "die Milch",
+   "examples": [
+    "Die Milch steht im Kühlschrank."
+   ]
+  },
+  {
+   "lemma": "mit",
+   "article": null,
+   "plural": null,
+   "raw": "mit",
+   "examples": [
+    "Trinken Sie den Kaffee mit Milch?"
+   ]
+  },
+  {
+   "lemma": "mitbringen",
+   "article": null,
+   "plural": null,
+   "raw": "mitbringen",
+   "examples": [
+    "Ich gehe einkaufen. Soll ich dir was mitbringen?"
+   ]
+  },
+  {
+   "lemma": "mitkommen",
+   "article": null,
+   "plural": null,
+   "raw": "mitkommen",
+   "examples": [
+    "Ich gehe ins Kino. Kommst du mit?"
+   ]
+  },
+  {
+   "lemma": "mitmachen",
+   "article": null,
+   "plural": null,
+   "raw": "mitmachen",
+   "examples": [
+    "Warum macht ihr nicht mit?"
+   ]
+  },
+  {
+   "lemma": "mitnehmen",
+   "article": null,
+   "plural": null,
+   "raw": "mitnehmen",
+   "examples": [
+    "Nehmen wir meine Schwester ins Kino mit?"
+   ]
+  },
+  {
+   "lemma": "Mitte",
+   "article": "die",
+   "plural": null,
+   "raw": "die Mitte",
+   "examples": [
+    "Der Lehrer steht in der Mitte des Klassenzimmers."
+   ]
+  },
+  {
+   "lemma": "Möbel (pl.)",
+   "article": "die",
+   "plural": null,
+   "raw": "die Möbel (pl.)",
+   "examples": [
+    "Sind die Möbel neu?"
+   ]
+  },
+  {
+   "lemma": "möchten",
+   "article": null,
+   "plural": null,
+   "raw": "möchten",
+   "examples": [
+    "Was möchten Sie trinken?"
+   ]
+  },
+  {
+   "lemma": "mögen",
+   "article": null,
+   "plural": null,
+   "raw": "mögen",
+   "examples": [
+    "Magst du Kaffee oder Tee?"
+   ]
+  },
+  {
+   "lemma": "möglich",
+   "article": null,
+   "plural": null,
+   "raw": "möglich",
+   "examples": [
+    "Mit dieser Fahrkarte ist die Fahrt ab 9 Uhr möglich."
+   ]
+  },
+  {
+   "lemma": "Moment",
+   "article": "der",
+   "plural": null,
+   "raw": "der Moment",
+   "examples": [
+    "Moment mal bitte!",
+    "Einen Moment bitte."
+   ]
+  },
+  {
+   "lemma": "morgen",
+   "article": null,
+   "plural": null,
+   "raw": "morgen",
+   "examples": [
+    "Morgen beginnt die Schule um 10 Uhr."
+   ]
+  },
+  {
+   "lemma": "müde",
+   "article": null,
+   "plural": null,
+   "raw": "müde",
+   "examples": [
+    "Ich bin müde. Ich gehe schlafen."
+   ]
+  },
+  {
+   "lemma": "Mund",
+   "article": "der",
+   "plural": null,
+   "raw": "der Mund",
+   "examples": [
+    "Öffnen Sie den Mund."
+   ]
+  },
+  {
+   "lemma": "müssen",
+   "article": null,
+   "plural": null,
+   "raw": "müssen",
+   "examples": [
+    "Ich muss jeden Tag von 8 Uhr bis 18 Uhr arbeiten."
+   ]
+  },
+  {
+   "lemma": "Mutter",
+   "article": "die",
+   "plural": "-ü",
+   "raw": "die Mutter, -ü",
+   "examples": [
+    "Frau Berghäuser ist die Mutter von Michaela."
+   ]
+  },
+  {
+   "lemma": "nach",
+   "article": null,
+   "plural": null,
+   "raw": "nach",
+   "examples": [
+    "Ich gehe jetzt nach Hause.",
+    "Ich fliege nach München.",
+    "Es ist schon 5 nach 12."
+   ]
+  },
+  {
+   "lemma": "nächst-",
+   "article": null,
+   "plural": null,
+   "raw": "nächst-",
+   "examples": [
+    "Sehen wir uns nächste Woche?"
+   ]
+  },
+  {
+   "lemma": "Name",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der Name, -n",
+   "examples": [
+    "Mein Name ist Thomas Schmidt.",
+    "Mein Vorname ist Thomas; Schmidt ist der Familienname."
+   ]
+  },
+  {
+   "lemma": "nehmen",
+   "article": null,
+   "plural": null,
+   "raw": "nehmen",
+   "examples": [
+    "Heute gibt es Hähnchen. Das nehme ich.",
+    "Ich nehme den Bus."
+   ]
+  },
+  {
+   "lemma": "nein",
+   "article": null,
+   "plural": null,
+   "raw": "nein",
+   "examples": [
+    "Fährst du auch nach München? – Nein, ich habe keine",
+    "Zeit."
+   ]
+  },
+  {
+   "lemma": "neu",
+   "article": null,
+   "plural": null,
+   "raw": "neu",
+   "examples": [
+    "Ich bin der neue Kollege.",
+    "Wir haben eine neue Wohnung."
+   ]
+  },
+  {
+   "lemma": "nicht",
+   "article": null,
+   "plural": null,
+   "raw": "nicht",
+   "examples": [
+    "Das stimmt nicht.",
+    "Das ist doch schön, nicht?"
+   ]
+  },
+  {
+   "lemma": "nichts",
+   "article": null,
+   "plural": null,
+   "raw": "nichts",
+   "examples": [
+    "Das macht nichts.",
+    "Hier kaufe ich nichts. Der Laden gefällt mir nicht."
+   ]
+  },
+  {
+   "lemma": "nie",
+   "article": null,
+   "plural": null,
+   "raw": "nie",
+   "examples": [
+    "Er kommt nie pünktlich."
+   ]
+  },
+  {
+   "lemma": "noch",
+   "article": null,
+   "plural": null,
+   "raw": "noch",
+   "examples": [
+    "Vielleicht kommt er noch.",
+    "Wir warten noch fünf Minuten.",
+    "Ich habe noch 20 Euro."
+   ]
+  },
+  {
+   "lemma": "normal",
+   "article": null,
+   "plural": null,
+   "raw": "normal",
+   "examples": [
+    "75 kg. Sein Gewicht ist normal."
+   ]
+  },
+  {
+   "lemma": "Nummer",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Nummer, -n",
+   "examples": [
+    "Sie haben Zimmer Nummer zwölf.",
+    "Welche Hausnummer haben Sie?",
+    "Können Sie mir Ihre Nummer geben?"
+   ]
+  },
+  {
+   "lemma": "nur",
+   "article": null,
+   "plural": null,
+   "raw": "nur",
+   "examples": [
+    "Ich möchte nur ein Glas Wasser."
+   ]
+  },
+  {
+   "lemma": "oben",
+   "article": null,
+   "plural": null,
+   "raw": "oben",
+   "examples": [
+    "Ich wohne oben."
+   ]
+  },
+  {
+   "lemma": "Obst",
+   "article": "das",
+   "plural": null,
+   "raw": "das Obst",
+   "examples": [
+    "Im Sommer ist das Obst billig."
+   ]
+  },
+  {
+   "lemma": "oder",
+   "article": null,
+   "plural": null,
+   "raw": "oder",
+   "examples": [
+    "Wann können Sie kommen – heute oder morgen?"
+   ]
+  },
+  {
+   "lemma": "öffnen",
+   "article": null,
+   "plural": null,
+   "raw": "öffnen",
+   "examples": [
+    "Ich öffne die Tür."
+   ]
+  },
+  {
+   "lemma": "geöffnet",
+   "article": null,
+   "plural": null,
+   "raw": "geöffnet",
+   "examples": [
+    "Der Laden ist samstags bis 16.00 Uhr geöffnet."
+   ]
+  },
+  {
+   "lemma": "oft",
+   "article": null,
+   "plural": null,
+   "raw": "oft",
+   "examples": [
+    "Petra treffe ich oft."
+   ]
+  },
+  {
+   "lemma": "ohne",
+   "article": null,
+   "plural": null,
+   "raw": "ohne",
+   "examples": [
+    "Ohne Geld kann er nichts kaufen."
+   ]
+  },
+  {
+   "lemma": "Öl",
+   "article": "das",
+   "plural": null,
+   "raw": "das Öl",
+   "examples": [
+    "Den Salat machen wir ohne Öl."
+   ]
+  },
+  {
+   "lemma": "Oma",
+   "article": "die",
+   "plural": "-s",
+   "raw": "die Oma, -s",
+   "examples": [
+    "Meine Oma ist schon tot."
+   ]
+  },
+  {
+   "lemma": "Opa",
+   "article": "der",
+   "plural": "-s",
+   "raw": "der Opa, -s",
+   "examples": [
+    "Mein Opa heißt Hans."
+   ]
+  },
+  {
+   "lemma": "Ordnung",
+   "article": "die",
+   "plural": null,
+   "raw": "die Ordnung",
+   "examples": [
+    "Das ist in Ordnung."
+   ]
+  },
+  {
+   "lemma": "Ort",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Ort, -e",
+   "examples": [
+    "Der Ort liegt am Meer."
+   ]
+  },
+  {
+   "lemma": "Papier",
+   "article": "das",
+   "plural": null,
+   "raw": "das Papier",
+   "examples": [
+    "Hier sind Papier und Bleistift."
+   ]
+  },
+  {
+   "lemma": "Papiere (pl.)",
+   "article": "die",
+   "plural": null,
+   "raw": "die Papiere (pl.)",
+   "examples": [
+    "Haben Sie Ihre Papiere dabei?"
+   ]
+  },
+  {
+   "lemma": "Partner",
+   "article": "der",
+   "plural": "-/",
+   "raw": "der Partner, -/",
+   "examples": []
+  },
+  {
+   "lemma": "Partnerin",
+   "article": "die",
+   "plural": "-nen",
+   "raw": "die Partnerin, -nen",
+   "examples": [
+    "Sie ist meine Partnerin."
+   ]
+  },
+  {
+   "lemma": "Party",
+   "article": "die",
+   "plural": null,
+   "raw": "die Party",
+   "examples": [
+    "Heute Abend machen wir eine Party."
+   ]
+  },
+  {
+   "lemma": "Pass",
+   "article": "der",
+   "plural": "-ä, e",
+   "raw": "der Pass, -ä, e",
+   "examples": [
+    "Im Hotel brauchst du deinen Pass."
+   ]
+  },
+  {
+   "lemma": "Pause",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Pause, -n",
+   "examples": [
+    "Von 12.00 bis 12.30 Uhr haben wir Mittagspause."
+   ]
+  },
+  {
+   "lemma": "Plan",
+   "article": "der",
+   "plural": "-ä, e",
+   "raw": "der Plan, -ä, e",
+   "examples": [
+    "Ich kaufe mir einen Stadtplan."
+   ]
+  },
+  {
+   "lemma": "Platz",
+   "article": "der",
+   "plural": "-ä, e",
+   "raw": "der Platz, -ä, e",
+   "examples": [
+    "Tut mir leid, der Platz ist besetzt.",
+    "Bitte nehmen Sie Platz!",
+    "Ich wohne Messeplatz 5."
+   ]
+  },
+  {
+   "lemma": "Polizei",
+   "article": "die",
+   "plural": null,
+   "raw": "die Polizei",
+   "examples": [
+    "Holen Sie die Polizei!"
+   ]
+  },
+  {
+   "lemma": "Pommes frites (pl.)",
+   "article": "die",
+   "plural": null,
+   "raw": "die Pommes frites (pl.)",
+   "examples": [
+    "Die Kinder essen Hähnchen mit Pommes frites."
+   ]
+  },
+  {
+   "lemma": "Post",
+   "article": "die",
+   "plural": null,
+   "raw": "die Post",
+   "examples": [
+    "Wo ist die Post, bitte?",
+    "Ist Post da?"
+   ]
+  },
+  {
+   "lemma": "Postleitzahl",
+   "article": "die",
+   "plural": null,
+   "raw": "die Postleitzahl",
+   "examples": [
+    "Wie ist Ihre Postleitzahl?"
+   ]
+  },
+  {
+   "lemma": "Praktikum",
+   "article": "das",
+   "plural": null,
+   "raw": "das Praktikum",
+   "examples": [
+    "Ich mache ein Praktikum bei Siemens."
+   ]
+  },
+  {
+   "lemma": "Praxis",
+   "article": "die",
+   "plural": null,
+   "raw": "die Praxis",
+   "examples": [
+    "Die Praxis ist ab acht Uhr geöffnet."
+   ]
+  },
+  {
+   "lemma": "Preis",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Preis, -e",
+   "examples": [
+    "Die Preise sind hoch."
+   ]
+  },
+  {
+   "lemma": "Problem",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Problem, -e",
+   "examples": [
+    "Mein Problem ist die Sprache."
+   ]
+  },
+  {
+   "lemma": "Prospekt",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Prospekt, -e",
+   "examples": [
+    "Bitte schicken Sie mir einen Prospekt von Ihrem Hotel."
+   ]
+  },
+  {
+   "lemma": "Prüfung",
+   "article": "die",
+   "plural": null,
+   "raw": "die Prüfung",
+   "examples": [
+    "Die Prüfung ist am Montag um 8.00 Uhr."
+   ]
+  },
+  {
+   "lemma": "pünktlich",
+   "article": null,
+   "plural": null,
+   "raw": "pünktlich",
+   "examples": [
+    "Der Bus fährt pünktlich um acht Uhr.",
+    "Herr Müller ist immer pünktlich."
+   ]
+  },
+  {
+   "lemma": "Rad fahren",
+   "article": null,
+   "plural": null,
+   "raw": "Rad fahren",
+   "examples": [
+    "Das Kind kann schon Rad fahren."
+   ]
+  },
+  {
+   "lemma": "rauchen",
+   "article": null,
+   "plural": null,
+   "raw": "rauchen",
+   "examples": [
+    "Ich rauche nicht."
+   ]
+  },
+  {
+   "lemma": "Raum",
+   "article": "der",
+   "plural": "-ä, e",
+   "raw": "der Raum, -ä, e",
+   "examples": [
+    "Der Unterricht ist in Raum 332."
+   ]
+  },
+  {
+   "lemma": "Rechnung",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Rechnung, -en",
+   "examples": [
+    "Die Rechnung, bitte."
+   ]
+  },
+  {
+   "lemma": "rechts",
+   "article": null,
+   "plural": null,
+   "raw": "rechts",
+   "examples": [
+    "Die Schillerstraße ist hier rechts."
+   ]
+  },
+  {
+   "lemma": "regnen",
+   "article": null,
+   "plural": null,
+   "raw": "regnen",
+   "examples": [
+    "Heute regnet es."
+   ]
+  },
+  {
+   "lemma": "Regen",
+   "article": "der",
+   "plural": null,
+   "raw": "der Regen",
+   "examples": [
+    "Bei diesem Regen gehe ich nicht raus."
+   ]
+  },
+  {
+   "lemma": "Reis",
+   "article": "der",
+   "plural": null,
+   "raw": "der Reis",
+   "examples": [
+    "Ich esse gern Reis."
+   ]
+  },
+  {
+   "lemma": "reisen",
+   "article": null,
+   "plural": null,
+   "raw": "reisen",
+   "examples": [
+    "Ich reise gern."
+   ]
+  },
+  {
+   "lemma": "Reise",
+   "article": "die",
+   "plural": null,
+   "raw": "die Reise",
+   "examples": [
+    "Wir machen eine Reise nach Österreich."
+   ]
+  },
+  {
+   "lemma": "Reisebüro",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Reisebüro, -s",
+   "examples": [
+    "Mein Mann arbeitet im Reisebüro."
+   ]
+  },
+  {
+   "lemma": "Reiseführer",
+   "article": "der",
+   "plural": null,
+   "raw": "der Reiseführer",
+   "examples": [
+    "Ich kaufe mir einen Reiseführer von Berlin.",
+    "Unser Reiseführer heißt Peter."
+   ]
+  },
+  {
+   "lemma": "reparieren",
+   "article": null,
+   "plural": null,
+   "raw": "reparieren",
+   "examples": [
+    "Er hat das Fahrrad repariert."
+   ]
+  },
+  {
+   "lemma": "Reparatur",
+   "article": "die",
+   "plural": null,
+   "raw": "die Reparatur",
+   "examples": [
+    "Die Reparatur ist sehr teuer."
+   ]
+  },
+  {
+   "lemma": "Restaurant",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Restaurant, -s",
+   "examples": [
+    "Wir essen heute in einem Restaurant."
+   ]
+  },
+  {
+   "lemma": "Rezeption",
+   "article": "die",
+   "plural": null,
+   "raw": "die Rezeption",
+   "examples": [
+    "Fragen Sie bitte im Hotel an der Rezeption."
+   ]
+  },
+  {
+   "lemma": "richtig",
+   "article": null,
+   "plural": null,
+   "raw": "richtig",
+   "examples": [
+    "Habe ich das richtig verstanden?",
+    "Das ist richtig."
+   ]
+  },
+  {
+   "lemma": "riechen",
+   "article": null,
+   "plural": null,
+   "raw": "riechen",
+   "examples": [
+    "Dieser Wein riecht gut."
+   ]
+  },
+  {
+   "lemma": "ruhig",
+   "article": null,
+   "plural": null,
+   "raw": "ruhig",
+   "examples": [
+    "Ich möchte ein ruhiges Zimmer."
+   ]
+  },
+  {
+   "lemma": "Saft",
+   "article": "der",
+   "plural": null,
+   "raw": "der Saft",
+   "examples": [
+    "Möchtest du einen Apfelsaft?"
+   ]
+  },
+  {
+   "lemma": "sagen",
+   "article": null,
+   "plural": null,
+   "raw": "sagen",
+   "examples": [
+    "Sag mal, wie geht es dir denn?"
+   ]
+  },
+  {
+   "lemma": "Salat",
+   "article": "der",
+   "plural": null,
+   "raw": "der Salat",
+   "examples": [
+    "Wie schmeckt dir der Salat?"
+   ]
+  },
+  {
+   "lemma": "Salz",
+   "article": "das",
+   "plural": null,
+   "raw": "das Salz",
+   "examples": [
+    "Herr Ober, kann ich bitte Salz haben?"
+   ]
+  },
+  {
+   "lemma": "Satz",
+   "article": null,
+   "plural": "-ä, e",
+   "raw": "Satz, -ä, e",
+   "examples": [
+    "Dieser Satz ist sehr einfach."
+   ]
+  },
+  {
+   "lemma": "S-Bahn",
+   "article": "die",
+   "plural": null,
+   "raw": "die S-Bahn",
+   "examples": [
+    "Ich nehme lieber die S-Bahn."
+   ]
+  },
+  {
+   "lemma": "Schalter",
+   "article": "der",
+   "plural": null,
+   "raw": "der Schalter",
+   "examples": [
+    "Gehen Sie bitte zum Schalter drei!"
+   ]
+  },
+  {
+   "lemma": "scheinen",
+   "article": null,
+   "plural": null,
+   "raw": "scheinen",
+   "examples": [
+    "Die Sonne scheint."
+   ]
+  },
+  {
+   "lemma": "schicken",
+   "article": null,
+   "plural": null,
+   "raw": "schicken",
+   "examples": [
+    "Bitte schicken Sie mir eine E-Mail."
+   ]
+  },
+  {
+   "lemma": "Schild",
+   "article": "das",
+   "plural": "-er",
+   "raw": "das Schild, -er",
+   "examples": [
+    "Haben Sie nicht das Schild gesehen?"
+   ]
+  },
+  {
+   "lemma": "Schinken",
+   "article": "der",
+   "plural": "–",
+   "raw": "der Schinken, –",
+   "examples": [
+    "Ich möchte gern ein Schinkenbrot."
+   ]
+  },
+  {
+   "lemma": "schlafen",
+   "article": null,
+   "plural": null,
+   "raw": "schlafen",
+   "examples": [
+    "Ich schlafe meistens acht Stunden."
+   ]
+  },
+  {
+   "lemma": "schlecht",
+   "article": null,
+   "plural": null,
+   "raw": "schlecht",
+   "examples": [
+    "Mir ist schlecht!",
+    "Sie sehen schlecht aus.",
+    "Wir haben schlechtes Wetter."
+   ]
+  },
+  {
+   "lemma": "schließen",
+   "article": null,
+   "plural": null,
+   "raw": "schließen",
+   "examples": [
+    "Bitte, schließen Sie die Tür."
+   ]
+  },
+  {
+   "lemma": "geschlossen",
+   "article": null,
+   "plural": null,
+   "raw": "geschlossen",
+   "examples": [
+    "Die Bank hat am Samstag geschlossen."
+   ]
+  },
+  {
+   "lemma": "Schluss",
+   "article": "der",
+   "plural": null,
+   "raw": "der Schluss",
+   "examples": [
+    "Ich muss jetzt Schluss machen.",
+    "Zum Schluss gibt er uns allen die Hand."
+   ]
+  },
+  {
+   "lemma": "Schlüssel",
+   "article": "der",
+   "plural": "–",
+   "raw": "der Schlüssel, –",
+   "examples": [
+    "Ich gebe Ihnen noch den Zimmerschlüssel."
+   ]
+  },
+  {
+   "lemma": "schmecken",
+   "article": null,
+   "plural": null,
+   "raw": "schmecken",
+   "examples": [
+    "Schmeckt das gut?"
+   ]
+  },
+  {
+   "lemma": "schnell",
+   "article": null,
+   "plural": null,
+   "raw": "schnell",
+   "examples": [
+    "Er fährt schnell."
+   ]
+  },
+  {
+   "lemma": "schon",
+   "article": null,
+   "plural": null,
+   "raw": "schon",
+   "examples": [
+    "Ist das Essen schon fertig?"
+   ]
+  },
+  {
+   "lemma": "schön",
+   "article": null,
+   "plural": null,
+   "raw": "schön",
+   "examples": [
+    "Schönen Urlaub!",
+    "Das ist sehr schön."
+   ]
+  },
+  {
+   "lemma": "Schrank",
+   "article": "der",
+   "plural": "-ä, e",
+   "raw": "der Schrank, -ä, e",
+   "examples": [
+    "Die Gläser stehen im Schrank."
+   ]
+  },
+  {
+   "lemma": "schreiben",
+   "article": null,
+   "plural": null,
+   "raw": "schreiben",
+   "examples": [
+    "Er schreibt jeden Tag fünfzig E-Mails."
+   ]
+  },
+  {
+   "lemma": "Schuh",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Schuh, -e",
+   "examples": [
+    "Zieh die Schuhe aus!"
+   ]
+  },
+  {
+   "lemma": "Schule",
+   "article": "die",
+   "plural": null,
+   "raw": "die Schule",
+   "examples": [
+    "Meine Tochter geht schon in die Schule.",
+    "Die Schule ist gleich hier um die Ecke."
+   ]
+  },
+  {
+   "lemma": "Schüler",
+   "article": "der",
+   "plural": "–",
+   "raw": "der Schüler, –",
+   "examples": [
+    "In meinem Kurs sind acht Schülerinnen und fünf",
+    "Schüler."
+   ]
+  },
+  {
+   "lemma": "schwer",
+   "article": null,
+   "plural": null,
+   "raw": "schwer",
+   "examples": [
+    "Ist Ihr Gepäck sehr schwer?",
+    "Das ist eine schwere Arbeit."
+   ]
+  },
+  {
+   "lemma": "Schwester",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Schwester, -n",
+   "examples": [
+    "Meine Schwester kommt am Dienstag."
+   ]
+  },
+  {
+   "lemma": "schwimmen",
+   "article": null,
+   "plural": null,
+   "raw": "schwimmen",
+   "examples": [
+    "Ich schwimme jeden Tag einen Kilometer."
+   ]
+  },
+  {
+   "lemma": "Schwimmbad",
+   "article": "das",
+   "plural": null,
+   "raw": "das Schwimmbad",
+   "examples": [
+    "Kommst du mit ins Schwimmbad?"
+   ]
+  },
+  {
+   "lemma": "See",
+   "article": "der",
+   "plural": null,
+   "raw": "der See",
+   "examples": [
+    "Komm, wir fahren zum Starnberger See."
+   ]
+  },
+  {
+   "lemma": "sehen",
+   "article": null,
+   "plural": null,
+   "raw": "sehen",
+   "examples": [
+    "Ich kann dich nicht sehen.",
+    "Ich habe diesen Jungen schon einmal gesehen."
+   ]
+  },
+  {
+   "lemma": "Sehenswürdigkeit",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Sehenswürdigkeit, -en",
+   "examples": [
+    "Welche Sehenswürdigkeiten gibt es in Frankfurt?"
+   ]
+  },
+  {
+   "lemma": "sehr",
+   "article": null,
+   "plural": null,
+   "raw": "sehr",
+   "examples": [
+    "Danke sehr!",
+    "Das ist sehr schwer."
+   ]
+  },
+  {
+   "lemma": "sein",
+   "article": null,
+   "plural": null,
+   "raw": "sein",
+   "examples": [
+    "Herr Müller ist in seinem Zimmer.",
+    "Mir ist kalt.",
+    "Ich bin dreiundzwanzig."
+   ]
+  },
+  {
+   "lemma": "an sein",
+   "article": null,
+   "plural": null,
+   "raw": "an sein",
+   "examples": [
+    "Das Licht ist noch an."
+   ]
+  },
+  {
+   "lemma": "auf sein",
+   "article": null,
+   "plural": null,
+   "raw": "auf sein",
+   "examples": [
+    "Das Fenster ist noch auf."
+   ]
+  },
+  {
+   "lemma": "weg sein",
+   "article": null,
+   "plural": null,
+   "raw": "weg sein",
+   "examples": [
+    "Herr Meier ist schon weg."
+   ]
+  },
+  {
+   "lemma": "zu sein",
+   "article": null,
+   "plural": null,
+   "raw": "zu sein",
+   "examples": [
+    "Die Tür ist zu."
+   ]
+  },
+  {
+   "lemma": "seit",
+   "article": null,
+   "plural": null,
+   "raw": "seit",
+   "examples": [
+    "Ich wohne seit drei Jahren in Köln."
+   ]
+  },
+  {
+   "lemma": "selbstständig",
+   "article": null,
+   "plural": null,
+   "raw": "selbstständig",
+   "examples": [
+    "Er ist selbstständig."
+   ]
+  },
+  {
+   "lemma": "sich",
+   "article": null,
+   "plural": null,
+   "raw": "sich",
+   "examples": [
+    "Sie müssen sich erst anmelden."
+   ]
+  },
+  {
+   "lemma": "sie",
+   "article": null,
+   "plural": null,
+   "raw": "sie",
+   "examples": [
+    "Wie heißt sie?"
+   ]
+  },
+  {
+   "lemma": "Sie",
+   "article": null,
+   "plural": null,
+   "raw": "Sie",
+   "examples": [
+    "Wie heißen Sie, bitte?"
+   ]
+  },
+  {
+   "lemma": "sitzen",
+   "article": null,
+   "plural": null,
+   "raw": "sitzen",
+   "examples": [
+    "Wo sitzen Sie?"
+   ]
+  },
+  {
+   "lemma": "so",
+   "article": null,
+   "plural": null,
+   "raw": "so",
+   "examples": [
+    "Sie müssen das so machen!",
+    "Fahren Sie bitte nicht so schnell!",
+    "Meine Frau ist so groß wie ich.",
+    "So, das war‘s/wär‘s!"
+   ]
+  },
+  {
+   "lemma": "Sofa",
+   "article": "das",
+   "plural": null,
+   "raw": "das Sofa",
+   "examples": [
+    "Das Sofa ist neu."
+   ]
+  },
+  {
+   "lemma": "sofort",
+   "article": null,
+   "plural": null,
+   "raw": "sofort",
+   "examples": [
+    "Bitte antworten Sie sofort."
+   ]
+  },
+  {
+   "lemma": "Sohn",
+   "article": "der",
+   "plural": "-ö, e",
+   "raw": "der Sohn, -ö, e",
+   "examples": [
+    "Das ist Hans, mein Sohn."
+   ]
+  },
+  {
+   "lemma": "sollen",
+   "article": null,
+   "plural": null,
+   "raw": "sollen",
+   "examples": [
+    "Soll ich kommen?",
+    "Was soll ich mitbringen?"
+   ]
+  },
+  {
+   "lemma": "Sonne",
+   "article": "die",
+   "plural": null,
+   "raw": "die Sonne",
+   "examples": [
+    "Die Sonne scheint."
+   ]
+  },
+  {
+   "lemma": "spät",
+   "article": null,
+   "plural": null,
+   "raw": "spät",
+   "examples": [
+    "Es ist schon spät, ich muss gehen."
+   ]
+  },
+  {
+   "lemma": "später",
+   "article": null,
+   "plural": null,
+   "raw": "später",
+   "examples": [
+    "Das können wir später machen."
+   ]
+  },
+  {
+   "lemma": "Speisekarte",
+   "article": "die",
+   "plural": null,
+   "raw": "die Speisekarte",
+   "examples": [
+    "Bringen Sie mir die Speisekarte, bitte."
+   ]
+  },
+  {
+   "lemma": "spielen",
+   "article": null,
+   "plural": null,
+   "raw": "spielen",
+   "examples": [
+    "Die Kinder spielen draußen.",
+    "Spielen Sie Karten?"
+   ]
+  },
+  {
+   "lemma": "Sport",
+   "article": "der",
+   "plural": null,
+   "raw": "der Sport",
+   "examples": [
+    "Ich mache viel Sport."
+   ]
+  },
+  {
+   "lemma": "Sprache",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Sprache, -n",
+   "examples": [
+    "Welche Sprachen sprichst du?"
+   ]
+  },
+  {
+   "lemma": "sprechen",
+   "article": null,
+   "plural": null,
+   "raw": "sprechen",
+   "examples": [
+    "Kann ich (mit) Herrn Klein sprechen?"
+   ]
+  },
+  {
+   "lemma": "Stadt",
+   "article": "die",
+   "plural": "-ä, e",
+   "raw": "die Stadt, -ä, e",
+   "examples": [
+    "Heidelberg ist eine alte Stadt."
+   ]
+  },
+  {
+   "lemma": "stehen",
+   "article": null,
+   "plural": null,
+   "raw": "stehen",
+   "examples": [
+    "Ich glaube es nicht, aber es steht in der Zeitung.",
+    "Der Bus steht schon an der Haltestelle."
+   ]
+  },
+  {
+   "lemma": "Stelle",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Stelle, -n",
+   "examples": [
+    "Ich habe eine neue Stelle."
+   ]
+  },
+  {
+   "lemma": "stellen",
+   "article": null,
+   "plural": null,
+   "raw": "stellen",
+   "examples": [
+    "Stell die Tasche rechts in die Ecke!"
+   ]
+  },
+  {
+   "lemma": "Stock",
+   "article": "der",
+   "plural": null,
+   "raw": "der Stock",
+   "examples": [
+    "Unsere Wohnung liegt im ersten Stock."
+   ]
+  },
+  {
+   "lemma": "Straße",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Straße, -n",
+   "examples": [
+    "In welcher Straße wohnen Sie?"
+   ]
+  },
+  {
+   "lemma": "Straßenbahn",
+   "article": "die",
+   "plural": null,
+   "raw": "die Straßenbahn",
+   "examples": [
+    "Wo fährt die Straßenbahn ab?"
+   ]
+  },
+  {
+   "lemma": "studieren",
+   "article": null,
+   "plural": null,
+   "raw": "studieren",
+   "examples": [
+    "Ich studiere in Mainz."
+   ]
+  },
+  {
+   "lemma": "Studium",
+   "article": "das",
+   "plural": null,
+   "raw": "das Studium",
+   "examples": [
+    "Das Studium beginnt im Oktober."
+   ]
+  },
+  {
+   "lemma": "Student",
+   "article": "der",
+   "plural": "-en",
+   "raw": "der Student, -en",
+   "examples": [
+    "Ich bin Studentin."
+   ]
+  },
+  {
+   "lemma": "Stunde",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Stunde, -n",
+   "examples": [
+    "Ich bin in einer Stunde zurück."
+   ]
+  },
+  {
+   "lemma": "suchen",
+   "article": null,
+   "plural": null,
+   "raw": "suchen",
+   "examples": [
+    "Suchst du etwas?"
+   ]
+  },
+  {
+   "lemma": "tanzen",
+   "article": null,
+   "plural": null,
+   "raw": "tanzen",
+   "examples": [
+    "Tanzen Sie gern?"
+   ]
+  },
+  {
+   "lemma": "Tasche",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Tasche, -n",
+   "examples": [
+    "Ich habe die Schlüssel in der Tasche."
+   ]
+  },
+  {
+   "lemma": "Taxi",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Taxi, -s",
+   "examples": [
+    "Es gibt heute keinen Bus mehr. Er fährt mit dem Taxi."
+   ]
+  },
+  {
+   "lemma": "Tee",
+   "article": "der",
+   "plural": null,
+   "raw": "der Tee",
+   "examples": [
+    "Ich trinke morgens immer Tee."
+   ]
+  },
+  {
+   "lemma": "Teil",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Teil, -e",
+   "examples": [
+    "Lies bitte auch den zweiten Teil."
+   ]
+  },
+  {
+   "lemma": "telefonieren",
+   "article": null,
+   "plural": null,
+   "raw": "telefonieren",
+   "examples": [
+    "Darf ich mal telefonieren?"
+   ]
+  },
+  {
+   "lemma": "Telefon",
+   "article": "das",
+   "plural": null,
+   "raw": "das Telefon",
+   "examples": [
+    "Haben Sie Telefon?"
+   ]
+  },
+  {
+   "lemma": "Termin",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Termin, -e",
+   "examples": [
+    "Am besten machen wir sofort einen Termin."
+   ]
+  },
+  {
+   "lemma": "Test",
+   "article": "der",
+   "plural": null,
+   "raw": "der Test",
+   "examples": [
+    "Der Test war einfach."
+   ]
+  },
+  {
+   "lemma": "teuer",
+   "article": null,
+   "plural": null,
+   "raw": "teuer",
+   "examples": [
+    "Das ist mir zu teuer."
+   ]
+  },
+  {
+   "lemma": "Text",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Text, -e",
+   "examples": [
+    "Lesen Sie bitte diesen Text."
+   ]
+  },
+  {
+   "lemma": "Thema",
+   "article": "das",
+   "plural": null,
+   "raw": "das Thema",
+   "examples": [
+    "Wir sprechen heute über das Thema „Essen und",
+    "Trinken“."
+   ]
+  },
+  {
+   "lemma": "Ticket",
+   "article": "das",
+   "plural": "-s",
+   "raw": "das Ticket, -s",
+   "examples": [
+    "Wie viel kostet das Ticket?"
+   ]
+  },
+  {
+   "lemma": "Tisch",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Tisch, -e",
+   "examples": [
+    "Die Fotos liegen auf dem Tisch."
+   ]
+  },
+  {
+   "lemma": "Tochter",
+   "article": "die",
+   "plural": "-ö",
+   "raw": "die Tochter, -ö",
+   "examples": [
+    "Das ist meine Tochter Katharina."
+   ]
+  },
+  {
+   "lemma": "Toilette",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Toilette, -en",
+   "examples": [
+    "Wo ist die Toilette, bitte?"
+   ]
+  },
+  {
+   "lemma": "Tomate",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Tomate, -n",
+   "examples": [
+    "Die Tomate ist noch grün."
+   ]
+  },
+  {
+   "lemma": "tot",
+   "article": null,
+   "plural": null,
+   "raw": "tot",
+   "examples": [
+    "Sein Vater ist schon lange tot."
+   ]
+  },
+  {
+   "lemma": "treffen",
+   "article": null,
+   "plural": null,
+   "raw": "(sich) treffen",
+   "examples": [
+    "Ich treffe in der Stadt einen Kollegen.",
+    "Wir treffen uns immer freitags."
+   ]
+  },
+  {
+   "lemma": "Treppe",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Treppe, -n",
+   "examples": [
+    "Die Toilette? Die Treppe hoch und dann links."
+   ]
+  },
+  {
+   "lemma": "trinken",
+   "article": null,
+   "plural": null,
+   "raw": "trinken",
+   "examples": [
+    "Möchtest du etwas trinken?"
+   ]
+  },
+  {
+   "lemma": "tschüss",
+   "article": null,
+   "plural": null,
+   "raw": "tschüss",
+   "examples": [
+    "Junge Leute sagen meistens „tschüss!“ und nicht",
+    "„auf Wiedersehen“."
+   ]
+  },
+  {
+   "lemma": "tun",
+   "article": null,
+   "plural": null,
+   "raw": "tun",
+   "examples": [
+    "Ich habe noch etwas zu tun.",
+    "Was tut Ihr Mann?"
+   ]
+  },
+  {
+   "lemma": "über",
+   "article": null,
+   "plural": null,
+   "raw": "über",
+   "examples": [
+    "Gehen Sie hier über die Straße.",
+    "Er wohnt im zweiten Stock über Familie Meier.",
+    "Sind Sie über 18?"
+   ]
+  },
+  {
+   "lemma": "übernachten",
+   "article": null,
+   "plural": null,
+   "raw": "übernachten",
+   "examples": [
+    "Du kannst bei mir übernachten."
+   ]
+  },
+  {
+   "lemma": "überweisen",
+   "article": null,
+   "plural": null,
+   "raw": "überweisen",
+   "examples": [
+    "Sie können das Geld auch überweisen."
+   ]
+  },
+  {
+   "lemma": "Uhr",
+   "article": "die",
+   "plural": null,
+   "raw": "die Uhr",
+   "examples": [
+    "Es ist vier Uhr."
+   ]
+  },
+  {
+   "lemma": "um",
+   "article": null,
+   "plural": null,
+   "raw": "um",
+   "examples": [
+    "Er kommt um sieben Uhr.",
+    "Da kommt er gerade um die Ecke."
+   ]
+  },
+  {
+   "lemma": "umziehen",
+   "article": null,
+   "plural": null,
+   "raw": "umziehen",
+   "examples": [
+    "Nächsten Monat ziehen wir um."
+   ]
+  },
+  {
+   "lemma": "und",
+   "article": null,
+   "plural": null,
+   "raw": "und",
+   "examples": [
+    "Peter und Helmut sind meine Söhne."
+   ]
+  },
+  {
+   "lemma": "unser-",
+   "article": null,
+   "plural": null,
+   "raw": "unser-",
+   "examples": [
+    "Das ist unsere Lehrerin."
+   ]
+  },
+  {
+   "lemma": "unten",
+   "article": null,
+   "plural": null,
+   "raw": "unten",
+   "examples": [
+    "Er wohnt ganz unten im Haus."
+   ]
+  },
+  {
+   "lemma": "unter",
+   "article": null,
+   "plural": null,
+   "raw": "unter",
+   "examples": [
+    "Unter uns wohnt eine Familie mit drei Kindern."
+   ]
+  },
+  {
+   "lemma": "Unterricht",
+   "article": "der",
+   "plural": null,
+   "raw": "der Unterricht",
+   "examples": [
+    "Wir haben Unterricht von 8.00 bis 12.00 Uhr."
+   ]
+  },
+  {
+   "lemma": "unterschreiben",
+   "article": null,
+   "plural": null,
+   "raw": "unterschreiben",
+   "examples": [
+    "Wo muss ich unterschreiben?"
+   ]
+  },
+  {
+   "lemma": "Unterschrift",
+   "article": "die",
+   "plural": null,
+   "raw": "die Unterschrift",
+   "examples": [
+    "Hier fehlt noch Ihre Unterschrift."
+   ]
+  },
+  {
+   "lemma": "Urlaub",
+   "article": "der",
+   "plural": null,
+   "raw": "der Urlaub",
+   "examples": [
+    "Ich nehme im September Urlaub."
+   ]
+  },
+  {
+   "lemma": "Vater",
+   "article": "der",
+   "plural": "-ä",
+   "raw": "der Vater, -ä",
+   "examples": [
+    "Mein Vater ist Arbeiter."
+   ]
+  },
+  {
+   "lemma": "verboten",
+   "article": null,
+   "plural": null,
+   "raw": "verboten",
+   "examples": [
+    "Hier ist Rauchen verboten."
+   ]
+  },
+  {
+   "lemma": "verdienen",
+   "article": null,
+   "plural": null,
+   "raw": "verdienen",
+   "examples": [
+    "Ich verdiene 1.500 Euro im Monat."
+   ]
+  },
+  {
+   "lemma": "Verein",
+   "article": "der",
+   "plural": null,
+   "raw": "der Verein",
+   "examples": [
+    "Es gibt einen neuen Sportverein in der Stadt."
+   ]
+  },
+  {
+   "lemma": "verheiratet",
+   "article": null,
+   "plural": null,
+   "raw": "verheiratet",
+   "examples": [
+    "Ich bin verheiratet und habe drei Kinder."
+   ]
+  },
+  {
+   "lemma": "verkaufen",
+   "article": null,
+   "plural": null,
+   "raw": "verkaufen",
+   "examples": [
+    "Er verkauft sein altes Auto."
+   ]
+  },
+  {
+   "lemma": "Verkäufer",
+   "article": "der",
+   "plural": "–",
+   "raw": "der Verkäufer, –",
+   "examples": [
+    "Meine Mutter ist Verkäuferin im Kaufhaus."
+   ]
+  },
+  {
+   "lemma": "vermieten",
+   "article": null,
+   "plural": null,
+   "raw": "vermieten",
+   "examples": [
+    "Die Wohnung ist schon vermietet."
+   ]
+  },
+  {
+   "lemma": "Vermieter",
+   "article": "der",
+   "plural": null,
+   "raw": "der Vermieter",
+   "examples": [
+    "Unser Vermieter heißt Huber. Er wohnt auch hier."
+   ]
+  },
+  {
+   "lemma": "verstehen",
+   "article": null,
+   "plural": null,
+   "raw": "verstehen",
+   "examples": [
+    "Können Sie mich verstehen?"
+   ]
+  },
+  {
+   "lemma": "Verwandte",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der Verwandte, -n",
+   "examples": [
+    "Peter besucht seine Verwandten in Polen."
+   ]
+  },
+  {
+   "lemma": "viel",
+   "article": null,
+   "plural": null,
+   "raw": "viel",
+   "examples": [
+    "Hier regnet es viel."
+   ]
+  },
+  {
+   "lemma": "vielleicht",
+   "article": null,
+   "plural": null,
+   "raw": "vielleicht",
+   "examples": [
+    "Ich komme vielleicht mit dem Bus."
+   ]
+  },
+  {
+   "lemma": "von",
+   "article": null,
+   "plural": null,
+   "raw": "von",
+   "examples": [
+    "Das Auto von Felix ist kaputt.",
+    "Er kommt gerade von Köln/von zu Hause."
+   ]
+  },
+  {
+   "lemma": "vor",
+   "article": null,
+   "plural": null,
+   "raw": "vor",
+   "examples": [
+    "Der Termin war vor einer Stunde.",
+    "Das Auto steht vor der Tür."
+   ]
+  },
+  {
+   "lemma": "Vorname",
+   "article": "der",
+   "plural": "-n",
+   "raw": "der Vorname, -n",
+   "examples": [
+    "Ich heiße Müller, mein Vorname ist Eva."
+   ]
+  },
+  {
+   "lemma": "Vorsicht",
+   "article": "die",
+   "plural": null,
+   "raw": "die Vorsicht",
+   "examples": [
+    "Vorsicht! Da kommt ein Auto."
+   ]
+  },
+  {
+   "lemma": "vorstellen",
+   "article": null,
+   "plural": null,
+   "raw": "(sich) vorstellen",
+   "examples": [
+    "Wir wollen uns kennenlernen. Können Sie sich bitte",
+    "vorstellen?"
+   ]
+  },
+  {
+   "lemma": "Vorwahl",
+   "article": "die",
+   "plural": null,
+   "raw": "die Vorwahl",
+   "examples": [
+    "Wie ist die Vorwahl von München?"
+   ]
+  },
+  {
+   "lemma": "wandern",
+   "article": null,
+   "plural": null,
+   "raw": "wandern",
+   "examples": [
+    "Wir wandern um den Chiemsee."
+   ]
+  },
+  {
+   "lemma": "wann",
+   "article": null,
+   "plural": null,
+   "raw": "wann",
+   "examples": [
+    "Wann bist du fertig?",
+    "Wann kann ich Sie anrufen?",
+    "Wann sind Sie geboren?"
+   ]
+  },
+  {
+   "lemma": "warten",
+   "article": null,
+   "plural": null,
+   "raw": "warten",
+   "examples": [
+    "Können Sie ein paar Minuten warten?",
+    "Auf wen warten Sie?"
+   ]
+  },
+  {
+   "lemma": "warum",
+   "article": null,
+   "plural": null,
+   "raw": "warum",
+   "examples": [
+    "Warum kommt er nicht?"
+   ]
+  },
+  {
+   "lemma": "was",
+   "article": null,
+   "plural": null,
+   "raw": "was",
+   "examples": [
+    "Was ist das?",
+    "Was möchten Sie?"
+   ]
+  },
+  {
+   "lemma": "was für ein",
+   "article": null,
+   "plural": null,
+   "raw": "was für ein",
+   "examples": [
+    "Was für eine Farbe möchten Sie?"
+   ]
+  },
+  {
+   "lemma": "waschen",
+   "article": null,
+   "plural": null,
+   "raw": "(sich) waschen",
+   "examples": [
+    "Wo kann ich mir die Hände waschen?",
+    "Ich muss morgen waschen."
+   ]
+  },
+  {
+   "lemma": "Wasser",
+   "article": "das",
+   "plural": null,
+   "raw": "das Wasser",
+   "examples": [
+    "Ein Glas Wasser, bitte."
+   ]
+  },
+  {
+   "lemma": "weh tun",
+   "article": null,
+   "plural": null,
+   "raw": "weh tun",
+   "examples": [
+    "Ich muss zum Arzt. Mein Bein tut weh."
+   ]
+  },
+  {
+   "lemma": "weiblich",
+   "article": null,
+   "plural": null,
+   "raw": "weiblich",
+   "examples": [
+    "Kreuzen Sie bitte an: „weiblich“ oder „männlich“."
+   ]
+  },
+  {
+   "lemma": "Wein",
+   "article": "der",
+   "plural": null,
+   "raw": "der Wein",
+   "examples": [
+    "Nein danke, ich möchte keinen Wein."
+   ]
+  },
+  {
+   "lemma": "weit",
+   "article": null,
+   "plural": null,
+   "raw": "weit",
+   "examples": [
+    "Zum Bahnhof ist es nicht weit."
+   ]
+  },
+  {
+   "lemma": "weiter",
+   "article": null,
+   "plural": null,
+   "raw": "weiter",
+   "examples": [
+    "Der Bus fährt nicht weiter."
+   ]
+  },
+  {
+   "lemma": "welch-",
+   "article": null,
+   "plural": null,
+   "raw": "welch-",
+   "examples": [
+    "Welches Buch möchtest du?"
+   ]
+  },
+  {
+   "lemma": "Welt",
+   "article": "die",
+   "plural": null,
+   "raw": "die Welt",
+   "examples": [
+    "Es gibt viele Probleme auf der Welt."
+   ]
+  },
+  {
+   "lemma": "wenig",
+   "article": null,
+   "plural": null,
+   "raw": "wenig",
+   "examples": [
+    "Ich habe leider nur wenig verstanden.",
+    "Er verdient wenig."
+   ]
+  },
+  {
+   "lemma": "wer",
+   "article": null,
+   "plural": null,
+   "raw": "wer",
+   "examples": [
+    "Wer ist das?"
+   ]
+  },
+  {
+   "lemma": "werden",
+   "article": null,
+   "plural": null,
+   "raw": "werden",
+   "examples": [
+    "Mein Sohn will Arzt werden."
+   ]
+  },
+  {
+   "lemma": "Wetter",
+   "article": "das",
+   "plural": null,
+   "raw": "das Wetter",
+   "examples": [
+    "Wir hatten schlechtes Wetter."
+   ]
+  },
+  {
+   "lemma": "wichtig",
+   "article": null,
+   "plural": null,
+   "raw": "wichtig",
+   "examples": [
+    "Dieses Formular ist sehr wichtig."
+   ]
+  },
+  {
+   "lemma": "wie",
+   "article": null,
+   "plural": null,
+   "raw": "wie",
+   "examples": [
+    "Wie heißt du?",
+    "Er schreibt wie ein Kind.",
+    "Meine Frau ist so groß wie ich.",
+    "Wie soll ich das machen?",
+    "Wie groß ist die Wohnung?",
+    "Wie bitte?",
+    "Wie lange bist du schon hier?"
+   ]
+  },
+  {
+   "lemma": "wiederholen",
+   "article": null,
+   "plural": null,
+   "raw": "wiederholen",
+   "examples": [
+    "Können Sie das bitte wiederholen?"
+   ]
+  },
+  {
+   "lemma": "Wiederhören",
+   "article": "das",
+   "plural": null,
+   "raw": "das Wiederhören",
+   "examples": [
+    "Wir müssen jetzt Schluss machen.",
+    "Also auf Wiederhören!"
+   ]
+  },
+  {
+   "lemma": "Wiedersehen",
+   "article": "das",
+   "plural": null,
+   "raw": "das Wiedersehen",
+   "examples": [
+    "Auf Wiedersehen!"
+   ]
+  },
+  {
+   "lemma": "wie viel",
+   "article": null,
+   "plural": null,
+   "raw": "wie viel",
+   "examples": [
+    "Wie viel Milch nehmen Sie?"
+   ]
+  },
+  {
+   "lemma": "willkommen",
+   "article": null,
+   "plural": null,
+   "raw": "willkommen",
+   "examples": [
+    "Herzlich willkommen!"
+   ]
+  },
+  {
+   "lemma": "Wind",
+   "article": "der",
+   "plural": null,
+   "raw": "der Wind",
+   "examples": [
+    "Der Wind kommt aus Osten."
+   ]
+  },
+  {
+   "lemma": "wir",
+   "article": null,
+   "plural": null,
+   "raw": "wir",
+   "examples": [
+    "Wir lernen Deutsch."
+   ]
+  },
+  {
+   "lemma": "wissen",
+   "article": null,
+   "plural": null,
+   "raw": "wissen",
+   "examples": [
+    "Weißt du, wie er heißt?"
+   ]
+  },
+  {
+   "lemma": "wo",
+   "article": null,
+   "plural": null,
+   "raw": "wo",
+   "examples": [
+    "Wo waren Sie im Urlaub?",
+    "Wo ist die Post?",
+    "Wo sind Sie geboren?"
+   ]
+  },
+  {
+   "lemma": "woher",
+   "article": null,
+   "plural": null,
+   "raw": "woher",
+   "examples": [
+    "Woher kommen Sie?"
+   ]
+  },
+  {
+   "lemma": "wohin",
+   "article": null,
+   "plural": null,
+   "raw": "wohin",
+   "examples": [
+    "Wohin fährt dieser Bus?",
+    "Wohin wollen Sie am Wochenende?"
+   ]
+  },
+  {
+   "lemma": "wohnen",
+   "article": null,
+   "plural": null,
+   "raw": "wohnen",
+   "examples": [
+    "Ich wohne in München."
+   ]
+  },
+  {
+   "lemma": "Wohnung",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Wohnung, -en",
+   "examples": [
+    "Seit wann haben Sie diese Wohnung?"
+   ]
+  },
+  {
+   "lemma": "wollen",
+   "article": null,
+   "plural": null,
+   "raw": "wollen",
+   "examples": [
+    "Wollen Sie einen Kaffee trinken?"
+   ]
+  },
+  {
+   "lemma": "Wort",
+   "article": "das",
+   "plural": "-ö, er/-e",
+   "raw": "das Wort, -ö, er/-e",
+   "examples": [
+    "Ich kenne das Wort nicht."
+   ]
+  },
+  {
+   "lemma": "wunderbar",
+   "article": null,
+   "plural": null,
+   "raw": "wunderbar",
+   "examples": [
+    "Das Essen schmeckt wunderbar."
+   ]
+  },
+  {
+   "lemma": "zahlen",
+   "article": null,
+   "plural": null,
+   "raw": "zahlen",
+   "examples": [
+    "Zahlen, bitte!"
+   ]
+  },
+  {
+   "lemma": "Zeit",
+   "article": "die",
+   "plural": null,
+   "raw": "die Zeit",
+   "examples": [
+    "Ich habe heute keine Zeit."
+   ]
+  },
+  {
+   "lemma": "zurzeit",
+   "article": null,
+   "plural": null,
+   "raw": "zurzeit",
+   "examples": [
+    "Zurzeit habe ich sehr viel zu tun."
+   ]
+  },
+  {
+   "lemma": "Zeitung",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Zeitung, -en",
+   "examples": [
+    "Ich lese gern Zeitung."
+   ]
+  },
+  {
+   "lemma": "Zigarette",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Zigarette, -n",
+   "examples": [
+    "Wie teuer sind die Zigaretten?"
+   ]
+  },
+  {
+   "lemma": "Zimmer",
+   "article": "das",
+   "plural": "–",
+   "raw": "das Zimmer, –",
+   "examples": [
+    "Das Zimmer ist groß.",
+    "Öffne im Schlafzimmer das Fenster, bitte!",
+    "Die Wohnung hat drei Zimmer.",
+    "Ich habe ein Zimmer bestellt."
+   ]
+  },
+  {
+   "lemma": "Zoll",
+   "article": "der",
+   "plural": null,
+   "raw": "der Zoll",
+   "examples": [
+    "Wir müssen noch durch den Zoll."
+   ]
+  },
+  {
+   "lemma": "zu",
+   "article": null,
+   "plural": null,
+   "raw": "zu",
+   "examples": [
+    "Der Bus fährt zum Bahnhof.",
+    "Ich gehe zu Fuß.",
+    "Ich bin zu Hause."
+   ]
+  },
+  {
+   "lemma": "zufrieden",
+   "article": null,
+   "plural": null,
+   "raw": "zufrieden",
+   "examples": [
+    "Ich bin mit der Wohnung zufrieden."
+   ]
+  },
+  {
+   "lemma": "Zug",
+   "article": "der",
+   "plural": "-ü, e",
+   "raw": "der Zug, -ü, e",
+   "examples": [
+    "Ich fahre gern mit dem Zug."
+   ]
+  },
+  {
+   "lemma": "zurück",
+   "article": null,
+   "plural": null,
+   "raw": "zurück",
+   "examples": [
+    "Einmal Frankfurt und zurück.",
+    "Wann kommst du zurück?"
+   ]
+  },
+  {
+   "lemma": "zusammen",
+   "article": null,
+   "plural": null,
+   "raw": "zusammen",
+   "examples": [
+    "Sollen wir zusammen essen gehen?",
+    "Das macht zusammen 2 Euro 80."
+   ]
+  },
+  {
+   "lemma": "zwischen",
+   "article": null,
+   "plural": null,
+   "raw": "zwischen",
+   "examples": [
+    "Heidelberg liegt zwischen Frankfurt und Stuttgart.",
+    "Zwischen 8 und 10 Uhr bin ich zu Hause."
+   ]
+  },
+  {
+   "lemma": "Literatur",
+   "article": null,
+   "plural": null,
+   "raw": "Literatur",
+   "examples": []
+  },
+  {
+   "lemma": "Sekunde",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Sekunde, -n",
+   "group": "zeitmasse"
+  },
+  {
+   "lemma": "Minute",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Minute, -n",
+   "group": "zeitmasse"
+  },
+  {
+   "lemma": "Stunde",
+   "article": "die",
+   "plural": "-n",
+   "raw": "die Stunde, -n",
+   "group": "zeitmasse"
+  },
+  {
+   "lemma": "Tag",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Tag, -e",
+   "group": "zeitmasse"
+  },
+  {
+   "lemma": "Woche",
+   "article": "die",
+   "plural": "-e",
+   "raw": "die Woche, -e",
+   "group": "zeitmasse"
+  },
+  {
+   "lemma": "Jahr",
+   "article": "das",
+   "plural": "-e",
+   "raw": "das Jahr, -e",
+   "group": "zeitmasse"
+  },
+  {
+   "lemma": "Wochentag",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Wochentag, -e",
+   "group": "wochentage"
+  },
+  {
+   "lemma": "Wochenende",
+   "article": "das",
+   "plural": null,
+   "raw": "das Wochenende",
+   "group": "wochentage"
+  },
+  {
+   "lemma": "Montag",
+   "article": "der",
+   "plural": null,
+   "raw": "der Montag",
+   "group": "wochentage"
+  },
+  {
+   "lemma": "Dienstag",
+   "article": "der",
+   "plural": null,
+   "raw": "der Dienstag",
+   "group": "wochentage"
+  },
+  {
+   "lemma": "Mittwoch",
+   "article": "der",
+   "plural": null,
+   "raw": "der Mittwoch",
+   "group": "wochentage"
+  },
+  {
+   "lemma": "Donnerstag",
+   "article": "der",
+   "plural": null,
+   "raw": "der Donnerstag",
+   "group": "wochentage"
+  },
+  {
+   "lemma": "Freitag",
+   "article": "der",
+   "plural": null,
+   "raw": "der Freitag",
+   "group": "wochentage"
+  },
+  {
+   "lemma": "Samstag",
+   "article": "der",
+   "plural": null,
+   "raw": "der Samstag",
+   "group": "wochentage"
+  },
+  {
+   "lemma": "Sonnabend",
+   "article": "der",
+   "plural": null,
+   "raw": "der Sonnabend",
+   "group": "wochentage"
+  },
+  {
+   "lemma": "Sonntag",
+   "article": "der",
+   "plural": null,
+   "raw": "der Sonntag",
+   "group": "wochentage"
+  },
+  {
+   "lemma": "Morgen",
+   "article": "der",
+   "plural": null,
+   "raw": "der Morgen",
+   "group": "tageszeiten"
+  },
+  {
+   "lemma": "Vormittag",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Vormittag, -e",
+   "group": "tageszeiten"
+  },
+  {
+   "lemma": "Mittag",
+   "article": "der",
+   "plural": null,
+   "raw": "der Mittag",
+   "group": "tageszeiten"
+  },
+  {
+   "lemma": "Nachmittag",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Nachmittag, -e",
+   "group": "tageszeiten"
+  },
+  {
+   "lemma": "Abend",
+   "article": "der",
+   "plural": "-e",
+   "raw": "der Abend, -e",
+   "group": "tageszeiten"
+  },
+  {
+   "lemma": "Nacht",
+   "article": "die",
+   "plural": "¨-e",
+   "raw": "die Nacht, ¨-e",
+   "group": "tageszeiten"
+  },
+  {
+   "lemma": "Januar",
+   "article": "der",
+   "plural": null,
+   "raw": "der Januar",
+   "group": "monate"
+  },
+  {
+   "lemma": "Februar",
+   "article": "der",
+   "plural": null,
+   "raw": "der Februar",
+   "group": "monate"
+  },
+  {
+   "lemma": "März",
+   "article": "der",
+   "plural": null,
+   "raw": "der März",
+   "group": "monate"
+  },
+  {
+   "lemma": "April",
+   "article": "der",
+   "plural": null,
+   "raw": "der April",
+   "group": "monate"
+  },
+  {
+   "lemma": "Mai",
+   "article": "der",
+   "plural": null,
+   "raw": "der Mai",
+   "group": "monate"
+  },
+  {
+   "lemma": "Juni",
+   "article": "der",
+   "plural": null,
+   "raw": "der Juni",
+   "group": "monate"
+  },
+  {
+   "lemma": "Juli",
+   "article": "der",
+   "plural": null,
+   "raw": "der Juli",
+   "group": "monate"
+  },
+  {
+   "lemma": "August",
+   "article": "der",
+   "plural": null,
+   "raw": "der August",
+   "group": "monate"
+  },
+  {
+   "lemma": "September",
+   "article": "der",
+   "plural": null,
+   "raw": "der September",
+   "group": "monate"
+  },
+  {
+   "lemma": "Oktober",
+   "article": "der",
+   "plural": null,
+   "raw": "der Oktober",
+   "group": "monate"
+  },
+  {
+   "lemma": "November",
+   "article": "der",
+   "plural": null,
+   "raw": "der November",
+   "group": "monate"
+  },
+  {
+   "lemma": "Dezember",
+   "article": "der",
+   "plural": null,
+   "raw": "der Dezember",
+   "group": "monate"
+  },
+  {
+   "lemma": "Frühling",
+   "article": "der",
+   "plural": null,
+   "raw": "der Frühling",
+   "group": "jahreszeiten"
+  },
+  {
+   "lemma": "Frühjahr",
+   "article": "das",
+   "plural": null,
+   "raw": "das Frühjahr",
+   "group": "jahreszeiten"
+  },
+  {
+   "lemma": "Sommer",
+   "article": "der",
+   "plural": null,
+   "raw": "der Sommer",
+   "group": "jahreszeiten"
+  },
+  {
+   "lemma": "Herbst",
+   "article": "der",
+   "plural": null,
+   "raw": "der Herbst",
+   "group": "jahreszeiten"
+  },
+  {
+   "lemma": "Winter",
+   "article": "der",
+   "plural": null,
+   "raw": "der Winter",
+   "group": "jahreszeiten"
+  },
+  {
+   "lemma": "schwarz",
+   "article": null,
+   "plural": null,
+   "raw": "schwarz",
+   "group": "farben"
+  },
+  {
+   "lemma": "weiß",
+   "article": null,
+   "plural": null,
+   "raw": "weiß",
+   "group": "farben"
+  },
+  {
+   "lemma": "grau",
+   "article": null,
+   "plural": null,
+   "raw": "grau",
+   "group": "farben"
+  },
+  {
+   "lemma": "rot",
+   "article": null,
+   "plural": null,
+   "raw": "rot",
+   "group": "farben"
+  },
+  {
+   "lemma": "blau",
+   "article": null,
+   "plural": null,
+   "raw": "blau",
+   "group": "farben"
+  },
+  {
+   "lemma": "gelb",
+   "article": null,
+   "plural": null,
+   "raw": "gelb",
+   "group": "farben"
+  },
+  {
+   "lemma": "grün",
+   "article": null,
+   "plural": null,
+   "raw": "grün",
+   "group": "farben"
+  },
+  {
+   "lemma": "braun",
+   "article": null,
+   "plural": null,
+   "raw": "braun",
+   "group": "farben"
+  },
+  {
+   "lemma": "Norden",
+   "article": "der",
+   "plural": null,
+   "raw": "der Norden",
+   "group": "himmelsrichtungen"
+  },
+  {
+   "lemma": "Süden",
+   "article": "der",
+   "plural": null,
+   "raw": "der Süden",
+   "group": "himmelsrichtungen"
+  },
+  {
+   "lemma": "Westen",
+   "article": "der",
+   "plural": null,
+   "raw": "der Westen",
+   "group": "himmelsrichtungen"
+  },
+  {
+   "lemma": "Osten",
+   "article": "der",
+   "plural": null,
+   "raw": "der Osten",
+   "group": "himmelsrichtungen"
+  },
+  {
+   "lemma": "null",
+   "article": null,
+   "plural": null,
+   "raw": "null",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "eins",
+   "article": null,
+   "plural": null,
+   "raw": "eins",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "zwei",
+   "article": null,
+   "plural": null,
+   "raw": "zwei",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "drei",
+   "article": null,
+   "plural": null,
+   "raw": "drei",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "vier",
+   "article": null,
+   "plural": null,
+   "raw": "vier",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "fünf",
+   "article": null,
+   "plural": null,
+   "raw": "fünf",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "sechs",
+   "article": null,
+   "plural": null,
+   "raw": "sechs",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "sieben",
+   "article": null,
+   "plural": null,
+   "raw": "sieben",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "acht",
+   "article": null,
+   "plural": null,
+   "raw": "acht",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "neun",
+   "article": null,
+   "plural": null,
+   "raw": "neun",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "zehn",
+   "article": null,
+   "plural": null,
+   "raw": "zehn",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "elf",
+   "article": null,
+   "plural": null,
+   "raw": "elf",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "zwölf",
+   "article": null,
+   "plural": null,
+   "raw": "zwölf",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "zwanzig",
+   "article": null,
+   "plural": null,
+   "raw": "zwanzig",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "hundert",
+   "article": null,
+   "plural": null,
+   "raw": "hundert",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "tausend",
+   "article": null,
+   "plural": null,
+   "raw": "tausend",
+   "group": "zahlen"
+  },
+  {
+   "lemma": "Million",
+   "article": "die",
+   "plural": "-en",
+   "raw": "die Million, -en",
+   "group": "zahlen"
+  }
+ ]
+}
