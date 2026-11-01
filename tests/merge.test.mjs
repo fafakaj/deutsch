@@ -33,15 +33,16 @@ test("quiz answers: a right answer wins, the reference stays", () => {
   assert.equal(a.quiz.s[2].ok, true);
 });
 
-test("words: learned words are joined, best test is the maximum, the rest follows the newer record", () => {
+test("words: learned words are joined, best tests are the maximum, the rest follows the newer record", () => {
   const laptop = empty();
-  laptop.words.w1d1 = { learnedIds: [0, 1], testBest: 90, studyIndex: 2, updatedAt: 100 };
+  laptop.words.w1d1 = { learnedIds: [0, 1], testBest: 90, wordTestBest: 70, studyIndex: 2, updatedAt: 100 };
   const phone = empty();
-  phone.words.w1d1 = { learnedIds: [1, 5], testBest: 60, studyIndex: 7, updatedAt: 200 };
+  phone.words.w1d1 = { learnedIds: [1, 5], testBest: 60, wordTestBest: 95, studyIndex: 7, updatedAt: 200 };
   phone.words.w1d2 = { learnedIds: [3], testBest: 0, updatedAt: 50 };
   mergeProgress(laptop, phone);
   assert.deepEqual(laptop.words.w1d1.learnedIds, [0, 1, 5]);
   assert.equal(laptop.words.w1d1.testBest, 90);
+  assert.equal(laptop.words.w1d1.wordTestBest, 95);
   assert.equal(laptop.words.w1d1.studyIndex, 7);
   assert.equal(laptop.words.w1d1.updatedAt, 200);
   assert.deepEqual(laptop.words.w1d2.learnedIds, [3]);

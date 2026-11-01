@@ -134,6 +134,21 @@
     .soft-btn:active {
       transform: scale(0.96);
     }
+
+    /* Пропущенные буквы в режиме запоминания */
+    .gap-letter {
+      display: inline-block;
+      min-width: 0.62em;
+      margin: 0 0.03em;
+      border-bottom: 2px solid #a8a29e;
+      color: #78716c;
+      text-align: center;
+      line-height: 1.15;
+    }
+    .gap-letter-open {
+      border-bottom-color: #10b981;
+      color: #059669;
+    }
   </style>
 </head>
 <body>
@@ -185,10 +200,41 @@
 
     const fullWord = (w) => (w.article ? `${w.article} ${w.de}` : w.de);
 
-    // Режимы про артикль берут только существительные; письменная проверка — все слова колоды
+    // Режимы про артикль берут только существительные; режимы обычных слов — слова без артикля;
+    // письменная проверка всей колоды — все слова.
     function modePool(deck, mode) {
       const all = deck.words.map((_, i) => i);
-      return mode === "test" ? all : all.filter(i => deck.words[i].article);
+      if (mode === "test") return all;
+      if (mode === "word_study" || mode === "word_test") return all.filter(i => !deck.words[i].article);
+      return all.filter(i => deck.words[i].article);
+    }
+
+    const WORD_MODES = new Set(["word_study", "word_test"]);
+
+    // Несколько букв слова прячем: первая остаётся подсказкой, дальше — равномерно по слову.
+    function blankPositions(de) {
+      const letters = [];
+      for (let i = 0; i < de.length; i++) if (/[A-Za-zÄÖÜäöüß]/.test(de[i])) letters.push(i);
+      if (!letters.length) return [];
+      const anchor = letters.length > 1 ? letters.slice(1) : letters;
+      const count = Math.max(1, Math.min(5, Math.round(letters.length / 3)));
+      const positions = new Set();
+      for (let k = 0; k < count; k++) {
+        positions.add(anchor[Math.min(anchor.length - 1, Math.floor(((k + 0.5) * anchor.length) / count))]);
+      }
+      return Array.from(positions).sort((a, b) => a - b);
+    }
+
+    function missingLetters(wordObj) {
+      return blankPositions(wordObj.de).map(i => wordObj.de[i]).join('');
+    }
+
+    function blankedWordHtml(wordObj, reveal = false) {
+      const gaps = new Set(blankPositions(wordObj.de));
+      return Array.from(wordObj.de).map((ch, i) => {
+        if (!gaps.has(i)) return esc(ch);
+        return `<span class="gap-letter${reveal ? ' gap-letter-open' : ''}">${reveal ? esc(ch) : '·'}</span>`;
+      }).join('');
     }
 
     /*************************************************************************
@@ -203,6 +249,7 @@
       const inRange = (n) => Number.isInteger(n) && n >= 0 && n < total;
       const learnedIds = Array.from(new Set(Array.isArray(r.learnedIds) ? r.learnedIds : [])).filter(inRange);
       const run = r.testRun && typeof r.testRun === "object" ? r.testRun : {};
+      const wordRun = r.wordTestRun && typeof r.wordTestRun === "object" ? r.wordTestRun : {};
       return {
         learnedIds,
         correct: learnedIds.length,
@@ -210,12 +257,19 @@
         studyIndex: Number.isInteger(r.studyIndex) && r.studyIndex >= 0 ? r.studyIndex : 0,
         articleQuizIndex: Number.isInteger(r.articleQuizIndex) && r.articleQuizIndex >= 0 ? r.articleQuizIndex : 0,
         testIndex: Number.isInteger(r.testIndex) && r.testIndex >= 0 ? r.testIndex : 0,
+        wordStudyIndex: Number.isInteger(r.wordStudyIndex) && r.wordStudyIndex >= 0 ? r.wordStudyIndex : 0,
+        wordTestIndex: Number.isInteger(r.wordTestIndex) && r.wordTestIndex >= 0 ? r.wordTestIndex : 0,
         // Текущий проход письменной проверки: какие слова отвечены и какие верно
         testRun: {
           seen: (Array.isArray(run.seen) ? run.seen : []).filter(inRange),
           ok: (Array.isArray(run.ok) ? run.ok : []).filter(inRange)
         },
+        wordTestRun: {
+          seen: (Array.isArray(wordRun.seen) ? wordRun.seen : []).filter(inRange),
+          ok: (Array.isArray(wordRun.ok) ? wordRun.ok : []).filter(inRange)
+        },
         testBest: Number.isInteger(r.testBest) ? r.testBest : 0,
+        wordTestBest: Number.isInteger(r.wordTestBest) ? r.wordTestBest : 0,
         updatedAt: r.updatedAt || 0
       };
     }
@@ -245,10 +299,16 @@
         if (mode === "study") deckRec.studyIndex = safeNext;
         else if (mode === "article_quiz") deckRec.articleQuizIndex = safeNext;
         else if (mode === "test") deckRec.testIndex = safeNext;
+        else if (mode === "word_study") deckRec.wordStudyIndex = safeNext;
+        else if (mode === "word_test") deckRec.wordTestIndex = safeNext;
       }
       if (mode === "test") {
         deckRec.testRun.seen = Array.from(new Set([...deckRec.testRun.seen, wordIdx]));
         if (isCorrect) deckRec.testRun.ok = Array.from(new Set([...deckRec.testRun.ok, wordIdx]));
+      }
+      if (mode === "word_test") {
+        deckRec.wordTestRun.seen = Array.from(new Set([...deckRec.wordTestRun.seen, wordIdx]));
+        if (isCorrect) deckRec.wordTestRun.ok = Array.from(new Set([...deckRec.wordTestRun.ok, wordIdx]));
       }
       deckRec.updatedAt = Date.now();
       scheduleSave();
@@ -276,6 +336,20 @@
       return pct;
     }
 
+    /** Итог прохода проверки обычных слов: процент, если отвечены все слова без артикля. */
+    function finishWordTestRun(deckId) {
+      const deck = DECK_BY_ID.get(deckId);
+      const rec = getDeckState(deckId);
+      const total = modePool(deck, "word_test").length;
+      if (!total || rec.wordTestRun.seen.length < total) return null;
+      const pct = Math.round((rec.wordTestRun.ok.length / total) * 100);
+      rec.wordTestBest = Math.max(rec.wordTestBest, pct);
+      rec.wordTestRun = { seen: [], ok: [] };
+      rec.wordTestIndex = 0;
+      scheduleSave();
+      return pct;
+    }
+
     // Сбор всех изученных слов по всем колодам
     function collectAllLearnedWords() {
       const list = [];
@@ -300,7 +374,7 @@
       screen: "loading", // "loading" | "nologin" | "error" | "categories" | "mode_select" | "session" | "summary"
       searchQuery: "",
       selectedDeckId: null,
-      mode: "study", // "study" | "article_quiz" | "test" | "learned_quiz"
+      mode: "study", // "study" | "article_quiz" | "test" | "word_study" | "word_test" | "learned_quiz"
       pool: [], // Индексы слов колоды в этой сессии
       quizPool: [], // Список всех выученных слов для режима "Проверка изученных слов"
       cardIndex: 0,
@@ -309,7 +383,9 @@
       mistakes: [],
       feedback: null, // { isCorrect, userAnswer, correctFull }
       testInput: "",
+      blankInput: "", // пропущенные буквы в режиме запоминания
       testResult: null, // процент полного прохода проверки
+      wordTestResult: null, // процент проверки обычных слов
       stepId: null, // шаг дорожки из ссылки #deck=…&step=…
       saveState: "saved",
       errorMsg: ""
@@ -557,6 +633,7 @@
             <div class="text-[11px] text-stone-400 mt-0.5 mb-1.5">
               Изучено слов: <b class="text-stone-600">${prog.correct}/${deck.words.length}</b>
               ${prog.testBest > 0 ? ` · Проверка: ${prog.testBest}%` : ''}
+              ${prog.wordTestBest > 0 ? ` · Слова: ${prog.wordTestBest}%` : ''}
             </div>
             <div class="w-full h-1.5 bg-stone-100 rounded-full overflow-hidden">
               <div class="h-full ${barColor} rounded-full transition-all duration-300" style="width: ${prog.percent}%"></div>
@@ -691,17 +768,20 @@
       });
     }
 
-    /* ЭКРАН 3: ВЫБОР РЕЖИМА ДЛЯ КАТЕГОРИИ (3 ВАРИАНТА ВЗАИМОДЕЙСТВИЯ) */
+    /* ЭКРАН 3: ВЫБОР РЕЖИМА ДЛЯ КАТЕГОРИИ (АРТИКЛИ, ОБЫЧНЫЕ СЛОВА, ВСЯ КОЛОДА) */
     function renderModeSelect() {
       clearAutoAdvanceTimer();
       const deck = DECK_BY_ID.get(state.selectedDeckId);
       const prog = getDeckState(deck.id);
       const nounCount = modePool(deck, "study").length;
+      const plainCount = modePool(deck, "word_study").length;
       const articleOff = nounCount === 0 ? 'disabled' : '';
       const articleOffClass = nounCount === 0 ? 'opacity-45 cursor-not-allowed' : '';
+      const plainOff = plainCount === 0 ? 'disabled' : '';
+      const plainOffClass = plainCount === 0 ? 'opacity-45 cursor-not-allowed' : '';
 
       appEl.innerHTML = `
-        <div class="flex-1 flex flex-col justify-between py-1 animate-card">
+        <div class="flex-1 flex flex-col justify-between py-1 animate-card scroll-area">
           <div class="flex items-center justify-between">
             <button id="backToCatsBtn" class="soft-btn px-3.5 py-2 rounded-2xl bg-white border border-stone-200/80 text-xs font-medium text-stone-600 shadow-sm">
               ← Категории
@@ -724,7 +804,7 @@
             </div>
             <h2 class="text-base font-bold text-stone-800">${esc(deck.title)}</h2>
             <p class="text-[11px] text-stone-400 mt-0.5 mb-3.5">
-              ${deck.words.length} слов, из них существительных: ${nounCount} · выберите режим
+              ${deck.words.length} слов · существительных: ${nounCount} · обычных: ${plainCount}
             </p>
 
             <div class="space-y-2 text-left">
@@ -775,6 +855,44 @@
                   </div>
                 </div>
               </button>
+
+              <div class="flex items-center gap-2 pt-1">
+                <div class="h-px flex-1 bg-stone-200"></div>
+                <span class="text-[10px] font-semibold uppercase tracking-wide text-stone-400">Обычные слова</span>
+                <div class="h-px flex-1 bg-stone-200"></div>
+              </div>
+
+              <!-- Режим 4: Запоминание обычных слов по пропущенным буквам -->
+              <button id="startWordStudyBtn" ${plainOff} class="${plainOffClass} soft-btn w-full p-3.5 rounded-2xl bg-stone-50 hover:bg-stone-100/80 border border-stone-200/90 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg shrink-0">
+                  🧩
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-xs font-bold text-stone-800">4. Запоминание слов</span>
+                    ${prog.wordStudyIndex > 0 ? `<span class="text-[10px] font-semibold text-indigo-600 shrink-0">С #${prog.wordStudyIndex + 1} →</span>` : ''}
+                  </div>
+                  <div class="text-[11px] text-stone-500 leading-snug mt-0.5">
+                    Глаголы, прилагательные, фразы без артикля: слово с пропущенными буквами — впишите их
+                  </div>
+                </div>
+              </button>
+
+              <!-- Режим 5: Проверка обычных слов — написать слово целиком -->
+              <button id="startWordTestBtn" ${plainOff} class="${plainOffClass} soft-btn w-full p-3.5 rounded-2xl bg-stone-50 hover:bg-stone-100/80 border border-stone-200/90 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg shrink-0">
+                  📝
+                </div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between gap-1">
+                    <span class="text-xs font-bold text-stone-800">5. Проверка слов (письменно)</span>
+                    ${prog.wordTestIndex > 0 ? `<span class="text-[10px] font-semibold text-amber-600 shrink-0">С #${prog.wordTestIndex + 1} →</span>` : ''}
+                  </div>
+                  <div class="text-[11px] text-stone-500 leading-snug mt-0.5">
+                    Обычные слова без подсказки: написать слово целиком${prog.wordTestBest > 0 ? ` · лучший итог ${prog.wordTestBest}%` : ''}
+                  </div>
+                </div>
+              </button>
             </div>
           </div>
 
@@ -808,6 +926,14 @@
       document.getElementById("startTestBtn").addEventListener("click", () => {
         startDeckSession("test", prog.testIndex || 0);
       });
+
+      document.getElementById("startWordStudyBtn").addEventListener("click", () => {
+        startDeckSession("word_study", prog.wordStudyIndex || 0);
+      });
+
+      document.getElementById("startWordTestBtn").addEventListener("click", () => {
+        startDeckSession("word_test", prog.wordTestIndex || 0);
+      });
     }
 
     function startDeckSession(mode, startIdx = 0) {
@@ -820,20 +946,27 @@
       if (mode === "test" && state.cardIndex === 0) {
         getDeckState(deck.id).testRun = { seen: [], ok: [] }; // новый проход проверки
       }
+      if (mode === "word_test" && state.cardIndex === 0) {
+        getDeckState(deck.id).wordTestRun = { seen: [], ok: [] }; // новый проход проверки обычных слов
+      }
       state.testResult = null;
+      state.wordTestResult = null;
       state.sessionCorrect = 0;
       state.sessionAnswered = 0;
       state.mistakes = [];
       state.feedback = null;
       state.testInput = "";
+      state.blankInput = "";
       state.screen = "session";
       render();
     }
 
-    /* ЭКРАН 4: ТРЕНИРОВКА (ИЗУЧЕНИЕ / ТРЕНИРОВКА АРТИКЛЯ / ПРОВЕРКА КОЛОДЫ / ПРОВЕРКА ВСЕХ ИЗУЧЕННЫХ СЛОВ) */
+    /* ЭКРАН 4: ТРЕНИРОВКА (АРТИКЛИ / ЗАПОМИНАНИЕ И ПРОВЕРКА ОБЫЧНЫХ СЛОВ / ВСЯ КОЛОДА / ИЗУЧЕННЫЕ) */
     function renderSession() {
       const isLearnedQuiz = state.mode === "learned_quiz";
       const isArticleSelectionMode = state.mode === "study" || state.mode === "article_quiz";
+      const isWordStudy = state.mode === "word_study";
+      const isWordTest = state.mode === "word_test";
       let wordObj = null;
       let total = 0;
       let headerInfoHtml = "";
@@ -881,6 +1014,10 @@
         }
       } else if (state.mode === "article_quiz") {
         genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-stone-100 text-stone-500">Угадайте артикль · цвет откроется после выбора</span>`;
+      } else if (isWordStudy) {
+        genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-indigo-50 text-indigo-700">Запоминание · впишите пропущенные буквы</span>`;
+      } else if (isWordTest) {
+        genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-amber-50 text-amber-700">Проверка слова · без подсказки</span>`;
       } else if (isLearnedQuiz) {
         genderBadge = `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-stone-100 text-stone-600">${esc(currentDeckTitle)}</span>`;
       } else {
@@ -934,27 +1071,41 @@
                   </button>
                 </div>
                 <p class="text-sm text-stone-500 mt-0.5">${esc(wordObj.ru)}</p>
+              ` : isWordStudy ? `
+                <div class="flex items-center justify-center gap-2">
+                  <h3 id="wordBlanksDisplay" class="text-2xl font-bold text-stone-800 tracking-tight">${blankedWordHtml(wordObj)}</h3>
+                  <button
+                    id="MainSpeakButton"
+                    type="button"
+                    aria-label="Озвучить слово по-немецки"
+                    class="soft-btn w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 border border-stone-200/80 text-stone-700 flex items-center justify-center text-base shadow-xs"
+                    title="Озвучить слово"
+                  >
+                    🎙️
+                  </button>
+                </div>
+                <p class="text-sm text-stone-500 mt-0.5">${esc(wordObj.ru)}</p>
               ` : `
                 <div class="flex items-center justify-center gap-2">
                   <p class="text-lg font-bold text-stone-800">${esc(wordObj.ru)}</p>
                   <button
                     id="MainSpeakButton"
                     type="button"
-                    aria-label="Озвучить артикль и слово по-немецки"
+                    aria-label="Озвучить слово по-немецки"
                     class="soft-btn w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 border border-stone-200/80 text-stone-700 flex items-center justify-center text-base shadow-xs"
-                    title="Озвучить с артиклем"
+                    title="Озвучить слово"
                   >
                     🎙️
                   </button>
                 </div>
-                <p class="text-xs text-stone-400 mt-0.5">${wordObj.article ? 'Впишите артикль и немецкое слово' : 'Впишите немецкое слово'}</p>
+                <p class="text-xs text-stone-400 mt-0.5">${isWordTest ? 'Напишите немецкое слово целиком' : wordObj.article ? 'Впишите артикль и немецкое слово' : 'Впишите немецкое слово'}</p>
               `}
             </div>
           </div>
 
           <!-- Нижний блок взаимодействия -->
           <div class="bg-white rounded-3xl p-3.5 shadow-sm border border-stone-200/80">
-            ${isArticleSelectionMode ? renderStudyControls(wordObj) : renderTestControls(wordObj)}
+            ${isArticleSelectionMode ? renderStudyControls(wordObj) : isWordStudy ? renderWordStudyControls(wordObj) : renderTestControls(wordObj)}
           </div>
         </div>
       `;
@@ -982,6 +1133,8 @@
 
       if (isArticleSelectionMode) {
         bindStudyEvents(wordObj);
+      } else if (isWordStudy) {
+        bindWordStudyEvents(wordObj);
       } else {
         bindTestEvents(wordObj);
       }
@@ -1114,6 +1267,131 @@
       }
     }
 
+    function charButtonsHtml() {
+      return `
+        <button type="button" data-char="ä" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ä</button>
+        <button type="button" data-char="ö" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ö</button>
+        <button type="button" data-char="ü" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ü</button>
+        <button type="button" data-char="ß" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ß</button>
+      `;
+    }
+
+    function renderWordStudyControls(wordObj) {
+      if (state.feedback) {
+        const isOk = state.feedback.isCorrect;
+        return `
+          <div class="text-center space-y-2.5">
+            <div class="py-2.5 px-3 rounded-2xl text-sm font-semibold ${isOk ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-rose-50 text-rose-700 border border-rose-200'}">
+              ${isOk
+                ? `✓ Верно! ${blankedWordHtml(wordObj, true)}`
+                : `Пропущено: «${esc(state.feedback.userAnswer || '—')}»<br/>Верно: <b>${blankedWordHtml(wordObj, true)}</b>`}
+            </div>
+            <button id="nextCardBtn" class="soft-btn w-full py-3.5 rounded-2xl bg-stone-800 text-white font-semibold text-sm">
+              Следующее слово →
+            </button>
+          </div>
+        `;
+      }
+
+      const gaps = blankPositions(wordObj.de).length;
+      return `
+        <form id="wordStudyForm" class="space-y-2.5" autocomplete="off">
+          <div class="flex items-center justify-center gap-2">
+            ${charButtonsHtml()}
+          </div>
+          <div class="text-center text-xs text-stone-400">
+            Пропущено букв: <b class="text-stone-600">${gaps}</b> · впишите только их, по порядку
+          </div>
+          <div class="flex gap-2">
+            <input
+              id="wordStudyInput"
+              type="text"
+              value="${esc(state.blankInput)}"
+              placeholder="Пропущенные буквы"
+              autocapitalize="off"
+              autocorrect="off"
+              spellcheck="false"
+              class="flex-1 px-4 py-3 rounded-2xl bg-stone-50 border border-stone-200 text-stone-800 focus:outline-none focus:border-stone-400 focus:bg-white"
+            />
+            <button type="submit" class="soft-btn px-5 py-3 rounded-2xl bg-stone-800 text-white font-semibold text-sm shrink-0">
+              ОК
+            </button>
+          </div>
+        </form>
+      `;
+    }
+
+    function normalizeLetters(str) {
+      return umlautFree(String(str).toLowerCase().replace(/[^a-zäöüß]/g, ''));
+    }
+
+    function bindWordStudyEvents(wordObj) {
+      const inputEl = document.getElementById("wordStudyInput");
+      if (inputEl) {
+        inputEl.addEventListener("input", (e) => {
+          state.blankInput = e.target.value;
+        });
+      }
+
+      document.querySelectorAll(".char-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const ch = btn.getAttribute("data-char");
+          if (!inputEl) return;
+          const start = inputEl.selectionStart || inputEl.value.length;
+          const end = inputEl.selectionEnd || inputEl.value.length;
+          inputEl.value = inputEl.value.slice(0, start) + ch + inputEl.value.slice(end);
+          state.blankInput = inputEl.value;
+          inputEl.focus();
+          inputEl.setSelectionRange(start + 1, start + 1);
+        });
+      });
+
+      const form = document.getElementById("wordStudyForm");
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const userRaw = (inputEl ? inputEl.value : state.blankInput).trim();
+          if (!userRaw) return;
+
+          const expected = normalizeLetters(missingLetters(wordObj));
+          const actual = normalizeLetters(userRaw);
+          const isCorrect = Boolean(actual) && actual === expected;
+          state.sessionAnswered++;
+          if (isCorrect) {
+            state.sessionCorrect++;
+          } else {
+            state.mistakes.push({ wordObj, userAnswer: userRaw });
+          }
+
+          recordCardProgress(
+            state.selectedDeckId,
+            state.pool[state.cardIndex],
+            isCorrect,
+            state.cardIndex + 1,
+            "word_study"
+          );
+
+          state.feedback = {
+            isCorrect,
+            userAnswer: userRaw,
+            correctFull: wordObj.de
+          };
+          state.blankInput = "";
+          render();
+          speakGermanWordWithArticle(wordObj);
+        });
+      }
+
+      const nextBtn = document.getElementById("nextCardBtn");
+      if (nextBtn) {
+        nextBtn.addEventListener("click", () => {
+          state.feedback = null;
+          state.blankInput = "";
+          advanceOrSummarize();
+        });
+      }
+    }
+
     function renderTestControls(wordObj) {
       if (state.feedback) {
         const isOk = state.feedback.isCorrect;
@@ -1131,18 +1409,18 @@
         `;
       }
 
+      const isWordCheck = state.mode === "word_test";
       return `
         <form id="testAnswerForm" class="space-y-2.5" autocomplete="off">
-          <!-- Быстрые кнопки умлаутов и артиклей для удобного ввода с телефона -->
-          <div class="flex items-center justify-between gap-1">
-            <button type="button" data-prefix="der " class="prefix-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">der</button>
-            <button type="button" data-prefix="die " class="prefix-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">die</button>
-            <button type="button" data-prefix="das " class="prefix-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">das</button>
-            <div class="h-4 w-px bg-stone-200 mx-0.5"></div>
-            <button type="button" data-char="ä" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ä</button>
-            <button type="button" data-char="ö" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ö</button>
-            <button type="button" data-char="ü" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ü</button>
-            <button type="button" data-char="ß" class="char-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">ß</button>
+          <!-- Быстрые кнопки умлаутов (и артиклей для проверки всей колоды) -->
+          <div class="flex items-center ${isWordCheck ? 'justify-center' : 'justify-between'} gap-1">
+            ${isWordCheck ? '' : `
+              <button type="button" data-prefix="der " class="prefix-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">der</button>
+              <button type="button" data-prefix="die " class="prefix-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">die</button>
+              <button type="button" data-prefix="das " class="prefix-btn soft-btn px-2.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 text-xs font-semibold">das</button>
+              <div class="h-4 w-px bg-stone-200 mx-0.5"></div>
+            `}
+            ${charButtonsHtml()}
           </div>
 
           <div class="flex gap-2">
@@ -1150,7 +1428,7 @@
               id="testWordInput"
               type="text"
               value="${esc(state.testInput)}"
-              placeholder="Напр.: der Tisch"
+              placeholder="${isWordCheck ? 'Написать слово целиком' : 'Напр.: der Tisch'}"
               autocapitalize="off"
               autocorrect="off"
               spellcheck="false"
@@ -1243,7 +1521,7 @@
               state.pool[state.cardIndex],
               isCorrect,
               state.cardIndex + 1,
-              "test"
+              state.mode
             );
           }
 
@@ -1281,6 +1559,7 @@
       } else {
         // Колода пройдена до конца: итог проверки ≥ 80 % засчитывает шаг дорожки
         if (state.mode === "test") state.testResult = finishTestRun(state.selectedDeckId);
+        if (state.mode === "word_test") state.wordTestResult = finishWordTestRun(state.selectedDeckId);
         state.screen = "summary";
         render();
       }
@@ -1312,21 +1591,34 @@
       } else {
         const deck = DECK_BY_ID.get(state.selectedDeckId);
         const deckProg = getDeckState(deck.id);
-        const hasResult = state.mode === "test" && state.testResult !== null;
-        const shown = hasResult ? state.testResult : deckProg.percent;
+        const hasWordResult = state.mode === "word_test" && state.wordTestResult !== null;
+        const hasResult = (state.mode === "test" && state.testResult !== null) || hasWordResult;
+        const shown = state.mode === "test"
+          ? (state.testResult ?? deckProg.percent)
+          : state.mode === "word_test"
+            ? (state.wordTestResult ?? deckProg.wordTestBest)
+            : deckProg.percent;
         badgeEmoji = shown >= 80 ? "🏆" : shown >= 50 ? "👏" : "🌱";
         title = deck.title;
         const modeTitle = state.mode === "study"
           ? "Изучение"
           : state.mode === "article_quiz"
             ? "Тренировка артикля"
-            : "Проверка";
+            : state.mode === "word_study"
+              ? "Запоминание слов"
+              : state.mode === "word_test"
+                ? "Проверка слов"
+                : "Проверка";
         const stepDone = isWordsStep(state.stepId, deck.id) && progress.steps[state.stepId]?.status === "done";
         subtitle = `Режим: ${modeTitle} · Профиль: ${esc(sess.user)}${stepDone ? ' · ✓ шаг дорожки засчитан' : ''}`;
         statLeftTop = `${deckProg.correct} / ${deck.words.length}`;
         statLeftBottom = "Всего изучено в колоде";
         statRightTop = `${shown}%`;
-        statRightBottom = hasResult ? `Итог проверки (нужно ${PASS_PERCENT}%)` : "Сохранённый прогресс";
+        statRightBottom = hasWordResult
+          ? `Итог проверки слов (нужно ${PASS_PERCENT}%)`
+          : hasResult
+            ? `Итог проверки (нужно ${PASS_PERCENT}%)`
+            : state.mode === "word_test" ? "Лучший итог проверки слов" : "Сохранённый прогресс";
       }
 
       appEl.innerHTML = `
@@ -1448,7 +1740,7 @@
       render();
     }
 
-    // Ссылка с дорожки: #deck=w1d1&step=w01-mon-05[&mode=study|test] сразу открывает колоду
+    // Ссылка с дорожки: #deck=w1d1&step=w01-mon-05[&mode=study|test|word_study|word_test] сразу открывает колоду
     function openFromHash() {
       const params = new URLSearchParams(location.hash.slice(1));
       const deckId = params.get("deck");
@@ -1457,8 +1749,9 @@
       state.stepId = params.get("step");
       const mode = params.get("mode");
       state.screen = "mode_select";
-      if (mode === "study" || mode === "test") {
-        startDeckSession(mode === "study" && !modePool(DECK_BY_ID.get(deckId), "study").length ? "test" : mode, 0);
+      if (mode === "study" || mode === "article_quiz" || mode === "test" || WORD_MODES.has(mode)) {
+        const deck = DECK_BY_ID.get(deckId);
+        startDeckSession(modePool(deck, mode).length ? mode : "test", 0);
         return true;
       }
       render();

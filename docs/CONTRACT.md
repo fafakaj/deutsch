@@ -94,7 +94,7 @@
 | `oral` | `quiz: "q-…"` (вопросы `text`) | говорит вслух, сверяет с образцом |
 | `practice` | `items: [{text, write?: true, sample?: "образец (md)"}]` | пишет текст; после ответа видит образец |
 | `anki` | `deck: "Неделя 1"` | карточки из `anki.json` этой колоды (SRS) |
-| `words` | `deck: "w1d1"`, `mode?: "study"\|"test"` | кнопка «Открыть колоду» → `words/#deck=w1d1&step=<id>` |
+| `words` | `deck: "w1d1"`, `mode?: "study"\|"test"\|"word_study"\|"word_test"` | кнопка «Открыть колоду» → `words/#deck=w1d1&step=<id>` |
 | `listen` | `source {…, type:"video"}`, `quiz: "q-…"` | видео/аудио + вопросы по нему |
 
 ### `data/quizzes.json`
@@ -137,6 +137,8 @@ markdown на русском, примеры на немецком
 
 `article`: `"der"|"die"|"das"|null` (null — не существительное). `pos`:
 `noun|verb|adj|adv|num|phrase|other`. В режимах про артикль участвуют только слова с `article`.
+Обычные слова (без `article`) учатся в двух режимах: `word_study` — вписать пропущенные
+буквы, `word_test` — написать слово целиком. Режим `test` проверяет всю колоду письменно.
 
 ## Тренажёр ↔ сайт
 
