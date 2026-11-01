@@ -67,6 +67,7 @@ const rules = {
     }
     a.learnedIds = [...new Set([...(a.learnedIds || []), ...(b.learnedIds || [])])].sort((x, y) => x - y);
     a.testBest = Math.max(a.testBest || 0, b.testBest || 0);
+    a.wordTestBest = Math.max(a.wordTestBest || 0, b.wordTestBest || 0);
     return JSON.stringify(a) !== before;
   },
 };

@@ -14,6 +14,7 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
+LETTER = re.compile(r"[A-Za-zÄÖÜäöüß]")
 BASE = "http://localhost:8812"
 ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "data" / "words.json").read_text())
@@ -78,6 +79,48 @@ def run_choice_mode(page, button, words):
 WRONG = '<b id="xss">falsch</b>'  # a wrong answer with markup must stay text
 
 
+def blank_positions(de):
+    """The same letters the page hides: the first letter stays as an anchor."""
+    letters = [i for i, ch in enumerate(de) if LETTER.match(ch)]
+    if not letters:
+        return []
+    anchor = letters[1:] if len(letters) > 1 else letters
+    count = max(1, min(5, int(len(letters) / 3 + 0.5)))
+    return sorted({anchor[min(len(anchor) - 1, int((k + 0.5) * len(anchor) / count))] for k in range(count)})
+
+
+def missing(de):
+    return "".join(de[i] for i in blank_positions(de))
+
+
+def run_word_study_mode(page, words, right):
+    page.click("#startWordStudyBtn")
+    for i, w in enumerate(words):
+        page.wait_for_selector("#wordStudyInput")
+        gaps = page.locator("#wordBlanksDisplay .gap-letter").count()
+        check(gaps == len(blank_positions(w["de"])), f"word study карта {i + 1}: {w['de']}, пропусков {gaps}")
+        page.fill("#wordStudyInput", missing(w["de"]) if i < right else WRONG)
+        page.press("#wordStudyInput", "Enter")
+        if i >= right:
+            check(page.locator("#xss").count() == 0 and WRONG in page.inner_text("#app"),
+                  f"word study: ответ с разметкой показан текстом (карта {i + 1})")
+        page.click("#nextCardBtn")
+    page.wait_for_selector("#retryDeckBtn")
+
+
+def run_word_test_mode(page, words, right):
+    page.click("#startWordTestBtn")
+    for i, w in enumerate(words):
+        page.wait_for_selector("#testWordInput")
+        page.fill("#testWordInput", w["de"] if i < right else WRONG)
+        page.press("#testWordInput", "Enter")
+        if i >= right:
+            check(page.locator("#xss").count() == 0 and WRONG in page.inner_text("#app"),
+                  f"word test: ответ с разметкой показан текстом (карта {i + 1})")
+        page.click("#nextCardBtn")
+    page.wait_for_selector("#retryDeckBtn")
+
+
 def run_test_mode(page, words, right):
     page.click("#startTestBtn")
     for i, w in enumerate(words):
@@ -100,6 +143,7 @@ def reset_progress(user):
 
 def main():
     nouns = [w for w in DECK["words"] if w["article"]]
+    plain = [w for w in DECK["words"] if not w["article"]]
     for size in SIZES:
         reset_progress(f"{USER}{size[0]}")
     with sync_playwright() as p:
@@ -154,6 +198,18 @@ def main():
             page.click("#toCategoriesBtn")
             page.click(f".deck-card[data-deck-id='{DECK['id']}']")
 
+            # Ordinary words: first fill in only the missing letters, then write the whole word.
+            run_word_study_mode(page, plain, len(plain) - 1)
+            no_hscroll(page, f"{tag} итог запоминания слов")
+            check("Запоминание слов" in page.inner_text("#app"), f"{tag}: итог режима запоминания")
+            page.click("#toCategoriesBtn")
+            page.click(f".deck-card[data-deck-id='{DECK['id']}']")
+            run_word_test_mode(page, plain, len(plain))
+            no_hscroll(page, f"{tag} итог проверки слов")
+            check("Проверка слов" in page.inner_text("#app"), f"{tag}: итог режима проверки слов")
+            page.click("#toCategoriesBtn")
+            page.click(f".deck-card[data-deck-id='{DECK['id']}']")
+
             # Test below 80 %: the step stays open.
             right = int(len(DECK["words"]) * 0.8) - 1
             run_test_mode(page, DECK["words"], right)
@@ -176,6 +232,7 @@ def main():
             check(saved.get("steps", {}).get(STEP, {}).get("status") == "done", f"{tag}: тест ≥ 80 % → markDone")
             rec = saved.get("words", {}).get(DECK["id"], {})
             check(len(rec.get("learnedIds", [])) == len(DECK["words"]), f"{tag}: progress.words[{DECK['id']}] сохранён")
+            check(rec.get("wordTestBest") == 100, f"{tag}: проверка обычных слов сохранена (100 %)")
 
             # The check of all learned words goes to the end.
             page.click("#toCategoriesBtn")
@@ -205,8 +262,17 @@ def main():
             page.goto(f"{BASE}/words/#deck={verbs['id']}")
             page.wait_for_selector("#startTestBtn")
             check(page.locator("#startStudyBtn").is_disabled(), f"{tag}: {verbs['id']} без существительных — режимы артикля выключены")
+            check(not page.locator("#startWordStudyBtn").is_disabled(), f"{tag}: {verbs['id']} — запоминание слов доступно")
+            check(not page.locator("#startWordTestBtn").is_disabled(), f"{tag}: {verbs['id']} — проверка слов доступна")
             run_test_mode(page, verbs["words"], len(verbs["words"]))
             check("100%" in page.inner_text("#app"), f"{tag}: {verbs['id']} проверка до конца, 100 %")
+
+            # A deck without ordinary words: the new modes are off.
+            nouns_only = next(d for d in DATA["decks"] if all(w["article"] for w in d["words"]))
+            page.goto(f"{BASE}/words/#deck={nouns_only['id']}")
+            page.wait_for_selector("#startTestBtn")
+            check(page.locator("#startWordStudyBtn").is_disabled() and page.locator("#startWordTestBtn").is_disabled(),
+                  f"{tag}: {nouns_only['id']} без обычных слов — новые режимы выключены")
             page.goto(f"{BASE}/words/")
             page.wait_for_selector(".deck-card")
 

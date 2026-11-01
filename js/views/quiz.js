@@ -2,7 +2,73 @@
 // compares with the model answer. The step is done when every question is correct.
 import { esc, md } from "../md.js";
 import { deAnswers, grade, questionBody, readValue } from "../grade.js";
+import { speakGermanSequence } from "../speech.js";
 import { data, isDone, logEvent, markDone, progress, scheduleSave } from "../store.js";
+
+const CYRILLIC = /[\u0400-\u04FF]/;
+
+function germanSpeechText(text, hints = false) {
+  let plain = String(text ?? "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`#>~]/g, "")
+    .replace(/[«»„“”"]/g, "");
+  plain = hints
+    ? plain.replace(/\([^)]*\)/g, " ")
+    : plain.replace(/\(([^)]*)\)/g, (_, inner) => (CYRILLIC.test(inner) ? " " : inner));
+  const words = plain.split(/\s+/).filter((w) => w && !CYRILLIC.test(w));
+  const result = words
+    .join(" ")
+    .replace(/_{2,}/g, " ")
+    .replace(/…|\.{3,}/g, " ")
+    .replace(/\s*[—–]\s*/g, ". ")
+    .replace(/\s*→\s*/g, ". ")
+    .replace(/\s*\/\s*/g, ". ")
+    .replace(/\s+/g, " ")
+    .replace(/\s+([.,;:!?])/g, "$1")
+    .replace(/([.,;:!?])(?:\s*[.,;:!?])+/g, "$1")
+    .trim()
+    .replace(/^[.,;:!?]+/, "")
+    .trim();
+  return /[A-Za-zÄÖÜäöüß0-9]/.test(result) ? result : "";
+}
+
+function filledQuestion(q, answer) {
+  const source = String(q.q ?? "");
+  const blanks = source.match(/_{2,}/g) || [];
+  if (!blanks.length) return germanSpeechText(source, true);
+
+  const words = germanSpeechText(answer).split(/\s+/).filter(Boolean);
+  let filled = source;
+  if (blanks.length === 1 && words.length) {
+    filled = source.replace(/_{2,}/, words.join(" "));
+  } else if (blanks.length === words.length) {
+    let k = 0;
+    filled = source.replace(/_{2,}/g, () => words[k++]);
+  }
+  if (/_{2,}/.test(filled)) return "";
+  return germanSpeechText(filled, true);
+}
+
+function speechAnswers(q) {
+  if (q.type === "de") return deAnswers(q).slice(0, 1).map(germanSpeechText);
+  if (q.type === "choice") return [germanSpeechText(q.options[q.answer])];
+  if (q.type === "multi") return q.answers.map((k) => germanSpeechText(q.options[k]));
+  if (q.type === "text") return [germanSpeechText(q.model ?? q.answer)];
+  return [];
+}
+
+function speakQuestionAndAnswer(q) {
+  const answers = speechAnswers(q).filter(Boolean);
+  const question = filledQuestion(q, answers.join(". "));
+  speakGermanSequence([question, ...answers]);
+}
+
+function hasAnswer(q, value) {
+  if (q.type === "choice") return value !== null;
+  if (q.type === "multi") return Array.isArray(value) && value.length > 0;
+  return String(value ?? "").trim() !== "";
+}
 
 function questionHTML(q, i, saved) {
   const state = saved?.ok ? "ok" : saved?.tried ? "bad" : "";
@@ -74,8 +140,12 @@ export function renderQuiz(root, step, { onDone }) {
       }
       s.revealed = true;
       s.msg = "";
-      return redraw(i);
+      redraw(i);
+      speakQuestionAndAnswer(q);
+      return;
     }
+    const withAnswer = hasAnswer(q, value);
+    if (withAnswer) speakQuestionAndAnswer(q);
     const { ok, msg = "" } = await grade(q, value);
     s.ok = ok;
     s.msg = msg;
