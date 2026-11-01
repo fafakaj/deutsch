@@ -159,6 +159,7 @@
     import { session } from "../js/auth.js";
     import { loadProgress, progress, scheduleSave, markDone, onSaveState, pullRemote, siteURL } from "../js/store.js";
     import { esc } from "../js/md.js";
+    import { speakGerman } from "../js/speech.js";
 
     /*************************************************************************
      * 1. СЛОВА: КОЛОДЫ КУРСА (w1d1…w4d6) И ДОПОЛНИТЕЛЬНЫЕ (x01…x50) ИЗ data/words.json
@@ -391,6 +392,16 @@
       errorMsg: ""
     };
 
+    // Enter после ответа работает как кнопка «Следующее слово»
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter" || state.screen !== "session" || !state.feedback) return;
+      if (e.target.closest("input, textarea, select, button, a")) return;
+      const nextBtn = document.getElementById("nextCardBtn");
+      if (!nextBtn) return;
+      e.preventDefault();
+      nextBtn.click();
+    });
+
     // Телефон и ноутбук делят gist: при возвращении на вкладку берём более новую копию
     document.addEventListener("visibilitychange", async () => {
       if (document.visibilityState === "visible" && state.screen !== "session" && await pullRemote()) render();
@@ -426,120 +437,12 @@
     }
 
     /*************************************************************************
-     * 5. НАДЁЖНАЯ НЕМЕЦКАЯ ОЗВУЧКА СТРОГО С АРТИКЛЕМ (iPhone 14 + Huawei Pura 70)
-     * 1) Всегда произносит "${article} ${de}" (например, "der Tisch", "die Lampe").
-     * 2) Запускается СТРОГО синхронно по нажатию на кнопку микрофона через
-     *    <audio id="ttsAudio" referrerpolicy="no-referrer"> с потоком Google German TTS,
-     *    благодаря чему iPhone 14 (iOS Safari) и Huawei Pura 70 произносят слова
-     *    эталонным немецким голосом, а не читают латиницу русским голосом.
-     * 3) Если телефон полностью офлайн, используется fallback на Web Speech API
-     *    ТОЛЬКО при наличии подлинного немецкого голоса (Anna, Helena, Petra, Martin и т.д.).
+     * 5. НЕМЕЦКАЯ ОЗВУЧКА СТРОГО С АРТИКЛЕМ (общий модуль ../js/speech.js)
+     * Произносит "${article} ${de}", запускается по нажатию и после ответа.
      *************************************************************************/
-    let cachedGermanVoice = null;
-
-    function findGenuineGermanVoice() {
-      if (!("speechSynthesis" in window)) return null;
-      const voices = window.speechSynthesis.getVoices() || [];
-      if (!voices.length) return null;
-
-      const noveltyRegex = /albert|bad news|bahh|bells|boing|bubbles|cellos|deranged|good news|hysterical|pipe organ|trinoids|whisper|zarvox|jester|superstar|wobble/i;
-      const deVoices = voices.filter(v => {
-        if (!v || !v.lang) return false;
-        const normLang = v.lang.replace('_', '-').toLowerCase();
-        return normLang.startsWith('de') && !noveltyRegex.test(v.name || '');
-      });
-
-      if (!deVoices.length) return null;
-
-      const preferredNames = ['anna', 'helena', 'petra', 'viktor', 'martin', 'markus', 'google deutsch', 'siri', 'marlene'];
-      for (const pref of preferredNames) {
-        const match = deVoices.find(v => (v.name || '').toLowerCase().includes(pref));
-        if (match) return match;
-      }
-
-      return deVoices.find(v => v.lang.replace('_', '-').toLowerCase() === 'de-de') || deVoices[0];
-    }
-
-    if ("speechSynthesis" in window) {
-      cachedGermanVoice = findGenuineGermanVoice();
-      if (typeof window.speechSynthesis.onvoiceschanged !== "undefined") {
-        window.speechSynthesis.onvoiceschanged = () => {
-          cachedGermanVoice = findGenuineGermanVoice();
-        };
-      }
-    }
-
-    function speakOfflineGermanFallback(phrase) {
-      if (!("speechSynthesis" in window)) return;
-      const genuineVoice = cachedGermanVoice || findGenuineGermanVoice();
-      // Никогда не запускаем синтез без явно найденного немецкого голоса,
-      // чтобы iOS не читала немецкие буквы русским голосом
-      if (!genuineVoice) return;
-
-      try {
-        window.speechSynthesis.cancel();
-        const utter = new SpeechSynthesisUtterance(phrase);
-        utter.voice = genuineVoice;
-        utter.lang = "de-DE";
-        utter.rate = 0.9;
-        utter.pitch = 1.0;
-        window.speechSynthesis.speak(utter);
-      } catch (e) {}
-    }
-
     function speakGermanWordWithArticle(wordObj, buttonEl = null) {
       if (!wordObj || !wordObj.de) return;
-      const phrase = fullWord(wordObj).trim();
-
-      const targetBtn = buttonEl || document.getElementById("MainSpeakButton");
-      if (targetBtn) {
-        targetBtn.classList.remove("speaking-pulse");
-        void targetBtn.offsetWidth;
-        targetBtn.classList.add("speaking-pulse");
-      }
-
-      if ("speechSynthesis" in window) {
-        try { window.speechSynthesis.cancel(); } catch (e) {}
-      }
-
-      const audioEl = document.getElementById("ttsAudio");
-      if (!audioEl) {
-        speakOfflineGermanFallback(phrase);
-        return;
-      }
-
-      const encoded = encodeURIComponent(phrase);
-      const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=de&q=${encoded}`;
-      const backupTtsUrl = `https://dict.youdao.com/dictvoice?audio=${encoded}&le=de`;
-
-      try {
-        audioEl.pause();
-        audioEl.onerror = () => {
-          audioEl.onerror = () => {
-            speakOfflineGermanFallback(phrase);
-          };
-          audioEl.src = backupTtsUrl;
-          const p2 = audioEl.play();
-          if (p2 !== undefined) {
-            p2.catch(() => speakOfflineGermanFallback(phrase));
-          }
-        };
-
-        audioEl.src = googleTtsUrl;
-        const playPromise = audioEl.play();
-        if (playPromise !== undefined) {
-          playPromise.catch(() => {
-            audioEl.onerror = null;
-            audioEl.src = backupTtsUrl;
-            const p2 = audioEl.play();
-            if (p2 !== undefined) {
-              p2.catch(() => speakOfflineGermanFallback(phrase));
-            }
-          });
-        }
-      } catch (err) {
-        speakOfflineGermanFallback(phrase);
-      }
+      speakGerman(fullWord(wordObj).trim(), buttonEl || document.getElementById("MainSpeakButton"));
     }
 
     /*************************************************************************
